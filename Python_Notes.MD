@@ -21,7 +21,7 @@
 <space>      * The source code is compiled into machine code (binary) before execution.
  * In this language, compilation errors prevent the code from compiling.
 
-$~$ **Interpreter-based languages** (e.g., Python): 
+$~~~~~~~~~~~~$ **Interpreter-based languages** (e.g., Python): 
  * The code is executed line by line, with each line being translated into machine code and executed on the fly.
  * In this languages, all the debugging occurs at run-time.
 
