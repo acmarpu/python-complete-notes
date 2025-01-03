@@ -1,18 +1,40 @@
+
+# **Python**
+
 ==============================================================================================================================
-**Python**
-==============================================================================================================================
 
-1. python is a programing language which is used to write coding part for the app devlopment
-2. python is a general purpose, high level program, interpreted language, dynamically typed,case sensitive program language
-3. Python is very simple and easy to learn
-4. Python is completely cross platform or platform independent
-5. python is completely free and open source
+* **1.** Python is a programming language used for app development*
 
-# compiler based --- c,c++, java,.net
-100 lines code 
+* **2.** Python is a general-purpose programming language, high-level programming language [Human understanble], case-sensitive programming language*
 
-# interpreted based --- python
-These languages execute code line by line, as opposed to compiled languages that translate the entire source code into machine code first. An interpreter reads and executes the program directly, which allows for easier debugging and quicker development.
+* **3.** Python is simple and easy to learn, meaning it’s a straightforward language*
+
+* **4.** Python is completely cross-platform or platform-independent:*
+ * Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
+
+* **5.** Python is completely free and open-source
+
+
+* **6.** Python is an interpreted language 
+
+&nbsp; **Compiler-based languages(e.g., C, C++, Java):** 
+<space> * The source code is compiled into machine code (binary) before execution.
+ * In this language, compilation errors prevent the code from compiling.
+
+ **Interpreter-based languages** (e.g., Python): 
+ * The code is executed line by line, with each line being translated into machine code and executed on the fly.
+ * In this languages, all the debugging occurs at run-time.
+
+
+* **7.** Python is a dynamically typed language, not a statically typed language:
+* *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
+* **Ex:** int a = 100
+* The data type (int) must be declared explicitly
+
+* *Dynamically typed languages (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible:
+dynamically: no need to spcify any data type at the time of decleration 
+* **Ex:** variable name = value 
+* var = 100  # Here, 'var' is dynamically typed as an integer.
 
 
 
