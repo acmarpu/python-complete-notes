@@ -9,12 +9,13 @@
 
 **3.** Python is simple and easy to learn, meaning it’s a straightforward language*
 
-**4.** Python is completely cross-platform or platform-independent:
+**4.** Python is completely cross-platform or platform-independent
 * Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
 **5.** Python is completely free and open-source
 
 **6.** Python is an interpreted language 
+
 **Compiler-based languages(e.g., C, C++, Java):** 
 * &nbsp; The source code is compiled into machine code (binary) before execution.
 * &nbsp; In this language, compilation errors prevent the code from compiling.
@@ -24,12 +25,13 @@
 * &nbsp; In this languages, all the debugging occurs at run-time.
 
 
-**7.** Python is a dynamically typed language, not a statically typed language:
-* &nbsp; *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
+**7.** Python is a dynamically typed language, not a statically typed language
+
+&nbsp; **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
 * &nbsp; **Ex:** int a = 100
 * &nbsp; The data type (int) must be declared explicitly
 
-* &nbsp; *Dynamically typed languages (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible:
+&nbsp; **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible:
 dynamically: no need to spcify any data type at the time of decleration 
 * &nbsp; **Ex:** variable name = value 
 * &nbsp; var = 100  # Here, 'var' is dynamically typed as an integer.
