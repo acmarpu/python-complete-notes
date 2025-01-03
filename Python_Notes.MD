@@ -15,19 +15,19 @@
 **5.** Python is completely free and open-source
 
 
-**6.** Python is an interpreted language 
+&nbsp;**6.** Python is an interpreted language 
 
-&nbsp;      **Compiler-based languages(e.g., C, C++, Java):** 
-<space>      * The source code is compiled into machine code (binary) before execution.
+**Compiler-based languages(e.g., C, C++, Java):** 
+* The source code is compiled into machine code (binary) before execution.
  * In this language, compilation errors prevent the code from compiling.
 
-$~~~~~~~~~~~~$ **Interpreter-based languages** (e.g., Python): 
+**Interpreter-based languages** (e.g., Python): 
  * The code is executed line by line, with each line being translated into machine code and executed on the fly.
  * In this languages, all the debugging occurs at run-time.
 
 
-* **7.** Python is a dynamically typed language, not a statically typed language:
-* *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
+( <br> ),**7.** Python is a dynamically typed language, not a statically typed language: ( <br> ),
+   * *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
 * **Ex:** int a = 100
 * The data type (int) must be declared explicitly
 
