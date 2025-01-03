@@ -3,25 +3,25 @@
 
 ==============================================================================================================================
 
-* **1.** Python is a programming language used for app development*
+**1.** Python is a programming language used for app development*
 
-* **2.** Python is a general-purpose programming language, high-level programming language [Human understanble], case-sensitive programming language*
+**2.** Python is a general-purpose programming language, high-level programming language [Human understanble], case-sensitive programming language*
 
-* **3.** Python is simple and easy to learn, meaning it’s a straightforward language*
+**3.** Python is simple and easy to learn, meaning it’s a straightforward language*
 
-* **4.** Python is completely cross-platform or platform-independent:*
+**4.** Python is completely cross-platform or platform-independent:*
  * Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
-* **5.** Python is completely free and open-source
+**5.** Python is completely free and open-source
 
 
-* **6.** Python is an interpreted language 
+**6.** Python is an interpreted language 
 
-&nbsp; **Compiler-based languages(e.g., C, C++, Java):** 
-<space> * The source code is compiled into machine code (binary) before execution.
+&nbsp;      **Compiler-based languages(e.g., C, C++, Java):** 
+<space>      * The source code is compiled into machine code (binary) before execution.
  * In this language, compilation errors prevent the code from compiling.
 
- **Interpreter-based languages** (e.g., Python): 
+$~$ **Interpreter-based languages** (e.g., Python): 
  * The code is executed line by line, with each line being translated into machine code and executed on the fly.
  * In this languages, all the debugging occurs at run-time.
 
