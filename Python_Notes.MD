@@ -10,24 +10,24 @@
 **3.** Python is simple and easy to learn, meaning it’s a straightforward language*
 
 **4.** Python is completely cross-platform or platform-independent:*
- * Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
+* Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
 **5.** Python is completely free and open-source
 
 
-   &nbsp;**6.** Python is an interpreted language 
+**6.** Python is an interpreted language 
 
-**Compiler-based languages(e.g., C, C++, Java):** 
-* The source code is compiled into machine code (binary) before execution.
- * In this language, compilation errors prevent the code from compiling.
+&nbsp;**Compiler-based languages(e.g., C, C++, Java):** 
+&nbsp;* The source code is compiled into machine code (binary) before execution.
+&nbsp;* In this language, compilation errors prevent the code from compiling.
 
-**Interpreter-based languages** (e.g., Python): 
- * The code is executed line by line, with each line being translated into machine code and executed on the fly.
- * In this languages, all the debugging occurs at run-time.
+&nbsp;**Interpreter-based languages** (e.g., Python): 
+&nbsp;* The code is executed line by line, with each line being translated into machine code and executed on the fly.
+&nbsp;* In this languages, all the debugging occurs at run-time.
 
 
-( <br> )   **7.** Python is a dynamically typed language, not a statically typed language: ( <br> ),
-   * *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
+**7.** Python is a dynamically typed language, not a statically typed language: ( <br> ),
+* *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
 * **Ex:** int a = 100
 * The data type (int) must be declared explicitly
 
