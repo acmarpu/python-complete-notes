@@ -14,26 +14,25 @@
 
 **5.** Python is completely free and open-source
 
-
 **6.** Python is an interpreted language 
-**<br> Compiler-based languages(e.g., C, C++, Java):** 
+**Compiler-based languages(e.g., C, C++, Java):** 
 * &nbsp; The source code is compiled into machine code (binary) before execution.
 * &nbsp; In this language, compilation errors prevent the code from compiling.
 
-**<br> Interpreter-based languages** (e.g., Python): 
+**Interpreter-based languages** (e.g., Python): 
 * &nbsp; The code is executed line by line, with each line being translated into machine code and executed on the fly.
 * &nbsp; In this languages, all the debugging occurs at run-time.
 
 
 **7.** Python is a dynamically typed language, not a statically typed language:
-* *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
-* **Ex:** int a = 100
-* The data type (int) must be declared explicitly
+* &nbsp; *Statically typed languages* (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
+* &nbsp; **Ex:** int a = 100
+* &nbsp; The data type (int) must be declared explicitly
 
-* *Dynamically typed languages (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible:
+* &nbsp; *Dynamically typed languages (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible:
 dynamically: no need to spcify any data type at the time of decleration 
-* **Ex:** variable name = value 
-* var = 100  # Here, 'var' is dynamically typed as an integer.
+* &nbsp; **Ex:** variable name = value 
+* &nbsp; var = 100  # Here, 'var' is dynamically typed as an integer.
 
 
 
