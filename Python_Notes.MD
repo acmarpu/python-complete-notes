@@ -18,12 +18,12 @@
 **6.** Python is an interpreted language 
 
 &nbsp;**Compiler-based languages(e.g., C, C++, Java):** 
-&nbsp;* The source code is compiled into machine code (binary) before execution.
-&nbsp;* In this language, compilation errors prevent the code from compiling.
+* &nbsp; The source code is compiled into machine code (binary) before execution.
+* &nbsp;* In this language, compilation errors prevent the code from compiling.
 
-&nbsp;**Interpreter-based languages** (e.g., Python): 
-&nbsp;* The code is executed line by line, with each line being translated into machine code and executed on the fly.
-&nbsp;* In this languages, all the debugging occurs at run-time.
+* &nbsp;**Interpreter-based languages** (e.g., Python): 
+* &nbsp;* The code is executed line by line, with each line being translated into machine code and executed on the fly.
+* &nbsp;* In this languages, all the debugging occurs at run-time.
 
 
 **7.** Python is a dynamically typed language, not a statically typed language: ( <br> ),
