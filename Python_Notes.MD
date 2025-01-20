@@ -12,7 +12,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **3.** Python is simple and easy to learn, meaning it’s a straight forward language
 
 **4.** Python is completely cross-platform or platform-independent
-* Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
+* &nbsp;Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
 **5.** Python is completely free and open-source
 
@@ -30,15 +30,15 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **7.** Python is a dynamically typed language, not a statically typed language
 
 **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
-&nbsp;* **Ex:** int a = 100
-&nbsp;* The data type (int) must be declared explicitly
+* &nbsp; **Ex:** int a = 100
+* &nbsp;* The data type (int) must be declared explicitly
 
 **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
-* dynamically: no need to spcify any data type at the time of decleration 
+* &nbsp; dynamically: no need to spcify any data type at the time of decleration 
 * &nbsp;**Ex:** variable name = value 
 * &nbsp;var = 100  # Here, 'var' is dynamically typed as an integer.
 
-
+===========================================================================================
 **Features of python:**
 
 **Easy to Learn:** Python has a simple and easy-to-understand syntax, making it a great choice for beginners.
@@ -62,6 +62,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **Extensible:** Python allows developers to integrate other languages like C/C++ for performance-critical parts, and it supports the use of external libraries and modules.
 
 
+===========================================================================================
 
 **Application Areas of Python:**
 
@@ -76,7 +77,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * Python is used for building networked applications and protocols.
 
 **Data Analysis Applications**
-Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in data analysis.
+* Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in data analysis.
 
 **Business Applications**
 * Python is used for building business applications, including ERP systems and CRM software.
@@ -99,6 +100,9 @@ Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in dat
 **Python File Extension:**
 * The default extension for Python files is .py (e.g., test.py).
 
+
+===========================================================================================
+
 **Different Ways to Write and Execute Python Code:**
 
 **Interactive Mode**
@@ -116,47 +120,47 @@ Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in dat
 * download PyCharm Community Edition : https://www.jetbrains.com/pycharm/download/?section=windows
 
 
-=========================================================================================== 
-**Python fundamentals**:
 ===========================================================================================
+# Python fundamentals
 
-1. **comments** 
--- Python are identified with a hash symbol(#), and extend to the end of the line# 
--- short cut key is ctrl+/ : description about the code we can use # also
+**1. Comments** 
+* &nbsp;Python are identified with a hash symbol(#), and extend to the end of the line# 
+* &nbsp;short cut key is ctrl+/ : description about the code we can use # also
 
-2. **Keywords or reserved words**
--- There are fewer restrictions on their usage. For example, you will get a “SyntaxError” if you try assigning a keyword to a variable
--- Python keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those specific purposes. 
--- These keywords are always available—you’ll never have to import them into your code.
-
--- Python keywords are different from Python’s built-in functions and types.
+**2. Keywords or Reserved Words**
+* &nbsp;There are fewer restrictions on their usage. For example, you will get a “SyntaxError” if you try assigning a keyword to a variable
+* &nbsp;Python keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those specific purposes. 
+* &nbsp;These keywords are always available—you’ll never have to import them into your code.
+* &nbsp;Python keywords are different from Python’s built-in functions and types.
    
-   import keyword
-   print(keyword.kwlist)
+* &nbsp;import keyword
+* &nbsp;print(keyword.kwlist)
 
-**3. identifiers**
--- Any name is called identifiers (variable name or function name or any other name)
--- Python Identifier is the name we give to identify a variable, function, class, module or other object. 
--- That means whenever we want to give an entity a name, that's called identifier.
+* 'if' is keyword, we can not use as variable
+
+**3. Identifiers**
+* &nbsp;Any name is called identifiers (variable name or function name or any other name)
+* &nbsp;Python Identifier is the name we give to identify a variable, function, class, module or other object. 
+* &nbsp;That means whenever we want to give an entity a name, that's called identifier.
    
-   a. lowercase or uppercase
-   b. case-sensitive
-   c. allow digits(0-9)
-   d. should not start with digit wrong : 9acmarpu9  crroct : acmarpu9
-   e. should not be two parts (if two parts use _) (emp id) (emp_id)
-   f. allow underscore (_)
-   g. if any identifier starts with underscore then it is private
-   h. no keywords or reserved words can be used as identifier
+* &nbsp;**a.** lowercase or uppercase
+* &nbsp;**b.** case-sensitive
+* &nbsp;**c.** allow digits(0-9)
+* &nbsp;**d.** should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
+* &nbsp;**e.** should not be two parts (if two parts use _) (emp id) (emp_id)
+* &nbsp;**f.** allow underscore (_)
+* &nbsp;**g.** if any identifier starts with underscore(_) then it is private
+* &nbsp;**h.** no keywords or reserved words can be used as identifier
 
-**4. variables**
--- Variables are containers for storing data values
--- variable is also called as identifier
--- variable is a named memory location
--- in python we dont specify any datatype while declare the variables
+**4. Variables**
+* &nbsp;Variables as Containers: A variable is used to store data values. It holds information that can be used and manipulated throughout a program.
+* &nbsp;Variables as Identifiers: A variable is also known as an identifier because it uniquely identifies the value or object it is storing. An identifier is simply a name given to a memory location where data is stored.
+* &nbsp;Named Memory Location: In Python, when you assign a value to a variable, Python internally stores the value in a memory location, and the variable name points to that location. The name you assign to a variable acts as a reference to the data.
+* &nbsp;No Need to Specify Data Type: Unlike many other programming languages, Python is dynamically typed, meaning you don't need to specify the type of data a variable will hold.
 
-**5. multiple assignment**
--- is process of assigning a single value to multiple variables
--- is process of assigning a multiple values to multiple variables
+**5. Multiple Assignment**
+* &nbsp;is process of assigning a single value to multiple variables
+* &nbsp;is process of assigning a multiple values to multiple variables
    
       a =b =c =10
       print(a)
@@ -164,11 +168,11 @@ Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in dat
       print(c)
       print(type(a))
 
-  #Single line print
+* &nbsp;Single line print
       a =b =c =10
       print(a,b,c, sep=",") # sep = separate with ,
 
-  #is the process of assigning multiple values ot multiple variables 
+* &nbsp; the process of assigning multiple values ot multiple variables 
       a,b,c = 10,20,30
       print(a)
       print(b)
@@ -179,7 +183,7 @@ Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in dat
       print(c)
 
 
-**6. python Indentation**
+**6. Python Indentation**
 -- Python indentation refers to adding white space before a statement to a particular block of code. 
    In other words, all the statements with the same space to the left, belong to the same code block. 
 -- whenever use a block of code
@@ -195,9 +199,11 @@ Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in dat
           print("false")
    
 
-==============================================================================================================================
-**Data types in python**
-==============================================================================================================================
+
+===========================================================================================
+# Data types in python
+===========================================================================================
+
 -- Python Data types are the classification or categorization of data items. 
    It represents the kind of value that tells what operations can be performed on a particular data
 -- data types used to represents the what type of data goig to store in variables 
