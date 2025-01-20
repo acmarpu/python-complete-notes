@@ -122,7 +122,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
+
 # Python fundamentals
+
+==========================================================================================
 
 **1. Comments** 
 * &nbsp;Python are identified with a hash symbol(#), and extend to the end of the line# 
@@ -195,10 +198,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
       i = 10
       if i ==10:
-    *# indent by four spaces = 1 level*
+    *indent by four spaces = 1 level*
           print("true")
+      
       else:
-    *# indent by four spaces = 1 level*
+    *indent by four spaces = 1 level*
           print("false")
    
 
