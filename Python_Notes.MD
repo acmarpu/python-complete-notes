@@ -1,7 +1,7 @@
 
 # **Python**
 
-===========================================================================================
+==========================================================================================
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
 
@@ -38,9 +38,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;**Ex:** variable name = value 
 * &nbsp;var = 100  # Here, 'var' is dynamically typed as an integer.
 
-===========================================================================================
+==========================================================================================
 **Features of python:**
-===========================================================================================
+==========================================================================================
 
 **Easy to Learn:** Python has a simple and easy-to-understand syntax, making it a great choice for beginners.
 
@@ -63,9 +63,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **Extensible:** Python allows developers to integrate other languages like C/C++ for performance-critical parts, and it supports the use of external libraries and modules.
 
 
-===========================================================================================
+==========================================================================================
 **Application Areas of Python:**
-===========================================================================================
+==========================================================================================
 
 **Standalone or Desktop Applications**
 * CUI (Command User Interface)
@@ -102,9 +102,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * The default extension for Python files is .py (e.g., test.py).
 
 
-===========================================================================================
+==========================================================================================
 **Different Ways to Write and Execute Python Code:**
-===========================================================================================
+==========================================================================================
 
 **Interactive Mode**
 * You can run Python code interactively in the Python shell (REPL).
@@ -121,7 +121,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * download PyCharm Community Edition : https://www.jetbrains.com/pycharm/download/?section=windows
 
 
-===========================================================================================
+==========================================================================================
 # Python fundamentals
 
 **1. Comments** 
@@ -134,8 +134,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;These keywords are always available—you’ll never have to import them into your code.
 * &nbsp;Python keywords are different from Python’s built-in functions and types.
    
-* &nbsp;import keyword
-* &nbsp;print(keyword.kwlist)
+   * &nbsp;import keyword
+   * &nbsp;print(keyword.kwlist)
 
 * 'if' is keyword, we can not use as variable
 
@@ -187,18 +187,18 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 **6. Python Indentation**
-* Python indentation refers to adding white space before a statement to a particular block of code. 
-* In other words, all the statements with the same space to the left, belong to the same code block. 
-* whenever use a block of code
-   * 4 spaces insted of {}
-   * 1 space also ok
+* Python uses indentation (whitespace before a statement) to define the structure of the code, such as loops, conditionals, functions, and classes. Instead of using curly braces {} (like in many other languages such as C or Java), Python relies on consistent indentation to group statements within a block of code. 
+* Indentation Rules:
+   * 4 spaces: The Python style guide (PEP 8) recommends using 4 spaces for each level of indentation.
+   * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
+   * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
 
       i = 10
       if i ==10:
-    # indent by four spaces = 1 level
+    *# indent by four spaces = 1 level*
           print("true")
       else:
-    # indent by four spaces = 1 level
+    *# indent by four spaces = 1 level*
           print("false")
    
 
