@@ -31,15 +31,16 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
 * &nbsp; **Ex:** int a = 100
-* &nbsp;* The data type (int) must be declared explicitly
+* &nbsp; The data type (int) must be declared explicitly
 
 **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
-* &nbsp; dynamically: no need to spcify any data type at the time of decleration 
+* &nbsp;dynamically: no need to spcify any data type at the time of decleration 
 * &nbsp;**Ex:** variable name = value 
 * &nbsp;var = 100  # Here, 'var' is dynamically typed as an integer.
 
 ===========================================================================================
 **Features of python:**
+===========================================================================================
 
 **Easy to Learn:** Python has a simple and easy-to-understand syntax, making it a great choice for beginners.
 
@@ -63,8 +64,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ===========================================================================================
-
 **Application Areas of Python:**
+===========================================================================================
 
 **Standalone or Desktop Applications**
 * CUI (Command User Interface)
@@ -102,8 +103,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ===========================================================================================
-
 **Different Ways to Write and Execute Python Code:**
+===========================================================================================
 
 **Interactive Mode**
 * You can run Python code interactively in the Python shell (REPL).
@@ -143,14 +144,14 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;Python Identifier is the name we give to identify a variable, function, class, module or other object. 
 * &nbsp;That means whenever we want to give an entity a name, that's called identifier.
    
-* &nbsp;**a.** lowercase or uppercase
-* &nbsp;**b.** case-sensitive
-* &nbsp;**c.** allow digits(0-9)
-* &nbsp;**d.** should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
-* &nbsp;**e.** should not be two parts (if two parts use _) (emp id) (emp_id)
-* &nbsp;**f.** allow underscore (_)
-* &nbsp;**g.** if any identifier starts with underscore(_) then it is private
-* &nbsp;**h.** no keywords or reserved words can be used as identifier
+   * &nbsp;**a.** lowercase or uppercase
+   * &nbsp;**b.** case-sensitive
+   * &nbsp;**c.** allow digits(0-9)
+   * &nbsp;**d.** should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
+   * &nbsp;**e.** should not be two parts (if two parts use _) (emp id) (emp_id)
+   * &nbsp;**f.** allow underscore (_)
+   * &nbsp;**g.** if any identifier starts with underscore(_) then it is private
+   * &nbsp;**h.** no keywords or reserved words can be used as identifier
 
 **4. Variables**
 * &nbsp;Variables as Containers: A variable is used to store data values. It holds information that can be used and manipulated throughout a program.
@@ -169,10 +170,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(type(a))
 
 * &nbsp;Single line print
+
       a =b =c =10
       print(a,b,c, sep=",") # sep = separate with ,
 
-* &nbsp; the process of assigning multiple values ot multiple variables 
+* &nbsp; the process of assigning multiple values ot multiple variables
+
       a,b,c = 10,20,30
       print(a)
       print(b)
@@ -184,11 +187,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 **6. Python Indentation**
--- Python indentation refers to adding white space before a statement to a particular block of code. 
-   In other words, all the statements with the same space to the left, belong to the same code block. 
--- whenever use a block of code
-   -- 4 spaces insted of {}
-   -- 1 space also ok
+* Python indentation refers to adding white space before a statement to a particular block of code. 
+* In other words, all the statements with the same space to the left, belong to the same code block. 
+* whenever use a block of code
+   * 4 spaces insted of {}
+   * 1 space also ok
 
       i = 10
       if i ==10:
