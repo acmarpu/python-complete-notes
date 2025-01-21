@@ -199,48 +199,51 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       i = 10
       if i ==10:
     *indent by four spaces = 1 level*
-          print("true")
+         print("true")
       
       else:
     *indent by four spaces = 1 level*
-          print("false")
+         print("false")
    
 
 
 ===========================================================================================
 # Data types in python
 ===========================================================================================
+* Python Data Types are used to define the type of a variable.
+* Data types define the type of value a variable holds, and they also determine what operations can be performed on that value.
+* In Python, data types are used to represent different types of values (e.g., numbers, strings, etc.) that are stored in variables.
+* Python Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. 
 
--- Python Data types are the classification or categorization of data items. 
-   It represents the kind of value that tells what operations can be performed on a particular data
--- data types used to represents the what type of data goig to store in variables 
--- Python Data Types are used to define the type of a variable
-
-mutable -- it is possible to change value
-immutable -- it is not possible to change value
+**Mutable:** Data types whose values can be changed after they are created.
+**Immutable:** Data types whose values cannot be changed after they are created.
 
 
-1. None    -- NoneType
-2. int(Integers).float.bool,Complex Numbers(1a) -- Numeric type -- holds numeric values
-3. string  -- Text Type        -- holds sequence of characters
-4. list    -- Sequence Types
-5. tuple   -- Sequence Types -- holds collection of items
-6. range   -- Sequence Types  -- holds collection of items
-7. set     -- Set Types --  hold collection of unique items
-8. dist    -- Mapping Type  -- holds data in key-value pair form
-9. bytes   -- Binary Types
-10. bytearray -- Binary Types 
-11. forzenset -- Set Types
+1. **None**(NoneType) -- a = 'none'
+2. **Numeric type**(*int(Integers)*) -- float.bool,Complex Numbers(1a) -- holds numeric values
+3. **string**(Text Type)      
+4. **list**(Sequence Types)
+5. **tuple**(Sequence Types)  -- holds collection of items
+6. **range**(Sequence Types)  -- holds collection of items
+7. **set**(Set Types)         --hold collection of unique items
+8. **dist**(Mapping Type)     -- holds data in key-value pair form
+9. **bytes**(Binary Types)
+10. **bytearray**(Binary Types) 
+11. **forzenset**(Set Types)
+
+
 
 **1. none**
-   nothing is there in the variable
+* nothing is there in the variable
+      
       a = 'none'
       print('none')
       print(a)
       print(type(a))
 
 **2.Numeric type**
- Numeric -- init(0,100),float(10.0),bool(true or false),Complex Numbers(1a)
+* Numeric -- init(0,100),float(10.0),bool(true or false),Complex Numbers(1a)
+      
       a = 10
       print(a)
       print(type(a))
@@ -249,7 +252,8 @@ immutable -- it is not possible to change value
       print(a)
       print(type(a))
 
-   ## int to flot convert
+   * int to flot convert*
+      
       a = 10
       print(a)
       print(type(a))
@@ -258,17 +262,19 @@ immutable -- it is not possible to change value
       print(b)
       print(type(b))
 
-      string to int convert 
-# Enter runtime
-   #By default runtime is **string**
 
-   #Lab
+
+**Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
+
+* #Lab
+
       a = input("enter num1:")
       print(type(a))
       x = int(a)
       print(type(x))
 
-   #Lab
+* #Lab
+
       a = input("enter number1:")
       print(a)
       print(type(a))
@@ -282,15 +288,24 @@ immutable -- it is not possible to change value
       print(type(y))
       c = x+y
       print("sum c is", c)
-
+    
 **-------another way------**
-   #Lab
+* #Lab
+
       a = int(input("Enter num1:"))
       b = int(input("enter num2:"))
       c = a + b
       print("sum is:", c)
 
-   bool = true or false
+* #Lab
+
+      a = float(input("Enter num1:"))
+      b = float(input("enter num2:"))
+      c = a + b
+      print("sum is:", c)
+
+* bool = true or false
+      
       a = 10
       b = 20
       c = a > b
