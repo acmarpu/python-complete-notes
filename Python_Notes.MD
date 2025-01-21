@@ -216,6 +216,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * Python Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. 
 
 **Mutable:** Data types whose values can be changed after they are created.
+
 **Immutable:** Data types whose values cannot be changed after they are created.
 
 
@@ -252,15 +253,17 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a)
       print(type(a))
 
-   * int to flot convert*
+* int to flot convert*
       
       a = 10
       print(a)
       print(type(a))
 
+
       b= float(a)
       print(b)
       print(type(b))
+
 
 
 
