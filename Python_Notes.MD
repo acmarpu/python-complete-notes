@@ -269,14 +269,14 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
 
-* #Lab
+* #Examples
 
       a = input("enter num1:")
       print(type(a))
       x = int(a)
       print(type(x))
 
-* #Lab
+* #Examples
 
       a = input("enter number1:")
       print(a)
@@ -295,14 +295,14 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print("sum c is", c)
     
 **-------another way------**
-* #Lab
+* #Examples
 
       a = int(input("Enter num1:"))
       b = int(input("enter num2:"))
       c = a + b
       print("sum is:", c)
 
-* #Lab
+* #Examples
 
       a = float(input("Enter num1:"))
       b = float(input("enter num2:"))
@@ -316,11 +316,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       c = a > b
       print(c)
 
-===========================================================================================
-**Sequence Datatypes or data structure**
-===========================================================================================
 
+# **Sequence Datatypes or data structure**
+
+=========================================================================================
 **3. String()**
+=========================================================================================
    * In Python, strings are an essential part of the language used to represent textual data. 
    * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
       * Example: 'hello', "world"
@@ -328,7 +329,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * String Immutability: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
 
    
-* #Lab
+* #Examples
 
       s = "hello ashoka" 
       print(s)           # Output: hello ashoka
@@ -358,30 +359,47 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * description      
       
       help(str)
-   
+
+=========================================================================================   
 **4. List[]**
-   *List is an ordered collection of similar or different types of items separated by commas and enclosed within brackets [ ]
-   *Lists are used to store multiple items in a single variable.
-   *list will allow the diffrent datatype elements
-   *list will allow the duplicate elements
-   *list is mutable, we can modify the list
+=========================================================================================
+   * A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
+   *Key Features of Python Lists:*
+   * Ordered: The items in a list have a specific order, and that order is preserved.
+   * Mutable: Lists can be modified after creation. You can change, add, or remove elements.
+   * Heterogeneous: Lists can store elements of different data types (e.g., integers, strings, booleans, etc.).
+   * Allow duplicates: Lists allow duplicate elements, meaning the same value can appear multiple times in a list.
+   
 
-   #Lab
-      l = [10,20,30,3.4,"att",True]
-      print(l)
-      print(type(l))
-      l.append(33) #append is adding
-      print(l)
+* Examples
+   Creating a list with various types of elements
+      
+       l = [10,20,30,3.4,"ashoka",True]
+       *Printing the list and its type*
+       print(l)            # Output: [10, 20, 30, 3.4, 'att', True]
+       print(type(l))      # Output: <class 'list'>
 
-      l = [10,20,30,3.4,"att",True]
-      print(l)
-      print(type(l))
-      l[1] = 33 #modifies the element at index 1
-      print(l)
-   #Output
-      [10, 20, 30, 3.4, 'att', True]
-      <class 'list'>
-      [10, 33, 30, 3.4, 'att', True]
+* Lists are mutable, which means we can change their elements. We can modify an element by accessing it using its index, or add elements using methods like append().
+      
+       l.append(33) # Adds 33 to the end of the list
+       print(l)     # Output: [10, 20, 30, 3.4, 'att', True, 33]
+
+      *Modifying an element at a specific index*
+
+       l[1] = 33 # Changes the element at index 1 (value 20) to 33
+       print(l)  # Output: [10, 33, 30, 3.4, 'att', True, 33]
+
+
+**Key Methods for Working with Lists:**
+* **append(value)** — Adds an element to the end of the list.
+* **insert(index, value)** — Inserts an element at a specific index in the list.
+* **remove(value)** — Removes the first occurrence of the specified value.
+* **pop(index)** — Removes the element at the specified index and returns it.
+* **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
+* **index(value)** — Returns the index of the first occurrence of the specified value.
+* **sort()** — Sorts the list in ascending order. 
+
+
 
 **5. Tuple()**
    *The tuple is another data type which is a sequence of data similar to a list. But it is immutable. That means data in a tuple is write-protected.
@@ -390,7 +408,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    *tuple will allow the diffrent datatype elements
    *tuple will allow the duplicate elements
 
-   #Lab
+   #Examples
       t = ("raj",)
       print(t)
       print(type(t))
@@ -402,12 +420,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    *set will allow the diffrent datatype elements
    *set is mutable, we can change the set
 
-   #Lab
+   #Examples
       s = set()
       print(s)
       print(type(s))
    
-   #Lab
+   #Examples
       a = {10,20,30,40,50,60}
       print(a)
       print(type(a))
@@ -422,20 +440,20 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    *structures that allow you to store key-value pairs. Dictionary can be created using the dict() constructor or curly braces' {}'. 
     Once you have created a dictionary, you can add, remove, or update elements using the methods dict.
 
-   #Lab
+   #Examples
       capital_city = {'TS': 'Hyd', 'AP':'AMV','TN':'CH'}
       print(capital_city)
       print(capital_city['TS'])
       print(capital_city['AP'])
    
-   #Lab
+   #Examples
       d = {1:'sai',2:'att'}
       print(d)
       print(type(d))
       d[2] = 'ramesh' # Changing the values 
       print(d)
 
-   #Lab
+   #Examples
       person = {}
       # Get user input for key-value pairs
       name = input("Enter person's name: ")
@@ -455,7 +473,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * by default the range starts from 0
    * range is immutable, we can not modify
 
-   #Lab
+   #Examples
       r = range(10)
       print(r)
       print(type(r))
@@ -466,21 +484,21 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **9. bytes**
    *the bytes data type represents sequences of bytes, which are immutable sequences of integers, each representing a byte value from 0 to 255
 
-   #Lab
+   #Examples
       b = bytes([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
       print(b)  # Output: b'ABC'
 
 **10. bytearray**
    *In Python, bytearray is a mutable sequence of integers in the range 0 <= x <= 255. It is similar to bytes, but unlike bytes, bytearray objects can be modified after creation.
 
-   #Lab
+   #Examples
       ba = bytearray([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
       print(ba)  # Output: bytearray(b'ABC')
 
 **11. frozenset**
    *frozenset is an immutable version of a set, which means once it is created, its elements cannot be changed or modified.
 
-   #Lab
+   #Examples
       frozen_set = frozenset([1, 2, 3, 4, 5])
       print(frozen_set)  # Output: frozenset({1, 2, 3, 4, 5})
 
@@ -545,17 +563,17 @@ range range()      no            yes         yes     no
    * and, or , not
    * and: return True if both the conditions are true else false
    
-   #Lab
+   #Examples
       print (20 < 3 and 1 < 4)
 
    * or: return True if any one of the condition is True or both the conditions are true else False
-   #Lab
+   #Examples
       print (20 < 3 or 1< 4)
 
    
    * not: return True if the condition is False
         return False if the condition is True
-   #Lab
+   #Examples
       print(not(20 < 3))
 
 
@@ -564,11 +582,11 @@ range range()      no            yes         yes     no
    * in : return True if the value is present in the sequence else False
    * not in : return True if the value is not present in the sequence else False
 
-   #Lab
+   #Examples
       l = [10,20,30]
       print(10 not in l)
       print(10 in l)
-   #Lab
+   #Examples
       print("x" in 'hyd')
 
 **6. identity**
@@ -576,7 +594,7 @@ range range()      no            yes         yes     no
    * is: return True if the variables are having same identity else False
    * is not: return True if the variable are not having same identity else False
 
-   #Lab
+   #Examples
       i = 10
       j = 20
       print(i is j)
@@ -616,7 +634,7 @@ range range()      no            yes         yes     no
   * is key word test the specific condition
   *if else --The if-else statement allows you to execute one block of code if the condition is true and another block of code if the condition is false
 
-   #Lab
+   #Examples
 
       i = 10
       if i == 100:
@@ -624,7 +642,7 @@ range range()      no            yes         yes     no
       else:
           print("this is not correct") #Python Indentation
      
-   #Lab
+   #Examples
 
       i = int(input("enter a number:"))
       if i % 2 == 0:
@@ -636,7 +654,7 @@ range range()      no            yes         yes     no
   * is test multipile conditions and one of the condition fail its jump into another if ) 
   * (if inside if) You can have if statements inside if statements, this is called nested if statements.
 
-   #Lab
+   #Examples
       i = int(input("enter first number:"))
       j = int(input("enter second number:"))
       k = int(input("enter third number:"))
@@ -649,7 +667,7 @@ range range()      no            yes         yes     no
         else:
            print(k,"is big")
 -----------------------------------------------------------------
-   #Lab
+   #Examples
       name = input("enter the name:")
       age = int(input("enter the age:"))
       gender = input("enter your geder (M/F):")
@@ -663,7 +681,7 @@ range range()      no            yes         yes     no
       else:
           print("You are not eligbile")
 
-   #Lab
+   #Examples
       var = 100
       or
       var = int(input("Enter the Expression value:")) #we can enter the runtime value 
@@ -683,7 +701,7 @@ range range()      no            yes         yes     no
   * one of the confition is true other condition will not be test here
 
  
-   #Lab
+   #Examples
       var = 100
       or
       var = int(input("Enter the Expression value:")) #we can enter the runtime value
@@ -696,7 +714,7 @@ range range()      no            yes         yes     no
       else:
           print("invalid expression value")
 
-   #Lab
+   #Examples
       i = int(input("enter the number:"))
       if i == 1:
           print("one")
@@ -747,7 +765,7 @@ range range()      no            yes         yes     no
         for variablename in sequence:
             statements
 
-  #Lab
+  #Examples
       
       list = [10,20,30,40,50,60]
       for element in list:
@@ -755,13 +773,13 @@ range range()      no            yes         yes     no
 
          ![alt text](image.png)
          
-   #Lab
+   #Examples
       
       list = [10,20,30,40,50,60]
       for i in list:
          print(i)
 
-   #Lab
+   #Examples
 
       l = [10,20,30,40,50]
       print(l[0])
@@ -769,7 +787,7 @@ range range()      no            yes         yes     no
       print(l[3])
       print(l[4])
 
-   #Lab
+   #Examples
        for i in range(50)
            print (att)
 ----------------------------------------------------
@@ -779,7 +797,7 @@ Another Way:-
    L list collections
    here one by one value assigned to "i" 
 
-   #Lab
+   #Examples
       l = [10,20,30,40,50]
       for i in l:
           print(i) # Line by Line
@@ -800,19 +818,19 @@ Another Way:-
       for i in range(1,10,2):
           print(i,end="")
 
-   #Lab
+   #Examples
       for i in range(1,11):
       if i == 5 or i == 8:
          continue
       print(i, end="")
    
-   #Lab
+   #Examples
       for i in range(1,11):
       if i == 5 or i == 8:
          break  # Completley stop 
       print(i, end="")
 -------------------------------------------------------------------------
-   #Lab
+   #Examples
       t = int(input("enter the table number:"))
       for i in range(1,21):
       print(t,"X",i,"=", t*i)
