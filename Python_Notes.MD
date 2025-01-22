@@ -260,7 +260,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(type(a))
 
 
-      b= float(a)
+      b = float(a)
       print(b)
       print(type(b))
 
@@ -284,11 +284,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       x = int(a)  #here we converting str to int
       print(x)
       print(type(x))
+
       b = input("enter number2:")
       print(b)
       print(type(b))
       y = int(b)  #here we converting str to int
       print(type(y))
+      
       c = x+y
       print("sum c is", c)
     
@@ -314,23 +316,48 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       c = a > b
       print(c)
 
+===========================================================================================
 **Sequence Datatypes or data structure**
+===========================================================================================
 
 **3. String()**
-   *In Python, strings are used for representing textual data.
-   *A string is a sequence of characters enclosed in either single quotes ('') or double quotes (" "). 
-   *The Python language provides various built-in methods and functionalities to work with strings efficiently
-   *str is a group of characters or sequence of characters
-   *string is immutable (can not change or modify directly)
+   * In Python, strings are an essential part of the language used to represent textual data. 
+   * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
+      * Example: 'hello', "world"
+   * String Methods: Python provides a variety of built-in methods to perform operations on strings. Some of these include methods like replace(), split(), lower(), upper(), and many more.
+   * String Immutability: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
 
-   #We can not replace, we will use replace to change the value
-   #Lab
-      s = "hello att" 
-      print(s)
-      s1 = s.replace("hello", "hai") #replace to change the value
-      print(s1)
+   
+* #Lab
 
-      #print(dir(str))
+      s = "hello ashoka" 
+      print(s)           # Output: hello ashoka
+      print(type(s))     # Output: <class 'str'>
+
+*Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
+      
+      s.replace("hello", "hai")
+      print(s)           # Output: hello ashoka (s is unchanged)
+
+*The replace method returns a new string, we can assign the result to a variable*
+*we can not reuse s value*
+
+      print(s.replace("hello","hai")) 
+
+*We can assign the modified string to a new variable*
+      
+      s1 = s.replace("hello", "hai")
+      print(s1)          # Output: hai ashoka
+
+**To get a list of all available functions for string operations, you can use the dir() function:**
+* This will return a list of all the methods and attributes associated with the string class.
+      
+      print(dir(str))
+      __add_  #also called descriptors
+
+* description      
+      
+      help(str)
    
 **4. List[]**
    *List is an ordered collection of similar or different types of items separated by commas and enclosed within brackets [ ]
@@ -456,6 +483,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    #Lab
       frozen_set = frozenset([1, 2, 3, 4, 5])
       print(frozen_set)  # Output: frozenset({1, 2, 3, 4, 5})
+
+
 
 
 DS      Create     mutable    immutable   ordered    duplicate
