@@ -122,9 +122,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-
 # Python fundamentals
-
 ==========================================================================================
 
 **1. Comments** 
@@ -191,6 +189,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **6. Python Indentation**
 * Python uses indentation (whitespace before a statement) to define the structure of the code, such as loops, conditionals, functions, and classes. Instead of using curly braces {} (like in many other languages such as C or Java), Python relies on consistent indentation to group statements within a block of code. 
+
 * Indentation Rules:
    * 4 spaces: The Python style guide (PEP 8) recommends using 4 spaces for each level of indentation.
    * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
@@ -198,12 +197,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
       i = 10
       if i ==10:
-    *indent by four spaces = 1 level*
          print("true")
+    *indent by four spaces = 1 level*
+         
       
       else:
-    *indent by four spaces = 1 level*
          print("false")
+      *indent by four spaces = 1 level*
    
 
 
