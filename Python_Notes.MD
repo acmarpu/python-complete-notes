@@ -403,7 +403,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 =========================================================================================
 **5. Tuple()**
-=========================================================================================
+==========================================================================================
 * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
    
    **Key Points:**
@@ -416,10 +416,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * Examples
    * tuple required multipile values*
    * The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
+
       
       t = ("raj",)
       print(t)      # Output: ('raj',)
       print(type(t)) # Output: <class 'tuple'>
+
 
 
    *Without the trailing comma, this is just a string enclosed in parentheses.*
@@ -440,7 +442,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 =========================================================================================
 **6. Set{}**
-=========================================================================================
+==========================================================================================
 * A set is an unordered collection of unique elements. This means that duplicate values are automatically removed when creating a set.
 
 *Key Points:*
