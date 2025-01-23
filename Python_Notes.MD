@@ -319,9 +319,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 # **Sequence Datatypes or data structure**
 
-=========================================================================================
+==========================================================================================
 **3. String()**
-=========================================================================================
+==========================================================================================
    * In Python, strings are an essential part of the language used to represent textual data. 
    * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
       * Example: 'hello', "world"
@@ -341,7 +341,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(s)           # Output: hello ashoka (s is unchanged)
 
 *The replace method returns a new string, we can assign the result to a variable*
-*we can not reuse s value*
+*we can not reuse "s" value*
 
       print(s.replace("hello","hai")) 
 
@@ -364,15 +364,16 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **4. List[]**
 =========================================================================================
    * A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
-   *Key Features of Python Lists:*
-   * Ordered: The items in a list have a specific order, and that order is preserved.
-   * Mutable: Lists can be modified after creation. You can change, add, or remove elements.
-   * Heterogeneous: Lists can store elements of different data types (e.g., integers, strings, booleans, etc.).
-   * Allow duplicates: Lists allow duplicate elements, meaning the same value can appear multiple times in a list.
+   
+*Key Features of Python Lists:*
+   * **Ordered:** The items in a list have a specific order, and that order is preserved.
+   * **Mutable:** Lists can be modified after creation. You can change, add, or remove elements.
+   * **Heterogeneous:** Lists can store elements of different data types (e.g., integers, strings, booleans, etc.).
+   * **Allow duplicates:** Lists allow duplicate elements, meaning the same value can appear multiple times in a list.
    
 
 * Examples
-   Creating a list with various types of elements
+   *Creating a list with various types of elements*
       
        l = [10,20,30,3.4,"ashoka",True]
        *Printing the list and its type*
@@ -381,13 +382,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 * Lists are mutable, which means we can change their elements. We can modify an element by accessing it using its index, or add elements using methods like append().
       
-       l.append(33) # Adds 33 to the end of the list
-       print(l)     # Output: [10, 20, 30, 3.4, 'att', True, 33]
+       l.append(33)        # Adds 33 to the end of the list
+       print(l)            # Output: [10, 20, 30, 3.4, 'att', True, 33]
 
       *Modifying an element at a specific index*
 
-       l[1] = 33 # Changes the element at index 1 (value 20) to 33
-       print(l)  # Output: [10, 33, 30, 3.4, 'att', True, 33]
+       l[1] = 33           # Changes the element at index 1 (value 20) to 33
+       print(l)            # Output: [10, 33, 30, 3.4, 'att', True, 33]
 
 
 **Key Methods for Working with Lists:**
@@ -400,18 +401,43 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * **sort()** — Sorts the list in ascending order. 
 
 
-
+=========================================================================================
 **5. Tuple()**
-   *The tuple is another data type which is a sequence of data similar to a list. But it is immutable. That means data in a tuple is write-protected.
-   *tuple is ordered collection of elements
-   *tuple can be create using () or ()bracket or opetional
-   *tuple will allow the diffrent datatype elements
-   *tuple will allow the duplicate elements
+=========================================================================================
+   * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
+   
+   **Key Points:**
+   *Immutable:* Once a tuple is created, its elements cannot be modified, added, or removed.
+   *Ordered:* Like lists, tuples maintain the order of elements.
+   *Different Data Types:* A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
+   *Duplicates Allowed:* Tuples can have multiple occurrences of the same element.
+   *Parentheses:* Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
 
-   #Examples
+* Examples
+   * tuple required multipile values*
+   * The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
+      
       t = ("raj",)
+      print(t)           # Output: ('raj',)
+      print(type(t))     # Output: <class 'tuple'>
+
+
+   *Without the trailing comma, this is just a string enclosed in parentheses.*
+      
+      t = ("raj")  # This is a string, not a tuple
+      print(t)  # Output: raj
+      print(type(t))  # Output: <class 'str'>
+
+
+
+      t = ("raj",12,23.4,10)
       print(t)
       print(type(t))
+      t[1] = 33
+      print(t)  # output t can not be changed
+
+
+
 
 **6. Set{}**
    *set is un-ordered collection of unique elements
