@@ -242,7 +242,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a)
       print(type(a))
 
-**2.Numeric type**
+**2. Numeric type**
 * Numeric -- init(0,100),float(10.0),bool(true or false),Complex Numbers(1a)
       
       a = 10
@@ -404,22 +404,22 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 =========================================================================================
 **5. Tuple()**
 =========================================================================================
-   * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
+* A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
    
    **Key Points:**
-   *Immutable:* Once a tuple is created, its elements cannot be modified, added, or removed.
-   *Ordered:* Like lists, tuples maintain the order of elements.
-   *Different Data Types:* A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
-   *Duplicates Allowed:* Tuples can have multiple occurrences of the same element.
-   *Parentheses:* Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
+*  *Immutable:* Once a tuple is created, its elements cannot be modified, added, or removed.
+*  *Ordered:* Like lists, tuples maintain the order of elements.
+*  *Different Data Types:* A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
+*  *Duplicates Allowed:* Tuples can have multiple occurrences of the same element.
+*  *Parentheses:* Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
 
 * Examples
    * tuple required multipile values*
    * The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
       
       t = ("raj",)
-      print(t)           # Output: ('raj',)
-      print(type(t))     # Output: <class 'tuple'>
+      print(t)      # Output: ('raj',)
+      print(type(t)) # Output: <class 'tuple'>
 
 
    *Without the trailing comma, this is just a string enclosed in parentheses.*
@@ -438,23 +438,55 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 
-
+=========================================================================================
 **6. Set{}**
-   *set is un-ordered collection of unique elements
-   *set can be create by using {}
-   *to create an empty set than we use set() function
-   *set will allow the diffrent datatype elements
-   *set is mutable, we can change the set
+=========================================================================================
+* A set is an unordered collection of unique elements. This means that duplicate values are automatically removed when creating a set.
 
-   #Examples
-      s = set()
-      print(s)
-      print(type(s))
+*Key Points:*
+* *Unordered:* The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
+* *Unique Elements:* Sets automatically remove duplicate elements, so each element is stored only once.
+* *Mutable:* Sets are mutable, meaning you can add or remove elements after creation.
+* *Different Data Types:* A set can hold elements of different data types (e.g., integers, strings, etc.).
+
+*Creating Sets:*
+* To create a non-empty set, you can use curly braces {}.
+* To create an empty set, you need to use the set() function because {} creates an empty dictionary, not a set.
    
-   #Examples
-      a = {10,20,30,40,50,60}
-      print(a)
-      print(type(a))
+* Examples
+      
+      s = set()
+      print(s)          # Output: set()
+      print(type(s))    # Output: <class 'set'>
+   
+
+      a = {10, 20, 30, 40, 50, 60}
+      print(a)  # Output: {10, 20, 30, 40, 50, 60}
+      print(type(a))  # Output: <class 'set'>
+
+
+      a = {10, 10, 20, 30, 40, 50, 60, 60}
+      print(a)  # Output: {10, 20, 30, 40, 50, 60}
+      print(type(a))  # Output: <class 'set'>
+
+
+* *Adding elements to a set:*
+      
+      a.add(70)  # Adds 70 to the set
+      print(a)  # Output: {10, 20, 30, 40, 50, 60, 70}
+
+* *Removing elements from a set:*
+
+      a.remove(20)  # Removes 20 from the set
+      print(a)  # Output: {10, 30, 40, 50, 60, 70}
+
+* *Set operations like union, intersection, and difference are also commonly used:*
+      
+      b = {50, 60, 70, 80}
+      print(a.union(b))  # Union: {10, 30, 40, 50, 60, 70, 80}
+      print(a.intersection(b))  # Intersection: {50, 60, 70}
+      print(a.difference(b))  # Difference: {10, 30, 40}
+
 
 **7. Dictionary dict {}**
    *dict is an ordered collection of items. It stores elements in key/value pairs.
