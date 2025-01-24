@@ -489,44 +489,72 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a.intersection(b))  # Intersection: {50, 60, 70}
       print(a.difference(b))  # Difference: {10, 30, 40}
 
-
+=========================================================================================
 **7. Dictionary dict {}**
-   *dict is an ordered collection of items. It stores elements in key/value pairs.
-   *each item can be a pair of key and value 
-   *we can create by usinf {}
-   *in dict keys are immutable, and must be unique
-   *in dict values are mutable and no need to be unique
-   *in dict keys and values can be of any type(key rule should satisfy)
-   *structures that allow you to store key-value pairs. Dictionary can be created using the dict() constructor or curly braces' {}'. 
-    Once you have created a dictionary, you can add, remove, or update elements using the methods dict.
+==========================================================================================
+* A dictionary is an unordered collection of key-value pairs. It stores elements in pairs, where each key is associated with a value.
 
-   #Examples
-      capital_city = {'TS': 'Hyd', 'AP':'AMV','TN':'CH'}
-      print(capital_city)
-      print(capital_city['TS'])
-      print(capital_city['AP'])
+**Key Points:**
+
+* **Ordered Collection:** As of Python 3.7+, dictionaries maintain the order of insertion, meaning the order in which you add key-value pairs is preserved.
+* **Keys are Immutable:** The keys must be of immutable types (e.g., strings, numbers, tuples). You cannot use mutable types (like lists) as keys.
+* **Unique Keys:** Dictionary keys must be unique. If you try to insert a duplicate key, it will update the existing key with the new value.
+* **Mutable Values:** Values can be of any data type, and they do not need to be unique.
+* **Creation:** You can create a dictionary using curly braces {} or by using the dict() constructor.
+* *Creating a Dictionary:*
+* **Empty dictionary:** Use {} or dict().
+* **Non-empty dictionary:** Use curly braces {} with key-value pairs separated by a colon (:).
    
-   #Examples
-      d = {1:'sai',2:'att'}
-      print(d)
-      print(type(d))
-      d[2] = 'ramesh' # Changing the values 
-      print(d)
+* #Examples
 
-   #Examples
+      d = {}
+      print(d)       # Output: {}
+      print(type(d)) # Output: <class 'dict'>
+
+
+      capital_city = {'TS':'Hyd', 'AP':'AMV','TN':'CH'}
+      print(capital_city)        # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
+      print(capital_city['TS'])  # Output: Hyd
+      print(capital_city['AP'])  # Output: AMV
+   
+  *Duplicate Keys:*
+
+      capital_city = {'TS':'Hyd', 'TS':'AMV','TN':'CH'}
+      print(capital_city)    # Output: {'TS': 'AMV', 'TN': 'CH'}
+
+
+ *Modifying Dictionary Values:*
+
+      capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
+      print(capital_city)     # Output: {'TS': 'Hyd', 'TG': 'HYD', 'TN': 'CH'}
+      
+ *Changing values in a dictionary:*
+
+      d = {1:'sai',2:'att'}
+      print(d)         # Output: {1: 'sai', 2: 'att'}
+      print(type(d))   # Output: <class 'dict'>
+      d[2] = 'ramesh'  # Changing the value for key 2 
+      print(d)         # Output: {1: 'sai', 2: 'ramesh'}
+
+  
+  *Adding key-value pairs at runtime:*
+
       person = {}
-      # Get user input for key-value pairs
+   *Get user input for key-value pairs*
       name = input("Enter person's name: ")
       age = int(input("Enter person's age: "))
       city = input("Enter person's city: ")
 
-      # Add or removing the key-value pairs to the dictionary
+   *Add key-value pairs to the dictionary*
       person['name'] = name
       person['age'] = age
       person['city'] = city
 
       print("Dictionary after adding runtime values:", person)
-      print(type(person))
+      print(type(person))   # Output: <class 'dict'>
+
+
+
 
 **8. range**
    * range is used to generate the range of values
