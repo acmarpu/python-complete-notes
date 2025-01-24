@@ -401,9 +401,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * **sort()** — Sorts the list in ascending order. 
 
 
-=========================================================================================
-**5. Tuple()**
 ==========================================================================================
+**5. Tuple()**
+===========================================================================================
 * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
    
    **Key Points:**
@@ -440,9 +440,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 
-=========================================================================================
-**6. Set{}**
 ==========================================================================================
+**6. Set{}**
+===========================================================================================
 * A set is an unordered collection of unique elements. This means that duplicate values are automatically removed when creating a set.
 
 *Key Points:*
@@ -455,7 +455,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * To create a non-empty set, you can use curly braces {}.
 * To create an empty set, you need to use the set() function because {} creates an empty dictionary, not a set.
    
-* Examples
+* #Examples
       
       s = set()
       print(s)          # Output: set()
@@ -489,9 +489,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a.intersection(b))  # Intersection: {50, 60, 70}
       print(a.difference(b))  # Difference: {10, 30, 40}
 
-=========================================================================================
-**7. Dictionary dict {}**
 ==========================================================================================
+**7. Dictionary dict {}**
+===========================================================================================
 * A dictionary is an unordered collection of key-value pairs. It stores elements in pairs, where each key is associated with a value.
 
 **Key Points:**
@@ -523,12 +523,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(capital_city)    # Output: {'TS': 'AMV', 'TN': 'CH'}
 
 
- *Modifying Dictionary Values:*
+  *Modifying Dictionary Values:*
 
       capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
       print(capital_city)     # Output: {'TS': 'Hyd', 'TG': 'HYD', 'TN': 'CH'}
       
- *Changing values in a dictionary:*
+  *Changing values in a dictionary:*
 
       d = {1:'sai',2:'att'}
       print(d)         # Output: {1: 'sai', 2: 'att'}
@@ -538,14 +538,15 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
   
   *Adding key-value pairs at runtime:*
+  *Get user input for key-value pairs*
 
       person = {}
-   *Get user input for key-value pairs*
       name = input("Enter person's name: ")
       age = int(input("Enter person's age: "))
       city = input("Enter person's city: ")
 
-   *Add key-value pairs to the dictionary*
+  *Add key-value pairs to the dictionary*
+      
       person['name'] = name
       person['age'] = age
       person['city'] = city
