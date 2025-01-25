@@ -618,17 +618,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(frozen_set)  # Output: frozenset({1, 2, 3, 4, 5})
 
 
-
-
-DS      Create     mutable    immutable   ordered    duplicate
-str    '' or ""      no          yes          yes      yes
-list     []          yes         no           yes      yes
-tuple    ()          no         yes           yes      yes
-set      {}          yes         no           no       no
-dict     {}        keys:no     keys:yes       yes     kesy:no
-                   value:yes   values:no            value:yes
-range range()      no            yes         yes     no
-
+![alt text](https://github.com/acmarpu/images/blob/main/Python/Python.png)
 
 ================================================================================================================
 ***Operators**:
