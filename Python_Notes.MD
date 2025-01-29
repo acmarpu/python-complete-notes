@@ -417,12 +417,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * tuple required multipile values*
    * The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
    
-   
+      
       t = ("raj",)
       print(t)      # Output: ('raj',)
       print(type(t)) # Output: <class 'tuple'>
       
 *Without the trailing comma, this is just a string enclosed in parentheses.*
+      
       
       t = ("raj")  # This is a string, not a tuple
       print(t)  # Output: raj
@@ -556,7 +557,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ===========================================================================================
 **8. range()**
-===========================================================================================
+=========================================================================================
    * The range() function in Python is used to generate a sequence of numbers. It's typically used in for loops to iterate over a specific range of values.
    
 **Key Points:**
@@ -596,122 +597,252 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       for i in range(5):
       print(i)
 
+
+===========================================================================================
 **9. bytes**
+=========================================================================================
    *the bytes data type represents sequences of bytes, which are immutable sequences of integers, each representing a byte value from 0 to 255
 
    #Examples
       b = bytes([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
       print(b)  # Output: b'ABC'
 
+
+===========================================================================================
 **10. bytearray**
    *In Python, bytearray is a mutable sequence of integers in the range 0 <= x <= 255. It is similar to bytes, but unlike bytes, bytearray objects can be modified after creation.
+=========================================================================================
 
    #Examples
+
       ba = bytearray([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
       print(ba)  # Output: bytearray(b'ABC')
 
+===========================================================================================
 **11. frozenset**
+=========================================================================================
    *frozenset is an immutable version of a set, which means once it is created, its elements cannot be changed or modified.
 
    #Examples
+
       frozen_set = frozenset([1, 2, 3, 4, 5])
       print(frozen_set)  # Output: frozenset({1, 2, 3, 4, 5})
 
 
+
 ![alt text](https://github.com/acmarpu/images/blob/main/Python/Python.png)
 
-================================================================================================================
-***Operators**:
-================================================================================================================
-* Operator is a symbol which is used to perform the required operations.
-* Operators are used to perform operations on variables and values.
 
-**1. Arithmetic**
-   + -- add
-   - -- sub
-   * -- mul
-   / -- div
-   % -- mod
-   // -- floor div
-   ** -- power
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# Operators
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+* In Python, operators are indeed symbols used to perform operations on variables and values. There are several types of operators in Python
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+**1. Arithmetic Operators:**
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+* These are used to perform mathematical operations like addition, subtraction, etc.
+
+* + (Addition)
+* - (Subtraction)
+* * (Multiplication)
+* / (Division)
+* // (Floor Division)
+* % (Modulus)
+* ** (Exponentiation)
+
+
+* #Example
 
    print(3+2)
 
-**2. Relational**
-  <  -- lessthan
-  >  -- greaterthan
-  <= -- lessthan or equlto
-  >= -- greaterthan or equalto
-  == -- equlto
-  != -- not equalto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+**2. Relational(Comparison) Operators:**
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+* These operators are used to compare values.
 
-   print(3 > 4)
-   False
+* == (Equal to)
+* != (Not equal to)
+* > (Greater than)
+* < (Less than)
+* >= (Greater than or equal to)
+* <= (Less than or equal to)
 
-**3. Assignment**
-  =  -- assignment
-  += -- add and assign
-  -= -- sub and assign
-  *= -- mul and assigan
-  /= -- div and assigan
-  %= -- mod and assigan
-  //= -- floot div and assign
-  **= -- power and assigan
-      a = 5
-      print(a)
-      a += 2
-      a = a+2
-      a -= 2
-      print(a)
+* #Example
 
-**4. logical**
-   * and, or , not
-   * and: return True if both the conditions are true else false
+      print(3 > 4)
+      False
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+**3. Assignment operator**
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+* These are used to assign values to variables.
+
+* = (Assign)
+* += (Add and assign)
+* -= (Subtract and assign)
+* *= (Multiply and assign)
+* /= (Divide and assign)
+* //= -- floot div and assign
+* **= -- power and assigan
+
+* #Example
+      a = 5  # Assigns 5 to variable 'a'
+      print(a)  # Outputs: 5
+
+      a += 2  # Equivalent to a = a + 2, adds 2 to 'a'
+      print(a)  # Outputs: 7 (because 5 + 2 = 7)
+
+      a -= 2  # Equivalent to a = a - 2, subtracts 2 from 'a'
+      print(a)  # Outputs: 5 (because 7 - 2 = 5)
+
+===========================================================================================
+**4. logical operators**
+=========================================================================================
+* These are used to perform logical operations, usually for conditional statements.
+* The and operator returns True if both conditions are true, otherwise it returns False.
+
+* and (Logical AND)
+* or (Logical OR)
+* not (Logical NOT
+
+    
+* #Examples
+   *The and operator returns True if both conditions are true, otherwise it returns False.*
+
+      print(20 < 3 and 1 < 4)  
+      #20 < 3 is False, 1 < 4 is True
+      #So, False and True gives False
+      #Output: False
+
+   *The or operator returns True if at least one condition is true. If both are false, it returns False.*
    
-   #Examples
-      print (20 < 3 and 1 < 4)
-
-   * or: return True if any one of the condition is True or both the conditions are true else False
-   #Examples
-      print (20 < 3 or 1< 4)
+      print(20 < 3 or 1 < 4)  
+      #20 < 3 is False, 1 < 4 is True
+      #So, False or True gives True
+      #Output: True
 
    
-   * not: return True if the condition is False
-        return False if the condition is True
-   #Examples
-      print(not(20 < 3))
+   *The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.*
+ 
+      print(not(20 < 3))  
+      #20 < 3 is False, so not False is True
+      #Output: True
 
+* #Additional Examples:
 
+      #Using and
+      x = 5
+      y = 10
+      print(x > 3 and y < 15)  # True and True = True
+      #Output: True
+
+      #Using or
+      x = 5
+      y = 10
+      print(x < 3 or y > 5)  # False or True = True
+      #Output: True
+
+      #Using not
+      x = 10
+      print(not(x < 5))  # not False = True
+      #Output: True
+
+===========================================================================================
 **5. Membership**
-   * These are used to check whether the value are present in the sequence or not
-   * in : return True if the value is present in the sequence else False
-   * not in : return True if the value is not present in the sequence else False
+=========================================================================================
+* These operators are really handy when checking if a value exists in a sequence like a list, tuple, string, or dictionary.
+* in: Returns True if the value exists in the sequence.
+* not in: Returns True if the value does not exist in the sequence
 
-   #Examples
-      l = [10,20,30]
-      print(10 not in l)
-      print(10 in l)
-   #Examples
-      print("x" in 'hyd')
+* #Examples
+      #List example
+      
+      l = [10, 20, 30]
 
+      *print(100 not in l)  # 100 is not in the list, so it returns True*
+      #Output: True
+
+      print(10 not in l)  # 10 is in the list, so it returns False
+      #Output: False
+
+      print(10 in l)  # 10 is in the list, so it returns True
+      #Output: True
+
+      #String example
+      print("x" in "hyd")  # "x" is not in the string "hyd", so it returns False
+      #Output: False
+
+===========================================================================================
 **6. identity**
-   * These are used to check whether the variables are having the same identity or not
-   * is: return True if the variables are having same identity else False
-   * is not: return True if the variable are not having same identity else False
+=========================================================================================
+* These are used to check whether the variables are having the same identity or not
+* is: This operator checks if two variables refer to the same object in memory (i.e., they have the same identity).
+* is not: This checks if two variables do not refer to the same object in memory.
 
-   #Examples
+* #Examples
+
       i = 10
       j = 20
-      print(i is j)
 
-      print(id(i))
-      print(id(j))
+      #Checking if i and j refer to the same object
+      print(i is j)  # False, because i and j are pointing to different objects
+      #Output: False
 
-   * id(): it is a built-in function
-         it is used to find the memory address of the variable 
-         it will return a unique interger
+      #Checking if i and j do not refer to the same object
+      
+      print(i is not j)  # True, because i and j are pointing to different objects
+      #Output: True
 
+      #Using id() to get the memory address of the variables
+      *id(): it is a built-in function*
+      
+      print(id(i))  # Unique memory address for i
+      print(id(j))  # Unique memory address for j
+   
+
+
+      #Assigning same value to two variables
+      
+      x = [1, 2, 3]
+      y = x  # y points to the same object as x
+
+      #Checking if both x and y are the same object in memory
+
+      print(x is y)  # True, because both refer to the same object in memory
+      #Output: True
+
+      #Checking the memory address of both variables
+      
+      print(id(x))  # Memory address of x
+      print(id(y))  # Memory address of y
+
+
+
+      a = [1, 2, 3]
+      b = [1, 2, 3]  # A new list, even though it has the same values as a
+
+      #Checking if a and b refer to the same object
+
+      print(a is b)  # False, because they are different objects in memory even though the values are the same
+      #Output: False
+
+      #Checking if a and b do not refer to the same object
+
+      print(a is not b)  # True, because a and b are different objects
+      # Output:True
+
+      #Memory addresses will be different for different objects
+      
+      print(id(a))  # Memory address of a
+      print(id(b))  # Memory address of b
+
+         
+
+=============================================================================================
 **7. Bitwise**
+===========================================================================================
    Bitwise operators will work on only integers for bit by bit calcualtion
 
    bitwise AND(&)
@@ -722,9 +853,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    bitwise right shift (>>)
    
 
-==========================================================================================================================================
+
+
+
+=============================================================================================
 **1. Control Flow Statement**
-==========================================================================================================================================
+===========================================================================================
   * Python control flow. Control flow is the order in which individual statements, instructions, or function calls are executed or evaluated.
   * Control FLow Statement are used to mantin flow of program execution
  
