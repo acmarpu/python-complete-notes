@@ -638,8 +638,6 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Operators
-
-
 * In Python, operators are indeed symbols used to perform operations on variables and values. There are several types of operators in Python
 
 
