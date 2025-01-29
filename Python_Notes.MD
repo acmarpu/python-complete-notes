@@ -637,15 +637,15 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 # Operators
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 * In Python, operators are indeed symbols used to perform operations on variables and values. There are several types of operators in Python
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **1. Arithmetic Operators:**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 * These are used to perform mathematical operations like addition, subtraction, etc.
 
@@ -663,9 +663,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    print(3+2)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 **2. Relational(Comparison) Operators:**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 * These operators are used to compare values.
 
@@ -683,7 +682,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **3. Assignment operator**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 * These are used to assign values to variables.
 
 * = (Assign)
@@ -706,7 +705,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **4. logical operators**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 * These are used to perform logical operations, usually for conditional statements.
 * The and operator returns True if both conditions are true, otherwise it returns False.
 
@@ -756,9 +755,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(not(x < 5))  # not False = True
       #Output: True
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **5. Membership**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 * These operators are really handy when checking if a value exists in a sequence like a list, tuple, string, or dictionary.
 * in: Returns True if the value exists in the sequence.
 * not in: Returns True if the value does not exist in the sequence
@@ -781,9 +781,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print("x" in "hyd")  # "x" is not in the string "hyd", so it returns False
       #Output: False
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **6. identity**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 * These are used to check whether the variables are having the same identity or not
 * is: This operator checks if two variables refer to the same object in memory (i.e., they have the same identity).
 * is not: This checks if two variables do not refer to the same object in memory.
@@ -849,7 +851,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **7. Bitwise**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
    Bitwise operators will work on only integers for bit by bit calcualtion
 
    bitwise AND(&)
