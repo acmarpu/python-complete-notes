@@ -557,7 +557,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ===========================================================================================
 **8. range()**
-=========================================================================================
+========================================================================================
    * The range() function in Python is used to generate a sequence of numbers. It's typically used in for loops to iterate over a specific range of values.
    
 **Key Points:**
@@ -600,27 +600,29 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ===========================================================================================
 **9. bytes**
-=========================================================================================
+========================================================================================
    *the bytes data type represents sequences of bytes, which are immutable sequences of integers, each representing a byte value from 0 to 255
 
    #Examples
+
       b = bytes([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
       print(b)  # Output: b'ABC'
 
 
 ===========================================================================================
 **10. bytearray**
+========================================================================================
    *In Python, bytearray is a mutable sequence of integers in the range 0 <= x <= 255. It is similar to bytes, but unlike bytes, bytearray objects can be modified after creation.
-=========================================================================================
 
-   #Examples
+
+* #Examples
 
       ba = bytearray([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
       print(ba)  # Output: bytearray(b'ABC')
 
 ===========================================================================================
 **11. frozenset**
-=========================================================================================
+========================================================================================
    *frozenset is an immutable version of a set, which means once it is created, its elements cannot be changed or modified.
 
    #Examples
@@ -634,14 +636,17 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 # Operators
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 * In Python, operators are indeed symbols used to perform operations on variables and values. There are several types of operators in Python
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **1. Arithmetic Operators:**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 * These are used to perform mathematical operations like addition, subtraction, etc.
 
 * + (Addition)
@@ -657,9 +662,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
    print(3+2)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 **2. Relational(Comparison) Operators:**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 * These operators are used to compare values.
 
 * == (Equal to)
@@ -674,9 +681,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(3 > 4)
       False
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **3. Assignment operator**
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 * These are used to assign values to variables.
 
 * = (Assign)
@@ -697,9 +704,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       a -= 2  # Equivalent to a = a - 2, subtracts 2 from 'a'
       print(a)  # Outputs: 5 (because 7 - 2 = 5)
 
-===========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **4. logical operators**
-=========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 * These are used to perform logical operations, usually for conditional statements.
 * The and operator returns True if both conditions are true, otherwise it returns False.
 
@@ -749,9 +756,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(not(x < 5))  # not False = True
       #Output: True
 
-===========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **5. Membership**
-=========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 * These operators are really handy when checking if a value exists in a sequence like a list, tuple, string, or dictionary.
 * in: Returns True if the value exists in the sequence.
 * not in: Returns True if the value does not exist in the sequence
@@ -774,9 +781,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print("x" in "hyd")  # "x" is not in the string "hyd", so it returns False
       #Output: False
 
-===========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **6. identity**
-=========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 * These are used to check whether the variables are having the same identity or not
 * is: This operator checks if two variables refer to the same object in memory (i.e., they have the same identity).
 * is not: This checks if two variables do not refer to the same object in memory.
@@ -840,9 +847,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
          
 
-=============================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **7. Bitwise**
-===========================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    Bitwise operators will work on only integers for bit by bit calcualtion
 
    bitwise AND(&)
