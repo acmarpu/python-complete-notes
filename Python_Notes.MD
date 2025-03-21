@@ -194,16 +194,17 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * 4 spaces: The Python style guide (PEP 8) recommends using 4 spaces for each level of indentation.
    * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
+   
 
-      i = 10
+   i = 10
       if i ==10:
          print("true")
-    *indent by four spaces = 1 level*
+*indent by four spaces = 1 level*
          
       
-      else:
-         print("false")
-      *indent by four spaces = 1 level*
+   else:
+      print("false")
+*indent by four spaces = 1 level*
    
 
 
@@ -850,7 +851,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 **7. Bitwise**
 
-   Bitwise operators will work on only integers for bit by bit calcualtion
+* Bitwise operators in Python perform operations on individual bits of integers
 
    bitwise AND(&)
    bitwise OR(|)
@@ -859,17 +860,78 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    bitwise left shift (<<)
    bitwise right shift (>>)
    
+1. Bitwise AND (&)
+* Compares each bit of two integers, returning 1 if both bits are 1, otherwise 0.
+    
+      a = 5  # 0101 in binary
+      b = 3  # 0011 in binary
+      result = a & b  # 0001 in binary, which is 1 in decimal
+      print(result)  # Output: 1
+
+2. Bitwise OR (|)
+* Compares each bit of two integers, returning 1 if at least one of the bits is 1.
+
+      a = 5  # 0101 in binary
+      b = 3  # 0011 in binary
+      result = a | b  # 0111 in binary, which is 7 in decimal
+      print(result)  # Output: 7
+
+3. Bitwise XOR (^)
+* Compares each bit of two integers, returning 1 if the bits are different, otherwise 0.
+
+      a = 5  # 0101 in binary
+      b = 3  # 0011 in binary
+      result = a ^ b  # 0110 in binary, which is 6 in decimal
+      print(result)  # Output: 6
+
+4. Bitwise NOT (~)
+* Inverts all the bits of the integer, which is equivalent to -(n + 1) (two's complement form).
+
+      a = 5  # 0101 in binary
+      result = ~a  # Inverts bits: 1010 in binary, which is -6 in decimal
+      print(result)  # Output: -6
+
+5. Bitwise Left Shift (<<)
+* Shifts the bits of the number to the left by a specified number of positions. Each shift to the left multiplies the number by 2.
+
+      a = 5  # 0101 in binary
+      result = a << 1  # Shift left by 1: 1010 in binary, which is 10 in decimal
+      print(result)  # Output: 10
+
+6. Bitwise Right Shift (>>)
+* Shifts the bits of the number to the right by a specified number of positions. Each shift to the right divides the number by 2 (and truncates the result).  
+
+      a = 5  # 0101 in binary
+      result = a >> 1  # Shift right by 1: 0010 in binary, which is 2 in decimal
+      print(result)  # Output: 2
 
 
-
-
-=============================================================================================
-**1. Control Flow Statement**
-===========================================================================================
-  * Python control flow. Control flow is the order in which individual statements, instructions, or function calls are executed or evaluated.
-  * Control FLow Statement are used to mantin flow of program execution
+*****************************************************************************************
+# **Control Flow Statement**
+*****************************************************************************************
+* In Python, conditional statements are used to execute certain blocks of code based on whether a condition is true or false. These statements allow your program to make decisions and change its behavior accordingly.
+* Python control flow. Control flow is the order in which individual statements, instructions, or function calls are executed or evaluated.
+* Control FLow Statement are used to mantin flow of program execution
  
+   Conditional statements
+      if 
+      if else
+      nested if
+      elif
+   
+   iteretive statement
+      for
+      whle
+   
+   transfer statements
+      break
+      continue
+      pass
+
+      
+*****************************************************************************************
 **1. Conditional statements**
+*****************************************************************************************
     *if  
     *if else 
     *nested if 
@@ -877,24 +939,33 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
     
       
 **if & if else**
-  * is key word test the specific condition
-  *if else --The if-else statement allows you to execute one block of code if the condition is true and another block of code if the condition is false
+* *if* is key word test the specific condition
+* if else --The if-else statement allows you to execute one block of code if the condition is true and another block of code if the condition is false
+* The if statement evaluates a condition. If the condition is True, the code block within the if gets executed. If the condition is False, it will skip to the else block (if present).
 
-   #Examples
+* #Examples
 
       i = 10
       if i == 100:
-          print("this is correct") #Python Indentation
+         print("this is correct")  # This won't be printed because i is not 100
       else:
-          print("this is not correct") #Python Indentation
-     
-   #Examples
+         print("this is not correct")  # This will be printed because i is 10, not 100
 
-      i = int(input("enter a number:"))
-      if i % 2 == 0:
-           print(i,"is even")
+     
+ 
+      i = int(input("Enter a number: "))  # Get user input as an integer
+      if i % 2 == 0:  # Check if the number is divisible by 2
+         print(i, "is even")
       else:
-           print(i,"is odd")
+         print(i, "is odd")
+
+
+      i = int(input("enter first number:"))
+      j = int(input("enter second number:"))  
+      if i > j:
+          print(i,"is big")
+      else
+           print(j,"is big")  
 -----------------------------------------------------------------
 **nested if**
   * is test multipile conditions and one of the condition fail its jump into another if ) 
