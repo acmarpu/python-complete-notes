@@ -18,8 +18,6 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * c) **Case-sensitive:**
 * Python treats uppercase and lowercase characters as different. For example, Variable and variable would be considered two different identifiers. This is important to remember when writing Python code, as the language will not automatically correct case mismatches
 
-
-
 **3.** Python is simple and easy to learn, meaning it’s a straight forward language
 
 **4.** Python is completely cross-platform or platform-independent
@@ -47,7 +45,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
 * &nbsp;dynamically: no need to spcify any data type at the time of decleration 
 * &nbsp;**Ex:** variable name = value 
-* &nbsp;var = 100  # Here, 'var' is dynamically typed as an integer.
+* &nbsp
+      var = 100 # Here, 'var' is dynamically typed as an integer.
+      print(var)
+      print(type(var))
 
 ==========================================================================================
 **Features of python:**
