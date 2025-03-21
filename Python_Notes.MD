@@ -49,6 +49,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       var = 100 # Here, 'var' is dynamically typed as an integer.
       print(var)
       print(type(var))
+      
 
 ==========================================================================================
 **Features of python:**
