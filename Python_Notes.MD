@@ -7,7 +7,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **1.** Python is a programming language used for app development
 
-**2.** Python is a general-purpose, high-level, case-sensitive and Easy to Learn programming language
+**2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
 * a) **General-purpose:**
 * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. You can use Python for web development, data analysis, machine learning, automation, and much more.
@@ -79,20 +79,20 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ==========================================================================================
 
 **Standalone or Desktop Applications**
-* CUI (Command User Interface)
-* GUI (Graphical User Interface)
+* CUI (Command User Interface) run directly on a user's computer
+* GUI (Graphical User Interface) interact with the user via text in the terminal or command line
 
 **Web Applications**
-* Frameworks like Django enable Python for web development.
+* Frameworks like Django and Flask enable Python for web development.
 
 **Network-Based Applications**
 * Python is used for building networked applications and protocols.
 
 **Data Analysis Applications**
-* Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in data analysis.
+* Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in data analysis.These libraries allow you to work with large datasets, perform calculations, and generate charts.
 
 **Business Applications**
-* Python is used for building business applications, including ERP systems and CRM software.
+* Python is used for building business applications, including ERP (Enterprise Resource Planning) systems and CRM software.
 
 **AWS (Amazon Web Services)**
 * Python can be used with AWS SDK (Boto3) for cloud services automation.
@@ -118,13 +118,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ==========================================================================================
 
 **Interactive Mode**
-* You can run Python code interactively in the Python shell (REPL).
+* You can run Python code interactively in the Python shell (REPL(Read-Eval-Print Loop)).
 
 **Script Mode**
 * You can write Python code in a file (e.g., test.py) and execute it via the command prompt:
 
 **Using Python IDLE**
-* Python's Integrated Development and Learning Environment (IDLE) is a simple environment to write and run Python code.
+* Python's Integrated Development and Learning Environment (IDLE(Integrated Development and Learning Environment)) is a simple environment to write and run Python code.
 
 **Using PyCharm Editor**
 * PyCharm is a popular Python IDE for professional developers.
@@ -207,15 +207,14 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
    
 
+
    i = 10
-      if i ==10:
-         print("true")
-*indent by four spaces = 1 level*
-         
-      
+   if i ==10:
+      print("true") *indent by four spaces = 1 level*
+
    else:
-      print("false")
-*indent by four spaces = 1 level*
+       print("false") *indent by four spaces = 1 level*
+
    
 
 
@@ -233,12 +232,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 1. **None**(NoneType) -- a = 'none'
-2. **Numeric type**(*int(Integers)*) -- float.bool,Complex Numbers(1a) -- holds numeric values
-3. **string**(Text Type)      
-4. **list**(Sequence Types)
-5. **tuple**(Sequence Types)  -- holds collection of items
-6. **range**(Sequence Types)  -- holds collection of items
-7. **set**(Set Types)         --hold collection of unique items
+2. **(Numeric)**(*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
+3. **(string)**(Text Type)      
+4. **[list]**(Sequence Types) [1, 2.5, "Hello", [1, 2, 3], True]
+5. **(tuple)**(Sequence Types)  -- holds collection of items
+6. **(range)**(Sequence Types)  -- holds collection of items
+7. **{set}**(Set Types)         --hold collection of unique items
 8. **dist**(Mapping Type)     -- holds data in key-value pair form
 9. **bytes**(Binary Types)
 10. **bytearray**(Binary Types) 
