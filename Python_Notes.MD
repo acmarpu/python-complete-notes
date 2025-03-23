@@ -356,10 +356,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    
 * #Examples
   
-      help(str)
-
-      print(dir(str)) # print the all the functions whcih are the present in the string
-
+ 
 * with '' 
       
       s = 'hello ashoka's'
@@ -399,12 +396,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(dir(str))
       __add_  #also called descriptors
 
-* description      
+   * description      
       
       help(str)
 
 ====================================================================================
-**4. List[]**
+**4. List[mutable]**
 ====================================================================================
    * A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
    
@@ -416,6 +413,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    
 
 * Examples
+
    *Creating a list with various types of elements*
       
        l = [10,20,30,3.4,"ashoka",True]
@@ -445,7 +443,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-**5. Tuple()**
+**5. Tuple(immutable)**
 ===========================================================================================
 * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
    
@@ -457,6 +455,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 *  *Parentheses:* Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
 
 * #Examples
+
    * tuple required multipile values*
    * The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
    
