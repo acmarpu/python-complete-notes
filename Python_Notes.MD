@@ -247,7 +247,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
 * Sequence Types
-3. **(string)**   (Text Type)      
+3. **(string)**   (Text Type)  '' or ''' ''' or "" or""" """    
 4. **[list]**     (Sequence Types) [1, 2.5, "Hello", [1, 2, 3], True]
 5. **(tuple)**    (Sequence Types)  -- holds collection of items
 6. **(range)**    (Sequence Types)  -- holds collection of items
@@ -342,13 +342,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(c)
 
 
+====================================================================================
+**Sequence Datatypes or data structure**
 
-
-==========================================================================================
-# **Sequence Datatypes or data structure**
-
-**3. String()**
-==========================================================================================
+**3. String(immutable)**
+====================================================================================
    * In Python, strings are an essential part of the language used to represent textual data. 
    * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
       * Example: 'hello', "world"
@@ -357,10 +355,28 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
    
 * #Examples
+  
+      help(str)
+
+      print(dir(str)) # print the all the functions whcih are the present in the string
+
+* with '' 
+      
+      s = 'hello ashoka's'
+      print(s)           # Output: hello ashoka
+      print(type(s))     # Output: <class 'str'>
+
+      s = 'hello ashoka\'s'
+      print(s)           # add \ for print
+      print(type(s))     # Output: <class 'str'>
+
+
+* with ""
 
       s = "hello ashoka" 
       print(s)           # Output: hello ashoka
       print(type(s))     # Output: <class 'str'>
+
 
 *Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
       
@@ -387,9 +403,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       
       help(str)
 
-=========================================================================================   
+====================================================================================
 **4. List[]**
-=========================================================================================
+====================================================================================
    * A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
    
 *Key Features of Python Lists:*
@@ -977,7 +993,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       else:
          print("this is not correct")  # This will be printed because i is 10, not 100
 
-     
+      i = 10
+      if i == 100:
+         pass   # nothing is there 
+      else:
+         print("this is not correct")  # This will be printed because i is 10, not 100
  
       i = int(input("Enter a number: "))  # Get user input as an integer
       if i % 2 == 0:  # Check if the number is divisible by 2
