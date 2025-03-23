@@ -206,7 +206,19 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
    
+* In Java
 
+   i = 10
+   if (i=10)
+   {
+   s.o.p("true); # System.out.print
+   }
+   else
+   {
+   s.o.p(false);
+   }
+
+* In Python
 
    i = 10
    if i ==10:
@@ -230,18 +242,20 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **Immutable:** Data types whose values cannot be changed after they are created.
 
+* Basic Data Types
+1. **None**       (NoneType) -- a = 'none'
+2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
-1. **None**(NoneType) -- a = 'none'
-2. **(Numeric)**(*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
-3. **(string)**(Text Type)      
-4. **[list]**(Sequence Types) [1, 2.5, "Hello", [1, 2, 3], True]
-5. **(tuple)**(Sequence Types)  -- holds collection of items
-6. **(range)**(Sequence Types)  -- holds collection of items
-7. **{set}**(Set Types)         --hold collection of unique items
-8. **dist**(Mapping Type)     -- holds data in key-value pair form
-9. **bytes**(Binary Types)
-10. **bytearray**(Binary Types) 
-11. **forzenset**(Set Types)
+* Sequence Types
+3. **(string)**   (Text Type)      
+4. **[list]**     (Sequence Types) [1, 2.5, "Hello", [1, 2, 3], True]
+5. **(tuple)**    (Sequence Types)  -- holds collection of items
+6. **(range)**    (Sequence Types)  -- holds collection of items
+7. **{set}**      (Set Types)         --hold collection of unique items
+8. **dist**       (Mapping Type)     -- holds data in key-value pair form
+9. **bytes**      (Binary Types)
+10. **bytearray** (Binary Types) 
+11. **forzenset** (Set Types)
 
 
 
@@ -316,7 +330,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * #Examples
 
       a = float(input("Enter num1:"))
-      b = float(input("enter num2:"))
+      b = float(input("enter num2:")) 
       c = a + b
       print("sum is:", c)
 
@@ -328,9 +342,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(c)
 
 
-# **Sequence Datatypes or data structure**
+
 
 ==========================================================================================
+# **Sequence Datatypes or data structure**
+
 **3. String()**
 ==========================================================================================
    * In Python, strings are an essential part of the language used to represent textual data. 
