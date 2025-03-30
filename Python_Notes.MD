@@ -207,7 +207,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
    
 * In Java
-
+~~~~~~~~~~~~~~
    i = 10
    if (i=10)
    {
@@ -220,6 +220,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 * In Python
 
+~~~~~~~~~~~~~~
    i = 10
    if i ==10:
       print("true") # *indent by four spaces = 1 level*
