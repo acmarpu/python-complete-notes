@@ -51,10 +51,12 @@ The data type (int) must be declared explicitly
 * &nbsp;dynamically: no need to spcify any data type at the time of decleration 
 * &nbsp;**Ex:** variable name = value 
 
+ ```
       var = 100 # Here, 'var' is dynamically typed as an integer.
       print(var)
       print(type(var))
-
+      
+```
 
 ==========================================================================================
 ### Features of Python:
