@@ -76,7 +76,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ==========================================================================================
 * **Application Areas of Python:**
-==========================================================================================
+=========================================================================================
 
 **Standalone or Desktop Applications**
 * CUI (Command User Interface) run directly on a user's computer
