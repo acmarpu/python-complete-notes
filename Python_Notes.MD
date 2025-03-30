@@ -1,6 +1,6 @@
 
+==========================================================================================
 # **Python**
-
 ==========================================================================================
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
@@ -53,9 +53,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(type(var))
 
 
-========================================================================================
-**Features of python:**
-========================================================================================
+==========================================================================================
+# **Features of python:**
+==========================================================================================
 
 **Expressive Language:** Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
 
