@@ -252,11 +252,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **Immutable:** Data types whose values cannot be changed after they are created.
 
-* Basic Data Types
+_* Basic Data Types_
 1. **None**       (NoneType) -- a = 'none'
 2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
-* Sequence Types
+_* Sequence Types_
 3. **(string)**   (Text Type)       -- holds textual data                      '' or ''' ''' or "" or""" """    
 4. **[list]**     (Sequence Types)  -- holds a variety of different data types [1, 2.5, "Hello", [1, 2, 3], True]
 5. **(tuple)**    (Sequence Types)  -- holds collection of items               (1, 2.5, "Hello")
@@ -265,11 +265,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 8. **dist**       (Mapping Type)    -- holds data in key-value pair form        {"key1": "value1", "key2": "value2"}
 9. **bytes**      (Binary Types)    -- Immutable sequence of bytes              b'Hello'
 10. **bytearray** (Binary Types)    -- Mutable sequence of bytes                bytearray(b'Hello').
-11. **forzenset** (Set Types)       -- 
+11. **forzenset** (Set Types)       -- Similar to a set,immutable               frozenset([1, 2, 3])                         
 
 
 
-**1. none**
+##### 1. none
 * nothing is there in the variable
       
       a = 'none'
