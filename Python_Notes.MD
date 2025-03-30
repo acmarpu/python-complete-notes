@@ -1,3 +1,12 @@
+This is list
+* item 1
+* item 2
+* item 3
+
+1. item 1
+2. item 2
+3. item 3
+
 
 ==========================================================================================
 # **Python**
@@ -55,7 +64,7 @@ The data type (int) must be declared explicitly
       var = 100 # Here, 'var' is dynamically typed as an integer.
       print(var)
       print(type(var))
-      
+
 ```
 
 ==========================================================================================
