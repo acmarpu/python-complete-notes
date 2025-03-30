@@ -54,7 +54,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-## **Features of python:**
+### Features of python:
 ==========================================================================================
 
 **Expressive Language:** Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
@@ -75,7 +75,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-## **Application Areas of Python:**
+### Application Areas of Python:
 ==========================================================================================
 
 **Standalone or Desktop Applications**
@@ -114,7 +114,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-## **Different Ways to Write and Execute Python Code:**
+### **Different Ways to Write and Execute Python Code:**
 ==========================================================================================
 
 **Interactive Mode**
@@ -133,7 +133,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-## Python fundamentals
+### Python fundamentals
 ==========================================================================================
 
 **1. Comments** 
