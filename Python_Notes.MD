@@ -1,15 +1,5 @@
-This is list
-* item 1
-* item 2
-* item 3
-
-1. item 1
-2. item 2
-3. item 3
-
-
 ==========================================================================================
-# **Python**
+# Python
 ==========================================================================================
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
@@ -18,16 +8,16 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
-* a) **General-purpose:**
+* _a)_ **General-purpose:**
 * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. You can use Python for web development, data analysis, machine learning, automation, and much more.
 
-* b) **High-level:**
+* _b)_ **High-level:**
 * Python is considered a high-level language because it is abstracted from the machine's hardware. This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-* c) **Case-sensitive:**
+* _c)_ **Case-sensitive:**
 * Python treats uppercase and lowercase characters as different. For example, Variable and variable would be considered two different identifiers. This is important to remember when writing Python code, as the language will not automatically correct case mismatches
 
-* d) **Easy to Learn:**
+* _d)_ **Easy to Learn:**
 * Python has a simple and easy-to-understand syntax, making it a great choice for beginners.
 
 **3.** Python is simple and easy to learn, meaning it’s a straight forward language
@@ -39,24 +29,24 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **6.** Python is an interpreted language 
 
-* a) **Compiler-based languages(e.g., C, C++, Java):** 
+* _a)_ **Compiler-based languages(e.g., C, C++, Java):** 
 * &nbsp; The source code is compiled into machine code (binary) before execution.
 * &nbsp; In this language, compilation errors prevent the code from compiling.
 
-* b) **Interpreter-based languages** (e.g., Python): 
+* _b)_ **Interpreter-based languages** (e.g., Python): 
 * &nbsp; The code is executed line by line, with each line being translated into machine code and executed on the fly.
 * &nbsp; In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
 **7.** Python is a dynamically typed language, not a statically typed language
 
-* a) **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
+* _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
 
 ```
       nt a = 100
 The data type (int) must be declared explicitly
 ```
 
-* b) **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
+* _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
 * &nbsp;dynamically: no need to spcify any data type at the time of decleration 
 * &nbsp;**Ex:** variable name = value 
 
