@@ -75,8 +75,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-* **Application Areas of Python:**
-=========================================================================================
+# **Application Areas of Python:**
+==========================================================================================
 
 **Standalone or Desktop Applications**
 * CUI (Command User Interface) run directly on a user's computer
@@ -114,7 +114,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-**Different Ways to Write and Execute Python Code:**
+# **Different Ways to Write and Execute Python Code:**
 ==========================================================================================
 
 **Interactive Mode**
@@ -222,17 +222,17 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
    i = 10
    if i ==10:
-      print("true") *indent by four spaces = 1 level*
+      print("true") # *indent by four spaces = 1 level*
 
    else:
-       print("false") *indent by four spaces = 1 level*
+       print("false") # *indent by four spaces = 1 level*
 
    
 
 
-===========================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Data types in python
-===========================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Python Data Types are used to define the type of a variable.
 * Data types define the type of value a variable holds, and they also determine what operations can be performed on that value.
 * In Python, data types are used to represent different types of values (e.g., numbers, strings, etc.) that are stored in variables.
@@ -247,15 +247,15 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
 * Sequence Types
-3. **(string)**   (Text Type)  '' or ''' ''' or "" or""" """    
-4. **[list]**     (Sequence Types) [1, 2.5, "Hello", [1, 2, 3], True]
-5. **(tuple)**    (Sequence Types)  -- holds collection of items
-6. **(range)**    (Sequence Types)  -- holds collection of items
-7. **{set}**      (Set Types)         --hold collection of unique items
-8. **dist**       (Mapping Type)     -- holds data in key-value pair form
-9. **bytes**      (Binary Types)
-10. **bytearray** (Binary Types) 
-11. **forzenset** (Set Types)
+3. **(string)**   (Text Type)       -- holds textual data                      '' or ''' ''' or "" or""" """    
+4. **[list]**     (Sequence Types)  -- holds a variety of different data types [1, 2.5, "Hello", [1, 2, 3], True]
+5. **(tuple)**    (Sequence Types)  -- holds collection of items               (1, 2.5, "Hello")
+6. **(range)**    (Sequence Types)  -- holds often used in loops.               range(5)
+7. **{set}**      (Set Types)       -- holds collection of unique items         {1, 2, 3, 4}
+8. **dist**       (Mapping Type)    -- holds data in key-value pair form        {"key1": "value1", "key2": "value2"}
+9. **bytes**      (Binary Types)    -- Immutable sequence of bytes              b'Hello'
+10. **bytearray** (Binary Types)    -- Mutable sequence of bytes                bytearray(b'Hello').
+11. **forzenset** (Set Types)       -- 
 
 
 
