@@ -161,9 +161,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;Python Identifier is the name we give to identify a variable, function, class, module or other object. 
 * &nbsp;That means whenever we want to give an entity a name, that's called identifier.
    
-* a. lowercase or uppercase
-* b. case-sensitive
-   &nbsp;**c.** allow digits(0-9)
+   * &nbsp;**a.** lowercase or uppercase
+   * &nbsp;**b.** case-sensitive
+   * &nbsp;**c.** allow digits(0-9)
    * &nbsp;**d.** should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
    * &nbsp;**e.** should not be two parts (if two parts use _) (emp id) (emp_id)
    * &nbsp;**f.** allow underscore (_)
@@ -211,7 +211,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
 
-***
+```
 #In Java
 
    i = 10
@@ -223,9 +223,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    {
    s.o.p(false);
    }
-***
+```
 
-~~~~~~~~~~~~~~
+```
 # In Python
 
 
@@ -235,9 +235,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
    else:
        print("false") # *indent by four spaces = 1 level*
-~~~~~~~~~~~~~~
-
-
+```
 
    
 
