@@ -114,7 +114,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-### **Different Ways to Write and Execute Python Code:**
+### Different Ways to Write and Execute Python Code:
 ==========================================================================================
 
 **Interactive Mode**
