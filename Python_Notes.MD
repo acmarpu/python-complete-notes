@@ -4,7 +4,7 @@
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
 
-1. Python is a programming language used for app development
+**1.** Python is a programming language used for app development
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
@@ -43,7 +43,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ```
       nt a = 100
-The data type (int) must be declared explicitly
+      The data type (int) must be declared explicitly
 ```
 
 * _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
@@ -149,10 +149,11 @@ The data type (int) must be declared explicitly
 * &nbsp;Python keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those specific purposes. 
 * &nbsp;These keywords are always available—you’ll never have to import them into your code.
 * &nbsp;Python keywords are different from Python’s built-in functions and types.
-   
-   * &nbsp;import keyword
-   * &nbsp;print(keyword.kwlist)
 
+``` 
+      import keyword
+      print(keyword.kwlist)
+```
 * 'if' is keyword, we can not use as variable
 
 **3. Identifiers**
@@ -160,9 +161,9 @@ The data type (int) must be declared explicitly
 * &nbsp;Python Identifier is the name we give to identify a variable, function, class, module or other object. 
 * &nbsp;That means whenever we want to give an entity a name, that's called identifier.
    
-   * &nbsp;**a.** lowercase or uppercase
-   * &nbsp;**b.** case-sensitive
-   * &nbsp;**c.** allow digits(0-9)
+   &nbsp;**a.** lowercase or uppercase
+   &nbsp;**b.** case-sensitive
+   &nbsp;**c.** allow digits(0-9)
    * &nbsp;**d.** should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
    * &nbsp;**e.** should not be two parts (if two parts use _) (emp id) (emp_id)
    * &nbsp;**f.** allow underscore (_)
