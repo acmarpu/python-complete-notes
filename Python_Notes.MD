@@ -206,7 +206,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
 
-~~~~~~~~~~~~~~  
+***
 # In Java
 
    i = 10
@@ -218,7 +218,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    {
    s.o.p(false);
    }
-~~~~~~~~~~~~~~
+***
 
 ~~~~~~~~~~~~~~
 # In Python
