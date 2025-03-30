@@ -54,7 +54,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-# **Features of python:**
+## **Features of python:**
 ==========================================================================================
 
 **Expressive Language:** Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
@@ -75,7 +75,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-# **Application Areas of Python:**
+## **Application Areas of Python:**
 ==========================================================================================
 
 **Standalone or Desktop Applications**
@@ -114,7 +114,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-# **Different Ways to Write and Execute Python Code:**
+## **Different Ways to Write and Execute Python Code:**
 ==========================================================================================
 
 **Interactive Mode**
@@ -133,7 +133,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-# Python fundamentals
+## Python fundamentals
 ==========================================================================================
 
 **1. Comments** 
@@ -207,7 +207,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
 
 ***
-# In Java
+#In Java
 
    i = 10
    if (i=10)
@@ -231,6 +231,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    else:
        print("false") # *indent by four spaces = 1 level*
 ~~~~~~~~~~~~~~
+
+
+
    
 
 
