@@ -205,9 +205,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * 4 spaces: The Python style guide (PEP 8) recommends using 4 spaces for each level of indentation.
    * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
-   
+
+~~~~~~~~~~~~~~  
 * In Java
-~~~~~~~~~~~~~~
+
    i = 10
    if (i=10)
    {
@@ -217,17 +218,19 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    {
    s.o.p(false);
    }
-
-* In Python
+~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~
+* In Python
+
+
    i = 10
    if i ==10:
       print("true") # *indent by four spaces = 1 level*
 
    else:
        print("false") # *indent by four spaces = 1 level*
-
+~~~~~~~~~~~~~~
    
 
 
