@@ -161,8 +161,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;Python Identifier is the name we give to identify a variable, function, class, module or other object. 
 * &nbsp;That means whenever we want to give an entity a name, that's called identifier.
    
-   &nbsp;**a.** lowercase or uppercase
-   &nbsp;**b.** case-sensitive
+a. lowercase or uppercase
+b. case-sensitive
    &nbsp;**c.** allow digits(0-9)
    * &nbsp;**d.** should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
    * &nbsp;**e.** should not be two parts (if two parts use _) (emp id) (emp_id)
