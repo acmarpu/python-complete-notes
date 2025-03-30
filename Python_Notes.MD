@@ -40,9 +40,12 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **7.** Python is a dynamically typed language, not a statically typed language
 
-* a) **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of declaration.
-* &nbsp; **Ex:** int a = 100
-* &nbsp; The data type (int) must be declared explicitly
+* a) **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
+
+```
+      nt a = 100
+The data type (int) must be declared explicitly
+```
 
 * b) **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
 * &nbsp;dynamically: no need to spcify any data type at the time of decleration 
@@ -54,7 +57,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-### Features of python:
+### Features of Python:
 ==========================================================================================
 
 **Expressive Language:** Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
@@ -133,7 +136,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-### Python fundamentals
+### Python Fundamentals
 ==========================================================================================
 
 **1. Comments** 
