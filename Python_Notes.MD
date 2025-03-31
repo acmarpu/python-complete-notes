@@ -288,7 +288,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 * **_Sequence Types_**
-
+*  meaning you can access individual characters using indexing and slice them into substrings
 
 | **Data Types**  |    **Type**       | **Example**                               | **Definition**
 | -------------   | -------------     |-------------                              |------------- 
@@ -398,7 +398,7 @@ _A More Concise Way_
 
 
 
-#### 3. String(immutable)
+#### 3. String (immutable)
 
    * In Python, strings are an essential part of the language used to represent textual data. 
    * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
@@ -423,6 +423,30 @@ _A More Concise Way_
       s = "hello ashoka" 
       print(s)           # Output: hello ashoka
       print(type(s))     # Output: <class 'str'>
+```
+```
+      s = "Hello"
+      print(s[0])   # Output: H (first character)
+      print(s[-1])  # Output: o (last character)
+      print(s[0:5])   # Output: Hello (from index 0 to 4)
+```
+
+```
+      s = "Hello"
+      repeated = s * 3
+      print(repeated)  # Output: HelloHelloHello
+
+```
+
+```
+s = "  Hello, World!  "
+print(s.upper())   # Output: HELLO, WORLD!
+print(s.lower())   # Output: hello, world!
+print(s.strip())   # Output: Hello, World!
+print(s.replace("World", "Python"))  # Output:   Hello, Python!  
+print(s.split())   # Output: ['Hello,', 'World!']
+print(s.find("World"))  # Output: 8 (index of the first occurrence of "World")
+
 ```
 
 * Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
@@ -453,7 +477,7 @@ _A More Concise Way_
       help(str)
 
 
-#### 4. List[mutable]
+#### 4. List [mutable]
 
    * A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
    
