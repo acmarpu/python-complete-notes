@@ -274,10 +274,13 @@ _**Mutable:** Data types whose values can be changed after they are created._
 _**Immutable:** Data types whose values cannot be changed after they are created._
 
 _* Basic Data Types_
+
 1. **None**       (NoneType) -- a = 'none'
+
 2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
 _* Sequence Types_
+
 3. **(string)**   (Text Type)       -- holds textual data                      '' or ''' ''' or "" or""" """ 
 
 4. **[list]**     (Sequence Types)  -- holds a variety of different data types [1, 2.5, "Hello", [1, 2, 3], True]
@@ -295,7 +298,7 @@ _* Sequence Types_
 10. **bytearray** (Binary Types)    -- Mutable sequence of bytes                bytearray(b'Hello').
 
 11. **forzenset** (Set Types)       -- Similar to a set,immutable               frozenset([1, 2, 3])   
-                      
+
 
 
 
