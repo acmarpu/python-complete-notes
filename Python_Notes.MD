@@ -273,6 +273,16 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **Immutable:** Data types whose values cannot be changed after they are created.
 
+
+
+| **Data Types**  |    **Type**        | **value**          | Description
+| -------------   | -------------      |-------------       |------------- 
+| **None**        | (NoneType)         | a = 'none'         |nothing is there in the variable
+| **(Numeric)**   | (*int(Integers)*)  |float[1.0]          |holds numeric values
+                                       |bool[true and false]|
+                                       |Complex Numbers(1a) |
+
+
 * **_Basic Data Types_**
 
 1. **None**       (NoneType) -- a = 'none'
