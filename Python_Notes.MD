@@ -8,16 +8,16 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
-* _a)_ **General-purpose:**
+ _a)_ **General-purpose:**
 * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. You can use Python for web development, data analysis, machine learning, automation, and much more.
 
-* _b)_ **High-level:**
+  _b)_ **High-level:**
 * Python is considered a high-level language because it is abstracted from the machine's hardware. This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-* _c)_ **Case-sensitive:**
+  _c)_ **Case-sensitive:**
 * Python treats uppercase and lowercase characters as different. For example, Variable and variable would be considered two different identifiers. This is important to remember when writing Python code, as the language will not automatically correct case mismatches
 
-* _d)_ **Easy to Learn:**
+  _d)_ **Easy to Learn:**
 * Python has a simple and easy-to-understand syntax, making it a great choice for beginners.
 
 **3.** Python is simple and easy to learn, meaning it’s a straight forward language
@@ -248,9 +248,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * In Python, data types are used to represent different types of values (e.g., numbers, strings, etc.) that are stored in variables.
 * Python Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. 
 
-**Mutable:** Data types whose values can be changed after they are created.
+_**Mutable:** Data types whose values can be changed after they are created._
 
-**Immutable:** Data types whose values cannot be changed after they are created.
+_**Immutable:** Data types whose values cannot be changed after they are created._
 
 _* Basic Data Types_
 1. **None**       (NoneType) -- a = 'none'
@@ -269,17 +269,17 @@ _* Sequence Types_
 
 
 
-##### 1. none
+#### 1. none
 * nothing is there in the variable
-      
+ ```     
       a = 'none'
       print('none')
       print(a)
       print(type(a))
-
+```
 **2. Numeric type**
 * Numeric -- init(0,100),float(10.0),bool(true or false),Complex Numbers(1a)
-      
+```      
       a = 10
       print(a)
       print(type(a))
@@ -287,9 +287,10 @@ _* Sequence Types_
       a = 10.9
       print(a)
       print(type(a))
+```
 
 * int to flot convert*
-      
+```      
       a = 10
       print(a)
       print(type(a))
@@ -298,21 +299,20 @@ _* Sequence Types_
       b = float(a)
       print(b)
       print(type(b))
-
-
-
+```
 
 **Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
 
 * #Examples
-
+```
       a = input("enter num1:")
       print(type(a))
       x = int(a)
       print(type(x))
+```
 
 * #Examples
-
+```
       a = input("enter number1:")
       print(a)
       print(type(a))
@@ -328,34 +328,35 @@ _* Sequence Types_
       
       c = x+y
       print("sum c is", c)
-    
+```    
 **-------another way------**
-* #Examples
 
+* #Examples
+```
       a = int(input("Enter num1:"))
       b = int(input("enter num2:"))
       c = a + b
       print("sum is:", c)
-
+```
 * #Examples
-
+```
       a = float(input("Enter num1:"))
       b = float(input("enter num2:")) 
       c = a + b
       print("sum is:", c)
-
+```
 * bool = true or false
-      
+```      
       a = 10
       b = 20
       c = a > b
       print(c)
-
+```
 
 ====================================================================================
-**Sequence Datatypes or data structure**
+### Sequence Datatypes or data structure**
 
-**3. String(immutable)**
+### 3. String(immutable)
 ====================================================================================
    * In Python, strings are an essential part of the language used to represent textual data. 
    * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
