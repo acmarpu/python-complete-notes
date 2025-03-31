@@ -468,7 +468,7 @@ _A More Concise Way_
 
 **To get a list of all available functions for string operations, you can use the dir() function:**
 * This will return a list of all the methods and attributes associated with the string class.
-```      
+```
       print(dir(str))
       __add_  #also called descriptors
 ```
@@ -481,44 +481,89 @@ _A More Concise Way_
 
 #### 4. List [mutable]
 
-   * A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
+* A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
    
-*Key Features of Python Lists:*
+* Key Features of Python Lists:*
    * **Ordered:** The items in a list have a specific order, and that order is preserved.
    * **Mutable:** Lists can be modified after creation. You can change, add, or remove elements.
    * **Heterogeneous:** Lists can store elements of different data types (e.g., integers, strings, booleans, etc.).
    * **Allow duplicates:** Lists allow duplicate elements, meaning the same value can appear multiple times in a list.
    
 
-* Examples
 
-   *Creating a list with various types of elements*
-      
-       l = [10,20,30,3.4,"ashoka",True]
-       *Printing the list and its type*
-       print(l)            # Output: [10, 20, 30, 3.4, 'att', True]
-       print(type(l))      # Output: <class 'list'>
+* Creating a list with various types of elements*
+
+```      
+      l = [10,20,30,3.4,"ashoka",True]
+      *Printing the list and its type*
+      print(l)            # Output: [10, 20, 30, 3.4, 'att', True]
+      print(type(l))      # Output: <class 'list'>
+```
 
 * Lists are mutable, which means we can change their elements. We can modify an element by accessing it using its index, or add elements using methods like append().
-      
+
+```      
+       l = [10,20,30,3.4,"ashoka",True]
        l.append(33)        # Adds 33 to the end of the list
        print(l)            # Output: [10, 20, 30, 3.4, 'att', True, 33]
+```
 
+```
       *Modifying an element at a specific index*
 
        l[1] = 33           # Changes the element at index 1 (value 20) to 33
        print(l)            # Output: [10, 33, 30, 3.4, 'att', True, 33]
-
+```
 
 **Key Methods for Working with Lists:**
 * **append(value)** — Adds an element to the end of the list.
+```
+      l = [10,20,30,3.4,"ashoka",True]
+      l.append(33)        # Adds 33 to the end of the list
+```
 * **insert(index, value)** — Inserts an element at a specific index in the list.
+```
+      my_list = [10, 20, 30]
+      my_list.insert(1, 15)  # Inserts 15 at index 1
+      print(my_list)  # Output: [10, 15, 20, 30]
+```
 * **remove(value)** — Removes the first occurrence of the specified value.
+```
+      my_list = [10, 20, 30, 40, 20]
+      my_list.remove(20)  # Removes the first occurrence of 20
+      print(my_list)  # Output: [10, 30, 40, 20]
+```
 * **pop(index)** — Removes the element at the specified index and returns it.
-* **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
-* **index(value)** — Returns the index of the first occurrence of the specified value.
-* **sort()** — Sorts the list in ascending order. 
+```
+      my_list = [10, 20, 30, 40, 50]
+      popped_item = my_list.pop(2)  # Removes the element at index 2 (30)
+      print(my_list)  # Output: [10, 20, 40, 50]
+      print("Popped Item:", popped_item)  # Output: Popped Item: 30
 
+```
+* **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
+```
+      # Original list
+      my_list = [1, 2, 3]
+      # Another list to extend my_list with
+      other_list = [4, 5, 6]
+      # Using extend() to add elements of other_list to my_list
+      my_list.extend(other_list)
+      print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+```
+
+* **index(value)** — Returns the index of the first occurrence of the specified value.
+```
+      my_list = [10, 20, 30, 40, 50]
+      index_of_30 = my_list.index(30)
+      print(index_of_30)  # Output: 2 (The index of 30 is 2)
+```
+* **sort()** — Sorts the list in ascending order. 
+```
+      my_list = [4, 1, 3, 9, 2]
+      my_list.sort()
+      print(my_list)  # Output: [1, 2, 3, 4, 9]
+```
 
 ==========================================================================================
 **5. Tuple(immutable)**
