@@ -439,13 +439,13 @@ _A More Concise Way_
 ```
 
 ```
-s = "  Hello, World!  "
-print(s.upper())   # Output: HELLO, WORLD!
-print(s.lower())   # Output: hello, world!
-print(s.strip())   # Output: Hello, World!
-print(s.replace("World", "Python"))  # Output:   Hello, Python!  
-print(s.split())   # Output: ['Hello,', 'World!']
-print(s.find("World"))  # Output: 8 (index of the first occurrence of "World")
+      s = "  Hello, World!  "
+      print(s.upper())   # Output: HELLO, WORLD!
+      print(s.lower())   # Output: hello, world!
+      print(s.strip())   # Output: Hello, World!
+      print(s.replace("World", "Python"))  # Output:   Hello, Python!  
+      print(s.split())   # Output: ['Hello,', 'World!']
+      print(s.find("World"))  # Output: 8 (index of the first occurrence of "World")
 
 ```
 
@@ -468,13 +468,15 @@ print(s.find("World"))  # Output: 8 (index of the first occurrence of "World")
 
 **To get a list of all available functions for string operations, you can use the dir() function:**
 * This will return a list of all the methods and attributes associated with the string class.
-      
+```      
       print(dir(str))
       __add_  #also called descriptors
-
+```
    * description      
-      
+```      
       help(str)
+```
+
 
 
 #### 4. List [mutable]
