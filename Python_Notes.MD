@@ -30,26 +30,26 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **6.** Python is an interpreted language 
 
-* _a)_ **Compiler-based languages(e.g., C, C++, Java):** 
+ _a)_ **Compiler-based languages(e.g., C, C++, Java):** 
 * &nbsp; The source code is compiled into machine code (binary) before execution.
 * &nbsp; In this language, compilation errors prevent the code from compiling.
 
-* _b)_ **Interpreter-based languages** (e.g., Python): 
-* &nbsp; The code is executed line by line, with each line being translated into machine code and executed on the fly.
-* &nbsp; In this languages, all the debugging occurs at run-time.which makes debugging easier.
+ _b)_ **Interpreter-based languages** (e.g., Python): 
+* ==> The code is executed line by line, with each line being translated into machine code and executed on the fly.
+* ==> In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
 **7.** Python is a dynamically typed language, not a statically typed language
 
-* _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
+ _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
 
 ```
       nt a = 100
       The data type (int) must be declared explicitly
 ```
 
-* _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
-* &nbsp;dynamically: no need to spcify any data type at the time of decleration 
-* &nbsp;**Ex:** variable name = value 
+ _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
+* ==> dynamically: no need to spcify any data type at the time of decleration 
+* ==> **Ex:** variable name = value 
 
  ```
       var = 100 # Here, 'var' is dynamically typed as an integer.
