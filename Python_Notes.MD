@@ -269,17 +269,17 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * In Python, data types are used to represent different types of values (e.g., numbers, strings, etc.) that are stored in variables.
 * Python Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. 
 
-_**Mutable:** Data types whose values can be changed after they are created._
+**Mutable:** Data types whose values can be changed after they are created.
 
-_**Immutable:** Data types whose values cannot be changed after they are created._
+**Immutable:** Data types whose values cannot be changed after they are created.
 
-_* Basic Data Types_
+* **_Basic Data Types_**
 
 1. **None**       (NoneType) -- a = 'none'
 
 2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
-_* Sequence Types_
+* **_Sequence Types_**
 
 3. **(string)**   (Text Type)       -- holds textual data                      '' or ''' ''' or "" or""" """ 
 
@@ -299,6 +299,17 @@ _* Sequence Types_
 
 11. **forzenset** (Set Types)       -- Similar to a set,immutable               frozenset([1, 2, 3])   
 
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 
 
