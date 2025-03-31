@@ -276,13 +276,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * **_Basic Data Types_**
 
 
-| **Data Types**  |    **Type**     | **value**                     | **Definition**
+| **Data Types**  |    **Type**     | **Example**                   | **Definition**
 | -------------   | -------------   |-------------                  |------------- 
 | **None**        | (None Type)     | a = 'none'                    |nothing is there in the variable
 | **Numeric**     | int(Integers)   | int   a = 10                  |holds numeric values (0,100)
-|				                        | float a = 10.0                |have a decimal point or a fractional part
-|                                   | bool  x = True                |This represents a truthy value [true and false]
-|                                   | Complex Numbers  a = 2 + 3j   |real part and an imaginary part
+|				      |                 | float a = 10.0                |have a decimal point or a fractional part
+|                 |                 | bool  x = True                |This represents a truthy value [true and false]
+|                 |                 | Complex Numbers  a = 2 + 3j   |real part and an imaginary part
 
 
 
