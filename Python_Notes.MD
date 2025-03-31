@@ -305,29 +305,6 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 
-
-
-3. **(string)**   (Text Type)       -- holds textual data                      '' or ''' ''' or "" or""" """ 
-
-4. **[list]**     (Sequence Types)  -- holds a variety of different data types [1, 2.5, "Hello", [1, 2, 3], True]
-
-5. **(tuple)**    (Sequence Types)  -- holds collection of items               (1, 2.5, "Hello")
-
-6. **(range)**    (Sequence Types)  -- holds often used in loops.               range(5)
-
-7. **{set}**      (Set Types)       -- holds collection of unique items         {1, 2, 3, 4}
-
-8. **dist**       (Mapping Type)    -- holds data in key-value pair form        {"key1": "value1", "key2": "value2"}
-
-9. **bytes**      (Binary Types)    -- Immutable sequence of bytes              b'Hello'
-
-10. **bytearray** (Binary Types)    -- Mutable sequence of bytes                bytearray(b'Hello').
-
-11. **forzenset** (Set Types)       -- Similar to a set,immutable               frozenset([1, 2, 3])   
-
-
-
-
 #### 1. none
 * nothing is there in the variable
  ```     
@@ -336,7 +313,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a)
       print(type(a))
 ```
-**2. Numeric type**
+#### 2. Numeric type
 * Numeric -- init(0,100),float(10.0),bool(true or false),Complex Numbers(1a)
 ```      
       a = 10
