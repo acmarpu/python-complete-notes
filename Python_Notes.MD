@@ -24,19 +24,22 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **3.** Python is simple and easy to learn, meaning it’s a straight forward language
 
 **4.** Python is completely cross-platform or platform-independent
-* ==> Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
+
+* Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
 **5.** Python is completely free and open-source
 
 **6.** Python is an interpreted language 
 
  _a)_ **Compiler-based languages(e.g., C, C++, Java):** 
+
 * &nbsp; The source code is compiled into machine code (binary) before execution.
 * &nbsp; In this language, compilation errors prevent the code from compiling.
 
  _b)_ **Interpreter-based languages** (e.g., Python): 
-* ==> The code is executed line by line, with each line being translated into machine code and executed on the fly.
-* ==> In this languages, all the debugging occurs at run-time.which makes debugging easier.
+
+* The code is executed line by line, with each line being translated into machine code and executed on the fly.
+* In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
 **7.** Python is a dynamically typed language, not a statically typed language
 
@@ -48,8 +51,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ```
 
  _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
-* ==> dynamically: no need to spcify any data type at the time of decleration 
-* ==> **Ex:** variable name = value 
+* dynamically: no need to spcify any data type at the time of decleration 
+
+* **Ex:** variable name = value 
 
  ```
       var = 100 # Here, 'var' is dynamically typed as an integer.
