@@ -228,7 +228,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * Python uses indentation (whitespace before a statement) to define the structure of the code, such as loops, conditionals, functions, and classes. Instead of using curly braces {} (like in many other languages such as C or Java), Python relies on consistent indentation to group statements within a block of code. 
 
 * Indentation Rules:
-   * 4 spaces: The Python style guide (PEP 8) recommends using 4 spaces for each level of indentation.
+   * 4 spaces: The Python style guide (PEP 8((Python Enhancement Proposal 8))) recommends using 4 spaces for each level of indentation.
    * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
 
@@ -238,11 +238,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    i = 10
    if (i=10)
    {
-   s.o.p("true); # System.out.print
+   s.o.p("true"); # System.out.print
    }
    else
    {
-   s.o.p(false);
+   s.o.p("false");
    }
 ```
 
@@ -278,15 +278,24 @@ _* Basic Data Types_
 2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
 _* Sequence Types_
-3. **(string)**   (Text Type)       -- holds textual data                      '' or ''' ''' or "" or""" """    
+3. **(string)**   (Text Type)       -- holds textual data                      '' or ''' ''' or "" or""" """ 
+
 4. **[list]**     (Sequence Types)  -- holds a variety of different data types [1, 2.5, "Hello", [1, 2, 3], True]
+
 5. **(tuple)**    (Sequence Types)  -- holds collection of items               (1, 2.5, "Hello")
+
 6. **(range)**    (Sequence Types)  -- holds often used in loops.               range(5)
+
 7. **{set}**      (Set Types)       -- holds collection of unique items         {1, 2, 3, 4}
+
 8. **dist**       (Mapping Type)    -- holds data in key-value pair form        {"key1": "value1", "key2": "value2"}
+
 9. **bytes**      (Binary Types)    -- Immutable sequence of bytes              b'Hello'
+
 10. **bytearray** (Binary Types)    -- Mutable sequence of bytes                bytearray(b'Hello').
-11. **forzenset** (Set Types)       -- Similar to a set,immutable               frozenset([1, 2, 3])                         
+
+11. **forzenset** (Set Types)       -- Similar to a set,immutable               frozenset([1, 2, 3])   
+                      
 
 
 
