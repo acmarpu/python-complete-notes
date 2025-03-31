@@ -275,20 +275,17 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 * **_Basic Data Types_**
 
-| **Data Types**  |    **Type**     | **value**           | Description
-| -------------   | -------------   |-------------        |------------- 
-| **None**        | (None Type)     | a = 'none'          |nothing is there in the variable
-| **Numeric**     | (int(Integers)) | int                 |holds numeric values (0,100)
-|				      | float           |using float[1.0]     |
-|                                   | bool[true and false]|using bool[true and false]
-|                                   | Complex Numbers     | (1a)
+
+| **Data Types**  |    **Type**     | **value**                     | **Definition**
+| -------------   | -------------   |-------------                  |------------- 
+| **None**        | (None Type)     | a = 'none'                    |nothing is there in the variable
+| **Numeric**     | int(Integers)   | int   a = 10                  |holds numeric values (0,100)
+|				                        | float a = 10.0                |have a decimal point or a fractional part
+|                                   | bool  x = True                |This represents a truthy value [true and false]
+|                                   | Complex Numbers  a = 2 + 3j   |real part and an imaginary part
 
 
 
-
-1. **None**       (NoneType) -- a = 'none'
-
-2. **(Numeric)**  (*int(Integers)*) -- float[1.0], bool[true and false],Complex Numbers(1a) -- holds numeric values
 
 * **_Sequence Types_**
 
