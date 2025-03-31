@@ -46,7 +46,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
  _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
 
 ```
-      nt a = 100
+      int a = 100
       The data type (int) must be declared explicitly
 ```
 
@@ -192,20 +192,28 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **5. Multiple Assignment**
 * &nbsp;is process of assigning a single value to multiple variables
 * &nbsp;is process of assigning a multiple values to multiple variables
-   
+
+```  
       a =b =c =10
       print(a)
       print(b)
       print(c)
       print(type(a))
+```
 
 * &nbsp;Single line print
 
+```
       a =b =c =10
       print(a,b,c, sep=",") # sep = separate with ,
+      print(a,b,c, sep=",", end=".")
+      print(type(a))
+      10,10,10. <class 'int'> # O
+```
 
 * &nbsp; the process of assigning multiple values ot multiple variables
 
+```
       a,b,c = 10,20,30
       print(a)
       print(b)
@@ -214,7 +222,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a, end=",")
       print(b, end=",")
       print(c)
-
+```
 
 **6. Python Indentation**
 * Python uses indentation (whitespace before a statement) to define the structure of the code, such as loops, conditionals, functions, and classes. Instead of using curly braces {} (like in many other languages such as C or Java), Python relies on consistent indentation to group statements within a block of code. 
