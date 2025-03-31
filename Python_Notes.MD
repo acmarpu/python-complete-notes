@@ -402,16 +402,13 @@ _A More Concise Way_
 
    * In Python, strings are an essential part of the language used to represent textual data. 
    * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
-      * Example: 'hello', "world"
+      * Example: 'hello', "python", """world"""
    * String Methods: Python provides a variety of built-in methods to perform operations on strings. Some of these include methods like replace(), split(), lower(), upper(), and many more.
    * String Immutability: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
 
    
-* #Examples
-  
- 
 * with '' 
-      
+```      
       s = 'hello ashoka's'
       print(s)           # Output: hello ashoka
       print(type(s))     # Output: <class 'str'>
@@ -419,19 +416,21 @@ _A More Concise Way_
       s = 'hello ashoka\'s'
       print(s)           # add \ for print
       print(type(s))     # Output: <class 'str'>
-
+```
 
 * with ""
-
+```
       s = "hello ashoka" 
       print(s)           # Output: hello ashoka
       print(type(s))     # Output: <class 'str'>
+```
 
+* Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
 
-*Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
-      
+```      
       s.replace("hello", "hai")
       print(s)           # Output: hello ashoka (s is unchanged)
+```
 
 *The replace method returns a new string, we can assign the result to a variable*
 *we can not reuse "s" value*
@@ -453,9 +452,9 @@ _A More Concise Way_
       
       help(str)
 
-====================================================================================
-**4. List[mutable]**
-====================================================================================
+
+#### 4. List[mutable]
+
    * A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
    
 *Key Features of Python Lists:*
