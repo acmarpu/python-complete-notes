@@ -314,18 +314,22 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(type(a))
 ```
 #### 2. Numeric type
-* Numeric -- init(0,100),float(10.0),bool(true or false),Complex Numbers(1a)
+* In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
+
 ```      
       a = 10
       print(a)
       print(type(a))
 
-      a = 10.9
-      print(a)
-      print(type(a))
 ```
+```
+     a = 3.14
+     print(a)
+     print(type(a))
+```     
 
-* int to flot convert*
+* int to flot convert
+
 ```      
       a = 10
       print(a)
@@ -339,7 +343,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
 
-* #Examples
+
 ```
       a = input("enter num1:")
       print(type(a))
@@ -347,41 +351,44 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(type(x))
 ```
 
-* #Examples
 ```
       a = input("enter number1:")
       print(a)
       print(type(a))
-      x = int(a)  #here we converting str to int
+      x = int(a)  #_here we converting str to int_
       print(x)
       print(type(x))
 
       b = input("enter number2:")
       print(b)
       print(type(b))
-      y = int(b)  #here we converting str to int
+      y = int(b)  #_here we converting str to int_
       print(type(y))
       
       c = x+y
       print("sum c is", c)
-```    
-**-------another way------**
 
-* #Examples
+```   
+
+_A More Concise Way_
+
+
 ```
       a = int(input("Enter num1:"))
       b = int(input("enter num2:"))
       c = a + b
       print("sum is:", c)
 ```
-* #Examples
+
 ```
       a = float(input("Enter num1:"))
       b = float(input("enter num2:")) 
       c = a + b
       print("sum is:", c)
 ```
+
 * bool = true or false
+
 ```      
       a = 10
       b = 20
@@ -389,11 +396,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(c)
 ```
 
-====================================================================================
-### Sequence Datatypes or data structure**
 
-### 3. String(immutable)
-====================================================================================
+
+#### 3. String(immutable)
+
    * In Python, strings are an essential part of the language used to represent textual data. 
    * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
       * Example: 'hello', "world"
