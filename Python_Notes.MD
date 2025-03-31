@@ -166,14 +166,14 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;Python Identifier is the name we give to identify a variable, function, class, module or other object. 
 * &nbsp;That means whenever we want to give an entity a name, that's called identifier.
    
-   _a)_ lowercase or uppercase
-   _b)_ case-sensitive
-   _c)_ allow digits(0-9)
-   _d)_ should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
-   _e)_ should not be two parts (if two parts use _) (emp id) (emp_id)
-   _f)_ allow underscore (_)
-   _g)_ if any identifier starts with underscore(_) then it is private
-   _h)_ no keywords or reserved words can be used as identifier
+   _a)_ lowercase or uppercase.
+   _b)_ case-sensitive.
+   _c)_ allow digits(0-9).
+   _d)_ should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9.
+   _e)_ should not be two parts (if two parts use _) (emp id) (emp_id).
+   _f)_ allow underscore (_).
+   _g)_ if any identifier starts with underscore(_) then it is private.
+   _h)_ no keywords or reserved words can be used as identifier.
 
 **4. Variables**
 * &nbsp;Variables as Containers: A variable is used to store data values. It holds information that can be used and manipulated throughout a program.
