@@ -167,13 +167,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;That means whenever we want to give an entity a name, that's called identifier.
    
    _a)_ lowercase or uppercase
-   * &nbsp;**b.** case-sensitive
-   * &nbsp;**c.** allow digits(0-9)
-   * &nbsp;**d.** should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
-   * &nbsp;**e.** should not be two parts (if two parts use _) (emp id) (emp_id)
-   * &nbsp;**f.** allow underscore (_)
-   * &nbsp;**g.** if any identifier starts with underscore(_) then it is private
-   * &nbsp;**h.** no keywords or reserved words can be used as identifier
+   _b)_ case-sensitive
+   _c)_ allow digits(0-9)
+   _d)_ should not start with digit. wrong : 9acmarpu9  crroct : acmarpu9
+   _e)_ should not be two parts (if two parts use _) (emp id) (emp_id)
+   _f)_ allow underscore (_)
+   _g)_ if any identifier starts with underscore(_) then it is private
+   _h)_ no keywords or reserved words can be used as identifier
 
 **4. Variables**
 * &nbsp;Variables as Containers: A variable is used to store data values. It holds information that can be used and manipulated throughout a program.
