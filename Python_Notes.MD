@@ -7,18 +7,18 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **1.** Python is a programming language used for app development
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
-
  _a)_ **General-purpose:**
 * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. You can use Python for web development, data analysis, machine learning, automation, and much more.
 
-  _b)_ **High-level:**
+ _b)_ **High-level:**
 * Python is considered a high-level language because it is abstracted from the machine's hardware. This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-  _c)_ **Case-sensitive:**
+ _c)_ **Case-sensitive:**
 * Python treats uppercase and lowercase characters as different. For example, Variable and variable would be considered two different identifiers. This is important to remember when writing Python code, as the language will not automatically correct case mismatches
 
-  _d)_ **Easy to Learn:**
+ _d)_ **Easy to Learn:**
 * Python has a simple and easy-to-understand syntax, making it a great choice for beginners.
+
 
 **3.** Python is simple and easy to learn, meaning it’s a straight forward language
 
