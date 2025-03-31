@@ -290,7 +290,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * **_Sequence Types_**
 *  meaning you can access individual characters using indexing and slice them into substrings
 
-| **Data Types**  |    **Type**       | **Example**                               | **Definition**
+|**Data Types**   |    **Type**       | **Example**                               | **Definition**
 | -------------   | -------------     |-------------                              |------------- 
 | **(string)**    |(Text Type)        | a = 'x' or "x" or """x"""                 |holds textual data 
 | **[list]**      |[Sequence Types]   | a = [1, 2.5, "Hello", [1, 2, 3], True]    |allows you to store multiple items in a single variable
