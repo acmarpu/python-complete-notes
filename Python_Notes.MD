@@ -7,6 +7,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **1.** Python is a programming language used for app development
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
+
  _a)_ **General-purpose:**
 * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. You can use Python for web development, data analysis, machine learning, automation, and much more.
 
@@ -23,7 +24,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **3.** Python is simple and easy to learn, meaning it’s a straight forward language
 
 **4.** Python is completely cross-platform or platform-independent
-* &nbsp;Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
+* ==> Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
 **5.** Python is completely free and open-source
 
