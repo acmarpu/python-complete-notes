@@ -296,7 +296,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 | **[list]**      |[Sequence Types]   | a = [1, 2.5, "Hello", [1, 2, 3], True]    |allows you to store multiple items in a single variable
 | **(tuple)** 	   |(Sequence Types)   | a = (1, 2.5, "Hello")                     |used to store multiple values in a single variable
 | **(range)**     |(Sequence Types)   | for i in range(5):                        |function is used to generate a sequence of numbers, often utilized in loops
-|                 |                     print (i)                                
+|                 |                   |  print (i)                                |
 |**{set}**        |{Set Types}        | a = {1, 2, 3, 4, 5}                       |represents an unordered collection of unique elements. duplicate values removed when creating a set
 | **dist**        |{Mapping Type}     | a = {"key1": "value1", "key2": "value2"}  |holds data in key-value pair 
 | bytes           |(Binary Types)     | byte_data = b'Hello'                      |represent immutable sequences of byte values
