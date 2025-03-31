@@ -275,12 +275,15 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 * **_Basic Data Types_**
 
-| **Data Types**  |    **Type**        | **value**          | Description
-| -------------   | -------------      |-------------       |------------- 
-| **None**        | (NoneType)         | a = 'none'         |nothing is there in the variable
-| **(Numeric)**   | (*int(Integers)*)  |float[1.0]          |holds numeric values
-|                 |                    |bool[true and false]|
-|                 |                    |Complex Numbers(1a) |
+| **Data Types**  |    **Type**     | **value**           | Description
+| -------------   | -------------   |-------------        |------------- 
+| **None**        | (None Type)     | a = 'none'          |nothing is there in the variable
+| **Numeric**     | (int(Integers)) | int                 |holds numeric values (0,100)
+|				      | float           |using float[1.0]     |
+|                                   | bool[true and false]|using bool[true and false]
+|                                   | Complex Numbers     | (1a)
+
+
 
 
 1. **None**       (NoneType) -- a = 'none'
@@ -307,17 +310,6 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 11. **forzenset** (Set Types)       -- Similar to a set,immutable               frozenset([1, 2, 3])   
 
-
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
 
 
