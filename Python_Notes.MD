@@ -590,10 +590,9 @@ _A More Concise Way_
 *  *Duplicates Allowed:* Tuples can have multiple occurrences of the same element.
 *  *Parentheses:* Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
 
-* #Examples
 
-   * tuple required multipile values*
-   * The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
+* tuple required multipile values*
+* The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
    
 ```      
       t = ("raj",)
