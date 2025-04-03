@@ -305,7 +305,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 
-#### 1. none
+### 1. none
 * nothing is there in the variable
  ```     
       a = 'none'
@@ -313,7 +313,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a)
       print(type(a))
 ```
-#### 2. Numeric type
+### 2. Numeric type
 * In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
 
 ```      
@@ -399,7 +399,7 @@ _A More Concise Way_
 
 
 
-#### 3. String (immutable)
+### 3. String (immutable)
 
 * In Python, strings are an essential part of the language used to represent textual data. 
 * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
@@ -481,7 +481,7 @@ _A More Concise Way_
 
 
 
-#### 4. List [mutable]
+### 4. List [mutable]
 
 * A list in Python is an **ordered** collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
    
