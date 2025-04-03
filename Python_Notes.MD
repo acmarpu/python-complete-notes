@@ -304,8 +304,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 |**forzenset**       |(Set Types)         | frozenset([1, 2, 3])                       |Similar to a set,immutable 
 
 
-
+==========================================================================================
 ### 1. none
+===========================================================================================
+
 * nothing is there in the variable
  ```     
       a = 'none'
@@ -313,7 +315,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(a)
       print(type(a))
 ```
+
+==========================================================================================
 ### 2. Numeric type
+===========================================================================================
+
 * In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
 
 ```      
@@ -398,8 +404,9 @@ _A More Concise Way_
 ```
 
 
-
+==========================================================================================
 ### 3. String (immutable)
+===========================================================================================
 
 * In Python, strings are an essential part of the language used to represent textual data. 
 * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
@@ -480,11 +487,13 @@ _A More Concise Way_
 ```
 
 
-
+==========================================================================================
 ### 4. List [mutable]
+===========================================================================================
 
 * A list in Python is an **ordered** collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
-   
+* Defined using square brackets
+
 * Key Features of Python Lists:*
    * **Ordered:** The items in a list have a specific order, and that order is preserved.
    * **Mutable:** Lists can be modified after creation. You can change, add, or remove elements.
@@ -567,9 +576,11 @@ _A More Concise Way_
       print(my_list)  # Output: [1, 2, 3, 4, 9]
 ```
 
+
 ==========================================================================================
 #### 5. Tuple(immutable)
 ===========================================================================================
+
 * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
    
    **Key Points:**
@@ -584,31 +595,39 @@ _A More Concise Way_
    * tuple required multipile values*
    * The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
    
-      
+```      
       t = ("raj",)
       print(t)      # Output: ('raj',)
       print(type(t)) # Output: <class 'tuple'>
+
+``
+
+* Without the trailing comma, this is just a string enclosed in parentheses.*
       
-*Without the trailing comma, this is just a string enclosed in parentheses.*
-      
-      
+```      
       t = ("raj")  # This is a string, not a tuple
       print(t)  # Output: raj
       print(type(t))  # Output: <class 'str'>
 
+```
 
-
+``
       t = ("raj",12,23.4,10)
       print(t)
       print(type(t))
       t[1] = 33
       print(t)  # output t can not be changed
 
+``
 
+```
+      nested_tuple = (1, 2, (3, 4), 5)
+      print(nested_tuple[2])
 
-==========================================================================================
-**6. Set{}**
-===========================================================================================
+```
+
+### 6 . Set {}
+
 * A set is an unordered collection of unique elements. This means that duplicate values are automatically removed when creating a set.
 
 *Key Points:*
@@ -621,7 +640,7 @@ _A More Concise Way_
 * To create a non-empty set, you can use curly braces {}.
 * To create an empty set, you need to use the set() function because {} creates an empty dictionary, not a set.
    
-* #Examples
+
       
       s = set()
       print(s)          # Output: set()
