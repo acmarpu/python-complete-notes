@@ -290,18 +290,18 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * **_Sequence Types_**
 *  meaning you can access individual characters using indexing and slice them into substrings
 
-|**Data Types**   |    **Type**       | **Example**                               | **Definition**
-| -------------   | -------------     |-------------                              |------------- 
-| **(string)**    |(Text Type)        | a = 'x' or "x" or """x"""                 |holds textual data 
-| **[list]**      |[Sequence Types]   | a = [1, 2.5, "Hello", [1, 2, 3], True]    |allows you to store multiple items in a single variable
-| **(tuple)** 	   |(Sequence Types)   | a = (1, 2.5, "Hello")                     |used to store multiple values in a single variable
-| **(range)**     |(Sequence Types)   | for i in range(5):                        |function is used to generate a sequence of numbers, often utilized in loops
-|                 |                   |  print (i)                                |
-|**{set}**        |{Set Types}        | a = {1, 2, 3, 4, 5}                       |represents an unordered collection of unique elements. duplicate values removed when creating a set
-| **dist**        |{Mapping Type}     | a = {"key1": "value1", "key2": "value2"}  |holds data in key-value pair 
-| bytes           |(Binary Types)     | byte_data = b'Hello'                      |represent immutable sequences of byte values
-| **bytearray**   |(Binary Types)     | bytearray(b'Hello')                       |Mutable sequence of bytes
-|**forzenset**    |(Set Types)        | frozenset([1, 2, 3])                      |Similar to a set,immutable 
+|**Data Types**      |    **Type**        | **Example**                                | **Definition**
+| -------------      | -------------      |-------------                               |------------- 
+| **(string)**       |(Text Type)         | a = 'x' or "x" or """x"""                  |holds textual data 
+| **[list]**         |[Sequence Types]    | a = [1, 2.5, "Hello", [1, 2, 3], True]     |allows you to store multiple items in a single variable
+| **(tuple)** 	      |(Sequence Types)    | a = (1, 2.5, "Hello")                      |used to store multiple values in a single variable
+| **(range)**        |(Sequence Types)    | for i in range(5):                         |function is used to generate a sequence of numbers, often utilized in loops
+|                    |                    |  print (i)                                 |
+|**{set}**           |{Set Types}         | a = {1, 2, 3, 4, 5}                        |represents an unordered collection of unique elements. duplicate values removed when creating a set
+| **dist**           |{Mapping Type}      | a = {"key1": "value1", "key2": "value2"}   |holds data in key-value pair 
+| bytes              |(Binary Types)      | byte_data = b'Hello'                       |represent immutable sequences of byte values
+| **bytearray**      |(Binary Types)      | bytearray(b'Hello')                        |Mutable sequence of bytes
+|**forzenset**       |(Set Types)         | frozenset([1, 2, 3])                       |Similar to a set,immutable 
 
 
 
@@ -394,17 +394,18 @@ _A More Concise Way_
       b = 20
       c = a > b
       print(c)
+      print(type(c))
 ```
 
 
 
 #### 3. String (immutable)
 
-   * In Python, strings are an essential part of the language used to represent textual data. 
-   * String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
-      * Example: 'hello', "python", """world"""
-   * String Methods: Python provides a variety of built-in methods to perform operations on strings. Some of these include methods like replace(), split(), lower(), upper(), and many more.
-   * String Immutability: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
+* In Python, strings are an essential part of the language used to represent textual data. 
+* String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
+   * Example: ('hello'), ("python"), ("""world""")
+* String Methods: Python provides a variety of built-in methods to perform operations on strings. Some of these include methods like replace(), split(), lower(), upper(), and many more.
+* String Immutability: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
 
    
 * with '' 
@@ -419,6 +420,7 @@ _A More Concise Way_
 ```
 
 * with ""
+
 ```
       s = "hello ashoka" 
       print(s)           # Output: hello ashoka
@@ -442,7 +444,7 @@ _A More Concise Way_
       s = "  Hello, World!  "
       print(s.upper())   # Output: HELLO, WORLD!
       print(s.lower())   # Output: hello, world!
-      print(s.strip())   # Output: Hello, World!
+      print(s.strip())   # Output: Hello, World! used to remove any leading and trailing whitespace characters from a string
       print(s.replace("World", "Python"))  # Output:   Hello, Python!  
       print(s.split())   # Output: ['Hello,', 'World!']
       print(s.find("World"))  # Output: 8 (index of the first occurrence of "World")
@@ -481,7 +483,7 @@ _A More Concise Way_
 
 #### 4. List [mutable]
 
-* A list in Python is an ordered collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
+* A list in Python is an **ordered** collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
    
 * Key Features of Python Lists:*
    * **Ordered:** The items in a list have a specific order, and that order is preserved.
@@ -494,7 +496,7 @@ _A More Concise Way_
 * Creating a list with various types of elements*
 
 ```      
-      l = [10,20,30,3.4,"ashoka",True]
+      l = [10,20,30,3.4,"python",True]
       *Printing the list and its type*
       print(l)            # Output: [10, 20, 30, 3.4, 'att', True]
       print(type(l))      # Output: <class 'list'>
@@ -566,7 +568,7 @@ _A More Concise Way_
 ```
 
 ==========================================================================================
-**5. Tuple(immutable)**
+#### 5. Tuple(immutable)
 ===========================================================================================
 * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
    
