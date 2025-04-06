@@ -63,7 +63,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ```
 
 ==========================================================================================
-### Features of Python:
+### 1. Features of Python:
 ==========================================================================================
 
 **Expressive Language:** Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
@@ -84,7 +84,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-### Application Areas of Python:
+### 2. Application Areas of Python:
 ==========================================================================================
 
 **Standalone or Desktop Applications**
@@ -123,7 +123,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-### Different Ways to Write and Execute Python Code:
+### 3. Different Ways to Write and Execute Python Code:
 ==========================================================================================
 
 **Interactive Mode**
@@ -142,10 +142,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 
 ==========================================================================================
-### Python Fundamentals
+### 4. Python Fundamentals
 ==========================================================================================
 
-**1. Comments** 
+**a. Comments** 
 * &nbsp;Python are identified with a hash symbol(#), and extend to the end of the line# 
 * &nbsp;short cut key is ctrl+/ : description about the code we can use # also
 
@@ -158,10 +158,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ``` 
       import keyword
       print(keyword.kwlist)
+
 ```
 * 'if' is keyword, we can not use as variable
 
-**3. Identifiers**
+**b. Identifiers**
 * &nbsp;Any name is called identifiers (variable name or function name or any other name)
 * &nbsp;Python Identifier is the name we give to identify a variable, function, class, module or other object. 
 * &nbsp;That means whenever we want to give an entity a name, that's called identifier.
@@ -183,13 +184,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
     _h)_ no keywords or reserved words can be used as identifier.
 
 
-**4. Variables**
+**c. Variables**
 * &nbsp;Variables as Containers: A variable is used to store data values. It holds information that can be used and manipulated throughout a program.
 * &nbsp;Variables as Identifiers: A variable is also known as an identifier because it uniquely identifies the value or object it is storing. An identifier is simply a name given to a memory location where data is stored.
 * &nbsp;Named Memory Location: In Python, when you assign a value to a variable, Python internally stores the value in a memory location, and the variable name points to that location. The name you assign to a variable acts as a reference to the data.
 * &nbsp;No Need to Specify Data Type: Unlike many other programming languages, Python is dynamically typed, meaning you don't need to specify the type of data a variable will hold.
 
-**5. Multiple Assignment**
+**d. Multiple Assignment**
 * &nbsp;is process of assigning a single value to multiple variables
 * &nbsp;is process of assigning a multiple values to multiple variables
 
@@ -224,7 +225,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(c)
 ```
 
-**6. Python Indentation**
+**e. Python Indentation**
 * Python uses indentation (whitespace before a statement) to define the structure of the code, such as loops, conditionals, functions, and classes. Instead of using curly braces {} (like in many other languages such as C or Java), Python relies on consistent indentation to group statements within a block of code. 
 
 * Indentation Rules:
@@ -235,27 +236,27 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ```
 #In Java
 
-   i = 10
-   if (i=10)
-   {
-   s.o.p("true"); # System.out.print
-   }
-   else
-   {
-   s.o.p("false");
-   }
+      i = 10
+      if (i=10)
+      {
+      s.o.p("true"); # System.out.print
+      }
+      else
+      {
+      s.o.p("false");
+      }
 ```
 
 ```
 # In Python
 
 
-   i = 10
-   if i ==10:
-      print("true") # *indent by four spaces = 1 level*
+      i = 10
+      if i ==10:
+          print("true") # *indent by four spaces = 1 level*
 
-   else:
-       print("false") # *indent by four spaces = 1 level*
+      else:
+          print("false") # *indent by four spaces = 1 level*
 ```
 
    
@@ -309,6 +310,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ===========================================================================================
 
 * nothing is there in the variable
+
  ```     
       a = 'none'
       print('none')
@@ -328,10 +330,11 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(type(a))
 
 ```
+
 ```
-     a = 3.14
-     print(a)
-     print(type(a))
+      a = 3.14
+      print(a)
+      print(type(a))
 ```     
 
 * int to flot convert
@@ -384,6 +387,7 @@ _A More Concise Way_
       b = int(input("enter num2:"))
       c = a + b
       print("sum is:", c)
+
 ```
 
 ```
@@ -391,6 +395,7 @@ _A More Concise Way_
       b = float(input("enter num2:")) 
       c = a + b
       print("sum is:", c)
+
 ```
 
 * bool = true or false
@@ -401,6 +406,7 @@ _A More Concise Way_
       c = a > b
       print(c)
       print(type(c))
+
 ```
 
 
@@ -409,14 +415,16 @@ _A More Concise Way_
 ===========================================================================================
 
 * In Python, strings are an essential part of the language used to represent textual data. 
-* String Definition: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
+* _String Definition_: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
    * Example: ('hello'), ("python"), ("""world""")
-* String Methods: Python provides a variety of built-in methods to perform operations on strings. Some of these include methods like replace(), split(), lower(), upper(), and many more.
-* String Immutability: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
+* _String Methods_: Python provides a variety of built-in methods to perform operations on strings. Some of these include methods like replace(), split(), lower(), upper(), and many more.
+* _String Immutability_: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
 
+```  
    
 * with '' 
-```      
+
+    
       s = 'hello ashoka's'
       print(s)           # Output: hello ashoka
       print(type(s))     # Output: <class 'str'>
@@ -433,6 +441,7 @@ _A More Concise Way_
       print(s)           # Output: hello ashoka
       print(type(s))     # Output: <class 'str'>
 ```
+
 ```
       s = "Hello"
       print(s[0])   # Output: H (first character)
@@ -467,22 +476,25 @@ _A More Concise Way_
 
 *The replace method returns a new string, we can assign the result to a variable*
 *we can not reuse "s" value*
+```
 
       print(s.replace("hello","hai")) 
 
+```
 *We can assign the modified string to a new variable*
-      
+```      
       s1 = s.replace("hello", "hai")
       print(s1)          # Output: hai ashoka
-
+```
 **To get a list of all available functions for string operations, you can use the dir() function:**
 * This will return a list of all the methods and attributes associated with the string class.
 ```
       print(dir(str))
       __add_  #also called descriptors
 ```
-   * description      
-```      
+      
+```    
+       * description    
       help(str)
 ```
 
@@ -491,8 +503,9 @@ _A More Concise Way_
 ### 4. List [mutable]
 ===========================================================================================
 
-* A list in Python is an **ordered** collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. Lists are enclosed in square brackets [] and elements are separated by commas.
-* Defined using square brackets
+* A list in Python is an **ordered** collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. 
+* Lists are enclosed in square brackets [] and elements are separated by commas.
+
 
 * Key Features of Python Lists:*
    * **Ordered:** The items in a list have a specific order, and that order is preserved.
@@ -500,30 +513,29 @@ _A More Concise Way_
    * **Heterogeneous:** Lists can store elements of different data types (e.g., integers, strings, booleans, etc.).
    * **Allow duplicates:** Lists allow duplicate elements, meaning the same value can appear multiple times in a list.
    
-
-
 * Creating a list with various types of elements*
 
 ```      
       l = [10,20,30,3.4,"python",True]
-      *Printing the list and its type*
+   *Printing the list and its type*
       print(l)            # Output: [10, 20, 30, 3.4, 'att', True]
       print(type(l))      # Output: <class 'list'>
+
 ```
 
 * Lists are mutable, which means we can change their elements. We can modify an element by accessing it using its index, or add elements using methods like append().
 
 ```      
-       l = [10,20,30,3.4,"ashoka",True]
-       l.append(33)        # Adds 33 to the end of the list
-       print(l)            # Output: [10, 20, 30, 3.4, 'att', True, 33]
+      l = [10,20,30,3.4,"ashoka",True]
+      l.append(33)        # Adds 33 to the end of the list
+      print(l)            # Output: [10, 20, 30, 3.4, 'att', True, 33]
 ```
 
 ```
       *Modifying an element at a specific index*
 
-       l[1] = 33           # Changes the element at index 1 (value 20) to 33
-       print(l)            # Output: [10, 33, 30, 3.4, 'att', True, 33]
+      l[1] = 33           # Changes the element at index 1 (value 20) to 33
+      print(l)            # Output: [10, 33, 30, 3.4, 'att', True, 33]
 ```
 
 **Key Methods for Working with Lists:**
@@ -554,11 +566,11 @@ _A More Concise Way_
 ```
 * **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
 ```
-      # Original list
+   # Original list
       my_list = [1, 2, 3]
-      # Another list to extend my_list with
+   # Another list to extend my_list with
       other_list = [4, 5, 6]
-      # Using extend() to add elements of other_list to my_list
+   # Using extend() to add elements of other_list to my_list
       my_list.extend(other_list)
       print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
 ```
@@ -583,7 +595,7 @@ _A More Concise Way_
 
 * A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
    
-   **Key Points:**
+**Key Points:**
 *  *Immutable:* Once a tuple is created, its elements cannot be modified, added, or removed.
 *  *Ordered:* Like lists, tuples maintain the order of elements.
 *  *Different Data Types:* A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
@@ -599,7 +611,7 @@ _A More Concise Way_
       print(t)      # Output: ('raj',)
       print(type(t)) # Output: <class 'tuple'>
 
-``
+```
 
 * Without the trailing comma, this is just a string enclosed in parentheses.*
       
@@ -610,109 +622,150 @@ _A More Concise Way_
 
 ```
 
-``
+```
       t = ("raj",12,23.4,10)
       print(t)
       print(type(t))
       t[1] = 33
       print(t)  # output t can not be changed
 
-``
+```
 
 ```
       nested_tuple = (1, 2, (3, 4), 5)
       print(nested_tuple[2])
-
 ```
 
-### 6 . Set {}
 
-* A set is an unordered collection of unique elements. This means that duplicate values are automatically removed when creating a set.
+==========================================================================================
+### 6 . Set {}
+===========================================================================================
+
+* A set is an "unordered" collection of unique elements. This means that duplicate values are automatically removed when creating a set.
 
 *Key Points:*
-* *Unordered:* The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
-* *Unique Elements:* Sets automatically remove duplicate elements, so each element is stored only once.
-* *Mutable:* Sets are mutable, meaning you can add or remove elements after creation.
-* *Different Data Types:* A set can hold elements of different data types (e.g., integers, strings, etc.).
+   * *Unordered:* The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
+   * *Unique Elements:* Sets automatically remove duplicate elements, so each element is stored only once.
+   * *Mutable:* Sets are mutable, meaning you can add or remove elements after creation.
+   * *Different Data Types:* A set can hold elements of different data types (e.g., integers, strings, etc.).
 
 *Creating Sets:*
 * To create a non-empty set, you can use curly braces {}.
 * To create an empty set, you need to use the set() function because {} creates an empty dictionary, not a set.
    
 
-      
+```      
       s = set()
       print(s)          # Output: set()
       print(type(s))    # Output: <class 'set'>
-   
 
-      a = {10, 20, 30, 40, 50, 60}
-      print(a)  # Output: {10, 20, 30, 40, 50, 60}
-      print(type(a))  # Output: <class 'set'>
+```   
 
+```
+      s = {10, 20, 30, 40, 50, 60}
+      print(s)  # Output: {50, 20, 40, 10, 60, 30}
+      print(type(s))  # Output: <class 'set'>
+```
 
-      a = {10, 10, 20, 30, 40, 50, 60, 60}
-      print(a)  # Output: {10, 20, 30, 40, 50, 60}
-      print(type(a))  # Output: <class 'set'>
+```
+      s = {10, 10, 20, 30, 40, 50, 60, 60}
+      print(s)  # Output: {50, 20, 40, 10, 60, 30}
+      print(type(s))  # Output: <class 'set'>
 
+```
 
 * *Adding elements to a set:*
-      
-      a.add(70)  # Adds 70 to the set
-      print(a)  # Output: {10, 20, 30, 40, 50, 60, 70}
+```   
+      s = {10, 20, 30, 40, 50, 60}   
+      s.add(70)  # Adds 70 to the set
+      print(s)  # Output: {50, 20, 70, 40, 10, 60, 30}
 
+
+```
 * *Removing elements from a set:*
 
-      a.remove(20)  # Removes 20 from the set
-      print(a)  # Output: {10, 30, 40, 50, 60, 70}
+```      
+      s = {10, 20, 30, 40, 50, 60}
+      s.remove(20)  # Removes 20 from the set
+      print(s)  # Output: {10, 30, 40, 50, 60, 70}
+```
 
 * *Set operations like union, intersection, and difference are also commonly used:*
       
-      b = {50, 60, 70, 80}
-      print(a.union(b))  # Union: {10, 30, 40, 50, 60, 70, 80}
-      print(a.intersection(b))  # Intersection: {50, 60, 70}
-      print(a.difference(b))  # Difference: {10, 30, 40}
+```
+The union of two sets returns a new set that contains all unique elements from both sets
+      s = {10, 20, 30, 40, 50}
+      s1 = {50, 60, 70, 80}
+      print(s.union(s1))  # Union: {10, 20, 30, 40, 50, 60, 70, 80}
+```
+
+```
+intersection of two sets returns a new set that contains only the elements that are common to both sets.
+      s = {10, 20, 30, 40, 50}
+      s1 = {50, 60, 70, 80}
+      print(s.intersection(s1))  # Intersection: {50}
+
+```
+
+
+
 
 ==========================================================================================
-**7. Dictionary dict {}**
+### 7. Dictionary dict {}
 ===========================================================================================
 * A dictionary is an unordered collection of key-value pairs. It stores elements in pairs, where each key is associated with a value.
+* data in dictionary stores in key, value pair {key, value} --> item
 
 **Key Points:**
-
-* **Ordered Collection:** As of Python 3.7+, dictionaries maintain the order of insertion, meaning the order in which you add key-value pairs is preserved.
-* **Keys are Immutable:** The keys must be of immutable types (e.g., strings, numbers, tuples). You cannot use mutable types (like lists) as keys.
-* **Unique Keys:** Dictionary keys must be unique. If you try to insert a duplicate key, it will update the existing key with the new value.
-* **Mutable Values:** Values can be of any data type, and they do not need to be unique.
-* **Creation:** You can create a dictionary using curly braces {} or by using the dict() constructor.
-* *Creating a Dictionary:*
-* **Empty dictionary:** Use {} or dict().
-* **Non-empty dictionary:** Use curly braces {} with key-value pairs separated by a colon (:).
+   * **Ordered Collection:** As of Python 3.7+, dictionaries maintain the order of insertion, meaning the order in which you add key-value pairs is preserved.
+   * **Keys are Immutable:** The keys must be of immutable types (e.g., strings, numbers, tuples). You cannot use mutable types (like lists) as keys.
+   * **Unique Keys:** Dictionary keys must be unique. If you try to insert a duplicate key, it will update the existing key with the new value.
+   * **Mutable Values:** Values can be of any data type, and they do not need to be unique.
+   * **Creation:** You can create a dictionary using curly braces {} or by using the dict() constructor.
+   * *Creating a Dictionary:*
+   * **Empty dictionary:** Use {} or dict().
+   * **Non-empty dictionary:** Use curly braces {} with key-value pairs separated by a colon (:).
    
-* #Examples
+```
+   * Empty dictionary 
+      d = dict()
+
+      or
 
       d = {}
       print(d)       # Output: {}
       print(type(d)) # Output: <class 'dict'>
+      
+```
 
-
+```
       capital_city = {'TS':'Hyd', 'AP':'AMV','TN':'CH'}
       print(capital_city)        # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
       print(capital_city['TS'])  # Output: Hyd
       print(capital_city['AP'])  # Output: AMV
-   
-  *Duplicate Keys:*
+
+```   
+  
+
+```
+      *Duplicate Keys:*
 
       capital_city = {'TS':'Hyd', 'TS':'AMV','TN':'CH'}
       print(capital_city)    # Output: {'TS': 'AMV', 'TN': 'CH'}
 
+```
 
-  *Modifying Dictionary Values:*
+  
+```
+      *Modifying Dictionary Values:*
 
       capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
       print(capital_city)     # Output: {'TS': 'Hyd', 'TG': 'HYD', 'TN': 'CH'}
-      
-  *Changing values in a dictionary:*
+
+```
+
+```
+     *Changing values in a dictionary*
 
       d = {1:'sai',2:'att'}
       print(d)         # Output: {1: 'sai', 2: 'att'}
@@ -720,7 +773,9 @@ _A More Concise Way_
       d[2] = 'ramesh'  # Changing the value for key 2 
       print(d)         # Output: {1: 'sai', 2: 'ramesh'}
 
-  
+```
+
+``` 
   *Adding key-value pairs at runtime:*
   *Get user input for key-value pairs*
 
@@ -737,7 +792,7 @@ _A More Concise Way_
 
       print("Dictionary after adding runtime values:", person)
       print(type(person))   # Output: <class 'dict'>
-
+```
 
 
 ===========================================================================================
