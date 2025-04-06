@@ -748,7 +748,7 @@ intersection of two sets returns a new set that contains only the elements that 
   
 
 ```
-      *Duplicate Keys:*
+   *Duplicate Keys:*
 
       capital_city = {'TS':'Hyd', 'TS':'AMV','TN':'CH'}
       print(capital_city)    # Output: {'TS': 'AMV', 'TN': 'CH'}
@@ -757,7 +757,7 @@ intersection of two sets returns a new set that contains only the elements that 
 
   
 ```
-      *Modifying Dictionary Values:*
+   *Modifying Dictionary Values:*
 
       capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
       print(capital_city)     # Output: {'TS': 'Hyd', 'TG': 'HYD', 'TN': 'CH'}
@@ -765,7 +765,7 @@ intersection of two sets returns a new set that contains only the elements that 
 ```
 
 ```
-     *Changing values in a dictionary*
+   *Changing values in a dictionary*
 
       d = {1:'sai',2:'att'}
       print(d)         # Output: {1: 'sai', 2: 'att'}
