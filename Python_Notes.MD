@@ -149,7 +149,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;Python are identified with a hash symbol(#), and extend to the end of the line# 
 * &nbsp;short cut key is ctrl+/ : description about the code we can use # also
 
-**2. Keywords or Reserved Words**
+**b. Keywords or Reserved Words**
 * &nbsp;There are fewer restrictions on their usage. For example, you will get a “SyntaxError” if you try assigning a keyword to a variable
 * &nbsp;Python keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those specific purposes. 
 * &nbsp;These keywords are always available—you’ll never have to import them into your code.
@@ -780,9 +780,9 @@ intersection of two sets returns a new set that contains only the elements that 
   *Get user input for key-value pairs*
 
       person = {}
-      name = input("Enter person's name: ")
-      age = int(input("Enter person's age: "))
-      city = input("Enter person's city: ")
+      name = input("Enter person's name:")
+      age = int(input("Enter person's age:"))
+      city = input("Enter person's city:")
 
   *Add key-value pairs to the dictionary*
       
@@ -798,7 +798,7 @@ intersection of two sets returns a new set that contains only the elements that 
 ===========================================================================================
 **8. range()**
 ========================================================================================
-   * The range() function in Python is used to generate a sequence of numbers. It's typically used in for loops to iterate over a specific range of values.
+* The range() function in Python is used to generate a sequence of numbers. It's typically used in for loops to iterate over a specific range of values.
    
 **Key Points:**
 * **1.Start, Stop, Step:**
