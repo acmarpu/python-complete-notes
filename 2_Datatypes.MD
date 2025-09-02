@@ -1,6 +1,6 @@
 
 ==========================================================================================
-# Data types in python
+# Data types in Python
 ==========================================================================================
 * Python Data Types are used to define the type of a variable.
 * Data types define the type of value a variable holds, and they also determine what operations can be performed on that value.

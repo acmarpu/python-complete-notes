@@ -1,49 +1,56 @@
 ==========================================================================================
-# Python
+# Python_Basics
 ==========================================================================================
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
-
 
 **1.** Python is a programming language used for app development
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
- _a)_ **General-purpose:**
-* This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. You can use Python for web development, data analysis, machine learning, automation, and much more.
-
- _b)_ **High-level:**
-* Python is considered a high-level language because it is abstracted from the machine's hardware. This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
-
- _c)_ **Case-sensitive:**
-* Python treats uppercase and lowercase characters as different. For example, Variable and variable would be considered two different identifiers. This is important to remember when writing Python code, as the language will not automatically correct case mismatches
-
- _d)_ **Easy to Learn:**
-* Python has a simple and easy-to-understand syntax, making it a great choice for beginners.
+   _a)_ **General-purpose:**
+   * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. 
+   - You can use Python for 
+  
+   * Web development
+   * Data analysis
+   * Machine learning
+   * Automation
+   * Scripting, and more.
 
 
-**3.** Python is simple and easy to learn, meaning it’s a straight forward language
+    _b)_ **High-level:**
+   * Python is considered a high-level language because it is abstracted from the machine's hardware.(Python does not require you to deal with computer hardware directly (like CPU instructions or memory).)
+   * This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. 
+   * In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-**4.** Python is completely cross-platform or platform-independent
+    _c)_ **Case-sensitive:**
+   * Python treats uppercase and lowercase characters as different.
+   * For example, Variable and variable would be considered two different identifiers. 
+   * This is important to remember when writing Python code, as the language will not automatically correct case mismatches.
+ 
 
-* Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
+    _d)_ **Easy to Learn:**
+   * Python has a simple and easy learn and easy-to-understand syntax, making it a great choice for beginners.
+   * meaning it’s a straight forward language
 
-**5.** Python is completely free and open-source
 
-**6.** Python is an interpreted language 
+**3.** Python is completely cross-platform or platform-independent
+   * Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
- _a)_ **Compiler-based languages(e.g., C, C++, Java):** 
+**4.** Python is completely free and open-source
 
-* &nbsp; The source code is compiled into machine code (binary) before execution.
-* &nbsp; In this language, compilation errors prevent the code from compiling.
+**5.** Python is an interpreted language 
+ _a)_ **Interpreter-based languages** (e.g., Python): 
+   * The code is executed line by line, with each line being translated into machine code and executed on the fly.
+   * In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
- _b)_ **Interpreter-based languages** (e.g., Python): 
+ _b)_ **Compiler-based languages(e.g., C, C++, Java):** 
+   * &nbsp; The source code is compiled into machine code (binary) before execution.
+   * &nbsp; In this language, compilation errors prevent the code from compiling.
 
-* The code is executed line by line, with each line being translated into machine code and executed on the fly.
-* In this languages, all the debugging occurs at run-time.which makes debugging easier.
+**6.** Python is a dynamically typed language, not a statically typed language
 
-**7.** Python is a dynamically typed language, not a statically typed language
-
- _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
+    _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
 
 ```
       int a = 100
@@ -258,8 +265,107 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       else:
           print("false") # *indent by four spaces = 1 level*
 ```
+#----------------------------------------------------------------------------------------------
+# End next is 2_Datatypes.MD
+#-----------------------------------------------------------------------------------------------
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
