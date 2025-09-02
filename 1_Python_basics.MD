@@ -18,18 +18,18 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Scripting, and more.
 
 
-    _b)_ **High-level:**
+   _b)_ **High-level:**
    * Python is considered a high-level language because it is abstracted from the machine's hardware.(Python does not require you to deal with computer hardware directly (like CPU instructions or memory).)
    * This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. 
    * In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-    _c)_ **Case-sensitive:**
+   _c)_ **Case-sensitive:**
    * Python treats uppercase and lowercase characters as different.
    * For example, Variable and variable would be considered two different identifiers. 
    * This is important to remember when writing Python code, as the language will not automatically correct case mismatches.
  
 
-    _d)_ **Easy to Learn:**
+   _d)_ **Easy to Learn:**
    * Python has a simple and easy learn and easy-to-understand syntax, making it a great choice for beginners.
    * meaning it’s a straight forward language
 
@@ -50,7 +50,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **6.** Python is a dynamically typed language, not a statically typed language
 
-    _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
+ _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
 
 ```
       int a = 100
