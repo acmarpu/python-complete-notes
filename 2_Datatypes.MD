@@ -52,12 +52,12 @@
       print(a)
       print(type(a))
 
-      # none          # Output value
-      # <class 'str'> # Output value
+      # none          # Output 
+      # <class 'str'> # Output 
 ```
 
 ----------------------------------------------------------------------------------------------
-### 🔹 2. Numeric type
+### 🔸 2. Numeric type
 ----------------------------------------------------------------------------------------------
 
 * In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
@@ -67,8 +67,8 @@
       print(a)
       print(type(a))
  
-      # 10             # Output value
-      # <class 'int'>  # Output value
+      # 10             # Output 
+      # <class 'int'>  # Output 
 
 ```
 
@@ -77,8 +77,8 @@
       print(a)
       print(type(a))
 
-      # 10               # Output value
-      # <class 'float'>  # Output value
+      # 10               # Output 
+      # <class 'float'>  # Output 
 ```     
 
 * **Converts the integer 10 into a floating-point number → 10.0.**
@@ -88,8 +88,8 @@
       print(a)
       print(type(a))
 
-      # 10                  # Output value
-      # <class 'int'>       # Output value
+      # 10                  # Output 
+      # <class 'int'>       # Output 
 
       
 
@@ -97,8 +97,8 @@
       print(b)
       print(type(b))
 
-      # 10.0                 # Output value
-      # <class 'int'>        # Output value
+      # 10.0                 # Output 
+      # <class 'int'>        # Output 
 
 ```
 
@@ -107,9 +107,9 @@
 
 ``` 
       a = input("enter num1:")
-      print(type(a))             # Output value  <class 'str'>
+      print(type(a))             # Output   <class 'str'>
       x = int(a)                 # here we converting str to int
-      print(type(x))             # Output value  <class 'int'>
+      print(type(x))             # Output   <class 'int'>
 
 ```
 
@@ -119,7 +119,7 @@
       print(type(a))
       x = int(a)                 # _here we converting str to int_
       print(x)
-      print(type(x))             # Output value  <class 'int'>
+      print(type(x))             # Output   <class 'int'>
 
       b = input("enter number2:")
       print(b)
@@ -128,8 +128,8 @@
       print(type(y))
       
       c = x+y                   
-      # print(type(c))          # Output value  sun c is 30
-      print("sum c is", c)      # Output value <class 'int'>
+      # print(type(c))          # Output   sun c is 30
+      print("sum c is", c)      # Output  <class 'int'>
 
 ```   
 
@@ -158,66 +158,68 @@ _A More Concise Way_
       a = 10
       b = 20
       c = a > b
-      print(c)         # Output value False
-      print(type(c))   # Output value <class 'bool'>
+      print(c)         # Output  False
+      print(type(c))   # Output  <class 'bool'>
 
 ```
 
 
 ----------------------------------------------------------------------------------------------
-### 🔹 3. String (immutable)
+### ✨ 3. String (immutable)
 ----------------------------------------------------------------------------------------------
 
-* In Python, strings are an essential part of the language used to represent textual data. 
-* _String Definition_: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
-   * Example: ('hello'), ("python"), ("""world""")
-* _String Methods_: Python provides a variety of built-in methods to perform operations on strings. Some of these include methods like replace(), split(), lower(), upper(), and many more.
-* _String Immutability_: Strings in Python are immutable, meaning once a string is created, it cannot be modified. Operations like replace() or string concatenation will create new strings rather than modifying the original string.
+* In Python, strings are an essential data type used to represent textual data.
+* Definition: A string is a sequence of characters enclosed in single quotes (' '), double quotes (" "), or triple quotes (''' ''' / """ """).
+ - Example: 'hello', "python", """world"""
+* String Methods: Python provides many built-in methods to manipulate strings.
+ - Examples: .replace(), .split(), .lower(), .upper(), .strip(), etc.
+* String Immutability: Strings are immutable, meaning once created, they cannot be modified.
+ - Operations like concatenation or .replace() return a new string instead of changing the original one.
+
 
 ```  
-   
 * with '' 
 
     
-      s = 'hello ashoka's'
-      print(s)           # Output: hello ashoka
-      print(type(s))     # Output: <class 'str'>
+      s = 'hello ashoka''s'
+      print(s)                 # Output: hello ashoka
+      print(type(s))           # Output <class 'str'>
 
       s = 'hello ashoka\'s'
-      print(s)           # add \ for print
-      print(type(s))     # Output: <class 'str'>
+      print(s)                 # Output: hello ashoka's
+      print(type(s))           # Output: <class 'str'>
 ```
 
 * with ""
 
 ```
       s = "hello ashoka" 
-      print(s)           # Output: hello ashoka
-      print(type(s))     # Output: <class 'str'>
+      print(s)                 # Output: hello ashoka
+      print(type(s))           # Output: <class 'str'>
 ```
 
 ```
       s = "Hello"
-      print(s[0])   # Output: H (first character)
-      print(s[-1])  # Output: o (last character)
-      print(s[0:5])   # Output: Hello (from index 0 to 4)
+      print(s[0])             # Output: H (first character)
+      print(s[-1])            # Output: o (last character)
+      print(s[0:5])           # Output: Hello (from index 0 to 4)
 ```
 
 ```
       s = "Hello"
       repeated = s * 3
-      print(repeated)  # Output: HelloHelloHello
+      print(repeated)        # Output: HelloHelloHello
 
 ```
 
 ```
       s = "  Hello, World!  "
-      print(s.upper())   # Output: HELLO, WORLD!
-      print(s.lower())   # Output: hello, world!
-      print(s.strip())   # Output: Hello, World! used to remove any leading and trailing whitespace characters from a string
-      print(s.replace("World", "Python"))  # Output:   Hello, Python!  
-      print(s.split())   # Output: ['Hello,', 'World!']
-      print(s.find("World"))  # Output: 8 (index of the first occurrence of "World")
+      print(s.upper())           # Output: HELLO, WORLD!
+      print(s.lower())           # Output: hello, world!
+      print(s.strip())           # Output: Hello, World! used to remove any leading and trailing whitespace characters from a string
+      print(s.replace("World", "Python"))            # Output:   Hello, Python!  
+      print(s.split())                               # Output: ['Hello,', 'World!']
+      print(s.find("World"))                         # Output: 8 (index of the first occurrence of "World")
 
 ```
 
