@@ -40,24 +40,25 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **4.** Python is completely free and open-source
 
 **5.** Python is an interpreted language 
- _a)_ **Interpreter-based languages** (e.g., Python): 
+
+   _a)_ **Interpreter-based languages** (e.g., Python): 
    * The code is executed line by line, with each line being translated into machine code and executed on the fly.
    * In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
- _b)_ **Compiler-based languages(e.g., C, C++, Java):** 
+   _b)_ **Compiler-based languages(e.g., C, C++, Java):** 
    * &nbsp; The source code is compiled into machine code (binary) before execution.
    * &nbsp; In this language, compilation errors prevent the code from compiling.
 
 **6.** Python is a dynamically typed language, not a statically typed language
 
- _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
+   _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
 
 ```
       int a = 100
       The data type (int) must be declared explicitly
 ```
 
- _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
+   _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
 * dynamically: no need to spcify any data type at the time of decleration 
 
 * **Ex:** variable name = value 
@@ -212,24 +213,38 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * &nbsp;Single line print
 
 ```
-      a =b =c =10
-      print(a,b,c, sep=",") # sep = separate with ,
-      print(a,b,c, sep=",", end=".")
-      print(type(a))
-      10,10,10. <class 'int'> # O
+      a =b =c =10                       # multiple variables assigned the same value
+      print(a,b,c, sep=",")             # sep -> separates output with commas
+      print(a,b,c, sep=",", end=".")    # end -> ends output with a period instead of newline
+      print(type(a))                    # prints the type of variable 'a'
+
+      
+      # 10,10,10. <class 'int'>         # Output value 
 ```
 
 * &nbsp; the process of assigning multiple values ot multiple variables
 
 ```
-      a,b,c = 10,20,30
-      print(a)
-      print(b)
-      print(c)
+      a,b,c = 10,20,30     # assigning multiple values to multiple variables
+      print(a)             # prints value of a
+      print(b)             # prints value of b
+      print(c)             # prints value of c
+
       print(a,b,c)
+      # 10 20 30           # Output value  
+
       print(a, end=",")
+      # 10,                # Output value 
+
       print(b, end=",")
+      # 20,                # Output value 
+
       print(c)
+      # 30,                # Output value 
+
+      # Each variable (a, b, c) is printed one after the other on the same line.
+      # 10,20,30,          # Output value 
+
 ```
 
 **e. Python Indentation**
@@ -264,7 +279,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
       else:
           print("false") # *indent by four spaces = 1 level*
+
 ```
+
+
+
+
+
 #----------------------------------------------------------------------------------------------
 # End next is 2_Datatypes.MD
 #-----------------------------------------------------------------------------------------------
