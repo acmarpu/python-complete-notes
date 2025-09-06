@@ -15,18 +15,6 @@
 
 * **_Basic Data Types_**
 
-
-| **Data Types**  |    **Type**      | **Example**                   | **Definition**
-| -------------   | -------------    |-------------                  |------------- 
-| **None**        | (None Type)      | a = 'none'                    |nothing is there in the variable
-| **Numeric**     | int(Integers)    | int   a = 10                  |holds numeric values (0,100)
-|				      |                  | float a = 10.0                |have a decimal point or a fractional part
-|                 |                  | bool  x = True                |This represents a truthy value [true and false]
-|                 |                  | Complex Numbers  a = 2 + 3j   |real part and an imaginary part
-
-
-* **_Basic Data Types_**
-
 | **Data Type**   | **Category**   | **Example**          | **Definition** |
 |-----------------|----------------|----------------------|----------------|
 | **None**        | NoneType       | `a = None`           | Represents the absence of a value or null. |
@@ -36,22 +24,20 @@
 |                 | complex        | `a = 2 + 3j`         | Numbers with real and imaginary parts. |
 
 
+* **_Sequence & Collection Types_**
+* Meaning: you can access elements using indexing, slicing, or keys.
 
-* **_Sequence Types_**
-*  meaning you can access individual characters using indexing and slice them into substrings
-
-|**Data Types**      |    **Type**        | **Example**                                | **Definition**
-| -------------      | -------------      |-------------                               |------------- 
-| **(string)**       |(Text Type)         | a = 'x' or "x" or """x"""                  |holds textual data 
-| **[list]**         |[Sequence Types]    | a = [1, 2.5, "Hello", [1, 2, 3], True]     |allows you to store multiple items in a single variable
-| **(tuple)** 	      |(Sequence Types)    | a = (1, 2.5, "Hello")                      |used to store multiple values in a single variable
-| **(range)**        |(Sequence Types)    | for i in range(5):                         |function is used to generate a sequence of numbers, often utilized in loops
-|                    |                    |  print (i)                                 |
-|**{set}**           |{Set Types}         | a = {1, 2, 3, 4, 5}                        |represents an unordered collection of unique elements. duplicate values removed when creating a set
-| **dist**           |{Mapping Type}      | a = {"key1": "value1", "key2": "value2"}   |holds data in key-value pair 
-| bytes              |(Binary Types)      | byte_data = b'Hello'                       |represent immutable sequences of byte values
-| **bytearray**      |(Binary Types)      | bytearray(b'Hello')                        |Mutable sequence of bytes
-|**forzenset**       |(Set Types)         | frozenset([1, 2, 3])                       |Similar to a set,immutable 
+| **Data Type** | **Category**      | **Example**                           | **Definition** |
+|---------------|------------------|---------------------------------------|----------------|
+| **str**       | Text Type         | `a = 'x'` or `"x"` or `"""Hello"""`   | Holds textual data (sequence of characters). |
+| **list**      | Sequence Type     | `a = [1, 2.5, "Hello", [1, 2, 3], True]` | Stores multiple items, **mutable** (can be changed). |
+| **tuple**     | Sequence Type     | `a = (1, 2.5, "Hello")`               | Stores multiple items, **immutable** (cannot be changed). |
+| **range**     | Sequence Type     | `for i in range(5): print(i)`         | Generates a sequence of numbers, often used in loops. |
+| **set**       | Set Type          | `a = {1, 2, 3, 4, 5}`                 | Unordered collection of unique items (duplicates removed). |
+| **frozenset** | Set Type          | `fs = frozenset([1, 2, 3])`           | Same as set, but **immutable**. |
+| **dict**      | Mapping Type      | `a = {"key1": "value1", "key2": "value2"}` | Stores data in **key-value pairs**. |
+| **bytes**     | Binary Type       | `b = b'Hello'`                        | Immutable sequence of bytes. |
+| **bytearray** | Binary Type       | `ba = bytearray(b'Hello')`            | Mutable sequence of bytes. |
 
 
 ==========================================================================================
