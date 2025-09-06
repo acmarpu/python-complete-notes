@@ -4,13 +4,14 @@
 ----------------------------------------------------------------------------------------------
 
 * Python Data Types are used to define the type of a variable.
-* Data types define the type of value a variable holds, and they also determine what operations can be performed on that value.
-* In Python, data types are used to represent different types of values (e.g., numbers, strings, etc.) that are stored in variables.
-* Python Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. 
+* They represent the kind of value a variable holds (e.g., numbers, strings, etc.), and they determine what operations can be performed on that value.
+* Python data types are the classification of data items. They represent the kind of value stored in a variable and determine the operations that can be performed on that value.
 
-**Mutable:** Data types whose values can be changed after they are created.
+#### 🔹 Mutable vs Immutable Types
 
-**Immutable:** Data types whose values cannot be changed after they are created.
+- **Mutable:** Data types whose values **can be changed** after creation.  
+- **Immutable:** Data types whose values **cannot be changed** after creation.  
+
 
 * **_Basic Data Types_**
 
@@ -23,6 +24,16 @@
 |                 |                  | bool  x = True                |This represents a truthy value [true and false]
 |                 |                  | Complex Numbers  a = 2 + 3j   |real part and an imaginary part
 
+
+* **_Basic Data Types_**
+
+| **Data Type**   | **Category**   | **Example**          | **Definition** |
+|-----------------|----------------|----------------------|----------------|
+| **None**        | NoneType       | `a = None`           | Represents the absence of a value or null. |
+| **Numeric**     | int (Integer)  | `a = 10`             | Holds whole numbers (e.g., 0, 100, -5). |
+|                 | float (Float)  | `a = 10.5`           | Numbers with decimal or fractional part. |
+|                 | bool (Boolean) | `x = True`           | Represents truth values: `True` or `False`. |
+|                 | complex        | `a = 2 + 3j`         | Numbers with real and imaginary parts. |
 
 
 
