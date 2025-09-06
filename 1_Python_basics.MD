@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------
-👉 Python Basics
+📌 # 📌 Python Basics
 ----------------------------------------------------------------------------------------------
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
