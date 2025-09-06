@@ -29,7 +29,7 @@
 
 | **Data Type** | **Category**      | **Example**                           | **Definition** |
 |---------------|------------------|---------------------------------------|----------------|
-| **str**       | Text Type         | `a = 'x'` or `"x"` or `"""Hello"""`   | Holds textual data (sequence of characters). |
+| **str**       | Text Type         | `a = 'x'` or `"x"` or `"""Hello"""`   | Holds textual data (sequence of characters). **mutable** (can be changed). |
 | **list**      | Sequence Type     | `a = [1, 2.5, "Hello", [1, 2, 3], True]` | Stores multiple items, **mutable** (can be changed). |
 | **tuple**     | Sequence Type     | `a = (1, 2.5, "Hello")`               | Stores multiple items, **immutable** (cannot be changed). |
 | **range**     | Sequence Type     | `for i in range(5): print(i)`         | Generates a sequence of numbers, often used in loops. |
@@ -40,9 +40,9 @@
 | **bytearray** | Binary Type       | `ba = bytearray(b'Hello')`            | Mutable sequence of bytes. |
 
 
-==========================================================================================
-### 1. none
-===========================================================================================
+----------------------------------------------------------------------------------------------
+### 🔹 1. none
+----------------------------------------------------------------------------------------------
 
 * nothing is there in the variable
 
@@ -51,11 +51,14 @@
       print('none')
       print(a)
       print(type(a))
+
+      # none          # Output value
+      # <class 'str'> # Output value
 ```
 
-==========================================================================================
-### 2. Numeric type
-===========================================================================================
+----------------------------------------------------------------------------------------------
+### 🔹 2. Numeric type
+----------------------------------------------------------------------------------------------
 
 * In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
 
@@ -63,54 +66,70 @@
       a = 10
       print(a)
       print(type(a))
+ 
+      # 10             # Output value
+      # <class 'int'>  # Output value
 
 ```
 
 ```
-      a = 3.14
+      a = 1.4
       print(a)
       print(type(a))
+
+      # 10               # Output value
+      # <class 'float'>  # Output value
 ```     
 
-* int to flot convert
+* **Converts the integer 10 into a floating-point number → 10.0.**
 
 ```      
       a = 10
       print(a)
       print(type(a))
 
+      # 10                  # Output value
+      # <class 'int'>       # Output value
+
+      
 
       b = float(a)
       print(b)
       print(type(b))
+
+      # 10.0                 # Output value
+      # <class 'int'>        # Output value
+
 ```
 
 **Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
 
 
-```
+``` 
       a = input("enter num1:")
-      print(type(a))
-      x = int(a)
-      print(type(x))
+      print(type(a))             # Output value  <class 'str'>
+      x = int(a)                 # here we converting str to int
+      print(type(x))             # Output value  <class 'int'>
+
 ```
 
 ```
       a = input("enter number1:")
       print(a)
       print(type(a))
-      x = int(a)  #_here we converting str to int_
+      x = int(a)                 # _here we converting str to int_
       print(x)
-      print(type(x))
+      print(type(x))             # Output value  <class 'int'>
 
       b = input("enter number2:")
       print(b)
       print(type(b))
-      y = int(b)  #_here we converting str to int_
+      y = int(b)                #_here we converting str to int_
       print(type(y))
       
-      c = x+y
-      print("sum c is", c)
+      c = x+y                   
+      # print(type(c))          # Output value  sun c is 30
+      print("sum c is", c)      # Output value <class 'int'>
 
 ```   
 
@@ -118,7 +137,7 @@ _A More Concise Way_
 
 
 ```
-      a = int(input("Enter num1:"))
+      a = int(input("Enter num1:"))  
       b = int(input("enter num2:"))
       c = a + b
       print("sum is:", c)
@@ -139,15 +158,15 @@ _A More Concise Way_
       a = 10
       b = 20
       c = a > b
-      print(c)
-      print(type(c))
+      print(c)         # Output value False
+      print(type(c))   # Output value <class 'bool'>
 
 ```
 
 
-==========================================================================================
-### 3. String (immutable)
-===========================================================================================
+----------------------------------------------------------------------------------------------
+### 🔹 3. String (immutable)
+----------------------------------------------------------------------------------------------
 
 * In Python, strings are an essential part of the language used to represent textual data. 
 * _String Definition_: A string is a sequence of characters enclosed in either single quotes (' ') or double quotes (" ").
