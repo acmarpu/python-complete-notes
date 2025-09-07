@@ -70,9 +70,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ```
 
-==========================================================================================
-### 1. Features of Python:
-==========================================================================================
+----------------------------------------------------------------------------------------------
+### 🧩 1. Features of Python:
+----------------------------------------------------------------------------------------------
 
 **Expressive Language:** Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
 
@@ -91,9 +91,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **Extensible:** Python allows developers to integrate other languages like C/C++ for performance-critical parts, and it supports the use of external libraries and modules.
 
 
-==========================================================================================
-### 2. Application Areas of Python:
-==========================================================================================
+----------------------------------------------------------------------------------------------
+### ⚡ 2. Application Areas of Python:
+----------------------------------------------------------------------------------------------
 
 **Standalone or Desktop Applications**
 * CUI (Command User Interface) run directly on a user's computer
@@ -130,9 +130,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * The default extension for Python files is .py (e.g., test.py).
 
 
-==========================================================================================
-### 3. Different Ways to Write and Execute Python Code:
-==========================================================================================
+----------------------------------------------------------------------------------------------
+### 💻 3. Different Ways to Write and Execute Python Code:
+----------------------------------------------------------------------------------------------
 
 **Interactive Mode**
 * You can run Python code interactively in the Python shell (REPL(Read-Eval-Print Loop)).
@@ -149,9 +149,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * download PyCharm Community Edition : https://www.jetbrains.com/pycharm/download/?section=windows
 
 
-==========================================================================================
-### 4. Python Fundamentals
-==========================================================================================
+----------------------------------------------------------------------------------------------
+### 📜 4. Python Fundamentals
+----------------------------------------------------------------------------------------------
 
 **a. Comments** 
 * &nbsp;Python are identified with a hash symbol(#), and extend to the end of the line# 
