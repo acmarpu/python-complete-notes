@@ -289,5 +289,5 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ----------------------------------------------------------------------------------------------
 ✅ End of Python Basics
 
-👉 Next Topic: [2_datatypes.md](./2_datatypes.md)
+👉 Next Topic: 
 ----------------------------------------------------------------------------------------------
