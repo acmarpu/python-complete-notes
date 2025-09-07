@@ -246,7 +246,7 @@
 
 ```      
       s.replace("hello", "hai")
-      print(s)           # Output: hello ashoka (s is unchanged)
+      print(s)                                    # Output: hello ashoka (s is unchanged)
 ```
 
 
@@ -264,7 +264,7 @@
 
 ```      
       s1 = s.replace("hello", "hai")
-      print(s1)          # Output: hai ashoka
+      print(s1)                                  # Output: hai ashoka
 
 ```
 
@@ -273,7 +273,7 @@
 
 ```
       print(dir(str))
-      __add_  #also called descriptors
+      __add_                                     #also called descriptors
 ```
 
 
@@ -326,7 +326,7 @@
 
 ```
 
-**Key Methods for Working with Lists:**
+📌 **Key Methods for Working with Lists:**
 
 * **append(value)** — Adds an element to the end of the list.
 ```
@@ -393,7 +393,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-### 🟢 5. Tuple(immutable)
+### 🟢 5. Tuple (immutable)
 ----------------------------------------------------------------------------------------------
 
 * A **tuple** is a built-in data structure in Python, very similar to a list. However, unlike lists, **tuples are immutable** — their elements cannot be changed after creation.
@@ -434,15 +434,16 @@
 ```
       nested_tuple = (1, 2, (3, 4), 5)
       print(nested_tuple[2])
-      
+
 ```
 
 
-==========================================================================================
-### 6 . Set {}
-===========================================================================================
+----------------------------------------------------------------------------------------------
+### 📝 6 . Set {Mutable}
+----------------------------------------------------------------------------------------------
 
-* A set is an "unordered" collection of unique elements. This means that duplicate values are automatically removed when creating a set.
+* * A **set** is an **unordered** collection of **unique elements**. 
+* Duplicate values are automatically removed when creating a set.
 
 *Key Points:*
    * *Unordered:* The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
@@ -455,69 +456,84 @@
 * To create an empty set, you need to use the set() function because {} creates an empty dictionary, not a set.
    
 
-```      
+```   
+      # Example: Empty set  
+
       s = set()
-      print(s)          # Output: set()
-      print(type(s))    # Output: <class 'set'>
+      print(s)                        # Output: set()
+      print(type(s))                  # Output: <class 'set'>
 
 ```   
 
 ```
       s = {10, 20, 30, 40, 50, 60}
-      print(s)  # Output: {50, 20, 40, 10, 60, 30}
-      print(type(s))  # Output: <class 'set'>
+      print(s)                       # Output: {50, 20, 40, 10, 60, 30}
+      print(type(s))                 # Output: <class 'set'>
+
 ```
 
 ```
       s = {10, 10, 20, 30, 40, 50, 60, 60}
-      print(s)  # Output: {50, 20, 40, 10, 60, 30}
-      print(type(s))  # Output: <class 'set'>
+      print(s)                       # Output: {50, 20, 40, 10, 60, 30} # Sets remove duplicates automatically
+      print(type(s))                 # Output: <class 'set'>
 
 ```
 
-* *Adding elements to a set:*
+* Adding elements to a set:
+
 ```   
       s = {10, 20, 30, 40, 50, 60}   
-      s.add(70)  # Adds 70 to the set
-      print(s)  # Output: {50, 20, 70, 40, 10, 60, 30}
+      s.add(70)                      # Adds 70 to the set
+      print(s)                       # Output: {50, 20, 70, 40, 10, 60, 30}
 
 
 ```
-* *Removing elements from a set:*
+* Removing elements from a set:
 
 ```      
       s = {10, 20, 30, 40, 50, 60}
-      s.remove(20)  # Removes 20 from the set
-      print(s)  # Output: {10, 30, 40, 50, 60, 70}
+      s.remove(20)                   # Removes 20 from the set
+      print(s)                       # Output: {10, 30, 40, 50, 60, 70}
+
 ```
 
-* *Set operations like union, intersection, and difference are also commonly used:*
-      
+* **Set operations** like **union**, **intersection**, and **difference** are commonly used.  
+**Union:** Returns a new set with **all unique elements** from both sets.    
+
 ```
-The union of two sets returns a new set that contains all unique elements from both sets
+
       s = {10, 20, 30, 40, 50}
       s1 = {50, 60, 70, 80}
-      print(s.union(s1))  # Union: {10, 20, 30, 40, 50, 60, 70, 80}
-```
+      print(s.union(s1))              # Union: {10, 20, 30, 40, 50, 60, 70, 80}
 
 ```
-intersection of two sets returns a new set that contains only the elements that are common to both sets.
+
+* intersection of two sets returns a new set that contains only the elements that are common to both sets.
+
+```
+
       s = {10, 20, 30, 40, 50}
       s1 = {50, 60, 70, 80}
       print(s.intersection(s1))  # Intersection: {50}
 
 ```
 
+* Difference: Returns a new set with elements in the first set but not in the second.
+
+```
+      print(s.difference(s1))   # Output: {10, 20, 30, 40}
+
+```
 
 
+----------------------------------------------------------------------------------------------
+### 📝 7. Dictionary {Mutable}
+----------------------------------------------------------------------------------------------
+* A **dictionary** is an **unordered collection of key-value pairs**.  
+* It stores elements in **pairs**, where each key is associated with a value. - Each key-value pair is called an **item**: `{key: value}` 
 
-==========================================================================================
-### 7. Dictionary dict {}
-===========================================================================================
-* A dictionary is an unordered collection of key-value pairs. It stores elements in pairs, where each key is associated with a value.
-* data in dictionary stores in key, value pair {key, value} --> item
+📌 **Key Points:**
 
-**Key Points:**
    * **Ordered Collection:** As of Python 3.7+, dictionaries maintain the order of insertion, meaning the order in which you add key-value pairs is preserved.
    * **Keys are Immutable:** The keys must be of immutable types (e.g., strings, numbers, tuples). You cannot use mutable types (like lists) as keys.
    * **Unique Keys:** Dictionary keys must be unique. If you try to insert a duplicate key, it will update the existing key with the new value.
@@ -534,56 +550,62 @@ intersection of two sets returns a new set that contains only the elements that 
       or
 
       d = {}
-      print(d)       # Output: {}
-      print(type(d)) # Output: <class 'dict'>
+      print(d)                                           # Output: {}
+      print(type(d))                                     # Output: <class 'dict'>
       
 ```
 
 ```
-      capital_city = {'TS':'Hyd', 'AP':'AMV','TN':'CH'}
-      print(capital_city)        # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
-      print(capital_city['TS'])  # Output: Hyd
-      print(capital_city['AP'])  # Output: AMV
+      capital_city = {'TS':'Hyd', 'KA':'BANG','TN':'CH'}
+      print(capital_city)                                 # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
+      print(capital_city['TS'])                           # Output: Hyd
+      print(capital_city['AP'])                           # Output: AMV
 
 ```   
   
+* Duplicate Keys:
 
 ```
-   *Duplicate Keys:*
+   
 
-      capital_city = {'TS':'Hyd', 'TS':'AMV','TN':'CH'}
-      print(capital_city)    # Output: {'TS': 'AMV', 'TN': 'CH'}
+      capital_city = {'TS':'Hyd', 'TS':'BANG','TN':'CH'}
+      print(capital_city)                                # Output: {'TS': 'BANG', 'TN': 'CH'}
 
 ```
 
-  
+* Modifying Dictionary Values:
 ```
-   *Modifying Dictionary Values:*
+
 
       capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
-      print(capital_city)     # Output: {'TS': 'Hyd', 'TG': 'HYD', 'TN': 'CH'}
+      capital_city['TS'] = 'Hyderabad'
+      print(capital_city)                               # Output: {'TS': 'Hyderabad', 'TG': 'HYD', 'TN': 'CH'}
 
 ```
 
 ```
    *Changing values in a dictionary*
 
-      d = {1:'sai',2:'att'}
-      print(d)         # Output: {1: 'sai', 2: 'att'}
-      print(type(d))   # Output: <class 'dict'>
-      d[2] = 'ramesh'  # Changing the value for key 2 
-      print(d)         # Output: {1: 'sai', 2: 'ramesh'}
+      d = {1:'sai',2:'ashoka'}
+      print(d)                                         # Output: {1: 'sai', 2: 'ashoka'}
+      print(type(d))                                   # Output: <class 'dict'>
+      d[2] = 'ramesh'                                  # Changing the value for key 2 
+      print(d)                                         # Output: {1: 'sai', 2: 'ramesh'}
 
 ```
+* Adding key-value pairs to a Dictionary at Runtime
+* Get user input for key-value pairs*
 
 ``` 
-  *Adding key-value pairs at runtime:*
-  *Get user input for key-value pairs*
-
+      # Create an empty dictionary
       person = {}
+
+      # Take input from user
       name = input("Enter person's name:")
       age = int(input("Enter person's age:"))
       city = input("Enter person's city:")
+
+
 
   *Add key-value pairs to the dictionary*
       
@@ -591,10 +613,29 @@ intersection of two sets returns a new set that contains only the elements that 
       person['age'] = age
       person['city'] = city
 
-      print("Dictionary after adding runtime values:", person)
-      print(type(person))   # Output: <class 'dict'>
+      print("Dictionary after adding runtime values:", person)  # Output:  {'name': 'ashoka', 'age': '35', 'city': 'hyd'}
+      print(type(person))                                       # Output:  <class 'dict'>
+
 ```
 
+```
+     # Start with an empty dictionary
+     student_scores = {}
+
+
+     # Adding scores for students
+     student_scores['ashoka'] = 85
+     student_scores['sunil'] = 92
+     student_scores['bhaskar'] = 78
+
+     print("Student Scores Dictionary:", student_scores)
+     print(type(student_scores))                             # Output: <class 'dict'>
+
+
+     student_scores['Alice'] = 90  # Update Alice's score
+     print(student_scores)                                    # Output: {'ashoka': 90, 'sunil': 92, 'bhaskar': 78}
+     
+``` 
 
 ===========================================================================================
 **8. range()**
