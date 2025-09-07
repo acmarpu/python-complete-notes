@@ -1,3 +1,13 @@
+
+
+# 🐍 Python Learning Notes
+
+Welcome to my **Python Learning Notes** repository!  
+This repo contains structured notes I’ve created while learning Python, written in **Markdown (.md)** format for easy reading and sharing.
+
+“These notes are created for personal learning and reference. Content is a mix of my own study, practice, and AI-assisted explanations.”
+
+
 python-notes/
 ├── README.md         # Overview of the repo
 ├── basics/

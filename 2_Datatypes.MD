@@ -52,12 +52,12 @@
       print(a)
       print(type(a))
 
-      # none          # Output 
-      # <class 'str'> # Output 
+      # none                 # Output 
+      # <class 'str'>        # Output 
 ```
 
 ----------------------------------------------------------------------------------------------
-### 🔸 2. Numeric type
+### 🔸 2. Numeric type   immutable.
 ----------------------------------------------------------------------------------------------
 
 * In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
@@ -66,9 +66,9 @@
       a = 10
       print(a)
       print(type(a))
- 
-      # 10             # Output 
-      # <class 'int'>  # Output 
+  
+      # 10                    # Output 
+      # <class 'int'>         # Output 
 
 ```
 
@@ -77,8 +77,8 @@
       print(a)
       print(type(a))
 
-      # 10               # Output 
-      # <class 'float'>  # Output 
+      # 10                     # Output 
+      # <class 'float'>        # Output 
 ```     
 
 * **Converts the integer 10 into a floating-point number → 10.0.**
@@ -88,8 +88,8 @@
       print(a)
       print(type(a))
 
-      # 10                  # Output 
-      # <class 'int'>       # Output 
+      # 10                      # Output 
+      # <class 'int'>           # Output 
 
       
 
@@ -97,8 +97,8 @@
       print(b)
       print(type(b))
 
-      # 10.0                 # Output 
-      # <class 'int'>        # Output 
+      # 10.0                     # Output 
+      # <class 'int'>            # Output 
 
 ```
 
@@ -113,18 +113,22 @@
 
 ```
 
-```
+```   
+      # Taking inputs separately and then converting to int
+
       a = input("enter number1:")
       print(a)
       print(type(a))
-      x = int(a)                 # _here we converting str to int_
+
+      x = int(a)                 # converting str to int
       print(x)
       print(type(x))             # Output   <class 'int'>
 
       b = input("enter number2:")
       print(b)
       print(type(b))
-      y = int(b)                #_here we converting str to int_
+
+      y = int(b)                # converting str to int
       print(type(y))
       
       c = x+y                   
@@ -133,39 +137,43 @@
 
 ```   
 
-_A More Concise Way_
+**Simplified Approach**
 
 
 ```
-      a = int(input("Enter num1:"))  
+      a = int(input("enter num1:"))  
       b = int(input("enter num2:"))
       c = a + b
-      print("sum is:", c)
+      print("sum is:", c)        # Output: sum is 30
 
 ```
 
-```
+```   
+      # Taking float inputs directly and adding them
+
       a = float(input("Enter num1:"))
       b = float(input("enter num2:")) 
       c = a + b
-      print("sum is:", c)
+      print("sum is:", c)        # Example Output: sum is 45.7
 
 ```
 
-* bool = true or false
 
-```      
+
+```   
+      # bool = true or false
+
       a = 10
       b = 20
       c = a > b
-      print(c)         # Output  False
-      print(type(c))   # Output  <class 'bool'>
+      print(c)                  # Output  False
+      print(type(c))            # Output  <class 'bool'>
 
 ```
 
 
 ----------------------------------------------------------------------------------------------
-### ✨ 3. String (immutable)
+### ✨ 3. String ("immutable","python")
 ----------------------------------------------------------------------------------------------
 
 * In Python, strings are an essential data type used to represent textual data.
@@ -178,7 +186,7 @@ _A More Concise Way_
 
 
 ```  
-* with '' 
+* With single quotes (' ') → may need escape \'.
 
     
       s = 'hello ashoka''s'
@@ -188,37 +196,48 @@ _A More Concise Way_
       s = 'hello ashoka\'s'
       print(s)                 # Output: hello ashoka's
       print(type(s))           # Output: <class 'str'>
+
 ```
 
-* with ""
+* With double quotes (" ")
 
 ```
       s = "hello ashoka" 
       print(s)                 # Output: hello ashoka
       print(type(s))           # Output: <class 'str'>
+
 ```
 
 ```
       s = "Hello"
-      print(s[0])             # Output: H (first character)
-      print(s[-1])            # Output: o (last character)
-      print(s[0:5])           # Output: Hello (from index 0 to 4)
+      print(s[0])              # Output: H (first character)
+      print(s[-1])             # Output: o  (last character, negative index)
+      print(s[0:5])            # Output: Hello (substring from index 0 to 4)
+
 ```
 
 ```
+      # In Python, you can repeat strings using the multiplication (*) operator.
+
       s = "Hello"
       repeated = s * 3
-      print(repeated)        # Output: HelloHelloHello
+      print(repeated)           # Output: HelloHelloHello
 
 ```
 
 ```
-      s = "  Hello, World!  "
-      print(s.upper())           # Output: HELLO, WORLD!
-      print(s.lower())           # Output: hello, world!
+      s = "  Hello, World  "
+      print(s.upper())           # Output: HELLO, WORLD
+      t = s[7:]. upper()         # Output: WORLD
+
+      print(s.lower())           # Output: hello, world
+      
       print(s.strip())           # Output: Hello, World! used to remove any leading and trailing whitespace characters from a string
-      print(s.replace("World", "Python"))            # Output:   Hello, Python!  
+
+      print(s.replace("World", "Python"))            # Output:   Hello, Python!
+
       print(s.split())                               # Output: ['Hello,', 'World!']
+
       print(s.find("World"))                         # Output: 8 (index of the first occurrence of "World")
 
 ```
@@ -230,52 +249,63 @@ _A More Concise Way_
       print(s)           # Output: hello ashoka (s is unchanged)
 ```
 
+
 *The replace method returns a new string, we can assign the result to a variable*
 *we can not reuse "s" value*
+
+
 ```
 
       print(s.replace("hello","hai")) 
 
 ```
+
 *We can assign the modified string to a new variable*
+
 ```      
       s1 = s.replace("hello", "hai")
       print(s1)          # Output: hai ashoka
+
 ```
+
 **To get a list of all available functions for string operations, you can use the dir() function:**
 * This will return a list of all the methods and attributes associated with the string class.
+
 ```
       print(dir(str))
       __add_  #also called descriptors
 ```
-      
+
+
 ```    
        * description    
       help(str)
+
 ```
 
 
-==========================================================================================
-### 4. List [mutable]
-===========================================================================================
+----------------------------------------------------------------------------------------------
+### 🟠 4. List ["mutable",10,20,30,3.4,"python",True]
+----------------------------------------------------------------------------------------------
 
-* A list in Python is an **ordered** collection that can hold a variety of different data types, including integers, floats, strings, and even other lists. 
-* Lists are enclosed in square brackets [] and elements are separated by commas.
+* A **list** in Python is an **ordered, mutable collection** that can hold different data types:integers, floats, strings, and even other lists.  
+* Lists are enclosed in **square brackets [ ]** and elements are separated by commas.
+* Since lists are **mutable**, their elements can be changed after creation.
 
 
-* Key Features of Python Lists:*
-   * **Ordered:** The items in a list have a specific order, and that order is preserved.
-   * **Mutable:** Lists can be modified after creation. You can change, add, or remove elements.
-   * **Heterogeneous:** Lists can store elements of different data types (e.g., integers, strings, booleans, etc.).
-   * **Allow duplicates:** Lists allow duplicate elements, meaning the same value can appear multiple times in a list.
-   
+📌 **Key Features of Python Lists:**
+  - **Ordered:** Items in a list have a defined order, and that order will not change unless modified.  
+  - **Mutable:** Lists can be changed after creation — you can add, update, or remove elements.  
+  - **Heterogeneous:** A single list can store elements of different data types (e.g., integers, strings, booleans, even other lists).  
+  - **Duplicates Allowed:** Lists can contain duplicate values; the same element can appear multiple times.  
+
+
 * Creating a list with various types of elements*
 
 ```      
       l = [10,20,30,3.4,"python",True]
-   *Printing the list and its type*
-      print(l)            # Output: [10, 20, 30, 3.4, 'att', True]
-      print(type(l))      # Output: <class 'list'>
+      print(l)                           # Output: [10,20,30,3.4,"python",True]
+      print(type(l))                     # Output: <class 'list'>
 
 ```
 
@@ -283,75 +313,92 @@ _A More Concise Way_
 
 ```      
       l = [10,20,30,3.4,"ashoka",True]
-      l.append(33)        # Adds 33 to the end of the list
-      print(l)            # Output: [10, 20, 30, 3.4, 'att', True, 33]
+      l.append(33)                       # Adds 33 to the end of the list
+      print(l)                           # Output: [10,20,30,3.4,"ashoka",True,33]
+
 ```
 
 ```
       *Modifying an element at a specific index*
 
-      l[1] = 33           # Changes the element at index 1 (value 20) to 33
-      print(l)            # Output: [10, 33, 30, 3.4, 'att', True, 33]
+      l[1] = 33                          # Changes the element at index 1 (20 → 33)
+      print(l)                           # Output: [10, 33, 30, 3.4, "ashoka",True,33]
+
 ```
 
 **Key Methods for Working with Lists:**
+
 * **append(value)** — Adds an element to the end of the list.
 ```
       l = [10,20,30,3.4,"ashoka",True]
-      l.append(33)        # Adds 33 to the end of the list
+      l.append(33)                       # Adds 33 to the end of the list
+      
 ```
+
 * **insert(index, value)** — Inserts an element at a specific index in the list.
-```
-      my_list = [10, 20, 30]
-      my_list.insert(1, 15)  # Inserts 15 at index 1
-      print(my_list)  # Output: [10, 15, 20, 30]
-```
-* **remove(value)** — Removes the first occurrence of the specified value.
-```
-      my_list = [10, 20, 30, 40, 20]
-      my_list.remove(20)  # Removes the first occurrence of 20
-      print(my_list)  # Output: [10, 30, 40, 20]
-```
-* **pop(index)** — Removes the element at the specified index and returns it.
-```
-      my_list = [10, 20, 30, 40, 50]
-      popped_item = my_list.pop(2)  # Removes the element at index 2 (30)
-      print(my_list)  # Output: [10, 20, 40, 50]
-      print("Popped Item:", popped_item)  # Output: Popped Item: 30
 
 ```
-* **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
+      my_list = [10, 20, 30]
+      my_list.insert(1, 15)              # Inserts 15 at index 1
+      print(my_list)                     # Output: [10, 15, 20, 30]
+
 ```
-   # Original list
-      my_list = [1, 2, 3]
-   # Another list to extend my_list with
-      other_list = [4, 5, 6]
-   # Using extend() to add elements of other_list to my_list
-      my_list.extend(other_list)
-      print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+
+* **remove(value)** — Removes the first occurrence of the specified value.
+
+```
+      my_list = [10, 20, 30, 40, 20]
+      my_list.remove(20)                 # Removes the first occurrence of 20
+      print(my_list)                     # Output: [10, 30, 40, 20]
+      
+```
+
+* **pop(index)** — Removes the element at the specified index and returns it.
+
+```
+      my_list = [10, 20, 30, 40, 50]
+      popped_item = my_list.pop(2)        # Removes the element at index 2 (30)
+      print(my_list)                      # Output: [10, 20, 40, 50]
+      print("Popped Item:", popped_item)  # Output: Popped Item: 30
+
+      # That returned value is stored in the variable popped_item
+
+```
+
+* **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
+
+```
+      my_list = [1, 2, 3]                 # Original list
+      other_list = ["python","java"]       # Another list to extend my_list with
+      my_list.extend(other_list)          # Using extend() to add elements of other_list to my_list
+      print(my_list)                      # Output: [1, 2, 3, 'python', 'java']
+
 ```
 
 * **index(value)** — Returns the index of the first occurrence of the specified value.
+
 ```
       my_list = [10, 20, 30, 40, 50]
       index_of_30 = my_list.index(30)
-      print(index_of_30)  # Output: 2 (The index of 30 is 2)
+      print(index_of_30)                  # Output: 2 (The index of 30 is 2)
+
 ```
+
 * **sort()** — Sorts the list in ascending order. 
+
 ```
       my_list = [4, 1, 3, 9, 2]
       my_list.sort()
       print(my_list)  # Output: [1, 2, 3, 4, 9]
 ```
 
+----------------------------------------------------------------------------------------------
+### 🟢 5. Tuple(immutable)
+----------------------------------------------------------------------------------------------
 
-==========================================================================================
-### 5. Tuple(immutable)
-===========================================================================================
-
-* A tuple is a built-in data structure in Python that is very similar to a list. However, unlike lists, tuples are immutable, which means their elements cannot be changed after creation.
+* A **tuple** is a built-in data structure in Python, very similar to a list. However, unlike lists, **tuples are immutable** — their elements cannot be changed after creation.
    
-**Key Points:**
+📌 **Key Points:**
 *  *Immutable:* Once a tuple is created, its elements cannot be modified, added, or removed.
 *  *Ordered:* Like lists, tuples maintain the order of elements.
 *  *Different Data Types:* A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
@@ -359,37 +406,35 @@ _A More Concise Way_
 *  *Parentheses:* Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
 
 
-* tuple required multipile values*
-* The trailing comma is necessary to differentiate a tuple with one element from a regular value enclosed in parentheses.
+* If you want to create a **tuple with only one element**, you must add a **trailing comma**.  
+* Without the comma, Python will treat it as a normal value inside parentheses, not a tuple.
    
-```      
-      t = ("raj",)
-      print(t)      # Output: ('raj',)
-      print(type(t)) # Output: <class 'tuple'>
+```   
+      t = ("ashoka")
+      print(t)                         # Output: ('ashoka')
+      print(type(t))                   # Output: <class 'str'>
+
+
+      t = ("ashoka",)
+      print(t)                         # Output: ('ashoka',)
+      print(type(t))                   # Output: <class 'tuple'>
 
 ```
 
-* Without the trailing comma, this is just a string enclosed in parentheses.*
-      
-```      
-      t = ("raj")  # This is a string, not a tuple
-      print(t)  # Output: raj
-      print(type(t))  # Output: <class 'str'>
 
 ```
-
-```
-      t = ("raj",12,23.4,10)
-      print(t)
-      print(type(t))
-      t[1] = 33
-      print(t)  # output t can not be changed
+      t = ("ashoka",12,23.4,10)
+      print(t)                         # Output: ('ashoka', 12, 23.4, 10)
+      print(type(t))                   # Output: <class 'tuple'>
+      t[1] = 33                        # ❌ Trying to change index 1 (value 12 to 33)
+      print(t)                         # Output ('ashoka', 12, 23.4, 10)  elements cannot be modified
 
 ```
 
 ```
       nested_tuple = (1, 2, (3, 4), 5)
       print(nested_tuple[2])
+      
 ```
 
 

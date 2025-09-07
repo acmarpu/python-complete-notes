@@ -219,7 +219,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(type(a))                    # prints the type of variable 'a'
 
       
-      # 10,10,10. <class 'int'>         # Output value 
+      # 10,10,10. <class 'int'>         # Output  
 ```
 
 * &nbsp; the process of assigning multiple values ot multiple variables
@@ -231,19 +231,19 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(c)             # prints value of c
 
       print(a,b,c)
-      # 10 20 30           # Output value  
+      # 10 20 30           # Output   
 
       print(a, end=",")
-      # 10,                # Output value 
+      # 10,                # Output  
 
       print(b, end=",")
-      # 20,                # Output value 
+      # 20,                # Output  
 
       print(c)
-      # 30,                # Output value 
+      # 30,                # Output  
 
       # Each variable (a, b, c) is printed one after the other on the same line.
-      # 10,20,30,          # Output value 
+      # 10,20,30,          # Output  
 
 ```
 
