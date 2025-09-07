@@ -40,6 +40,23 @@
 | **bytearray** | Binary Type       | `ba = bytearray(b'Hello')`            | Mutable sequence of bytes. |
 
 
+
+----------------------------------------------------------------------------------------------
+### 📊 Data Types Comparison Table
+----------------------------------------------------------------------------------------------
+
+
+| **Data Type** | **create**  | **Mutable**       | **immutable**     | **Ordered** | **duplicate**     |
+|---------------|-------------|-------------------|-------------------|-------------|-------------------|
+| **str**       |'' or ""     |    No             |    Yes            |     Yes     |  Yes              |
+| **list**      | []          |    Yes            |    No             |     Yes     |  Yes              |
+| **tuple**     | ()          |    No             |    Yes            |     Yes     |  Yes              |
+| **set**       | {}          |    Yes            |    No             |     No      |  No               |
+| **dict**      | {}          | key:no values:yes |key:no values:yes  |     Yes     | key:no values:yes |
+| **range**     | range()     |    No             |    Yes            |     Yes     |  No               |
+
+
+
 ----------------------------------------------------------------------------------------------
 ### 🔹 1. none
 ----------------------------------------------------------------------------------------------
@@ -445,7 +462,7 @@
 * A **set** is an **unordered** collection of **unique elements**. 
 * Duplicate values are automatically removed when creating a set.
 
-*Key Points:*
+📌 *Key Points:*
    * *Unordered:* The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
    * *Unique Elements:* Sets automatically remove duplicate elements, so each element is stored only once.
    * *Mutable:* Sets are mutable, meaning you can add or remove elements after creation.
