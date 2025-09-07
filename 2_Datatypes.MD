@@ -13,7 +13,7 @@
 - **Immutable:** Data types whose values **cannot be changed** after creation.  
 
 
-* **_Basic Data Types_**
+* 📘 **_Basic Data Types_**
 
 | **Data Type**   | **Category**   | **Example**          | **Definition** |
 |-----------------|----------------|----------------------|----------------|
@@ -74,7 +74,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-### 🔸 2. Numeric type   immutable.
+### 🔢 2. Numeric type   immutable.
 ----------------------------------------------------------------------------------------------
 
 * In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
@@ -190,7 +190,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### ✨ 3. String ("immutable","python")
+### 🔡 3. String ("immutable","python")
 ----------------------------------------------------------------------------------------------
 
 * In Python, strings are an essential data type used to represent textual data.
@@ -302,7 +302,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### 🟠 4. List ["mutable",10,20,30,3.4,"python",True]
+### 📋 4. List ["mutable"]
 ----------------------------------------------------------------------------------------------
 
 * A **list** in Python is an **ordered, mutable collection** that can hold different data types:integers, floats, strings, and even other lists.  
@@ -410,7 +410,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-### 🟢 5. Tuple (immutable)
+### 📦 5. Tuple (immutable)
 ----------------------------------------------------------------------------------------------
 
 * A **tuple** is a built-in data structure in Python, very similar to a list. However, unlike lists, **tuples are immutable** — their elements cannot be changed after creation.
@@ -456,7 +456,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### 📝 6 . Set {Mutable}
+### 🧾 6 . Set {Mutable}
 ----------------------------------------------------------------------------------------------
 
 * A **set** is an **unordered** collection of **unique elements**. 
@@ -544,7 +544,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### 📝 7. Dictionary {Mutable}
+### 🔑 7. Dictionary {Mutable}
 ----------------------------------------------------------------------------------------------
 * A **dictionary** is an **unordered collection of key-value pairs**.  
 * It stores elements in **pairs**, where each key is associated with a value. - Each key-value pair is called an **item**: `{key: value}` 
@@ -717,7 +717,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### ✨ 9. bytes  immutable 
+### 🔍 9. bytes  immutable 
 ----------------------------------------------------------------------------------------------
    *the bytes data type represents sequences of bytes, which are immutable sequences of integers, each representing a byte value from 0 to 255
 
@@ -742,7 +742,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-### ✨ 10. bytearray**
+### 🧮 10. bytearray**
 ----------------------------------------------------------------------------------------------
 
 - The **`bytearray`** type is a **mutable sequence of integers** in the range `0–255`.  
@@ -778,7 +778,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-### ✨ 11. frozenset**
+### ❄️ 11. frozenset**
 ----------------------------------------------------------------------------------------------
 * **frozenset** is an **immutable** version of a set, which means once it is created, its elements **cannot be changed, added, or removed**.
 * Like sets, frozensets:
@@ -800,8 +800,5 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-### 📊 Data Types Comparison Table
+#### End
 ----------------------------------------------------------------------------------------------
-
-
-![alt text](https://github.com/acmarpu/images/blob/main/Python/Python.png)
