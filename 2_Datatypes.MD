@@ -442,7 +442,7 @@
 ### 📝 6 . Set {Mutable}
 ----------------------------------------------------------------------------------------------
 
-* * A **set** is an **unordered** collection of **unique elements**. 
+* A **set** is an **unordered** collection of **unique elements**. 
 * Duplicate values are automatically removed when creating a set.
 
 *Key Points:*
@@ -583,8 +583,10 @@
 
 ```
 
+* Changing values in a dictionary
+
 ```
-   *Changing values in a dictionary*
+   
 
       d = {1:'sai',2:'ashoka'}
       print(d)                                         # Output: {1: 'sai', 2: 'ashoka'}
@@ -634,84 +636,155 @@
 
      student_scores['Alice'] = 90  # Update Alice's score
      print(student_scores)                                    # Output: {'ashoka': 90, 'sunil': 92, 'bhaskar': 78}
-     
+
 ``` 
 
-===========================================================================================
-**8. range()**
-========================================================================================
-* The range() function in Python is used to generate a sequence of numbers. It's typically used in for loops to iterate over a specific range of values.
+----------------------------------------------------------------------------------------------
+### ✨ 8. range (immutable)
+----------------------------------------------------------------------------------------------
+* The `range()` function in Python is used to generate a sequence of numbers.  
+* It's typically used in **for loops** to iterate over a specific range of values.
    
-**Key Points:**
-* **1.Start, Stop, Step:**
-   * *Start:* The number where the range begins (inclusive).
-   * *Stop:* The number where the range ends (exclusive).
-   * *Step:* The interval between each number in the range.
-   * If the step is not specified, it defaults to 1.
-   * If the start is not specified, it defaults to 0.
+📌 **Key Points:**
+  - **Start, Stop, Step:**
+  - **Start:** The number where the range begins (**inclusive**).
+  - **Stop:** The number where the range ends (**exclusive**).
+  - **Step:** The interval between each number in the range.
+  - If `step` is not specified, it defaults to `1`.
+  - If `start` is not specified, it defaults to `0`.
 
 **Immutability:**
-   * range() objects are immutable, meaning you cannot modify the values in a range once it’s created.
+- `range()` objects are **immutable**, meaning you cannot modify the values once it’s created.
 
 **Use Cases:**
-   * The range() function is often used in loops (like for loops) to repeat actions a certain number of times.
+- The range() function is often used in loops (like for loops) to repeat actions a certain number of times.
 
-* #Examples
 
+```
       r = range(10)
-      print(r)            # Output: range(0, 10)
-      print(type(r))      # Output: <class 'range'>
-      print(list(r))      # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-      print(type(r))      # Output: <class 'range'>
+      print(r)                # Output: range(0, 10)
+      print(type(r))          # Output: <class 'range'>
+      print(list(r))          # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      print(type(r))          # Output: <class 'range'>
 
-   * range(10) generates a sequence starting from 0 up to (but not including) 10.
-   * We can convert it to a list using list(r) to see the actual values in the range.
-   * range() itself does not store the sequence in memory; it generates the numbers on demand, which is why it shows as range(0, 10) when printed.
-      
+```
+
+- range(10) generates a sequence starting from 0 up to (but not including) 10.
+- You can convert it to a list or tuple to see the actual values.
+- `range()` itself does **not store all values in memory**. It generates numbers on demand (lazy evaluation), which is why printing it directly shows `range(0, 10)` instead of the numbers
+
+
+```    
       r = range(2, 10, 2)  # start=2, stop=10, step=2
       print(tuple(r))      # Output: (2, 4, 6, 8)
       print(type(r))       # Output: <class 'range'>
 
-   * range(2, 10, 2) starts from 2, goes up to (but not including) 10, and increments by 2 each time.
-   * We can convert the range to a tuple to see the sequence of numbers: (2, 4, 6, 8).
+```
 
-     
+- `range(2, 10, 2)` starts from `2`, goes up to (but not including) `10`, and increments by `2` each time.  
+- We can convert the range to a tuple to see the sequence of numbers: `(2, 4, 6, 8)`.
+
+
+```     
       for i in range(5):
       print(i)
 
+      # Output:
+      # 0
+      # 1
+      # 2
+      # 3
+      # 4
 
-===========================================================================================
-**9. bytes**
-========================================================================================
+```
+
+
+----------------------------------------------------------------------------------------------
+### ✨ 9. bytes  immutable 
+----------------------------------------------------------------------------------------------
    *the bytes data type represents sequences of bytes, which are immutable sequences of integers, each representing a byte value from 0 to 255
 
-   #Examples
+📌 **Key Points:**
+- Immutable → once created, cannot be changed.  
+- Each element in a `bytes` object is an integer (0–255).  
+- Often used when dealing with raw binary or encoded data.
 
-      b = bytes([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
-      print(b)  # Output: b'ABC'
+-  Creating bytes from a list of integers (ASCII codes)
+
+```
+      b = bytes([65, 66, 67])           # ASCII values for 'A', 'B', 'C'
+      print(b)                          # Output: b'ABC'
+      print(type(b))                    # Output: <class 'bytes'>
+
+      print(b[0])                       # Output: 65  (the ASCII code for 'A')
+
+      # Iterating over bytes
+      for byte in b:
+          print(byte)
+
+```
+
+----------------------------------------------------------------------------------------------
+### ✨ 10. bytearray**
+----------------------------------------------------------------------------------------------
+
+- The **`bytearray`** type is a **mutable sequence of integers** in the range `0–255`.  
+- Similar to `bytes`, but unlike `bytes`, a `bytearray` object **can be modified after creation**.  
 
 
-===========================================================================================
-**10. bytearray**
-========================================================================================
-   *In Python, bytearray is a mutable sequence of integers in the range 0 <= x <= 255. It is similar to bytes, but unlike bytes, bytearray objects can be modified after creation.
+📌 **Key Points:**
+ - Mutable → you can change elements after creation.  
+ - Each element represents a single byte (0–255).  
+ - Useful when you need a modifiable sequence of binary data.  
+
+ ```
+      # Creating a bytearray
+      ba = bytearray([65, 66, 67])   # ASCII values for 'A', 'B', 'C'
+      print(ba)                      # Output: bytearray(b'ABC')
+      print(type(ba))                # Output: <class 'bytearray'>
+
+      # Modifying elements
+      ba[0] = 90                     # Change ASCII 65 ('A') to 90 ('Z')
+      print(ba)                      # Output: bytearray(b'ZBC')
+
+      # Appending a new byte
+      ba.append(68)                  # ASCII for 'D'
+      print(ba)                      # Output: bytearray(b'ZBCD')
 
 
-* #Examples
+      # bytearray(b'ABC')
+      # <class 'bytearray'>
+      # bytearray(b'ZBC')
+      # bytearray(b'ZBCD')
 
-      ba = bytearray([65, 66, 67])  # ASCII values for 'A', 'B', 'C'
-      print(ba)  # Output: bytearray(b'ABC')
 
-===========================================================================================
-**11. frozenset**
-========================================================================================
-   *frozenset is an immutable version of a set, which means once it is created, its elements cannot be changed or modified.
+```
 
-   #Examples
+----------------------------------------------------------------------------------------------
+### ✨ 11. frozenset**
+----------------------------------------------------------------------------------------------
+* **frozenset** is an **immutable** version of a set, which means once it is created, its elements **cannot be changed, added, or removed**.
+* Like sets, frozensets:
+  - Store **unique elements** only (no duplicates).
+  - Support **set operations** (union, intersection, difference, etc.).
+* Difference: Unlike `set`, a `frozenset` is **hashable**, so it can be used as a **key in a dictionar
 
+```
       frozen_set = frozenset([1, 2, 3, 4, 5])
-      print(frozen_set)  # Output: frozenset({1, 2, 3, 4, 5})
+      print(frozen_set)   # Output: frozenset({1, 2, 3, 4, 5})
 
+      # frozen_set.add(6) ❌ Error: 'frozenset' object has no attribute 'add'
+
+      # But we can still perform set operations
+      s = {3, 4, 5, 6}
+      print(frozen_set.union(s))        # frozenset({1, 2, 3, 4, 5, 6})
+      print(frozen_set.intersection(s)) # frozenset({3, 4, 5})
+
+```
+
+----------------------------------------------------------------------------------------------
+### 📊 Data Types Comparison Table
+----------------------------------------------------------------------------------------------
 
 
 ![alt text](https://github.com/acmarpu/images/blob/main/Python/Python.png)
