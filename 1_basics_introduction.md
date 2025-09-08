@@ -7,7 +7,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
-   _a)_ **General-purpose:**
+   _a)_ **General-Purpose:**
    * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. 
    - You can use Python for 
   
@@ -23,7 +23,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. 
    * In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-   _c)_ **Case-sensitive:**
+   _c)_ **Case-Sensitive:**
    * Python treats uppercase and lowercase characters as different.
    * For example, Variable and variable would be considered two different identifiers. 
    * This is important to remember when writing Python code, as the language will not automatically correct case mismatches.
@@ -256,7 +256,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
 
 ```
-#In Java
+# In Java
 
       i = 10
       if (i=10)
