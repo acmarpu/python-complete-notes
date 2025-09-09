@@ -85,7 +85,7 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 
 
 ```
-    print(20 < 3 and 1 < 4)         # Output: False
+    print(20 < 3 and 1 < 4)   # Output: False
     # 20 < 3 is False, 1 < 4 is True **False and True gives False**
 
 ```
@@ -94,7 +94,7 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 * The or operator returns True if at least one condition is true. If both are false, it returns False.*
 
 ```   
-    print(20 < 3 or 1 < 4)            # Output: True
+    print(20 < 3 or 1 < 4)  # Output: True
      # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
 
 ```    
@@ -103,7 +103,7 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 * The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.*
 
 ```
-    print(not(20 < 3))  #Output: True
+    print(not(20 < 3))       # Output: True
     #20 < 3 is False, so not False is True
 
 ```      
@@ -114,7 +114,7 @@ Logical operators are used to perform **logical operations** (mainly in conditio
     #Using and
     x = 5
     y = 10
-    print(x > 3 and y < 15)      # Output: True
+    print(x > 3 and y < 15)  # Output: True
     #True and True = True
 
 ```      
@@ -122,14 +122,14 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 ```
     x = 5
     y = 10
-    print(x < 3 or y > 5)        # Output: True
+    print(x < 3 or y > 5)    # Output: True
     # False or True = True
 
 ```
 
 ```
     x = 10
-    print(not(x < 5))            # Output: True
+    print(not(x < 5))        # Output: True
     # not False = True
       
 ```
@@ -197,29 +197,29 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 
     # Using id() to get the memory address of the variables
     # id(): built-in function that returns the memory address of an object
-    print(id(i))  # Unique memory address for i
-    print(id(j))  # Unique memory address for j
+    print(id(i))       # Unique memory address for i
+    print(id(j))       # Unique memory address for j
 
 ```
 
 ```
     # Assigning same value to two variables
     x = [1, 2, 3]
-    y = x   # y points to the same object as x
+    y = x               # y points to the same object as x
 
     # Checking if both x and y are the same object in memory
     print(x is y)  
     # Output: True → because both refer to the same object in memory
 
     # Checking the memory address of both variables
-    print(id(x))  # Memory address of x
-    print(id(y))  # Memory address of y
+    print(id(x))        # Memory address of x
+    print(id(y))        # Memory address of y
 
 ```
 
 ```
     a = [1, 2, 3]
-    b = [1, 2, 3]   # A new list, even though it has the same values as 'a'
+    b = [1, 2, 3]       # A new list, even though it has the same values as 'a'
 
     # Checking if a and b refer to the same object
     print(a is b)  
@@ -230,8 +230,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
     # Output: True → because a and b are different objects
 
     # Memory addresses will be different for different objects
-    print(id(a))  # Memory address of a
-    print(id(b))  # Memory address of b
+    print(id(a))        # Memory address of a
+    print(id(b))        # Memory address of b
 
 ```         
 
@@ -253,10 +253,10 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 **1. Bitwise AND (`&`)**
 
 ```
-    a = 5  # 0101 in binary
-    b = 3  # 0011 in binary
-    result = a & b  # 0001 in binary → 1 in decimal
-    print(result)  # Output: 1
+    a = 5                # 0101 in binary
+    b = 3                # 0011 in binary
+    result = a & b       # 0001 in binary → 1 in decimal
+    print(result)        # Output: 1
 
 ```
 
@@ -266,8 +266,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 ```
     a = 5  # 0101
     b = 3  # 0011
-    result = a | b  # 0111 → 7
-    print(result)  # Output: 7
+    result = a | b       # 0111 → 7
+    print(result)        # Output: 7
 
 ```
 
@@ -275,10 +275,10 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 * Compares each bit of two integers, returning 1 if the bits are different, otherwise 0.
 
 ```
-    a = 5  # 0101
-    b = 3  # 0011
-    result = a ^ b  # 0110 → 6
-    print(result)  # Output: 6
+    a = 5                # 0101
+    b = 3                # 0011
+    result = a ^ b       # 0110 → 6
+    print(result)        # Output: 6
 
 ```
 
@@ -287,8 +287,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 
 ```
     a = 5  # 0101
-    result = ~a  # 1010 (two’s complement) → -6
-    print(result)  # Output: -6
+    result = ~a          # 1010 (two’s complement) → -6
+    print(result)        # Output: -6
 
 ```
 
@@ -297,8 +297,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 
 ```
     a = 5  # 0101
-    result = a << 1  # 1010 → 10
-    print(result)  # Output: 10
+    result = a << 1      # 1010 → 10
+    print(result)        # Output: 10
 
 ```
 
@@ -307,8 +307,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 
 ```
     a = 5  # 0101
-    result = a >> 1  # 0010 → 2
-    print(result)  # Output: 2
+    result = a >> 1      # 0010 → 2
+    print(result)        # Output: 2
 
 ```
 
