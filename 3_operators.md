@@ -4,9 +4,8 @@
 * In Python, **operators** are symbols (or keywords) used to perform operations on variables and values.  
 * They allow us to manipulate data, perform calculations, compare results, and control logic flow. 
 
-
 ----------------------------------------------------------------------------------------------
-#### ➕ 1.Arithmetic Operators
+#### ➕ 1. Arithmetic Operators
 ----------------------------------------------------------------------------------------------
 * Arithmetic operators are used to perform basic mathematical operations.
 
@@ -57,14 +56,14 @@
 
 
 ```
-        a = 5                   # Assigns 5 to variable 'a'
-        print(a)                # Outputs: 5
+    a = 5                   # Assigns 5 to variable 'a'
+    print(a)                # Outputs: 5
 
-        a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
-        print(a)                # Outputs: 7 (because 5 + 2 = 7)
+    a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
+    print(a)                # Outputs: 7 (because 5 + 2 = 7)
 
-        a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
-        print(a)                # Outputs: 5 (because 7 - 2 = 5)
+    a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
+    print(a)                # Outputs: 5 (because 7 - 2 = 5)
 
 ```
 
@@ -72,7 +71,6 @@
 #### 🔗 4 . logical operators
 ----------------------------------------------------------------------------------------------
 Logical operators are used to perform **logical operations** (mainly in conditional statements).  
-
 
 
 | Operator | Description                              | Example            | Result  |
@@ -87,8 +85,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 
 
 ```
-        print(20 < 3 and 1 < 4)         # Output: False
-        # 20 < 3 is False, 1 < 4 is True **False and True gives False**
+    print(20 < 3 and 1 < 4)         # Output: False
+    # 20 < 3 is False, 1 < 4 is True **False and True gives False**
 
 ```
                                            
@@ -96,8 +94,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 * The or operator returns True if at least one condition is true. If both are false, it returns False.*
 
 ```   
-       print(20 < 3 or 1 < 4)            # Output: True
-       # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
+    print(20 < 3 or 1 < 4)            # Output: True
+     # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
 
 ```    
 
@@ -105,33 +103,34 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 * The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.*
 
 ```
-      print(not(20 < 3))  #Output: True
-      #20 < 3 is False, so not False is True
+    print(not(20 < 3))  #Output: True
+    #20 < 3 is False, so not False is True
 
 ```      
 
 * Additional Examples:
 
 ```
-      #Using and
-      x = 5
-      y = 10
-      print(x > 3 and y < 15)      # Output: True
-      #True and True = True
+    #Using and
+    x = 5
+    y = 10
+    print(x > 3 and y < 15)      # Output: True
+    #True and True = True
+
 ```      
 
 ```
-      x = 5
-      y = 10
-      print(x < 3 or y > 5)        # Output: True
-      # False or True = True
+    x = 5
+    y = 10
+    print(x < 3 or y > 5)        # Output: True
+    # False or True = True
 
 ```
 
 ```
-      x = 10
-      print(not(x < 5))            # Output: True
-      # not False = True
+    x = 10
+    print(not(x < 5))            # Output: True
+    # not False = True
       
 ```
 
@@ -150,26 +149,26 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 * with List data types examples
 
 ```      
-      l = [10, 20, 30]
-      print(100 not in l)         
-      # Output : True 
-      # Explanation: 100 is in the list, so "in" returns True
+    l = [10, 20, 30]
+    print(100 not in l)         
+    # Output : True 
+    # Explanation: 100 is in the list, so "in" returns True
 
 ```
 
 ```
 
-      print(10 not in l)          
-      # Output : False 
-      # Explanation: 10 is in the list, so "in" returns False.
+    print(10 not in l)          
+    # Output : False 
+    # Explanation: 10 is in the list, so "in" returns False.
 
 ```
 
 * with string data types examples
 
 ```
-      print("x" in "hyd")     # "x" is not in the string "hyd", so it returns False
-      #Output: False
+    print("x" in "hyd")     # "x" is not in the string "hyd", so it returns False
+    #Output: False
 
 ```
 
@@ -185,21 +184,21 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 | `is not`   | Returns True if both variables do not refer to the same object              | `x is not y`| True/False |
 
 ```
-     i = 10
-     j = 20
+    i = 10
+    j = 20
 
-     # Checking if i and j refer to the same object
-     print(i is j)        
-     # Output: False → because i and j are pointing to different objects
+    # Checking if i and j refer to the same object
+    print(i is j)        
+    # Output: False → because i and j are pointing to different objects
 
-     # Checking if i and j do not refer to the same object
-     print(i is not j)    
-     # Output: True → because i and j are different objects
+    # Checking if i and j do not refer to the same object
+    print(i is not j)    
+    # Output: True → because i and j are different objects
 
-     # Using id() to get the memory address of the variables
-     # id(): built-in function that returns the memory address of an object
-     print(id(i))  # Unique memory address for i
-     print(id(j))  # Unique memory address for j
+    # Using id() to get the memory address of the variables
+    # id(): built-in function that returns the memory address of an object
+    print(id(i))  # Unique memory address for i
+    print(id(j))  # Unique memory address for j
 
 ```
 
@@ -314,7 +313,7 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 ```
 
 ----------------------------------------------------------------------------------------------
-✅ End of Python Data Types 
+✅ End of Python Operators
 
 👉 Next Topic: 
 ----------------------------------------------------------------------------------------------

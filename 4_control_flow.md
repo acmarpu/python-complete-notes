@@ -1,3 +1,5 @@
+# this document is inprogress 
+
 
 
 *****************************************************************************************
@@ -695,4 +697,3 @@ Dictionary:
 
    bytes: is used to represent byte numers just like an array the only allowed values for bytes is0 to256
           bytes is immutable, we cannot chang
-          
