@@ -1,967 +1,320 @@
-# this document is inprogress 
+----------------------------------------------------------------------------------------------
+### 👉 Operators
+----------------------------------------------------------------------------------------------
+* In Python, **operators** are symbols (or keywords) used to perform operations on variables and values.  
+* They allow us to manipulate data, perform calculations, compare results, and control logic flow. 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# Operators
-* In Python, operators are indeed symbols used to perform operations on variables and values. There are several types of operators in Python
+----------------------------------------------------------------------------------------------
+#### ➕ 1.Arithmetic Operators
+----------------------------------------------------------------------------------------------
+* Arithmetic operators are used to perform basic mathematical operations.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-**1. Arithmetic Operators:**
+| Operator | Description           | Example        | Output |
+|----------|-----------------------|----------------|--------|
+| `+`      | Addition              | `print(3 + 2)` | `5`    |
+| `-`      | Subtraction           | `print(5 - 3)` | `2`    |
+| `*`      | Multiplication        | `print(4 * 2)` | `8`    |
+| `/`      | Division (float)      | `print(10 / 3)`| `3.333...` |
+| `//`     | Floor Division        | `print(10 // 3)`| `3`   |
+| `%`      | Modulus (remainder)   | `print(10 % 3)` | `1`   |
+| `**`     | Exponentiation (power)| `print(2 ** 3)` | `8`   |
 
 
-* These are used to perform mathematical operations like addition, subtraction, etc.
 
-* + (Addition)
-* - (Subtraction)
-* * (Multiplication)
-* / (Division)
-* // (Floor Division)
-* % (Modulus)
-* ** (Exponentiation)
+----------------------------------------------------------------------------------------------
+#### ⚖️ 2. Relational(Comparison) Operators
+----------------------------------------------------------------------------------------------
+* Relational operators are used to **compare two values**.  
+* The result of these operations is always a **Boolean value** (`True` or `False`).
 
-
-* #Example
-
-   print(3+2)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-**2. Relational(Comparison) Operators:**
+| Operator | Description                      | Example        | Output  |
+|----------|----------------------------------|----------------|---------|
+| `==`     | Equal to                         | `print(5 == 5)`| `True`  |
+| `!=`     | Not equal to                     | `print(5 != 3)`| `True`  |
+| `>`      | Greater than                     | `print(7 > 4)` | `True`  |
+| `<`      | Less than                        | `print(3 < 2)` | `False` |
+| `>=`     | Greater than or equal to         | `print(5 >= 5)`| `True`  |
+| `<=`     | Less than or equal to            | `print(4 <= 3)`| `False` |
 
 
-* These operators are used to compare values.
+----------------------------------------------------------------------------------------------
+#### 📝 3. Assignment operator
+----------------------------------------------------------------------------------------------
+* Assignment operators are used to **assign values** to variables.  
+* Some operators also perform an operation and then assign the result to the variable.
 
-* == (Equal to)
-* != (Not equal to)
-* > (Greater than)
-* < (Less than)
-* >= (Greater than or equal to)
-* <= (Less than or equal to)
+| Operator | Description               | Example        | Equivalent To  | Result |
+|----------|---------------------------|----------------|----------------|--------|
+| `=`      | Assign                    | `a = 5`        | –              | `a = 5` |
+| `+=`     | Add and assign            | `a += 2`       | `a = a + 2`    | `a = 7` |
+| `-=`     | Subtract and assign       | `a -= 2`       | `a = a - 2`    | `a = 5` |
+| `*=`     | Multiply and assign       | `a *= 3`       | `a = a * 3`    | `a = 15`|
+| `/=`     | Divide and assign         | `a /= 5`       | `a = a / 5`    | `a = 3.0` |
+| `//=`    | Floor divide and assign   | `a //= 2`      | `a = a // 2`   | `a = 1` |
+| `**=`    | Exponent and assign       | `a **= 2`      | `a = a ** 2`   | `a = 25` |
 
-* #Example
 
-      print(3 > 4)
-      False
+```
+        a = 5                   # Assigns 5 to variable 'a'
+        print(a)                # Outputs: 5
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-**3. Assignment operator**
+        a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
+        print(a)                # Outputs: 7 (because 5 + 2 = 7)
 
-* These are used to assign values to variables.
+        a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
+        print(a)                # Outputs: 5 (because 7 - 2 = 5)
 
-* = (Assign)
-* += (Add and assign)
-* -= (Subtract and assign)
-* *= (Multiply and assign)
-* /= (Divide and assign)
-* //= -- floot div and assign
-* **= -- power and assigan
+```
 
-* #Example
-      a = 5  # Assigns 5 to variable 'a'
-      print(a)  # Outputs: 5
+----------------------------------------------------------------------------------------------
+#### 🔗 4 . logical operators
+----------------------------------------------------------------------------------------------
+Logical operators are used to perform **logical operations** (mainly in conditional statements).  
 
-      a += 2  # Equivalent to a = a + 2, adds 2 to 'a'
-      print(a)  # Outputs: 7 (because 5 + 2 = 7)
 
-      a -= 2  # Equivalent to a = a - 2, subtracts 2 from 'a'
-      print(a)  # Outputs: 5 (because 7 - 2 = 5)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-**4. logical operators**
+| Operator | Description                              | Example            | Result  |
+|----------|------------------------------------------|--------------------|---------|
+| `and`    | Returns True if **both** conditions are True | `(5 > 3 and 10 > 5)` | `True` |
+| `or`     | Returns True if **at least one** condition is True | `(5 < 3 or 10 > 5)` | `True` |
+| `not`    | Reverses the boolean value               | `not(5 > 3)`       | `False` |
 
-* These are used to perform logical operations, usually for conditional statements.
+
+
 * The and operator returns True if both conditions are true, otherwise it returns False.
 
-* and (Logical AND)
-* or (Logical OR)
-* not (Logical NOT
 
-    
-* #Examples
-   *The and operator returns True if both conditions are true, otherwise it returns False.*
+```
+        print(20 < 3 and 1 < 4)         # Output: False
+        # 20 < 3 is False, 1 < 4 is True **False and True gives False**
 
-      print(20 < 3 and 1 < 4)  
-      #20 < 3 is False, 1 < 4 is True
-      #So, False and True gives False
-      #Output: False
+```
+                                           
 
-   *The or operator returns True if at least one condition is true. If both are false, it returns False.*
-   
-      print(20 < 3 or 1 < 4)  
-      #20 < 3 is False, 1 < 4 is True
-      #So, False or True gives True
-      #Output: True
+* The or operator returns True if at least one condition is true. If both are false, it returns False.*
 
-   
-   *The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.*
- 
-      print(not(20 < 3))  
+```   
+       print(20 < 3 or 1 < 4)            # Output: True
+       # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
+
+```    
+
+
+* The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.*
+
+```
+      print(not(20 < 3))  #Output: True
       #20 < 3 is False, so not False is True
-      #Output: True
 
-* #Additional Examples:
+```      
 
+* Additional Examples:
+
+```
       #Using and
       x = 5
       y = 10
-      print(x > 3 and y < 15)  # True and True = True
-      #Output: True
+      print(x > 3 and y < 15)      # Output: True
+      #True and True = True
+```      
 
-      #Using or
+```
       x = 5
       y = 10
-      print(x < 3 or y > 5)  # False or True = True
-      #Output: True
+      print(x < 3 or y > 5)        # Output: True
+      # False or True = True
 
-      #Using not
+```
+
+```
       x = 10
-      print(not(x < 5))  # not False = True
-      #Output: True
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-**5. Membership**
-
-* These operators are really handy when checking if a value exists in a sequence like a list, tuple, string, or dictionary.
-* in: Returns True if the value exists in the sequence.
-* not in: Returns True if the value does not exist in the sequence
-
-* #Examples
-      #List example
+      print(not(x < 5))            # Output: True
+      # not False = True
       
+```
+
+----------------------------------------------------------------------------------------------
+#### 📦 5 . Membership
+----------------------------------------------------------------------------------------------
+
+* Membership operators are used to **test whether a value is present in a sequence** (like list, tuple, string, or dictionary).
+
+| Operator   | Description                                        | Example             | Result  |
+|------------|----------------------------------------------------|---------------------|---------|
+| `in`       | Returns True if the value exists in the sequence   | `10 in [10, 20, 30]`| `True`  |
+| `not in`   | Returns True if the value does not exist           | `100 not in [10,20]`| `True`  |
+
+
+* with List data types examples
+
+```      
       l = [10, 20, 30]
+      print(100 not in l)         
+      # Output : True 
+      # Explanation: 100 is in the list, so "in" returns True
 
-      *print(100 not in l)  # 100 is not in the list, so it returns True*
-      #Output: True
+```
 
-      print(10 not in l)  # 10 is in the list, so it returns False
+```
+
+      print(10 not in l)          
+      # Output : False 
+      # Explanation: 10 is in the list, so "in" returns False.
+
+```
+
+* with string data types examples
+
+```
+      print("x" in "hyd")     # "x" is not in the string "hyd", so it returns False
       #Output: False
 
-      print(10 in l)  # 10 is in the list, so it returns True
-      #Output: True
+```
 
-      #String example
-      print("x" in "hyd")  # "x" is not in the string "hyd", so it returns False
-      #Output: False
+----------------------------------------------------------------------------------------------
+#### 🆔 6. identity
+----------------------------------------------------------------------------------------------
 
+* Identity operators are used to **check if two variables refer to the same object in memory**.
 
+| Operator   | Description                                                                 | Example     | Result  |
+|------------|-----------------------------------------------------------------------------|-------------|---------|
+| `is`       | Returns True if both variables refer to the same object (same memory)       | `x is y`    | True/False |
+| `is not`   | Returns True if both variables do not refer to the same object              | `x is not y`| True/False |
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-**6. identity**
+```
+     i = 10
+     j = 20
 
-* These are used to check whether the variables are having the same identity or not
-* is: This operator checks if two variables refer to the same object in memory (i.e., they have the same identity).
-* is not: This checks if two variables do not refer to the same object in memory.
+     # Checking if i and j refer to the same object
+     print(i is j)        
+     # Output: False → because i and j are pointing to different objects
 
-* #Examples
+     # Checking if i and j do not refer to the same object
+     print(i is not j)    
+     # Output: True → because i and j are different objects
 
-      i = 10
-      j = 20
+     # Using id() to get the memory address of the variables
+     # id(): built-in function that returns the memory address of an object
+     print(id(i))  # Unique memory address for i
+     print(id(j))  # Unique memory address for j
 
-      #Checking if i and j refer to the same object
-      print(i is j)  # False, because i and j are pointing to different objects
-      #Output: False
+```
 
-      #Checking if i and j do not refer to the same object
-      
-      print(i is not j)  # True, because i and j are pointing to different objects
-      #Output: True
+```
+    # Assigning same value to two variables
+    x = [1, 2, 3]
+    y = x   # y points to the same object as x
 
-      #Using id() to get the memory address of the variables
-      *id(): it is a built-in function*
-      
-      print(id(i))  # Unique memory address for i
-      print(id(j))  # Unique memory address for j
-   
+    # Checking if both x and y are the same object in memory
+    print(x is y)  
+    # Output: True → because both refer to the same object in memory
 
+    # Checking the memory address of both variables
+    print(id(x))  # Memory address of x
+    print(id(y))  # Memory address of y
 
-      #Assigning same value to two variables
-      
-      x = [1, 2, 3]
-      y = x  # y points to the same object as x
+```
 
-      #Checking if both x and y are the same object in memory
+```
+    a = [1, 2, 3]
+    b = [1, 2, 3]   # A new list, even though it has the same values as 'a'
 
-      print(x is y)  # True, because both refer to the same object in memory
-      #Output: True
+    # Checking if a and b refer to the same object
+    print(a is b)  
+    # Output: False → they are different objects in memory even though values are the same
 
-      #Checking the memory address of both variables
-      
-      print(id(x))  # Memory address of x
-      print(id(y))  # Memory address of y
+    # Checking if a and b do not refer to the same object
+    print(a is not b)  
+    # Output: True → because a and b are different objects
 
+    # Memory addresses will be different for different objects
+    print(id(a))  # Memory address of a
+    print(id(b))  # Memory address of b
 
+```         
 
-      a = [1, 2, 3]
-      b = [1, 2, 3]  # A new list, even though it has the same values as a
-
-      #Checking if a and b refer to the same object
-
-      print(a is b)  # False, because they are different objects in memory even though the values are the same
-      #Output: False
-
-      #Checking if a and b do not refer to the same object
-
-      print(a is not b)  # True, because a and b are different objects
-      # Output:True
-
-      #Memory addresses will be different for different objects
-      
-      print(id(a))  # Memory address of a
-      print(id(b))  # Memory address of b
-
-         
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-**7. Bitwise**
-
+----------------------------------------------------------------------------------------------
+#### 🧮 7. Bitwise
+----------------------------------------------------------------------------------------------
 * Bitwise operators in Python perform operations on individual bits of integers
 
-   bitwise AND(&)
-   bitwise OR(|)
-   bitwise XOR(^)
-   bitwise NOT(~)
-   bitwise left shift (<<)
-   bitwise right shift (>>)
-   
-1. Bitwise AND (&)
-* Compares each bit of two integers, returning 1 if both bits are 1, otherwise 0.
-    
-      a = 5  # 0101 in binary
-      b = 3  # 0011 in binary
-      result = a & b  # 0001 in binary, which is 1 in decimal
-      print(result)  # Output: 1
+| Operator | Symbol | Description |
+|----------|---------|-------------|
+| AND      | `&`     | 1 if both bits are 1 |
+| OR       | `\|`    | 1 if at least one bit is 1 |
+| XOR      | `^`     | 1 if bits are different |
+| NOT      | `~`     | Inverts all bits (`-(n+1)`) |
+| Left Shift | `<<`  | Shifts bits left (multiplies by 2) |
+| Right Shift | `>>` | Shifts bits right (divides by 2) |
 
-2. Bitwise OR (|)
+
+**1. Bitwise AND (`&`)**
+
+```
+    a = 5  # 0101 in binary
+    b = 3  # 0011 in binary
+    result = a & b  # 0001 in binary → 1 in decimal
+    print(result)  # Output: 1
+
+```
+
+**2. Bitwise OR (|)**
 * Compares each bit of two integers, returning 1 if at least one of the bits is 1.
 
-      a = 5  # 0101 in binary
-      b = 3  # 0011 in binary
-      result = a | b  # 0111 in binary, which is 7 in decimal
-      print(result)  # Output: 7
+```
+    a = 5  # 0101
+    b = 3  # 0011
+    result = a | b  # 0111 → 7
+    print(result)  # Output: 7
 
-3. Bitwise XOR (^)
+```
+
+**3. Bitwise XOR (^)**
 * Compares each bit of two integers, returning 1 if the bits are different, otherwise 0.
 
-      a = 5  # 0101 in binary
-      b = 3  # 0011 in binary
-      result = a ^ b  # 0110 in binary, which is 6 in decimal
-      print(result)  # Output: 6
+```
+    a = 5  # 0101
+    b = 3  # 0011
+    result = a ^ b  # 0110 → 6
+    print(result)  # Output: 6
 
-4. Bitwise NOT (~)
+```
+
+**4. Bitwise NOT (~)**
 * Inverts all the bits of the integer, which is equivalent to -(n + 1) (two's complement form).
 
-      a = 5  # 0101 in binary
-      result = ~a  # Inverts bits: 1010 in binary, which is -6 in decimal
-      print(result)  # Output: -6
+```
+    a = 5  # 0101
+    result = ~a  # 1010 (two’s complement) → -6
+    print(result)  # Output: -6
 
-5. Bitwise Left Shift (<<)
+```
+
+**5. Bitwise Left Shift (<<)**
 * Shifts the bits of the number to the left by a specified number of positions. Each shift to the left multiplies the number by 2.
 
-      a = 5  # 0101 in binary
-      result = a << 1  # Shift left by 1: 1010 in binary, which is 10 in decimal
-      print(result)  # Output: 10
+```
+    a = 5  # 0101
+    result = a << 1  # 1010 → 10
+    print(result)  # Output: 10
 
-6. Bitwise Right Shift (>>)
+```
+
+**6. Bitwise Right Shift (>>)**
 * Shifts the bits of the number to the right by a specified number of positions. Each shift to the right divides the number by 2 (and truncates the result).  
 
-      a = 5  # 0101 in binary
-      result = a >> 1  # Shift right by 1: 0010 in binary, which is 2 in decimal
-      print(result)  # Output: 2
+```
+    a = 5  # 0101
+    result = a >> 1  # 0010 → 2
+    print(result)  # Output: 2
 
+```
 
-*****************************************************************************************
-# **Control Flow Statement**
-*****************************************************************************************
-* In Python, conditional statements are used to execute certain blocks of code based on whether a condition is true or false. These statements allow your program to make decisions and change its behavior accordingly.
-* Python control flow. Control flow is the order in which individual statements, instructions, or function calls are executed or evaluated.
-* Control FLow Statement are used to mantin flow of program execution
- 
-   Conditional statements
-      if 
-      if else
-      nested if
-      elif
-   
-   iteretive statement
-      for
-      whle
-   
-   transfer statements
-      break
-      continue
-      pass
+----------------------------------------------------------------------------------------------
+✅ End of Python Data Types 
 
-      
-*****************************************************************************************
-**1. Conditional statements**
-*****************************************************************************************
-    *if  
-    *if else 
-    *nested if 
-    *elif 
-    
-      
-**if & if else**
-* *if* is key word test the specific condition
-* if else --The if-else statement allows you to execute one block of code if the condition is true and another block of code if the condition is false
-* The if statement evaluates a condition. If the condition is True, the code block within the if gets executed. If the condition is False, it will skip to the else block (if present).
-
-* #Examples
-
-      i = 10
-      if i == 100:
-         print("this is correct")  # This won't be printed because i is not 100
-      else:
-         print("this is not correct")  # This will be printed because i is 10, not 100
-
-      i = 10
-      if i == 100:
-         pass   # nothing is there 
-      else:
-         print("this is not correct")  # This will be printed because i is 10, not 100
- 
-      i = int(input("Enter a number: "))  # Get user input as an integer
-      if i % 2 == 0:  # Check if the number is divisible by 2
-         print(i, "is even")
-      else:
-         print(i, "is odd")
-
-
-      i = int(input("enter first number:"))
-      j = int(input("enter second number:"))  
-      if i > j:
-          print(i,"is big")
-      else
-           print(j,"is big")  
------------------------------------------------------------------
-**nested if**
-  * is test multipile conditions and one of the condition fail its jump into another if ) 
-  * (if inside if) You can have if statements inside if statements, this is called nested if statements.
-
-   #Examples
-      i = int(input("enter first number:"))
-      j = int(input("enter second number:"))
-      k = int(input("enter third number:"))
-
-      if i > j and i > k: #30 10 20
-          print(i,"is big")
-      else
-           if j > k:
-            print(j,"is big")
-        else:
-           print(k,"is big")
------------------------------------------------------------------
-   #Examples
-      name = input("enter the name:")
-      age = int(input("enter the age:"))
-      gender = input("enter your geder (M/F):")
-
-      if age>= 18:
-      if gender == "M":
-           print("Hello Mr.", name, "Welcome")
-      else:
-           print("Hello Mrs", name, "Welcome")
-
-      else:
-          print("You are not eligbile")
-
-   #Examples
-      var = 100
-      or
-      var = int(input("Enter the Expression value:")) #we can enter the runtime value 
-      if var < 150:
-          print("Expression value is less than 150")
-
-          if var < 200:
-              print("Expression value is less than 200")
-
-              if var < 300:
-                   print("Expression value is less than 300")
-      else:
-           print("could not fine the Expression value")
-  
------------------------------------------------------------------
-**elif**
-  * one of the confition is true other condition will not be test here
-
- 
-   #Examples
-      var = 100
-      or
-      var = int(input("Enter the Expression value:")) #we can enter the runtime value
-      if var < 150:
-           print("Expression value is less than 150")
-      elif var < 200:
-          print("Expression value is less than 200")
-      elif var < 300:
-          print("Expression value is less than 300")
-      else:
-          print("invalid expression value")
-
-   #Examples
-      i = int(input("enter the number:"))
-      if i == 1:
-          print("one")
-      elif i == 2:
-          print("two")
-      elif i == 3:
-          print("three")
-      elif i == 4:
-          print("four")
-      else:
-          print("invalid number")
-
-
-
-==========================================================================================================================================
-**2. Iterative statements** or **loop Statement** or **Repetitive Statements**
-==========================================================================================================================================
-2 key words 
-   1. for loop
-      a) for loop statement
-         for loop is used to itetate the iterator or range
-         iterators -  list, set, tuple, dict, arry, string etc
-          
-      b) for repetitive statement
-         while loop is repetitive statement or loop statement
-         it will repet the certine block of code
-         
-      c) for iterative statement
-
-   2. While loop
-
-**for loop** 
-   * use to iterate the elements of collections what the order they appear
-   * A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
-
-   a) for loop statement
-         for loop is used to itetate the iterator or range
-         iterators -  list, set, tuple, dict, arry, string etc
-
-    
-    for element in iterator :
-              block of code
-
-   for - keyward  [to create for loop]       element - Temporary variable [ to store a value of iterator for every iteration]
-
-    for variablename in sequence:
-        statements
-        for variablename in sequence:
-            statements
-
-  #Examples
-      
-      list = [10,20,30,40,50,60]
-      for element in list:
-         print(element)
-
-         ![alt text](image.png)
-         
-   #Examples
-      
-      list = [10,20,30,40,50,60]
-      for i in list:
-         print(i)
-
-   #Examples
-
-      l = [10,20,30,40,50]
-      print(l[0])
-      print(l[1])
-      print(l[3])
-      print(l[4])
-
-   #Examples
-       for i in range(50)
-           print (att)
-----------------------------------------------------
-Another Way:-
-      
-   i is the loop variable
-   L list collections
-   here one by one value assigned to "i" 
-
-   #Examples
-      l = [10,20,30,40,50]
-      for i in l:
-          print(i) # Line by Line
-    
-      for i in l:
-          print(i, end= " ") #single line
-    
-      for i in [10,20,30,40,50]:
-         print(i)
-    
-      for i in "att":
-         print(i)
-        
-       for i in range(10):
-            print(i,end= " ")
-
-      for i in range(10):
-      for i in range(1,10,2):
-          print(i,end="")
-
-   #Examples
-      for i in range(1,11):
-      if i == 5 or i == 8:
-         continue
-      print(i, end="")
-   
-   #Examples
-      for i in range(1,11):
-      if i == 5 or i == 8:
-         break  # Completley stop 
-      print(i, end="")
--------------------------------------------------------------------------
-   #Examples
-      t = int(input("enter the table number:"))
-      for i in range(1,21):
-      print(t,"X",i,"=", t*i)
---------------------------------------------------------------------------
-
- **while** 
-   use to execute the no of statements as long as the condition is true, 
-   once the condition is false then the control will jump into out of the loop.
- 
-   *infinite* = no stop
-
-    while condition:
-       statement
-
-   i = 1
-    while i < 6:
-      print(i)
-      i += 1 # remember to increment i, or else the loop will continue forever.
---------------------------------------------------------------------------
-   i = 1
-    while i <= 10:
-        print(i)
-         i = i+1
-===========================================================================================================================================
-**3. transfer statement**
-===========================================================================================================================================
-
-   *break* is used to stope the iteratiosn based on the condition
-   *continue* is used to skip the current iteration and it will continue with the next iteration
-   *pass*
-
-   for i in range(1,10):
-        print(i,end= " ")
-        if i == 5:
-            break
----------------------------------------------------------
-*this will skip only 5 and 8*
-   for i in range(1,10):
-       if i == 5 or i == 8:
-            continue
-        print(i, end=" ")
-
-   for i in range(1,101):
-       if i%2 != 0: # if i%2 == 0:
-            continue
-        print(i,end= " ")
-
-----------------------------------------------------------------------------------------------------------
-
-*nested for loop* a for loop which is having one more loop within is is called nested for loop
-
-
-
-
-
-
-
-
-
-
-
-1. write a program to find the sum of first n mumbers using for loop and while loop?
-   # n = int(input("Enter number:"))
-   # s = 0
-   # for i in range(1,n+1):
-   #     s += i
-   # print("the sum of first",n,"numbers:",s)
-
-   n is the input type
-   s is the result storage
-
-
-2. take a number form user input print that number table?
-   # n = int(input("Enter the number:"))
-   # for i in range(1,11):
-   #     print(n,"X",i,"=",n*i)
-
-
-------------------------------------
-
-String :=
-
-1. what is string
-   string is group of charrecters or sequence of charrecters
-
-2. diffrent ways to create a string
-   '', "", ''' ''', immutable
-
-3. string indexing and string slicing
-   string always starts with 0 index 
-   slicing its part of the string
-   # 0 1 2 3 4 5 6 7 8 # positive index
-   # h y d e r a b a d
-   # -9-8-7-6-5-4-3-2-1 # negitive index
-
-   # s = "hyderabad"
-   # print(s)
-   # print(s[3])
-   # print(s[-3])
-   # print(s[1:6]) # slicing is print the 1 to 5 words in hyderabad
-   # print(s[-7:-1]) # negitive slicing
-
-4. String concatenation and string multiplication
-   concatenation is it just process of adding 2 or more string into single string (+)
-   multiplication is if you want to display the string number of repeted times  (*)
-   # s1 = "durga"
-   # s2 = "soft"
-   # print(s1+s2)
-   # print(s1+" "+s2)
-   # print(s1*3)
-   # print((s1+" "+s2+" ")*3)
-
-5. String split and max split
-   split just divied the string based on the separator
-   max split how many times
-   # s1 = "python is very easy and it is opp and it is interpreted"
-   # print(s1)
-   # s2 = s1.split(" ")
-   # print(s2)
-   # s2 = s1.split(" ",3)
-   # s2 = s1.split("is")
-   # print(s2)
-
-6. string capitalize
-   is used to return a new string where as capital letter 
-   # s1 = "python is very easy and it is opp and it is interpreted"
-   # print(s1)
-   # s2 = s1.capitalize()
-   # print(s2)
-   # print(s1.capitalize())
-
-7. String Titel
-   only starting capitalize word
-   # s1 = "python is very easy and it is opp and it is interpreted"
-   # print(s1)
-   # s2 = s1.title()
-   # print(s2)
-
-8. String count 
-   it is used to return the number of ocurrences of substring form given string
-   # s1 = "python is very easy and it is opp and it is interpreted"
-   # print(s1)
-   # print(s1.count('is'))
-   # s2 = s1.count("a")
-   # print(s2)
-
-9. string replace
-  # s1 = "python is very easy and it is opp and it is interpreted"
-  # print(s1.replace("easy","hard"))
-  # s2 = s1.replace("easy", "hard")
-  # print(s2)
-
-10. upper and lower
-   # s1 = "python is very easy and it is opp and it is interpreted"
-   # print(s1.upper())
-   # s2 = s1.upper()
-   # print(s2.lower())
-
-11. string swapcase (caps change to small)
-   # s = "DuRgAsOfT"
-   # print(s)
-   # print(s.swapcase())
-
-12. string reverse
-13. string immutable
-14. string sort
-   # s = "python is very easy"
-   # s1 = s.split()
-   # print(s1)
-   # s1.sort()
-   # print(s1)
-   # s1.sort(reverse=True)
-   # print(s1)
-
-print even index and odd index position characters
-# s = "durgasoft"
-# print("Even index position characters:",s[0::2])
-# print("odd index position characters:",s[1::2])
-
-   
-15 join function for the string
-
-   # s = "durgasoft"
-   # s1 = ':'.join(s)
-   # print(s1)
-   # s2 = ''.join(reversed(s1))
-   # print(s2)
-   # print("".join(reversed("SAI")))
-
-   # l = ["sai", "raj","ram"]
-   # s = ','.join(l)
-   # print(s)
-
-
-16. strip() 
-   - it return a copyof the string with both leading and trailing characters removed
-      leading = left side of the character
-      trailing = right side of the character
-       
-17. lstrip()
-   - return a copy of the string with leading characters removed
-
-18. rstrip()     
-   - Return a copy of the string with trailing characters removed
-   
-   # s = "  durga  "
-   # print(s.strip("  "))
-   # print(s.rstrip("  "))
-   # print(s.lstrip("  "))
-   # s1 = (s.strip("  "))
-   # print(s1)
-
-19. len(): it return length of the string
-    # print(len(s))
-
-20. Find() used to find substring from given string returns -1 if there is no substring
-    # print(s.find("b"))
-   
-21. Max() highest alphabetical character in a string
-22. min() lowest alphabeticalcharacter in astring
-23. index() index of substring
-    # print(s.index("b"))
-
-24. rindex() highest index of substring
-    # print(s.rindex(b))
-
-25. partition() splits the string at the first occurrence of the separator and return a tuple
-    # s = "python is very easy and it is opp and it is interpreted is"
-    # print(s.split(" "))
-    # print(s.partition(s))
-
-26. startswith() return true if a string starts with the given prefix otherwise returns false
-
-27. endwith() return true if a string ends with the given suffix otherwise returns False
-
-28. isdigit() returns "True" if all characters in the string are digits,
-    otherwise, it returns "False"
-
-29. isalpha() return "True" if all characters in the string are alphabets Otherwise, it returns "False"
-
-30. isalnum() returns true if all the characters
-
- Ex reveresed words
- # s = "python is very easy"
- # s1 = s.split(" ")
- # print(s1)
- # for i in s1:
- #     print(i[::-1],end=" ")
-
---------------------------------------------------------------------------------------------------
-List : is order collection of elements
-      heterogeneous elements (diffrent types of data types)
-
-1. what is list
-2. nested list (one or more list)
-  # l = [ 10,20,[30],40,1.0 ]
-  # print(l[2])
-  # print(type(l))
-3. creating a list
-
-4. access elements from a list
-5. list slicing (perticulear part of the string)
-   # l = [10,20,[30],40,1.0]
-   # print(l)
-   # l[1] =33 # 1 is index and 33 is element
-   # print(l)
-   # l.insert(1,33) # 1 is index and 33 is value
-   # print(l)
-
-6. changing or adding elements to list
-   # l = [10,20,[30],40,1.0]
-   # print(l)
-   # l.append(33) # last of the list and one element to the list
-   # print(l)
-   # l.extend([34,"sai",56]) # multipile elements to the list
-   # print(l)
-
-7. append and extend methods in list
-8. inser method in list
-9. list concatenation and multiplication
-   # l1 = ["sai","manoj","jaideep"]
-   # l2 = ["att","ms","tcs"]
-   # l3 = l1+l2
-   # print(l3)
-   # print(l1*2)
-10. delete or remove elements form a list
-11. remove(), pop(), clear(), del
-   # l = [10,20,30,40,60]
-   # print(l)
-   # l.remove(20) # elements
-   # print(l)
-   # l.pop(2) # index
-   # print(l)
-   # l.clear()
-   # print(l)
-   # del l
-   # print(l)
-
-12. list sort
-
-   # l = [2,10,4,8,6,7,8]
-   # print(l)
-   # l.sort()
-   # print(l)
-   # l.sort(reverse=True)
-   # print(l)
-b b   
-13. list copy
-   shallow copy is normal copy
-
-   deep copy
-   # l = [2,10,4,8,6,7,8]
-   # print(l)
-   # l1 = l.copy()
-   # print(l1)
-   # l.append(33)
-   # l1.remove(10)
-   # print(l1)
-   # print(l)
-   
-14. list count
-  # l = [2,10,4,8,6,7,8,5,5,5,5]
-  # print(l.count(5))
-  
-15. list index
-
-16. creating list from user input values
-
-   # creating list from user input value
-   # l = []
-   # v1 = int(input("Enter a integer value:"))
-   # v2 = float(input("Enter a float value:"))
-   # v3 = input("enter a string value:")
-   # l.append(v1)
-   # l.append(v2)
-   # l.append(v3)
-   # print(l)
-
-17. creating list using range function
-   # l = []
-   # n = int(input("Enter the length of list:"))
-   # for i in range(n):
-   #     x = int(input("enter the element:"))
-   #     l.append(x)
-   # print(l)
-
-
-   # l = []
-   # n = int(input("Enter the length of list:"))
-   # for i in range(n):
-   #     x = input("enter the element:")
-   #     l.append(x)
-   # print(l)
-
-# Creating list using range function
-   # print(list(range(2,10,2)))
-
-13--------------------------------------------------------------------------------------------------
-
-Tuple:
-
-1. what is tuple : is order collection of elements same as list
-2. creating tuple : ()
-3. creating tuple with one element : with ,
-4. accessing elements from tuple
-5. tuple slicing
-6. tuple immutable
-7. tuple concatenation and multiplication
-   adding one or more tuples in to single concatenation
-8. deleting a tuple
-9. tuple methods --- count and index
-10. tuple membershiptest
-11. len(),max(),min(),sum()
-12. converting a string into tuple
-13. converting a list into tuple
-14. converting a tuple into string
-15. tuple packing and unpacking
-
----------------------------------------
-Set:
-
-1. what is set : unorder collection of unic elements and ignore duplicate elements
-2. creating set 
-   # s = set()
-   # print(s)
-   # print(type(s))
-
-   # s = {10,20,30,"sai",34.5}
-   # print(s)
-   # s.add(99)
-   # print(s)
-   
-3. creating an empty set
-4. how to change set (add and update)
-5. remove elements from set(discard and remove), clear(), del
-6. set operation -- union (|)
-                    intersection (&)
-                    difference(-)
-                    symmetric difference(^)
-   # its return unique values
-   # a = {1,2,3,4,5}
-   # b = {4,5,6,7,8}
-   # print(a|b)
-   # print(a.union(b))
-
-   # intersection
-   # print(a&b)
-   # print(a.intersection(b))
-
-   # difference
-   # print(a-b)
-   # print(a.difference(b))
-
-   # symmetric difference
-   # common values will not print
-   # print(a^b)
-   # print(a.symmetric_difference(b))
-
-7. membership test
-8. len
-9. max and min
-10. sum
-
----------------------------------------
-
-Dictionary:
------------
-
-1. what is dictionary : is a collection of items, 
-                        each item can be pair {key:value}
-                        keys are immutable, values are mutable
-                        keys must be unique, no duplicate key
-                        value not unique, duplicate values also possible
-                        key can be any type
-2. creating dictonary
-3. accessing value from dictionary
-4. change or add values
-5. delete or remove values
-6. copy
-7. items
-8. keys
-9. values
-10. membership test
-11. len
-12. pop
-13. popitem
-
-   bytes: is used to represent byte numers just like an array the only allowed values for bytes is0 to256
-          bytes is immutable, we cannot chang
+👉 Next Topic: 
+----------------------------------------------------------------------------------------------

@@ -7,21 +7,22 @@ This repo contains structured notes I’ve created while learning Python, writte
 
 “These notes are created for personal learning and reference. Content is a mix of my own study, practice, and AI-assisted explanations.”
 
-
-python-notes/
-├── README.md         # Overview of the repo
-├── basics/
-│   ├── variables.md
-│   ├── datatypes.md
-│   ├── operators.md
-├── advanced/
-│   ├── oop.md
-│   ├── decorators.md
-│   ├── generators.md
-└── projects/
-    ├── small-project-1.md
-    ├── small-project-2.md
-
+📂 python-notes/
+│
+├── 1_basics_introduction.md
+├── 2_data_types.md
+├── 3_variables_and_operators.md
+├── 4_control_flow.md        # if, else, loops
+├── 5_functions.md
+├── 6_collections.md         # list, tuple, set, dict
+├── 7_strings.md
+├── 8_modules_and_packages.md
+├── 9_file_handling.md
+├── 10_exceptions.md
+├── 11_oop.md
+├── 12_advanced_topics.md    # generators, decorators, etc.
+│
+└── README.md                # overview + navigation links
 
 
 
