@@ -23,7 +23,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-#### ⚖️ 2. Relational(Comparison) Operators
+#### ⚖️ 2. Relational (Comparison) Operators
 ----------------------------------------------------------------------------------------------
 * Relational operators are used to **compare two values**.  
 * The result of these operations is always a **Boolean value** (`True` or `False`).
@@ -39,7 +39,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-#### 📝 3. Assignment operator
+#### 📝 3. Assignment Operator
 ----------------------------------------------------------------------------------------------
 * Assignment operators are used to **assign values** to variables.  
 * Some operators also perform an operation and then assign the result to the variable.
@@ -68,7 +68,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-#### 🔗 4 . logical operators
+#### 🔗 4 . Logical Operators
 ----------------------------------------------------------------------------------------------
 Logical operators are used to perform **logical operations** (mainly in conditional statements).  
 
@@ -173,7 +173,7 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 ```
 
 ----------------------------------------------------------------------------------------------
-#### 🆔 6. identity
+#### 🆔 6. Identity
 ----------------------------------------------------------------------------------------------
 
 * Identity operators are used to **check if two variables refer to the same object in memory**.
