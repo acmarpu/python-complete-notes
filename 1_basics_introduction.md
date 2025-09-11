@@ -191,12 +191,29 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
  
     _h)_ no keywords or reserved words can be used as identifier.
 
+----------------------------------------------------------------------------------------------
+##### 📜 c. Variables
+----------------------------------------------------------------------------------------------
+* *Statically Typed vs Dynamically Typed:*
+   * In some languages (like Java, C, C++), variables are *statically typed*, meaning you must declare the data type before using it.
+   * In Python, variables are *dynamically typed* — you don’t need to declare the type explicitly. Python infers the type automatically at runtime.
 
-**c. Variables**
-* &nbsp;Variables as Containers: A variable is used to store data values. It holds information that can be used and manipulated throughout a program.
-* &nbsp;Variables as Identifiers: A variable is also known as an identifier because it uniquely identifies the value or object it is storing. An identifier is simply a name given to a memory location where data is stored.
-* &nbsp;Named Memory Location: In Python, when you assign a value to a variable, Python internally stores the value in a memory location, and the variable name points to that location. The name you assign to a variable acts as a reference to the data.
-* &nbsp;No Need to Specify Data Type: Unlike many other programming languages, Python is dynamically typed, meaning you don't need to specify the type of data a variable will hold.
+* *Variables as Containers:*
+  Variables act like containers that store values. You can reuse and manipulate these values throughout the program.
+
+* *Variables as Identifiers:*
+  A variable is also called an *identifier* because it uniquely identifies the value or object stored in memory.
+
+* *Named Memory Location:* 
+  When you assign a value to a variable, Python stores that value in a memory location, and the variable name points to that location.  
+  Example: `x = 10` → here `x` is the *name* (identifier) pointing to the value `10`.
+
+* *Dynamic Typing in Python:* 
+  Python doesn’t require specifying the data type during declaration. The type is decided automatically based on the assigned value.
+  ```python
+  x = 10        # int
+  x = "hello"   # str
+  x = 3.14      # float
 
 **d. Multiple Assignment**
 * &nbsp;is process of assigning a single value to multiple variables
@@ -208,6 +225,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       print(b)
       print(c)
       print(type(a))
+
 ```
 
 * &nbsp;Single line print
@@ -247,13 +265,17 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ```
 
-**e. Python Indentation**
-* Python uses indentation (whitespace before a statement) to define the structure of the code, such as loops, conditionals, functions, and classes. Instead of using curly braces {} (like in many other languages such as C or Java), Python relies on consistent indentation to group statements within a block of code. 
+**e. Indentation**
+ * Python uses indentation (whitespace before a statement) to define the structure of the code — for example, in loops, conditionals, functions, and classes.
 
-* Indentation Rules:
-   * 4 spaces: The Python style guide (PEP 8((Python Enhancement Proposal 8))) recommends using 4 spaces for each level of indentation.
-   * Consistency: You can technically use a different number of spaces (like 1 or 2), but mixing different indentation styles (e.g., 4 spaces and tabs) will cause errors.
-   * Tab vs Space: Although spaces are preferred, you can use tabs. However, using spaces is the common practice. Python 3 will raise a TabError if you mix tabs and spaces within the same block.
+ * Unlike many other languages such as C, C++, or Java, which use curly braces {} to group statements, Python relies only on indentation.
+
+*Indentation Rules:*
+      * 4 spaces → According to PEP 8 (Python Enhancement Proposal 8), the recommended style is 4 spaces per indentation level.
+
+      * Consistency → You may technically use other spacing (e.g., 2 spaces), but mixing spaces and tabs or using inconsistent indentation will cause errors.
+
+      * Tabs vs Spaces → Spaces are preferred. While tabs can be used, Python 3 raises a TabError if you mix tabs and spaces in the same block.
 
 ```
 # In Java
