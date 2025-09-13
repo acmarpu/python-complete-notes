@@ -2,7 +2,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### Control Flow Statement
+### 🔀 Control Flow Statement
 ----------------------------------------------------------------------------------------------
 * In Python, **control flow statements** are used to decide the order in which statements are executed in a program.  
 * Control flow statements help maintain the flow of program execution.  
@@ -33,7 +33,7 @@
 
       
 ----------------------------------------------------------------------------------------------
-#### 1. Conditional statements
+#### 1. ❓Conditional statements
 ----------------------------------------------------------------------------------------------
 * The `if` keyword is used to test specific conditions.  
   - If the condition evaluates to **True**, the control enters the `if` block.  
@@ -114,7 +114,6 @@ else:
 ```
 
 ```
-
       name = input("enter the name:")
       age = int(input("enter the age:"))
       gender = input("enter your geder (M/F):")
