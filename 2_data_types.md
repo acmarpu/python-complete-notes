@@ -74,7 +74,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-### 🔢 2. Numeric type   immutable.
+### 🔢 2. Numeric type   (immutable)
 ----------------------------------------------------------------------------------------------
 
 * In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
@@ -190,7 +190,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### 🔡 3. String ("immutable","python")
+### 🔡 3. String ("immutable")
 ----------------------------------------------------------------------------------------------
 
 * In Python, strings are an essential data type used to represent textual data.
@@ -233,12 +233,19 @@
 
 ```
 
+* In Python, you can repeat strings using the multiplication (*) operator.
 ```
-      # In Python, you can repeat strings using the multiplication (*) operator.
-
       s = "Hello"
       repeated = s * 3
       print(repeated)           # Output: HelloHelloHello
+
+```
+```
+      s = "hello ashoka"
+      repeated = s * 3          # Output: hello ashokahello ashokahello ashoka
+      print(repeated)
+      repeated = " ".join([s] * 3)  # Output: hello ashoka hello ashoka hello ashoka
+      # " ".join(...) → joins them with a space " " in between
 
 ```
 
@@ -267,8 +274,8 @@
 ```
 
 
-*The replace method returns a new string, we can assign the result to a variable*
-*we can not reuse "s" value*
+* The replace method returns a new string, we can assign the result to a variable*
+* we can not reuse "s" value*
 
 
 ```
@@ -277,7 +284,7 @@
 
 ```
 
-*We can assign the modified string to a new variable*
+* We can assign the modified string to a new variable*
 
 ```      
       s1 = s.replace("hello", "hai")
@@ -334,10 +341,9 @@
       print(l)                           # Output: [10,20,30,3.4,"ashoka",True,33]
 
 ```
+* Modifying an element at a specific index
 
 ```
-      *Modifying an element at a specific index*
-
       l[1] = 33                          # Changes the element at index 1 (20 → 33)
       print(l)                           # Output: [10, 33, 30, 3.4, "ashoka",True,33]
 

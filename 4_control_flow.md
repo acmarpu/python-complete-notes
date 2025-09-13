@@ -1,90 +1,119 @@
 # this document is inprogress 
 
 
+----------------------------------------------------------------------------------------------
+### Control Flow Statement
+----------------------------------------------------------------------------------------------
+* In Python, **control flow statements** are used to decide the order in which statements are executed in a program.  
+* Control flow statements help maintain the flow of program execution.  
+* Conditional statements in Python are used to execute certain blocks of code based on whether a condition is true or false. These statements allow your program to make decisions and change its behavior accordingly.  
+* Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated.  
 
-*****************************************************************************************
-# **Control Flow Statement**
-*****************************************************************************************
-* In Python, conditional statements are used to execute certain blocks of code based on whether a condition is true or false. These statements allow your program to make decisions and change its behavior accordingly.
-* Python control flow. Control flow is the order in which individual statements, instructions, or function calls are executed or evaluated.
-* Control FLow Statement are used to mantin flow of program execution
- 
+
+```
    Conditional statements
       if 
       if else
       nested if
       elif
-   
+```
+
+```   
    iteretive statement
       for
       whle
-   
+```
+
+```   
    transfer statements
       break
       continue
       pass
+```
 
       
-*****************************************************************************************
-**1. Conditional statements**
-*****************************************************************************************
-    *if  
-    *if else 
-    *nested if 
-    *elif 
-    
-      
-**if & if else**
-* *if* is key word test the specific condition
-* if else --The if-else statement allows you to execute one block of code if the condition is true and another block of code if the condition is false
-* The if statement evaluates a condition. If the condition is True, the code block within the if gets executed. If the condition is False, it will skip to the else block (if present).
+----------------------------------------------------------------------------------------------
+#### 1. Conditional statements
+----------------------------------------------------------------------------------------------
+* The `if` keyword is used to test specific conditions.  
+  - If the condition evaluates to **True**, the control enters the `if` block.  
+  - If the condition evaluates to **False**, the control skips the `if` block and continues with the rest of the code.  
 
-* #Examples
-
-      i = 10
-      if i == 100:
-         print("this is correct")  # This won't be printed because i is not 100
-      else:
-         print("this is not correct")  # This will be printed because i is 10, not 100
-
-      i = 10
-      if i == 100:
-         pass   # nothing is there 
-      else:
-         print("this is not correct")  # This will be printed because i is 10, not 100
- 
-      i = int(input("Enter a number: "))  # Get user input as an integer
-      if i % 2 == 0:  # Check if the number is divisible by 2
-         print(i, "is even")
-      else:
-         print(i, "is odd")
+* The `if-else` block is used when you want to execute one block of code if the condition is **True**, and a different block of code if the condition is **False**.  
 
 
-      i = int(input("enter first number:"))
-      j = int(input("enter second number:"))  
-      if i > j:
-          print(i,"is big")
-      else
-           print(j,"is big")  
------------------------------------------------------------------
-**nested if**
-  * is test multipile conditions and one of the condition fail its jump into another if ) 
-  * (if inside if) You can have if statements inside if statements, this is called nested if statements.
+```
+if condation:
+   statements
+else:
+   statement
 
-   #Examples
+```  
+checking control flow is moving, check breack point select debuh option function key +f8
+
+
+##### 🔀 if & if-else
+* `if` is a keyword used to test a specific condition.  
+* `if-else`: The if-else statement allows you to execute one block of code if the condition is **True**, and another block of code if the condition is **False**.  
+* The `if` statement evaluates a condition:  
+  - If the condition is **True**, the code block inside `if` is executed.  
+  - If the condition is **False**, it will skip to the `else` block (if present).  
+
+
+```
+   i = 10
+   if i == 100:
+       print("this is correct")        # This won't be printed because i is not 100
+   else:
+       print("this is not correct")    # This will be printed because i is 10, not 100
+
+```  
+
+```
+
+   i = int(input("Enter a number: "))   # Get user input as an integer
+   if i % 2 == 0:                       # Check if the number is divisible by 2
+       print(i, "is even")
+   else:
+       print(i, "is odd")
+
+```
+
+``` 
+
+   i = int(input("Enter first number: "))
+   j = int(input("Enter second number: "))  
+   if i > j:
+       print(i, "is bigger")
+   else:
+       print(j, "is bigger")
+
+```
+
+##### 🪜 Nested if
+
+* Nested `if` is used to test **multiple conditions**.  
+* If the outer `if` condition is `True`, then the inner `if` condition(s) will be tested.  
+* If any condition fails, Python skips that inner block.  
+* In simple terms: **`if` inside another `if`** is called a **nested if statement**.
+
+```
       i = int(input("enter first number:"))
       j = int(input("enter second number:"))
       k = int(input("enter third number:"))
 
-      if i > j and i > k: #30 10 20
+      if i > j and i > k:
           print(i,"is big")
       else
            if j > k:
             print(j,"is big")
         else:
            print(k,"is big")
------------------------------------------------------------------
-   #Examples
+
+```
+
+```
+
       name = input("enter the name:")
       age = int(input("enter the age:"))
       gender = input("enter your geder (M/F):")
@@ -97,6 +126,9 @@
 
       else:
           print("You are not eligbile")
+
+```
+
 
    #Examples
       var = 100
@@ -112,13 +144,56 @@
                    print("Expression value is less than 300")
       else:
            print("could not fine the Expression value")
-  
------------------------------------------------------------------
-**elif**
-  * one of the confition is true other condition will not be test here
 
- 
-   #Examples
+##### 🔂 elif
+* If one of the conditions is true, the remaining conditions will not be tested.  
+* The `elif` statement allows you to check multiple conditions. As soon as one condition is true, its block of code executes, and the rest are skipped.  
+
+```
+   i = int(input("enter the number"))
+
+   if i == 1:
+       print("one")
+   else:
+       if i == 2:
+           print("two")
+       else:
+           if i == 3:
+               print("three)
+           else:
+               if i == 4:
+                   print("four")
+               else:
+       print("invalif number")
+
+```
+
+```
+   if i == 1:
+      print("one")
+   elif i == 2:
+      print("two")
+   elif i == 3:
+      print("three)
+   elif i == 4:
+      print("four")
+   else:
+       print("invalif number")
+
+```
+```
+   marks = 85
+   if marks >= 95:
+       print("Grade A")
+   elif marks >= 90:
+       print("Grade B")
+   elif marks >= 85:
+       print("Grade C")
+   elif marks >= 80:
+       print("Grade D")
+
+``` 
+```
       var = 100
       or
       var = int(input("Enter the Expression value:")) #we can enter the runtime value
@@ -131,7 +206,8 @@
       else:
           print("invalid expression value")
 
-   #Examples
+```
+```
       i = int(input("enter the number:"))
       if i == 1:
           print("one")
@@ -143,7 +219,7 @@
           print("four")
       else:
           print("invalid number")
-
+```
 
 
 ==========================================================================================================================================
