@@ -49,10 +49,11 @@ else:
    statement
 
 ```  
-checking control flow is moving, check breack point select debuh option function key +f8
+* Debug mode: checking control flow is moving, check breack point select debuh option function key +f8
+* You can set a breakpoint (🔴) in your code to tell the debugger:
+* (fn+F8): Exits the current function and goes back to the caller.
 
-
-##### 🔀 if & if-else
+#### 🔀 if & if-else
 * `if` is a keyword used to test a specific condition.  
 * `if-else`: The if-else statement allows you to execute one block of code if the condition is **True**, and another block of code if the condition is **False**.  
 * The `if` statement evaluates a condition:  
@@ -90,7 +91,7 @@ checking control flow is moving, check breack point select debuh option function
 
 ```
 
-##### 🪜 Nested if
+#### 🪜 Nested if
 
 * Nested `if` is used to test **multiple conditions**.  
 * If the outer `if` condition is `True`, then the inner `if` condition(s) will be tested.  
@@ -129,9 +130,8 @@ checking control flow is moving, check breack point select debuh option function
 
 ```
 
-
-   #Examples
-      var = 100
+```
+      var = 100   # assigan the int vaile directly 
       or
       var = int(input("Enter the Expression value:")) #we can enter the runtime value 
       if var < 150:
@@ -145,7 +145,9 @@ checking control flow is moving, check breack point select debuh option function
       else:
            print("could not fine the Expression value")
 
-##### 🔂 elif
+```
+
+#### 🔂 elif
 * If one of the conditions is true, the remaining conditions will not be tested.  
 * The `elif` statement allows you to check multiple conditions. As soon as one condition is true, its block of code executes, and the rest are skipped.  
 
@@ -181,6 +183,7 @@ checking control flow is moving, check breack point select debuh option function
        print("invalif number")
 
 ```
+
 ```
    marks = 85
    if marks >= 95:
@@ -193,6 +196,7 @@ checking control flow is moving, check breack point select debuh option function
        print("Grade D")
 
 ``` 
+
 ```
       var = 100
       or
@@ -207,6 +211,7 @@ checking control flow is moving, check breack point select debuh option function
           print("invalid expression value")
 
 ```
+
 ```
       i = int(input("enter the number:"))
       if i == 1:
