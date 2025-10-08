@@ -197,7 +197,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 *Variables as Containers:*
    * Variables act like containers that store values. You can reuse and manipulate these values throughout the program.
 
-* *Variables as Identifiers:*
+*Variables as Identifiers:*
    * A variable is also called an *identifier* because it uniquely identifies the value or object stored in memory.
 
 *Named Memory Location:* 
@@ -303,10 +303,4 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ```
 ----------------------------------------------------------------------------------------------
 ✅ End of Python Basics
-<<<<<<< HEAD:1_basics_introduction.md
 ----------------------------------------------------------------------------------------------
-=======
-
-👉 Next Topic: 2_data_types.md
-----------------------------------------------------------------------------------------------
->>>>>>> d081d14a235a275ea0733869f7e6d0ef3f83af57:1-basics-introduction.md
