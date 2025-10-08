@@ -8,7 +8,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
   *a) General-Purpose:*
-   * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. 
+   _ This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain.
    You can use Python for:
    * Web development
    * Data analysis
@@ -70,60 +70,67 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ### 🧩 1. Features of Python:
 ----------------------------------------------------------------------------------------------
 
-**Expressive Language:** Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
+**Expressive Language:** 
+  * Python code is readable and concise, allowing developers to write fewer lines of code for complex tasks.
 
-**Free and Open Source:** Python is free to use, and its source code is available for modification and redistribution under the Python Software Foundation License.
+**Free and Open Source:** 
+  * Python is free to use, and its source code is available for modification and redistribution under the Python Software Foundation License.
 
-**Cross-Platform/Platform Independent:** Python code can be run on any operating system without modification, making it highly portable.
+**Cross-Platform/Platform Independent:** 
+  * Python code can be run on any operating system without modification, making it highly portable.
 
-**Object-Oriented Language:** Python supports object-oriented programming (OOP), which enables code reuse, modularity, and encapsulation for better security and maintainability.
+**Object-Oriented Language:** 
+  * Python supports object-oriented programming (OOP), which enables code reuse, modularity, and encapsulation for better security and maintainability.
 
-**Huge Standard Libraries:** Python comes with a comprehensive standard library that provides many modules and functions for various tasks, such as file I/O, web development, data manipulation, etc.
+**Huge Standard Libraries:** 
+  * Python comes with a comprehensive standard library that provides many modules and functions for various tasks, such as file I/O, web development, data manipulation, etc.
 
-**GUI Support:** Python supports graphical user interface (GUI) development with frameworks like Tkinter, PyQt, and Kivy.
+**GUI Support:** 
+  * Python supports graphical user interface (GUI) development with frameworks like Tkinter, PyQt, and Kivy.
 
-**Portable:** Python programs can be easily migrated from one platform to another (e.g., from Windows to Linux or Mac) without changes.
+**Portable:** 
+  * Python programs can be easily migrated from one platform to another (e.g., from Windows to Linux or Mac) without changes.
 
-**Extensible:** Python allows developers to integrate other languages like C/C++ for performance-critical parts, and it supports the use of external libraries and modules.
-
+**Extensible:** 
+  * Python allows developers to integrate other languages like C/C++ for performance-critical parts, and it supports the use of external libraries and modules.
 
 ----------------------------------------------------------------------------------------------
 ### ⚡ 2. Application Areas of Python:
 ----------------------------------------------------------------------------------------------
 
 **Standalone or Desktop Applications**
-* CUI (Command User Interface) run directly on a user's computer
-* GUI (Graphical User Interface) interact with the user via text in the terminal or command line
+  * CUI (Command User Interface) run directly on a user's computer
+  * GUI (Graphical User Interface) interact with the user via text in the terminal or command line
 
 **Web Applications**
-* Frameworks like Django and Flask enable Python for web development.
+  * Frameworks like Django and Flask enable Python for web development.
 
 **Network-Based Applications**
-* Python is used for building networked applications and protocols.
+  * Python is used for building networked applications and protocols.
 
 **Data Analysis Applications**
-* Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in data analysis.These libraries allow you to work with large datasets, perform calculations, and generate charts.
+  * Python, with libraries like Pandas, NumPy, and Matplotlib, is widely used in data analysis.These libraries allow you to work with large datasets, perform calculations, and generate charts.
 
 **Business Applications**
-* Python is used for building business applications, including ERP (Enterprise Resource Planning) systems and CRM software.
+  * Python is used for building business applications, including ERP (Enterprise Resource Planning) systems and CRM software.
 
 **AWS (Amazon Web Services)**
-* Python can be used with AWS SDK (Boto3) for cloud services automation.
+  * Python can be used with AWS SDK (Boto3) for cloud services automation.
 
 **DevOps**
-* Python is often employed in automation scripts, monitoring, and server management tasks in DevOps.
+  * Python is often employed in automation scripts, monitoring, and server management tasks in DevOps.
 
 **MATLAB-like Applications**
-* Python can be used for numerical computing, similar to MATLAB, with libraries like SciPy and SymPy.
+  * Python can be used for numerical computing, similar to MATLAB, with libraries like SciPy and SymPy.
 
 **Artificial Intelligence (AI)**
-* Python is widely used for AI and Machine Learning, with frameworks like TensorFlow, Keras, and PyTorch.
+  * Python is widely used for AI and Machine Learning, with frameworks like TensorFlow, Keras, and PyTorch.
 
 **Testing**
-* Python is popular in software testing and automation with frameworks like unittest, pytest, and Selenium.
+  * Python is popular in software testing and automation with frameworks like unittest, pytest, and Selenium.
 
 **Python File Extension:**
-* The default extension for Python files is .py (e.g., test.py).
+  * The default extension for Python files is .py (e.g., test.py).
 
 
 ----------------------------------------------------------------------------------------------
@@ -131,18 +138,18 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ----------------------------------------------------------------------------------------------
 
 **Interactive Mode**
-* You can run Python code interactively in the Python shell (REPL(Read-Eval-Print Loop)).
+  * You can run Python code interactively in the Python shell (REPL(Read-Eval-Print Loop)).
 
 **Script Mode**
-* You can write Python code in a file (e.g., test.py) and execute it via the command prompt:
+  * You can write Python code in a file (e.g., test.py) and execute it via the command prompt:
 
 **Using Python IDLE**
-* Python's Integrated Development and Learning Environment (IDLE(Integrated Development and Learning Environment)) is a simple environment to write and run Python code.
+  * Python's Integrated Development and Learning Environment (IDLE(Integrated Development and Learning Environment)) is a simple environment to write and run Python code.
 
 **Using PyCharm Editor**
-* PyCharm is a popular Python IDE for professional developers.
-* You can download PyCharm Community Edition here.
-* download PyCharm Community Edition : https://www.jetbrains.com/pycharm/download/?section=windows
+  * PyCharm is a popular Python IDE for professional developers.
+  * You can download PyCharm Community Edition here.
+  * download PyCharm Community Edition : https://www.jetbrains.com/pycharm/download/?section=windows
 
 
 ----------------------------------------------------------------------------------------------
@@ -214,8 +221,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ```
 
 **d. Multiple Assignment**
-    * is process of assigning a single value to multiple variables
-    * is process of assigning a multiple values to multiple variables
+  * is process of assigning a single value to multiple variables
+  * is process of assigning a multiple values to multiple variables
 
 ```  
       a =b =c =10
@@ -264,16 +271,13 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ```
 
 **e. Indentation**
-      * Python uses indentation (whitespace before a statement) to define the structure of the code — for example, in loops, conditionals, functions, and classes.
-
-      * Unlike many other languages such as C, C++, or Java, which use curly braces {} to group statements, Python relies only on indentation.
+  * Python uses indentation (whitespace before a statement) to define the structure of the code — for example, in loops, conditionals, functions, and classes.
+  * Unlike many other languages such as C, C++, or Java, which use curly braces {} to group statements, Python relies only on indentation.
 
 *Indentation Rules:*
-      * 4 spaces → According to PEP 8 (Python Enhancement Proposal 8), the recommended style is 4 spaces per indentation level.
-
-      * Consistency → You may technically use other spacing (e.g., 2 spaces), but mixing spaces and tabs or using inconsistent indentation will cause errors.
-
-      * Tabs vs Spaces → Spaces are preferred. While tabs can be used, Python 3 raises a TabError if you mix tabs and spaces in the same block.
+  * 4 spaces → According to PEP 8 (Python Enhancement Proposal 8), the recommended style is 4 spaces per indentation level.
+  * Consistency → You may technically use other spacing (e.g., 2 spaces), but mixing spaces and tabs or using inconsistent indentation will cause errors.
+  * Tabs vs Spaces → Spaces are preferred. While tabs can be used, Python 3 raises a TabError if you mix tabs and spaces in the same block.
 
 ```
 # In Java
