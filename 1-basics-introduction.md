@@ -7,8 +7,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
-  *a) General-Purpose:*
-   * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. 
+&nbsp;*a) General-Purpose:*
+&nbsp; * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. 
    You can use Python for:
    * Web development
    * Data analysis
