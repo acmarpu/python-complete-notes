@@ -35,20 +35,18 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
    * Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
 **4.** Python is completely free and open-source
-
 **5.** Python is an interpreted language
+  *a) Interpreter-based languages(e.g., Python):* 
+   * The code is executed line by line, with each line being translated into machine code and executed on the fly.
+   * In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
-   *a) Interpreter-based languages(e.g., Python):* 
-    * The code is executed line by line, with each line being translated into machine code and executed on the fly.
-    * In this languages, all the debugging occurs at run-time.which makes debugging easier.
-
-   *b) Compiler-based languages(e.g., C, C++, Java):* 
-    * The source code is compiled into machine code (binary) before execution.
-    * In this language, compilation errors prevent the code from compiling.
+  *b) Compiler-based languages(e.g., C, C++, Java):* 
+   * The source code is compiled into machine code (binary) before execution.
+   * In this language, compilation errors prevent the code from compiling.
 
 **6.** Python is a dynamically typed language, not a statically typed language
 
-   *a) Statically typed languages (e.g., C, Java)* require the programmer to specify the data type of variables at the time of 
+  *a) Statically typed languages (e.g., C, Java)* require the programmer to specify the data type of variables at the time of 
 
 ```
       int a = 100
@@ -56,8 +54,8 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ```
 
-   *b) Dynamically typed languages (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
-* dynamically: no need to spcify any data type at the time of decleration 
+  *b) Dynamically typed languages (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
+   * dynamically: no need to spcify any data type at the time of decleration 
 
 * **Ex:** variable name = value 
 
