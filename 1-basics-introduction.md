@@ -36,9 +36,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **4.** Python is completely free and open-source
 
-**5.** Python is an interpreted language 
+**5.** Python is an interpreted language
 
-   *a) Interpreter-based languages(e.g., Python):*  
+   *a) Interpreter-based languages(e.g., Python):* 
     * The code is executed line by line, with each line being translated into machine code and executed on the fly.
     * In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
