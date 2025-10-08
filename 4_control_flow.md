@@ -16,12 +16,14 @@
       if else
       nested if
       elif
+
 ```
 
 ```   
    iteretive statement
       for
       whle
+
 ```
 
 ```   
@@ -29,12 +31,14 @@
       break
       continue
       pass
+
 ```
 
       
 ----------------------------------------------------------------------------------------------
-#### 1. ❓Conditional statements
+#### 1.❓Conditional statements
 ----------------------------------------------------------------------------------------------
+* Based on the condition. it decides whether the block of code will allows for execution or not.
 * The `if` keyword is used to test specific conditions.  
   - If the condition evaluates to **True**, the control enters the `if` block.  
   - If the condition evaluates to **False**, the control skips the `if` block and continues with the rest of the code.  
@@ -43,12 +47,14 @@
 
 
 ```
-if condation:
-   statements
-else:
-   statement
 
-```  
+   if condation:
+      statements
+   else:
+      statement
+
+``` 
+
 * Debug mode: checking control flow is moving, check breack point select debuh option function key +f8
 * You can set a breakpoint (🔴) in your code to tell the debugger:
 * (fn+F8): Exits the current function and goes back to the caller.
@@ -62,6 +68,7 @@ else:
 
 
 ```
+
    i = 10
    if i == 100:
        print("this is correct")        # This won't be printed because i is not 100
@@ -99,40 +106,38 @@ else:
 * In simple terms: **`if` inside another `if`** is called a **nested if statement**.
 
 ```
-      i = int(input("enter first number:"))
-      j = int(input("enter second number:"))
-      k = int(input("enter third number:"))
+      i = int(input("enter first number:"))  # 10
+      j = int(input("enter second number:")) # 20
+      k = int(input("enter third number:"))  # 30
 
       if i > j and i > k:
           print(i,"is big")
-      else
+      else:
            if j > k:
             print(j,"is big")
-        else:
-           print(k,"is big")
+           else:
+              print(k,"is big")               # Output 30 is big
 
 ```
 
 ```
-      name = input("enter the name:")
-      age = int(input("enter the age:"))
-      gender = input("enter your geder (M/F):")
+      name   = input("enter the name:")
+      age    = int(input("enter the age number:"))
+      gender = input("enter the gender:")
 
-      if age>= 18:
-      if gender == "M":
-           print("Hello Mr.", name, "Welcome")
+      if age >= 18:
+          if gender == "m":
+            print("Hello Mrs.", name, "welcome")
+          else:
+             print("hello Mrs.", "name")
       else:
-           print("Hello Mrs", name, "Welcome")
-
-      else:
-          print("You are not eligbile")
+         print("you are not eligbile")
 
 ```
 
 ```
-      var = 100   # assigan the int vaile directly 
-      or
-      var = int(input("Enter the Expression value:")) #we can enter the runtime value 
+      
+      var = int(input("Enter the Expression value:"))
       if var < 150:
           print("Expression value is less than 150")
 
@@ -226,24 +231,11 @@ else:
 ```
 
 
-==========================================================================================================================================
-**2. Iterative statements** or **loop Statement** or **Repetitive Statements**
-==========================================================================================================================================
-2 key words 
-   1. for loop
-      a) for loop statement
-         for loop is used to itetate the iterator or range
-         iterators -  list, set, tuple, dict, arry, string etc
-          
-      b) for repetitive statement
-         while loop is repetitive statement or loop statement
-         it will repet the certine block of code
-         
-      c) for iterative statement
-
-   2. While loop
-
-**for loop** 
+----------------------------------------------------------------------------------------------
+#### 2. Iterative statements or loop Statement or Repetitive Statements
+----------------------------------------------------------------------------------------------
+Based on the condition the block of code will execute repetitively R;GLB INERU4IOZY,48J
+#### for loop** 
    * use to iterate the elements of collections what the order they appear
    * A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
 
@@ -257,32 +249,33 @@ else:
 
    for - keyward  [to create for loop]       element - Temporary variable [ to store a value of iterator for every iteration]
 
-    for variablename in sequence:
-        statements
-        for variablename in sequence:
-            statements
+```
+   for variablename in sequence:
+      statements
+      for variablename in sequence:
+         statements
+```
 
-  #Examples
-      
-      list = [10,20,30,40,50,60]
-      for element in list:
+```
+       list = [10,20,30,40,50,60]
+       for element in list:
          print(element)
-
-         ![alt text](image.png)
+```
          
-   #Examples
+```
       
       list = [10,20,30,40,50,60]
       for i in list:
          print(i)
+```
 
-   #Examples
-
+```
       l = [10,20,30,40,50]
       print(l[0])
       print(l[1])
       print(l[3])
       print(l[4])
+```
 
    #Examples
        for i in range(50)
@@ -326,14 +319,17 @@ Another Way:-
       if i == 5 or i == 8:
          break  # Completley stop 
       print(i, end="")
--------------------------------------------------------------------------
-   #Examples
+
+```
       t = int(input("enter the table number:"))
       for i in range(1,21):
       print(t,"X",i,"=", t*i)
---------------------------------------------------------------------------
 
- **while** 
+```
+
+
+#### while
+ 
    use to execute the no of statements as long as the condition is true, 
    once the condition is false then the control will jump into out of the loop.
  
@@ -351,9 +347,9 @@ Another Way:-
     while i <= 10:
         print(i)
          i = i+1
-===========================================================================================================================================
-**3. transfer statement**
-===========================================================================================================================================
+----------------------------------------------------------------------------------------------
+#### 3. transfer statement
+----------------------------------------------------------------------------------------------
 
    *break* is used to stope the iteratiosn based on the condition
    *continue* is used to skip the current iteration and it will continue with the next iteration

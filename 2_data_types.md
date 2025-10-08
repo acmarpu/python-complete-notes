@@ -29,11 +29,11 @@
 
 | **Data Type** | **Category**      | **Example**                           | **Definition** |
 |---------------|------------------|---------------------------------------|----------------|
-| **str**       | Text Type         | `a = 'x'` or `"x"` or `"""Hello"""`   | Holds textual data (sequence of characters). **mutable** (can be changed). |
+| **str**       | Text Type         | `a = 'x'` or `"x"` or `"""Hello"""`   | Holds textual data (sequence of characters). **immutable** (can be changed). |
 | **list**      | Sequence Type     | `a = [1, 2.5, "Hello", [1, 2, 3], True]` | Stores multiple items, **mutable** (can be changed). |
 | **tuple**     | Sequence Type     | `a = (1, 2.5, "Hello")`               | Stores multiple items, **immutable** (cannot be changed). |
 | **range**     | Sequence Type     | `for i in range(5): print(i)`         | Generates a sequence of numbers, often used in loops. |
-| **set**       | Set Type          | `a = {1, 2, 3, 4, 5}`                 | Unordered collection of unique items (duplicates removed). |
+| **set**       | Set Type          | `a = {1, 2, 3, 4, 5}`                 | Unordered collection of unique items (duplicates removed). **mutable** |
 | **frozenset** | Set Type          | `fs = frozenset([1, 2, 3])`           | Same as set, but **immutable**. |
 | **dict**      | Mapping Type      | `a = {"key1": "value1", "key2": "value2"}` | Stores data in **key-value pairs**. |
 | **bytes**     | Binary Type       | `b = b'Hello'`                        | Immutable sequence of bytes. |
@@ -130,9 +130,8 @@
 
 ```
 
+* **Taking inputs separately and then converting to int**
 ```   
-      # Taking inputs separately and then converting to int
-
       a = input("enter number1:")
       print(a)
       print(type(a))
@@ -202,10 +201,9 @@
  - Operations like concatenation or .replace() return a new string instead of changing the original one.
 
 
-```  
 * With single quotes (' ') → may need escape \'.
 
-    
+```  
       s = 'hello ashoka''s'
       print(s)                 # Output: hello ashoka
       print(type(s))           # Output <class 'str'>
@@ -234,6 +232,7 @@
 ```
 
 * In Python, you can repeat strings using the multiplication (*) operator.
+
 ```
       s = "Hello"
       repeated = s * 3
@@ -270,20 +269,18 @@
 
 ```      
       s.replace("hello", "hai")
-      print(s)                                    # Output: hello ashoka (s is unchanged)
+      print(s)                                       # Output: hello ashoka (s is unchanged)
+
 ```
-
-
 * The replace method returns a new string, we can assign the result to a variable*
 * we can not reuse "s" value*
-
 
 ```
 
       print(s.replace("hello","hai")) 
 
 ```
-
+* But important: the original s is still unchanged (s is still "hello ashoka") because strings are immutable.
 * We can assign the modified string to a new variable*
 
 ```      
@@ -312,16 +309,16 @@
 ### 📋 4. List ["mutable"]
 ----------------------------------------------------------------------------------------------
 
-* A **list** in Python is an **ordered, mutable collection** that can hold different data types:integers, floats, strings, and even other lists.  
+* A **list** in Python is an **ordered, mutable collection** that can hold different data types: integers, floats, strings, and even other lists.  
 * Lists are enclosed in **square brackets [ ]** and elements are separated by commas.
 * Since lists are **mutable**, their elements can be changed after creation.
 
 
 📌 **Key Features of Python Lists:**
-  - **Ordered:** Items in a list have a defined order, and that order will not change unless modified.  
-  - **Mutable:** Lists can be changed after creation — you can add, update, or remove elements.  
-  - **Heterogeneous:** A single list can store elements of different data types (e.g., integers, strings, booleans, even other lists).  
-  - **Duplicates Allowed:** Lists can contain duplicate values; the same element can appear multiple times.  
+  * **Ordered:** Items in a list have a defined order, and that order will not change unless modified.  
+  * **Mutable:** Lists can be changed after creation — you can add, update, or remove elements.  
+  * **Heterogeneous:** A single list can store elements of different data types (e.g., integers, strings, booleans, even other lists).  
+  * **Duplicates Allowed:** Lists can contain duplicate values; the same element can appear multiple times.  
 
 
 * Creating a list with various types of elements*
@@ -422,11 +419,11 @@
 * A **tuple** is a built-in data structure in Python, very similar to a list. However, unlike lists, **tuples are immutable** — their elements cannot be changed after creation.
    
 📌 **Key Points:**
-*  *Immutable:* Once a tuple is created, its elements cannot be modified, added, or removed.
-*  *Ordered:* Like lists, tuples maintain the order of elements.
-*  *Different Data Types:* A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
-*  *Duplicates Allowed:* Tuples can have multiple occurrences of the same element.
-*  *Parentheses:* Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
+  * **Immutable:** Once a tuple is created, its elements cannot be modified, added, or removed.
+  * **Ordered:** Like lists, tuples maintain the order of elements.
+  * **Different Data Types:** A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
+  * **Duplicates Allowed:** Tuples can have multiple occurrences of the same element.
+  * **Parentheses:** Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
 
 
 * If you want to create a **tuple with only one element**, you must add a **trailing comma**.  
@@ -468,20 +465,20 @@
 * A **set** is an **unordered** collection of **unique elements**. 
 * Duplicate values are automatically removed when creating a set.
 
-📌 *Key Points:*
-   * *Unordered:* The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
-   * *Unique Elements:* Sets automatically remove duplicate elements, so each element is stored only once.
-   * *Mutable:* Sets are mutable, meaning you can add or remove elements after creation.
-   * *Different Data Types:* A set can hold elements of different data types (e.g., integers, strings, etc.).
+📌 **Key Points:**
+
+  * **Unordered:** The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
+  * **Unique Elements:** Sets automatically remove duplicate elements, so each element is stored only once.
+  * **Mutable:** Sets are mutable, meaning you can add or remove elements after creation.
+  * **Different Data Types:** A set can hold elements of different data types (e.g., integers, strings, etc.).
 
 *Creating Sets:*
 * To create a non-empty set, you can use curly braces {}.
 * To create an empty set, you need to use the set() function because {} creates an empty dictionary, not a set.
    
+* Example: Empty set
 
 ```   
-      # Example: Empty set  
-
       s = set()
       print(s)                        # Output: set()
       print(type(s))                  # Output: <class 'set'>
@@ -511,6 +508,7 @@
 
 
 ```
+
 * Removing elements from a set:
 
 ```      
@@ -537,7 +535,7 @@
 
       s = {10, 20, 30, 40, 50}
       s1 = {50, 60, 70, 80}
-      print(s.intersection(s1))  # Intersection: {50}
+      print(s.intersection(s1))       # Intersection: {50}
 
 ```
 
@@ -565,9 +563,10 @@
    * *Creating a Dictionary:*
    * **Empty dictionary:** Use {} or dict().
    * **Non-empty dictionary:** Use curly braces {} with key-value pairs separated by a colon (:).
-   
+
+* Empty dictionary  
+
 ```
-   * Empty dictionary 
       d = dict()
 
       or
@@ -807,6 +806,4 @@
 
 ----------------------------------------------------------------------------------------------
 ✅ End of Python Data Types 
-
-👉 Next Topic: ./3_operators.md
 ----------------------------------------------------------------------------------------------

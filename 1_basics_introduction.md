@@ -7,29 +7,26 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
-   _a)_ **General-Purpose:**
+  *a) General-Purpose:*
    * This means that Python is designed to be used for a wide variety of programming tasks, not just one specific domain. 
-   - You can use Python for 
-  
+   You can use Python for:
    * Web development
    * Data analysis
    * Machine learning
    * Automation
    * Scripting, and more.
 
-
-   _b)_ **High-level:**
+  *b) High-level:*
    * Python is considered a high-level language because it is abstracted from the machine's hardware.(Python does not require you to deal with computer hardware directly (like CPU instructions or memory).)
    * This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. 
    * In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-   _c)_ **Case-Sensitive:**
+  *c) Case-Sensitive:*
    * Python treats uppercase and lowercase characters as different.
-   * For example, Variable and variable would be considered two different identifiers. 
+   * For example, *Variable* and *variable* would be considered two different identifiers. 
    * This is important to remember when writing Python code, as the language will not automatically correct case mismatches.
  
-
-   _d)_ **Easy to Learn:**
+  *d) Easy to Learn:*
    * Python has a simple and easy learn and easy-to-understand syntax, making it a great choice for beginners.
    * meaning it’s a straight forward language
 
@@ -41,24 +38,25 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 **5.** Python is an interpreted language 
 
-   _a)_ **Interpreter-based languages** (e.g., Python): 
-   * The code is executed line by line, with each line being translated into machine code and executed on the fly.
-   * In this languages, all the debugging occurs at run-time.which makes debugging easier.
+   *a) Interpreter-based languages(e.g., Python):*  
+    * The code is executed line by line, with each line being translated into machine code and executed on the fly.
+    * In this languages, all the debugging occurs at run-time.which makes debugging easier.
 
-   _b)_ **Compiler-based languages(e.g., C, C++, Java):** 
-   * &nbsp; The source code is compiled into machine code (binary) before execution.
-   * &nbsp; In this language, compilation errors prevent the code from compiling.
+   *b) Compiler-based languages(e.g., C, C++, Java):* 
+    * The source code is compiled into machine code (binary) before execution.
+    * In this language, compilation errors prevent the code from compiling.
 
 **6.** Python is a dynamically typed language, not a statically typed language
 
-   _a)_ **Statically typed languages** (e.g., C, Java) require the programmer to specify the data type of variables at the time of 
+   *a) Statically typed languages (e.g., C, Java)* require the programmer to specify the data type of variables at the time of 
 
 ```
       int a = 100
       The data type (int) must be declared explicitly
+
 ```
 
-   _b)_ **Dynamically typed languages** (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
+   *b) Dynamically typed languages (e.g., Python)* allow the data type to be inferred based on the assigned value. You don't need to declare the type explicitly, making the code simpler and more flexible
 * dynamically: no need to spcify any data type at the time of decleration 
 
 * **Ex:** variable name = value 
@@ -192,32 +190,34 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
     _h)_ no keywords or reserved words can be used as identifier.
 
 ----------------------------------------------------------------------------------------------
-##### 📜 c. Variables
+### 📜 c. Variables
 ----------------------------------------------------------------------------------------------
-* *Statically Typed vs Dynamically Typed:*
+*Statically Typed vs Dynamically Typed:*
    * In some languages (like Java, C, C++), variables are *statically typed*, meaning you must declare the data type before using it.
    * In Python, variables are *dynamically typed* — you don’t need to declare the type explicitly. Python infers the type automatically at runtime.
 
-* *Variables as Containers:*
-  Variables act like containers that store values. You can reuse and manipulate these values throughout the program.
+*Variables as Containers:*
+   * Variables act like containers that store values. You can reuse and manipulate these values throughout the program.
 
 * *Variables as Identifiers:*
-  A variable is also called an *identifier* because it uniquely identifies the value or object stored in memory.
+   * A variable is also called an *identifier* because it uniquely identifies the value or object stored in memory.
 
-* *Named Memory Location:* 
-  When you assign a value to a variable, Python stores that value in a memory location, and the variable name points to that location.  
+*Named Memory Location:* 
+   * When you assign a value to a variable, Python stores that value in a memory location, and the variable name points to that location.  
   Example: `x = 10` → here `x` is the *name* (identifier) pointing to the value `10`.
 
-* *Dynamic Typing in Python:* 
-  Python doesn’t require specifying the data type during declaration. The type is decided automatically based on the assigned value.
-  ```python
-  x = 10        # int
-  x = "hello"   # str
-  x = 3.14      # float
+*Dynamic Typing in Python:* 
+   * Python doesn’t require specifying the data type during declaration. The type is decided automatically based on the assigned value.
+  
+```
+      x = 10        # int
+      x = "hello"   # str
+      x = 3.14      # float
+```
 
 **d. Multiple Assignment**
-* &nbsp;is process of assigning a single value to multiple variables
-* &nbsp;is process of assigning a multiple values to multiple variables
+    * is process of assigning a single value to multiple variables
+    * is process of assigning a multiple values to multiple variables
 
 ```  
       a =b =c =10
@@ -228,7 +228,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 
 ```
 
-* &nbsp;Single line print
+* Single line print
 
 ```
       a =b =c =10                       # multiple variables assigned the same value
@@ -240,7 +240,7 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
       # 10,10,10. <class 'int'>         # Output  
 ```
 
-* &nbsp; the process of assigning multiple values ot multiple variables
+* the process of assigning multiple values ot multiple variables
 
 ```
       a,b,c = 10,20,30     # assigning multiple values to multiple variables
@@ -266,9 +266,9 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 ```
 
 **e. Indentation**
- * Python uses indentation (whitespace before a statement) to define the structure of the code — for example, in loops, conditionals, functions, and classes.
+      * Python uses indentation (whitespace before a statement) to define the structure of the code — for example, in loops, conditionals, functions, and classes.
 
- * Unlike many other languages such as C, C++, or Java, which use curly braces {} to group statements, Python relies only on indentation.
+      * Unlike many other languages such as C, C++, or Java, which use curly braces {} to group statements, Python relies only on indentation.
 
 *Indentation Rules:*
       * 4 spaces → According to PEP 8 (Python Enhancement Proposal 8), the recommended style is 4 spaces per indentation level.
@@ -303,13 +303,6 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
           print("false") # *indent by four spaces = 1 level*
 
 ```
-
-
-
-
-
 ----------------------------------------------------------------------------------------------
 ✅ End of Python Basics
-
-👉 Next Topic: 2_data_types.md
 ----------------------------------------------------------------------------------------------
