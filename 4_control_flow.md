@@ -35,7 +35,9 @@
 ----------------------------------------------------------------------------------------------
 ### 1.❓Conditional Statements
 ----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 #### 🔀 if & if-else
+----------------------------------------------------------------------------------------------
 * Based on the condition. it decides whether the block of code will allows for execution or not.
 * The `if` keyword is used to test specific conditions.  
   - If the condition evaluates to **True**, the control enters the `if` block.  
@@ -96,9 +98,9 @@
        print(j, "is bigger")                  # 20 is bigge
 
 ```
-
+----------------------------------------------------------------------------------------------
 #### 🪜 Nested if
-
+----------------------------------------------------------------------------------------------
 * Nested `if` is used to test **multiple conditions**.  
 * If the outer `if` condition is `True`, then the inner `if` condition(s) will be tested.  
 * If any condition fails, Python skips that inner block.  
@@ -149,8 +151,9 @@
            print("could not fine the Expression value")
 
 ```
-
+----------------------------------------------------------------------------------------------
 #### 🔂 elif
+----------------------------------------------------------------------------------------------
 * If one of the conditions is true, the remaining conditions will not be tested.  
 * The `elif` statement allows you to check multiple conditions. As soon as one condition is true, its block of code executes, and the rest are skipped.
 
@@ -276,50 +279,84 @@
        for i in l:
          print(i)
 ```
+
+**Explanation:**
+* i → a temporary variable that holds each element of the list on every iteration
+* l → the list (iterator) we are looping through
+* The loop automatically moves through all items one by one  
+
+```
          
+      [10,20,30,40,50,60]     # list    iterator
 
-   #Examples
-       for i in range(50)
-           print (att)
+      for i in l:             # Loop
+      print(i)                # Print each element 
+         
+```
 
-Another Way:-
-      
-   i is the loop variable
-   L list collections
-   here one by one value assigned to "i" 
-
-   #Examples
-      l = [10,20,30,40,50]
+```
+      l = [10,20,30,40,50,60]   
       for i in l:
-          print(i) # Line by Line
-    
-      for i in l:
-          print(i, end= " ") #single line
-    
-      for i in [10,20,30,40,50]:
-         print(i)
-    
-      for i in "att":
-         print(i)
-        
-       for i in range(10):
-            print(i,end= " ")
+          print(i, end="")      # Output 10 20 30 40 50 60  
+```
 
-      for i in range(10):
+* Checking with string
+```
+      for i in "ashoka":
+          print(i)
+          #Output
+                  a
+                  s
+                  h
+                  o
+                  k
+                  a
+
+```
+
+
+* Checking with range
+```
+      for i in range(5):
+          print (i, end="")   #Output 01234
+```
+
+```
+      for i in [10,"ashoka",23.4,True,None]:
+          print(i,type(i))
+```
+
+```
       for i in range(1,10,2):
           print(i,end="")
 
-   #Examples
+```
+
+```
       for i in range(1,11):
-      if i == 5 or i == 8:
+      print(i, end="")
+      if i == 5
+         break                 # Completley stop when i = 5
+                               # Output 12345
+```      
+
+```
+      for i in range(1,11):
+      if i == 5
+         break  
+      print(i, end="")
+                                # Completley stop when i = 5
+                                # Output 1234
+
+```     
+
+```
+      for i in range(1,11):
+      if i == 5 
          continue
-      print(i, end="")
-   
-   #Examples
-      for i in range(1,11):
-      if i == 5 or i == 8:
-         break  # Completley stop 
-      print(i, end="")
+      print(i, end="")          # OutPut  1 2 3 4 6 7 8 9 10
+
+```   
 
 ```
       t = int(input("enter the table number:"))
@@ -343,7 +380,7 @@ Another Way:-
     while i < 6:
       print(i)
       i += 1 # remember to increment i, or else the loop will continue forever.
---------------------------------------------------------------------------
+
    i = 1
     while i <= 10:
         print(i)
