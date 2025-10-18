@@ -419,7 +419,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-#### 3. transfer statement
+### 3. Transfer Statement
 ----------------------------------------------------------------------------------------------
 * Transfer statements are used to **change the normal flow of execution** inside loops.
 
