@@ -121,31 +121,31 @@
 ```
 
 ```
-      name   = input("enter the name:")
-      age    = int(input("enter the age number:"))
-      gender = input("enter the gender:")
+      name   = input("enter the name:")             # ashoka       
+      age    = int(input("enter the age number:"))  # Convert input to integer 19
+      gender = input("enter the gender (m/f):")     # m      
 
       if age >= 18:
           if gender == "m":
-            print("Hello Mrs.", name, "welcome")
+            print("hello Mr.", name, "welcome")
           else:
-             print("hello Mrs.", "name")
+             print("hello Mrs.", name, "welcome")
       else:
-         print("you are not eligbile")
+         print("you are not eligbile")              # Output hello Mr. ashoka welcome
 
 ```
 
 ```
       
-      var = int(input("Enter the Expression value:"))
+      var = int(input("Enter the expression value:"))
       if var < 150:
-          print("Expression value is less than 150")
+          print("expression value is less than 150")
 
           if var < 200:
-              print("Expression value is less than 200")
+              print("expression value is less than 200")
 
               if var < 300:
-                   print("Expression value is less than 300")
+                   print("expression value is less than 300")
       else:
            print("could not fine the Expression value")
 
