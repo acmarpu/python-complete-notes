@@ -9,35 +9,33 @@
 * Conditional statements in Python are used to execute certain blocks of code based on whether a condition is true or false. These statements allow your program to make decisions and change its behavior accordingly.  
 * Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated.  
 
-
+* Conditional statements
 ```
-   Conditional statements
       if 
       if else
       nested if
       elif
-
 ```
 
+* iteretive statement
 ```   
-   iteretive statement
       for
       whle
 
 ```
 
+* transfer statements
 ```   
-   transfer statements
       break
       continue
       pass
-
 ```
 
       
 ----------------------------------------------------------------------------------------------
-#### 1.❓Conditional statements
+#### 1.❓Conditional Statements
 ----------------------------------------------------------------------------------------------
+##### 🔀 if & if-else
 * Based on the condition. it decides whether the block of code will allows for execution or not.
 * The `if` keyword is used to test specific conditions.  
   - If the condition evaluates to **True**, the control enters the `if` block.  
@@ -45,6 +43,9 @@
 
 * The `if-else` block is used when you want to execute one block of code if the condition is **True**, and a different block of code if the condition is **False**.  
 
+* The `if` statement evaluates a condition:  
+  - If the condition is **True**, the code block inside `if` is executed.  
+  - If the condition is **False**, it will skip to the `else` block (if present
 
 ```
 
@@ -55,18 +56,6 @@
 
 ``` 
 
-* Debug mode: checking control flow is moving, check breack point select debuh option function key +f8
-* You can set a breakpoint (🔴) in your code to tell the debugger:
-* (fn+F8): Exits the current function and goes back to the caller.
-
-#### 🔀 if & if-else
-* `if` is a keyword used to test a specific condition.  
-* `if-else`: The if-else statement allows you to execute one block of code if the condition is **True**, and another block of code if the condition is **False**.  
-* The `if` statement evaluates a condition:  
-  - If the condition is **True**, the code block inside `if` is executed.  
-  - If the condition is **False**, it will skip to the `else` block (if present).  
-
-
 ```
 
    i = 10
@@ -75,7 +64,18 @@
    else:
        print("this is not correct")    # This will be printed because i is 10, not 100
 
-```  
+``` 
+----------------------------------------------------------------------------------------------
+**🐞 Debug Mode**
+----------------------------------------------------------------------------------------------
+* Debug mode is used to trace how the control flow moves through your program step by step.
+* You can set a breakpoint (🔴) in your code — this is a marker that tells the debugger to pause execution at that specific line.
+* When the program pauses, you can inspect variables, check conditions, and understand logic flow.
+* To start debugging:
+* Set a breakpoint (🔴) on the line you want to stop.
+* Select Debug option in your IDE (e.g., VS Code → Run > Start Debugging).
+* Keyboard Shortcut:
+* Fn + F8: Step out of the current function and return to the caller (i.e., go back one level in the call stack).
 
 ```
 
@@ -89,16 +89,16 @@
 
 ``` 
 
-   i = int(input("Enter first number: "))
-   j = int(input("Enter second number: "))  
+   i = int(input("Enter first number: "))     # 10
+   j = int(input("Enter second number: "))    # 20
    if i > j:
        print(i, "is bigger")
    else:
-       print(j, "is bigger")
+       print(j, "is bigger")                  # 20 is bigge
 
 ```
 
-#### 🪜 Nested if
+##### 🪜 Nested if
 
 * Nested `if` is used to test **multiple conditions**.  
 * If the outer `if` condition is `True`, then the inner `if` condition(s) will be tested.  
