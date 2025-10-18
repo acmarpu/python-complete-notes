@@ -33,9 +33,9 @@
 
       
 ----------------------------------------------------------------------------------------------
-#### 1.❓Conditional Statements
+### 1.❓Conditional Statements
 ----------------------------------------------------------------------------------------------
-##### 🔀 if & if-else
+#### 🔀 if & if-else
 * Based on the condition. it decides whether the block of code will allows for execution or not.
 * The `if` keyword is used to test specific conditions.  
   - If the condition evaluates to **True**, the control enters the `if` block.  
@@ -65,9 +65,8 @@
        print("this is not correct")    # This will be printed because i is 10, not 100
 
 ``` 
-----------------------------------------------------------------------------------------------
+
 **🐞 Debug Mode**
-----------------------------------------------------------------------------------------------
 * Debug mode is used to trace how the control flow moves through your program step by step.
 * You can set a breakpoint (🔴) in your code — this is a marker that tells the debugger to pause execution at that specific line.
 * When the program pauses, you can inspect variables, check conditions, and understand logic flow.
@@ -98,7 +97,7 @@
 
 ```
 
-##### 🪜 Nested if
+#### 🪜 Nested if
 
 * Nested `if` is used to test **multiple conditions**.  
 * If the outer `if` condition is `True`, then the inner `if` condition(s) will be tested.  
@@ -153,52 +152,58 @@
 
 #### 🔂 elif
 * If one of the conditions is true, the remaining conditions will not be tested.  
-* The `elif` statement allows you to check multiple conditions. As soon as one condition is true, its block of code executes, and the rest are skipped.  
+* The `elif` statement allows you to check multiple conditions. As soon as one condition is true, its block of code executes, and the rest are skipped.
 
+
+* Using nested if statements (first example) makes the code longer and harder to read.
 ```
-   i = int(input("enter the number"))
-
-   if i == 1:
-       print("one")
-   else:
-       if i == 2:
-           print("two")
-       else:
-           if i == 3:
-               print("three)
-           else:
-               if i == 4:
-                   print("four")
-               else:
-       print("invalif number")
-
-```
-
-```
-   if i == 1:
-      print("one")
-   elif i == 2:
-      print("two")
-   elif i == 3:
-      print("three)
-   elif i == 4:
-      print("four")
-   else:
-       print("invalif number")
+     i = int(input("enter the number"))
+     if i == 1:
+         print("one")
+     else:
+         if i == 2:
+             print("two")
+         else:
+             if i == 3:
+                 print("three)
+             else:
+                 if i == 4:
+                     print("four")
+                 else:
+                     print("inval if number")
 
 ```
 
-```
-   marks = 85
-   if marks >= 95:
-       print("Grade A")
-   elif marks >= 90:
-       print("Grade B")
-   elif marks >= 85:
-       print("Grade C")
-   elif marks >= 80:
-       print("Grade D")
+* The elif ladder checks conditions one by one — once a condition is True, the rest are skipped.
 
+```
+     i = int(input("Enter a number: "))   # Define i before using it
+
+     if i == 1:
+        print("one")
+     elif i == 2:
+        print("two")
+     elif i == 3:
+        print("three)
+     elif i == 4:
+        print("four")
+     else:
+        print("invalif number")
+
+```
+
+```
+     marks = int(input("Enter the Marks:"))
+     if marks >= 95:
+         print("Grade A")
+     elif marks >= 90:
+         print("Grade B")
+     elif marks >= 85:
+         print("Grade C")
+     elif marks >= 80:
+         print("Grade D")
+     else:
+      print("not achived")
 ``` 
 
 ```
@@ -216,71 +221,67 @@
 
 ```
 
-```
-      i = int(input("enter the number:"))
-      if i == 1:
-          print("one")
-      elif i == 2:
-          print("two")
-      elif i == 3:
-          print("three")
-      elif i == 4:
-          print("four")
-      else:
-          print("invalid number")
-```
+----------------------------------------------------------------------------------------------
+### 2.🔁 Iterative Statements (Loops) / Repetitive Statements
+----------------------------------------------------------------------------------------------
+* Iterative statements (also known as **loops**) are used to execute a block of code repeatedly **as long as a specific condition is true**.
+* Once the condition becomes false, the loop terminates, and the control moves to the next part of the program.
+* Loops help in reducing code repetition and improving efficiency.
+
+📘 **Common Loop Types in Python:**
+1. `for` loop → used to iterate over a sequence (like list, tuple, string, range, etc.)
+2. `while` loop → used to repeat a block of code as long as a condition is `True`
+3. `Nested` loops → loop inside another loop
 
 
-----------------------------------------------------------------------------------------------
-#### 2. Iterative statements or loop Statement or Repetitive Statements
-----------------------------------------------------------------------------------------------
-Based on the condition the block of code will execute repetitively R;GLB INERU4IOZY,48J
 #### for loop** 
-   * use to iterate the elements of collections what the order they appear
-   * A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+* A **for loop** is used to iterate through elements of a collection **in the order they appear**.  
+* It is commonly used to loop over a **sequence** — such as a **list**, **tuple**, **set**, **dictionary**, **array**, or **string**.
 
-   a) for loop statement
-         for loop is used to itetate the iterator or range
-         iterators -  list, set, tuple, dict, arry, string etc
 
-    
-    for element in iterator :
-              block of code
+📘 **Key Points**
+* **`for`** → keyword used to create a loop  
+* **`element`** → temporary variable that holds each item of the sequence during iteration  
+* **`iterator` / `sequence`** → the collection or range you want to loop through  
 
-   for - keyward  [to create for loop]       element - Temporary variable [ to store a value of iterator for every iteration]
+
+```    
+       for element in iterator :
+                block of code
+```
+
 
 ```
-   for variablename in sequence:
+       for variablename in sequence:
       statements
       for variablename in sequence:
          statements
 ```
 
+* Normally, to display all elements of a list, we might print them **one by one**:
 ```
-       list = [10,20,30,40,50,60]
-       for element in list:
-         print(element)
-```
-         
-```
-      
-      list = [10,20,30,40,50,60]
-      for i in list:
-         print(i)
-```
+       l = [10,20,30,40,50]
+       print(l[0])
+       print(l[1])
+       print(l[2])
+       print(l[3])
+       print(l[4])
 
 ```
-      l = [10,20,30,40,50]
-      print(l[0])
-      print(l[1])
-      print(l[3])
-      print(l[4])
+
+* Instead of printing each element manually, we can use a for loop to print them all easily:
+
 ```
+       l = [10,20,30,40,50,60]   
+       for i in l:
+         print(i)
+```
+         
 
    #Examples
        for i in range(50)
            print (att)
-----------------------------------------------------
+
 Another Way:-
       
    i is the loop variable
@@ -328,7 +329,7 @@ Another Way:-
 ```
 
 
-#### while
+#### while//////
  
    use to execute the no of statements as long as the condition is true, 
    once the condition is false then the control will jump into out of the loop.
