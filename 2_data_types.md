@@ -189,7 +189,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### 🔡 3. String ("immutable")
+### 🧵 3. String ("immutable")
 ----------------------------------------------------------------------------------------------
 
 * In Python, strings are an essential data type used to represent textual data.
@@ -306,7 +306,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### 📋 4. List ["mutable"]
+### 🧾 4. List ["mutable"]
 ----------------------------------------------------------------------------------------------
 
 * A **list** in Python is an **ordered, mutable collection** that can hold different data types: integers, floats, strings, and even other lists.  

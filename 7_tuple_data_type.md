@@ -1,93 +1,148 @@
+--------------------------------------------------------------------------------------------------
+### 📦 Tuple
+--------------------------------------------------------------------------------------------------
+#### 1. what is tuple: 
+* A **tuple** is an *ordered collection of elements*, similar to a list.  
+* Unlike lists, **tuples are immutable**, meaning their elements **cannot be changed** after creation.
 
-13--------------------------------------------------------------------------------------------------
+#### 2. creating tuple : ()
 
-Tuple:
-
-1. what is tuple : is order collection of elements same as list
-2. creating tuple : ()
-3. creating tuple with one element : with ,
-4. accessing elements from tuple
-5. tuple slicing
-6. tuple immutable
-7. tuple concatenation and multiplication
-   adding one or more tuples in to single concatenation
-8. deleting a tuple
-9. tuple methods --- count and index
-10. tuple membershiptest
-11. len(),max(),min(),sum()
-12. converting a string into tuple
-13. converting a list into tuple
-14. converting a tuple into string
-15. tuple packing and unpacking
-
----------------------------------------
-Set:
-
-1. what is set : unorder collection of unic elements and ignore duplicate elements
-2. creating set 
-   # s = set()
-   # print(s)
-   # print(type(s))
-
-   # s = {10,20,30,"sai",34.5}
-   # print(s)
-   # s.add(99)
-   # print(s)
+```
    
-3. creating an empty set
-4. how to change set (add and update)
-5. remove elements from set(discard and remove), clear(), del
-6. set operation -- union (|)
-                    intersection (&)
-                    difference(-)
-                    symmetric difference(^)
-   # its return unique values
-   # a = {1,2,3,4,5}
-   # b = {4,5,6,7,8}
-   # print(a|b)
-   # print(a.union(b))
+   t = (10, 20, 30, 40)
+   print(t)
 
-   # intersection
-   # print(a&b)
-   # print(a.intersection(b))
+```
+#### 3. creating tuple with one element:
+* Must include a comma ( , ) after the element.
 
-   # difference
-   # print(a-b)
-   # print(a.difference(b))
+```
+   t = (10,)
+   print(t)
 
-   # symmetric difference
-   # common values will not print
-   # print(a^b)
-   # print(a.symmetric_difference(b))
+```
 
-7. membership test
-8. len
-9. max and min
-10. sum
+#### 4. accessing elements from tuple
 
----------------------------------------
+```
+   t = (10, 20, 30, 40)
+   print(t[1])             # Output: 20
+   print(t[-1])            # Output: 40
 
-Dictionary:
------------
+```
+#### 5. tuple slicing
+```
+   t = (10, 20, 30, 40, 50, 60)
+   print(t[1:4])           # Output: (20, 30, 40)
 
-1. what is dictionary : is a collection of items, 
-                        each item can be pair {key:value}
-                        keys are immutable, values are mutable
-                        keys must be unique, no duplicate key
-                        value not unique, duplicate values also possible
-                        key can be any type
-2. creating dictonary
-3. accessing value from dictionary
-4. change or add values
-5. delete or remove values
-6. copy
-7. items
-8. keys
-9. values
-10. membership test
-11. len
-12. pop
-13. popitem
+```
 
-   bytes: is used to represent byte numers just like an array the only allowed values for bytes is0 to256
-          bytes is immutable, we cannot chang
+#### 6. tuple immutable
+* Tuples cannot be modified (no item assignment).
+
+```
+   t = ("mac",10,3.5,10,10)
+   print(t)                 # ('mac', 10, 3.5, 10, 10)
+   print(type(t))           # <class 'tuple'>
+
+   t[1] = 33
+   print(t)                 # Output : ❌ TpyeError: tuple object does not support item assignment
+
+```
+#### 7. tuple concatenation and multiplication
+* adding one or more tuples in to single concatenation
+
+```
+   t1 = (10, 20)
+   t2 = (30, 40)
+   print(t1 + t2)          # Concatenation → (10, 20, 30, 40)
+   print(t1 * 2)           # Multiplication → (10, 20, 10, 20)
+
+```
+   
+#### 8. deleting a tuple
+
+
+```
+   t = (10, 20, 30)
+   del t
+```
+
+#### 9. count and index
+
+```
+   t = (10, 20, 10, 30, 10)
+   print(t.count(10))         # Output: 3
+   print(t.index(30))         # Output: 3
+
+```
+
+```
+   t - ("mac",10,3.5,10,10,"mac","mac",10,10)
+   print(t.count(mac))
+   print(t.index(3.5))
+
+```
+   
+#### 10. tuple membership test
+
+```
+   t = (10, 20, 30)  
+   print(20 in t)             # Output: True
+   print(40 not in t)         # Output: True
+
+```
+
+```
+   t - ("mac",10,3.5,10,10,"mac","mac",10,10)
+   print(100 in t)            # False
+
+```
+#### 11. len(),max(),min(),sum()
+
+```
+   t = ("mac",10,3.5,10,10,"mac","mac",10,10)
+   print(len(t))              # Output 6
+
+   t = (10,3.-5,10,10,10,10)
+   print(max((t)))            # Output 10
+   print(min((t)))            # Output -2.0
+   print(sum((t)))            # Output 48.0      
+
+```  
+#### 12. converting a string into tuple
+
+```
+   s = "python"
+   t = tuple(s)
+   print(t)                     # Output: ('p', 'y', 't', 'h', 'o', 'n')
+
+```
+#### 13. converting a list into tuple
+
+```
+   l = [10, 20, 30]
+   t = tuple(l)
+   print(t)                     # Output: (10, 20, 30)
+
+```
+#### 14. converting a tuple into string
+
+```
+   t = ('p', 'y', 't', 'h', 'o', 'n')
+   s = ''.join(t)
+   print(s)                     # Output: python
+
+```
+#### 15. packing and unpacking
+
+```
+  t = (10, 20, 30)
+  a, b, c = t
+  print(a, b, c)                # Output: 10 20 30
+
+```
+
+----------------------------------------------------------------------------------------------
+✅ End of tuple_data_type.md
+----------------------------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------------------------
-### List : 
+### 🧾 List
 --------------------------------------------------------------------------------------------------
 is order collection of elements
       heterogeneous elements (diffrent types of data types)
@@ -153,7 +153,7 @@ is order collection of elements
 
 ```
   
-#### 14. list index
+#### 13. list index
 
 ```
    l = [10, 20, 30, 40]
