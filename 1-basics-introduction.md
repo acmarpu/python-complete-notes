@@ -305,6 +305,41 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
           print("false") # *indent by four spaces = 1 level*
 
 ```
+
+
+----------------------------------------------------------------------------------------------
+#### 🧱 1. Structured Programming
+----------------------------------------------------------------------------------------------
+* **Definition:**
+* Structured programming is a logical, step-by-step programming style that emphasizes sequence, selection, and iteration.
+
+✅ Key Idea: Divide a program into smaller logical blocks (functions) that control the flow of execution using loops and conditionals.
+It improves readability and reduces the use of goto.
+
+
+----------------------------------------------------------------------------------------------
+#### ⚙️ 2. Function-Oriented Programming (FOP)
+----------------------------------------------------------------------------------------------
+* **Definition:**
+In function-oriented programming, the program is divided into functions, and data is passed between functions.
+
+✅ Key Idea:
+* Functions are the main building blocks.
+* Focuses on actions (functions) that operate on data.
+* Data and functions are separate.
+
+----------------------------------------------------------------------------------------------
+#### 🧩 3. Object-Oriented Programming (OOP)
+----------------------------------------------------------------------------------------------
+* **Definition:**
+* OOP organizes code around objects, which combine data (attributes) and functions (methods) into a single unit.
+✅ Key Idea:
+* Everything is treated as an object.
+* Objects represent real-world entities.
+* Focus on what to model rather than how to do it.
+
+
+
 ----------------------------------------------------------------------------------------------
 ✅ End of Python Basics
 ----------------------------------------------------------------------------------------------
