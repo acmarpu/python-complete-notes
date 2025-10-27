@@ -2,7 +2,6 @@
 ----------------------------------------------------------------------------------------------
 ### 👉 Data types in Python
 ----------------------------------------------------------------------------------------------
-
 * Python Data Types are used to define the type of a variable.
 * They represent the kind of value a variable holds (e.g., numbers, strings, etc.), and they determine what operations can be performed on that value.
 * Python data types are the classification of data items. They represent the kind of value stored in a variable and determine the operations that can be performed on that value.
@@ -15,13 +14,13 @@
 
 * 📘 **_Basic Data Types_**
 
-| **Data Type**   | **Category**   | **Example**          | **Definition** |
-|-----------------|----------------|----------------------|----------------|
-| **None**        | NoneType       | `a = None`           | Represents the absence of a value or null. |
-| **Numeric**     | int (Integer)  | `a = 10`             | Holds whole numbers (e.g., 0, 100, -5). |
-|                 | float (Float)  | `a = 10.5`           | Numbers with decimal or fractional part. |
-|                 | bool (Boolean) | `x = True`           | Represents truth values: `True` or `False`. |
-|                 | complex        | `a = 2 + 3j`         | Numbers with real and imaginary parts. |
+| **Data Type**   | **Category**   | **Example**     | **Definition** |
+|-----------------|----------------|-----------------|----------------|
+| **None**        | NoneType       |   a = None      | Represents the absence of a value or null. |
+| **Numeric**     | int (Integer)  |   a = 10        | Holds whole numbers (e.g., 0, 100, -5). |
+|                 | float (Float)  |   a = 10.5      | Numbers with decimal or fractional part. |
+|                 | bool (Boolean) |   x = True      | Represents truth values: `True` or `False`. |
+|                 | complex        |   a = 2 + 3j    | Numbers with real and imaginary parts. |
 
 
 * **_Sequence & Collection Types_**
@@ -576,6 +575,18 @@
       print(type(d))                                     # Output: <class 'dict'>
       
 ```
+
+```
+   student = {
+    "name" : "mac",
+    "age" : 25,
+    "course": "python"
+    }
+
+      print(student["name"])                             # Output: mac
+      print(student.get("age"))                          # Output: 25
+      student["course"] = "AI"
+      print(student)                                     # Output: {'name': 'ashoka', 'age': 25, 'course': 'AI'}
 
 ```
       capital_city = {'TS':'Hyd', 'KA':'BANG','TN':'CH'}
