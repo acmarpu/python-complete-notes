@@ -9,35 +9,36 @@
 ✅ All loops are control flow statements,
 but ❌ not all control flow statements are loops.
 
-* Conditional statements
+* Conditional statements:
 ```
-      if 
-      if else
-      nested if
-      elif
+   if 
+   if else
+   nested if
+   elif
+
 ```
 
-* iteretive statement
+* iteretive statement:
 ```   
-      for
-      whle
+   for
+   whle
 
 ```
 
-* transfer statements
+* transfer statements:
 ```   
-      break
-      continue
-      pass
-```
+   break
+   continue
+   pass
 
+```
       
 ----------------------------------------------------------------------------------------------
 ### 1.❓Conditional Statements
 ----------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------
+
 #### 🔀 if & if-else
-----------------------------------------------------------------------------------------------
+
 * Based on the condition. it decides whether the block of code will allows for execution or not.
 * The `if` keyword is used to test specific conditions.  
   - If the condition evaluates to **True**, the control enters the `if` block.  
@@ -57,6 +58,14 @@ but ❌ not all control flow statements are loops.
       statement
 
 ``` 
+
+
+```
+   i = 10
+   if i == 100:
+       print("this is the currect:")
+```
+
 
 ```
 
@@ -98,134 +107,135 @@ but ❌ not all control flow statements are loops.
        print(j, "is bigger")                  # 20 is bigge
 
 ```
-----------------------------------------------------------------------------------------------
+
 #### 🪜 Nested if
-----------------------------------------------------------------------------------------------
+
 * Nested `if` is used to test **multiple conditions**.  
 * If the outer `if` condition is `True`, then the inner `if` condition(s) will be tested.  
 * If any condition fails, Python skips that inner block.  
 * In simple terms: **`if` inside another `if`** is called a **nested if statement**.
 
 ```
-      i = int(input("enter first number:"))  # 10
-      j = int(input("enter second number:")) # 20
-      k = int(input("enter third number:"))  # 30
+   i = int(input("enter first number:"))  # 10
+   j = int(input("enter second number:")) # 20
+   k = int(input("enter third number:"))  # 30
 
-      if i > j and i > k:
-          print(i,"is big")
-      else:
-           if j > k:
-            print(j,"is big")
-           else:
-              print(k,"is big")               # Output 30 is big
-
-```
+   if i > j and i > k:
+       print(i,"is big")
+   else:
+       if j > k:
+          print(j,"is big")
+        else:
+           print(k,"is big")               # Output 30 is big
 
 ```
-      name   = input("enter the name:")             # ashoka       
-      age    = int(input("enter the age number:"))  # Convert input to integer 19
-      gender = input("enter the gender (m/f):")     # m      
 
-      if age >= 18:
-          if gender == "m":
+```
+   name   = input("enter the name:")             # ashoka       
+   age    = int(input("enter the age number:"))  # Convert input to integer 19
+   gender = input("enter the gender (m/f):")     # m      
+
+   if age >= 18:
+       if gender == "m":
             print("hello Mr.", name, "welcome")
-          else:
+        else:
              print("hello Mrs.", name, "welcome")
-      else:
-         print("you are not eligbile")              # Output hello Mr. ashoka welcome
+   else:
+        print("you are not eligbile")             # Output hello Mr. ashoka welcome
 
 ```
 
 ```
       
-      var = int(input("Enter the expression value:"))
-      if var < 150:
-          print("expression value is less than 150")
+   var = int(input("Enter the expression value:"))
+   if var < 150:
+       print("expression value is less than 150")
 
-          if var < 200:
-              print("expression value is less than 200")
+       if var < 200:
+           print("expression value is less than 200")
 
-              if var < 300:
-                   print("expression value is less than 300")
-      else:
-           print("could not fine the Expression value")
+           if var < 300:
+               print("expression value is less than 300")
+
+           else:
+               print("could not fine the Expression value")
 
 ```
-----------------------------------------------------------------------------------------------
+
 #### 🔂 elif
-----------------------------------------------------------------------------------------------
+
 * If one of the conditions is true, the remaining conditions will not be tested.  
 * The `elif` statement allows you to check multiple conditions. As soon as one condition is true, its block of code executes, and the rest are skipped.
 
 
 * Using nested if statements (first example) makes the code longer and harder to read.
 ```
-     i = int(input("enter the number"))
-     if i == 1:
-         print("one")
-     else:
-         if i == 2:
-             print("two")
-         else:
-             if i == 3:
-                 print("three)
-             else:
-                 if i == 4:
-                     print("four")
-                 else:
-                     print("inval if number")
+    i = int(input("enter the number"))
+    if i == 1:
+        print("one")
+    else:
+        if i == 2:
+            print("two")
+        else:
+            if i == 3:
+                print("three)
+            else:
+                if i == 4:
+                    print("four")
+                else:
+                    print("inval if number")
 
 ```
 
 * The elif ladder checks conditions one by one — once a condition is True, the rest are skipped.
-
 ```
-     i = int(input("Enter a number: "))   # Define i before using it
+    i = int(input("Enter a number: "))   # Define i before using it
 
-     if i == 1:
+    if i == 1:
         print("one")
-     elif i == 2:
+    elif i == 2:
         print("two")
-     elif i == 3:
+    elif i == 3:
         print("three)
-     elif i == 4:
+    elif i == 4:
         print("four")
-     else:
-        print("invalif number")
+    else:
+        print("invalid number")
 
 ```
 
 ```
-     marks = int(input("Enter the Marks:"))
-     if marks >= 95:
+   marks = int(input("Enter the Marks:"))
+   if marks >= 95:
          print("Grade A")
-     elif marks >= 90:
+   elif marks >= 90:
          print("Grade B")
-     elif marks >= 85:
+   elif marks >= 85:
          print("Grade C")
-     elif marks >= 80:
+   elif marks >= 80:
          print("Grade D")
-     else:
+   else:
       print("not achived")
 ``` 
 
 ```
-      var = 100
-      or
-      var = int(input("Enter the Expression value:")) #we can enter the runtime value
-      if var < 150:
-           print("Expression value is less than 150")
-      elif var < 200:
-          print("Expression value is less than 200")
-      elif var < 300:
-          print("Expression value is less than 300")
-      else:
-          print("invalid expression value")
+
+   var = 100
+   or
+   var = int(input("Enter the Expression value:")) #we can enter the runtime value
+   if var < 150:
+       print("Expression value is less than 150")
+   elif var < 200:
+       print("Expression value is less than 200")
+   elif var < 300:
+       print("Expression value is less than 300")
+   else:
+       print("invalid expression value")
 
 ```
 
 ----------------------------------------------------------------------------------------------
-### 2.🔁 Iterative Statements (Loops) / Repetitive Statements
+### 2.🔁 Iterative Statements / Repetitive Statements  (Loops) 
 ----------------------------------------------------------------------------------------------
 * Iterative statements (also known as **loops**) are used to execute a block of code repeatedly **as long as a specific condition is true**.
 * Once the condition becomes false, the loop terminates, and the control moves to the next part of the program.
@@ -236,9 +246,9 @@ but ❌ not all control flow statements are loops.
 2. `while` loop → used to repeat a block of code as long as a condition is `True`
 3. `Nested` loops → loop inside another loop
 
-----------------------------------------------------------------------------------------------
+
 #### for loop
-----------------------------------------------------------------------------------------------
+
 * A **for loop** is used to iterate through elements of a collection **in the order they appear**.  
 * It is commonly used to loop over a **sequence** — such as a **list**, **tuple**, **set**, **dictionary**, **array**, or **string**.
 
@@ -250,28 +260,26 @@ but ❌ not all control flow statements are loops.
 
 
 ```    
-       for element in iterator :
-                block of code
+    for element in iterator :
+            block of code
 ```
 
 * Normally, to display all elements of a list, we might print them **one by one**:
 ```
-       l = [10,20,30,40,50]
-       print(l[0])
-       print(l[1])
-       print(l[2])
-       print(l[3])
-       print(l[4])
+    l = [10,20,30,40,50]
+    print(l[0])
+    print(l[1])
+    print(l[2])
+    print(l[3])
+    print(l[4])
 
 ```
 
 * Instead of printing each element manually, we can use a for loop to print them all easily:
-
 ```
-       l = [10,20,30,40,50,60]   
-       for i in l:
-         print(i)
-```
+   l = [10,20,30,40,50,60]   
+   for i in l:
+       print(i)
 
 **Explanation:**
 * i → a temporary variable that holds each element of the list on every iteration
@@ -279,25 +287,19 @@ but ❌ not all control flow statements are loops.
 * The loop automatically moves through all items one by one  
 
 ```
-         
-      [10,20,30,40,50,60]     # list    iterator
-
-      for i in l:             # Loop
-      print(i)                # Print each element 
-         
-```
 
 ```
-      l = [10,20,30,40,50,60]   
-      for i in l:
-          print(i, end="")      # Output 10 20 30 40 50 60  
+   l = [10,20,30,40,50,60]   
+   for i in l:
+       print(i, end=" ")      # Output 10 20 30 40 50 60  
 ```
 
-* Checking with string
+
+*Checking with string*
 ```
-      for i in "ashoka":
-          print(i)
-          #Output
+   for i in "ashoka":
+        print(i)
+   #Output
                   a
                   s
                   h
@@ -310,44 +312,51 @@ but ❌ not all control flow statements are loops.
 
 *Checking with range*
 ```
-      for i in range(5):
-          print (i, end="")   #Output 01234
+   for i in range(5):
+        print (i, end="")   #Output 01234
 ```
 
 ```
-      for i in [10,"ashoka",23.4,True,None]:
-          print(i,type(i))
+
+   for i in [10,"ashoka",23.4,True,None]:
+        print(i,type(i))
+
+    # Output 
+    10 <class 'int'>
+    ashoka <class 'str'>
+    23.4 <class 'float'>
+    True <class 'bool'>
+    None <class 'NoneType'
+
 ```
 
 ```
-      for i in range(1,10,2):
-          print(i,end="")
+   for i in range(1,10,2):
+        print(i,end=" ")     #Output 1 3 5 7 9 
 
 ```
 
 ```
-      for i in range(1,11):
-      print(i, end="")
-      if i == 5
-         break                 # Completley stop when i = 5
-                               # Output 12345
+   for i in range(1,11):
+       print(i, end="")
+       if i == 5:
+               break                 # Completley stop when i = 5
+                                     # Output 1 2 3 4 5
 ```      
 
 ```
-      for i in range(1,11):
-      if i == 5
-         break  
-      print(i, end="")
-                                # Completley stop when i = 5
-                                # Output 1234
-
+   for i in range(1,11):
+    if i == 5:
+       break                   # Completley stop when i = 5
+    print(i, end="")           # Output 1 2 3 4
+                     
 ```     
 
 ```
-      for i in range(1,11):
-      if i == 5 
-         continue
-      print(i, end="")          # OutPut  1 2 3 4 6 7 8 9 10
+   for i in range(1,11):
+   if i == 5 
+      continue
+   print(i, end="")          # OutPut  1 2 3 4 6 7 8 9 10
 
 ```   
 

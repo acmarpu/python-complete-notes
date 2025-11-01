@@ -47,6 +47,7 @@
 
 | **Data Type** | **create**  | **Mutable**       | **immutable**     | **Ordered** | **duplicate**     |
 |---------------|-------------|-------------------|-------------------|-------------|-------------------|
+| **Numeric**   | 10 or 1.4   |    No             |    Yes            |     Yes     |  Yes              |
 | **str**       |'' or ""     |    No             |    Yes            |     Yes     |  Yes              |
 | **list**      | []          |    Yes            |    No             |     Yes     |  Yes              |
 | **tuple**     | ()          |    No             |    Yes            |     Yes     |  Yes              |
@@ -63,228 +64,217 @@
 * nothing is there in the variable
 
  ```     
-      a = 'none'
-      print('none')
-      print(a)
-      print(type(a))
+    a = 'none'
+    print('none')  
+    print(a)                  # Output none
+    print(type(a))            # Output <class 'str'> 
 
-      # none                 # Output 
-      # <class 'str'>        # Output 
 ```
 
 ----------------------------------------------------------------------------------------------
 ### 🔢 2. Numeric type   (immutable)
 ----------------------------------------------------------------------------------------------
 
-* In Python, the numeric types refer to the data types that represent numbers, which include -- int(0,100), float(10.0), bool(true or false), Complex Numbers(1a)
+* In Python, the numeric types refer to the data types that represent numbers, which include 
+   * int(0,100) 
+   * float(10.0)
+   * bool(true or false)
+   * Complex Numbers(1a)
 
 ```      
-      a = 10
-      print(a)
-      print(type(a))
-  
-      # 10                    # Output 
-      # <class 'int'>         # Output 
+   a = 10
+   print(a)                   # Output 10 
+   print(type(a))             # Output <class 'int'> 
 
 ```
 
 ```
-      a = 1.4
-      print(a)
-      print(type(a))
+   a = 1.4
+   print(a)                    # Output  1.4 
+   print(type(a))              # Output  <class 'float'>
 
-      # 10                     # Output 
-      # <class 'float'>        # Output 
 ```     
 
 * **Converts the integer 10 into a floating-point number → 10.0.**
-
 ```      
       a = 10
-      print(a)
-      print(type(a))
-
-      # 10                      # Output 
-      # <class 'int'>           # Output 
-
+      print(a)                # Output 10
+      print(type(a))          # Output  <class 'int'>
       
 
       b = float(a)
-      print(b)
-      print(type(b))
-
-      # 10.0                     # Output 
-      # <class 'int'>            # Output 
+      print(b)                # Output 10.0
+      print(type(b))          # Output <class 'float'>
 
 ```
 
 **Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
-
-
 ``` 
-      a = input("enter num1:")
-      print(type(a))             # Output   <class 'str'>
-      x = int(a)                 # here we converting str to int
-      print(type(x))             # Output   <class 'int'>
+   a = input("enter num1:")
+   print(type(a))              # Output   <class 'str'>
+   x = int(a)                  # here we converting str to int
+   print(type(x))              # Output   <class 'int'>
 
 ```
 
 * **Taking inputs separately and then converting to int**
 ```   
-      a = input("enter number1:")
-      print(a)
-      print(type(a))
+   a = input("enter number1:")       # Enter number 10
+   print(a)                          # Output 10
+   print(type(a))                    # Output <class 'str'>
 
-      x = int(a)                 # converting str to int
-      print(x)
-      print(type(x))             # Output   <class 'int'>
+   x = int(a)                        # converting str to int
+   print(x)                          # Output 10
+   print(type(x))                    # Output   <class 'int'>
 
-      b = input("enter number2:")
-      print(b)
-      print(type(b))
+   b = input("enter number2:")       # Enter number 20
+   print(b)                          # Output 20
+   print(type(b))                    # <class 'str'>
 
-      y = int(b)                # converting str to int
-      print(type(y))
+   y = int(b)                        # converting str to int
+   print(type(y))
       
-      c = x+y                   
-      # print(type(c))          # Output   sun c is 30
-      print("sum c is", c)      # Output  <class 'int'>
+   c = x+y 
+   print(c)                          # Output   sun c is 30                       
+   print(type(c))                    # Output  <class 'int'>                 
+   print("sum c is", c)              # Output sum c is 30         
 
 ```   
 
 **Simplified Approach**
-
-
 ```
-      a = int(input("enter num1:"))  
-      b = int(input("enter num2:"))
-      c = a + b
-      print("sum is:", c)        # Output: sum is 30
-
+   a = int(input("enter num1:"))     # Enter number 10
+   b = int(input("enter num2:"))     # Enter number 20
+   c = a + b
+   print(c)                          # Output 30
+   print("sum is:", c)               # Output: sum is 30
+   print(type(c))                    # Output <class 'int'>
+ 
 ```
 
+**Taking float inputs directly and adding them**
 ```   
-      # Taking float inputs directly and adding them
-
-      a = float(input("Enter num1:"))
-      b = float(input("enter num2:")) 
-      c = a + b
-      print("sum is:", c)        # Example Output: sum is 45.7
+   a = float(input("Enter num1:"))
+   b = float(input("enter num2:")) 
+   c = a + b
+   print("sum is:", c)               # Example Output: sum is 45.7
 
 ```
 
 
-
+**bool = true or false**
 ```   
-      # bool = true or false
-
-      a = 10
-      b = 20
-      c = a > b
-      print(c)                  # Output  False
-      print(type(c))            # Output  <class 'bool'>
+   a = 10
+   b = 20
+   c = a > b
+   print(c)                          # Output  False
+   print(type(c))                    # Output  <class 'bool'>
 
 ```
-
 
 ----------------------------------------------------------------------------------------------
 ### 🧵 3. String ("immutable")
 ----------------------------------------------------------------------------------------------
-
 * In Python, strings are an essential data type used to represent textual data.
 * Definition: A string is a sequence of characters enclosed in single quotes (' '), double quotes (" "), or triple quotes (''' ''' / """ """).
  - Example: 'hello', "python", """world"""
 * String Methods: Python provides many built-in methods to manipulate strings.
  - Examples: .replace(), .split(), .lower(), .upper(), .strip(), etc.
-* String Immutability: Strings are immutable, meaning once created, they cannot be modified.
+* String Immutability: Strings are **immutable**, meaning once created, they cannot be modified.
  - Operations like concatenation or .replace() return a new string instead of changing the original one.
 
 
 * With single quotes (' ') → may need escape \'.
-
 ```  
-      s = 'hello ashoka''s'
-      print(s)                 # Output: hello ashoka
-      print(type(s))           # Output <class 'str'>
+   s = 'hello marputechtravel'
+   print(s)                 # Output: hello marputechtravel
+   print(type(s))           # Output <class 'str'>
 
-      s = 'hello ashoka\'s'
-      print(s)                 # Output: hello ashoka's
-      print(type(s))           # Output: <class 'str'>
+   s = 'hello marputechtravel\'s'
+   print(s)                 # Output: hello marputechtravel's
+   print(type(s))           # Output: <class 'str'>
 
 ```
 
 * With double quotes (" ")
+```
+   s = "hello marputechtravel" 
+   print(s)                 # Output: hello marputechtravel
+   print(type(s))           # Output: <class 'str'>
 
 ```
-      s = "hello ashoka" 
-      print(s)                 # Output: hello ashoka
-      print(type(s))           # Output: <class 'str'>
 
+**Indexing**
 ```
-
-```
-      s = "Hello"
-      print(s[0])              # Output: H (first character)
-      print(s[-1])             # Output: o  (last character, negative index)
-      print(s[0:5])            # Output: Hello (substring from index 0 to 4)
+   s = "marputechtravel"
+   print(s[0])              # Output: m      (first character)
+   print(s[-1])             # Output: l      (last character, negative index)
+   print(s[0:7])            # Output: marputech (substring from index 0 to 4)
 
 ```
 
 * In Python, you can repeat strings using the multiplication (*) operator.
-
 ```
-      s = "Hello"
-      repeated = s * 3
-      print(repeated)           # Output: HelloHelloHello
-
-```
-```
-      s = "hello ashoka"
-      repeated = s * 3          # Output: hello ashokahello ashokahello ashoka
-      print(repeated)
-      repeated = " ".join([s] * 3)  # Output: hello ashoka hello ashoka hello ashoka
-      # " ".join(...) → joins them with a space " " in between
+   s = "Hello"
+   repeated = s * 3
+   print(repeated)              # Output: HelloHelloHello
 
 ```
 
-```
-      s = "  Hello, World  "
-      print(s.upper())           # Output: HELLO, WORLD
-      t = s[7:]. upper()         # Output: WORLD
 
-      print(s.lower())           # Output: hello, world
+```
+   s = "hello marputechtravel"
+   repeated = s * 3                 #  * (multiplication) operator on a string
+   print(repeated)                  # Output: hello marputechtravelhello marputechtravelhello marputechtravel
+   repeated = " ".join([s] * 3)     # Joining Strings with a Separator
+   # Output: hello ashoka hello ashoka hello ashoka
+   " ".join(...) → joins them with a space " " in between
+
+```
+
+```
+   s = "Hello, World"
+   print(s.upper())                 # Output: HELLO, WORLD
+   t = s[7:]. upper()               
+   print(t)                         # Output: WORLD
+
+   print(s.lower())                 # Output: hello, world
       
-      print(s.strip())           # Output: Hello, World! used to remove any leading and trailing whitespace characters from a string
+   print(s.strip())                 # Output: Hello, World! used to remove any leading and trailing whitespace characters from a string
 
-      print(s.replace("World", "Python"))            # Output:   Hello, Python!
+   print(s.replace("World", "Python"))      # Output:   Hello, Python!
 
-      print(s.split())                               # Output: ['Hello,', 'World!']
+   print(s.split())                         # Output: ['Hello,', 'World!']
 
-      print(s.find("World"))                         # Output: 8 (index of the first occurrence of "World")
+   print(s.find("World"))                   # Output: 8 (index of the first occurrence of "World")
+   
+* Note every character (including spaces, commas, tabs, etc.) counts as one index
 
 ```
+
 
 * Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
-
 ```      
-      s.replace("hello", "hai")
-      print(s)                                       # Output: hello ashoka (s is unchanged)
+   s.replace("hello", "hai")
+   print(s)                                 # Output: hello world (s is unchanged)
 
 ```
+
 * The replace method returns a new string, we can assign the result to a variable*
 * we can not reuse "s" value*
 
 ```
 
-      print(s.replace("hello","hai")) 
+   print(s.replace("hello","hai")) 
 
 ```
 * But important: the original s is still unchanged (s is still "hello ashoka") because strings are immutable.
 * We can assign the modified string to a new variable*
 
 ```      
-      s1 = s.replace("hello", "hai")
-      print(s1)                                  # Output: hai ashoka
+   s1 = s.replace("hello", "hai")
+   
+   print(s1)                                  # Output: hai worls
 
 ```
 
@@ -292,14 +282,14 @@
 * This will return a list of all the methods and attributes associated with the string class.
 
 ```
-      print(dir(str))
-      __add_                                     #also called descriptors
+   print(dir(str))
+   __add_                                     #also called descriptors
 ```
 
 
 ```    
-       * description    
-      help(str)
+  * description    
+  help(str)
 
 ```
 
@@ -308,10 +298,12 @@
 ### 🧾 4. List ["mutable"]
 ----------------------------------------------------------------------------------------------
 
-* A **list** in Python is an **ordered, mutable collection** that can hold different data types: integers, floats, strings, and even other lists.  
+* A **list** in Python is an **ordered, mutable collection** that can hold different data types: 
+   * integers, 
+   * floats, 
+   * strings, and even other lists.  
 * Lists are enclosed in **square brackets [ ]** and elements are separated by commas.
 * Since lists are **mutable**, their elements can be changed after creation.
-
 
 📌 **Key Features of Python Lists:**
   * **Ordered:** Items in a list have a defined order, and that order will not change unless modified.  
@@ -323,25 +315,26 @@
 * Creating a list with various types of elements*
 
 ```      
-      l = [10,20,30,3.4,"python",True]
-      print(l)                           # Output: [10,20,30,3.4,"python",True]
-      print(type(l))                     # Output: <class 'list'>
+   l = [10,20,30,3.4,"python",True]
+   print(l)                           # Output: [10,20,30,3.4,"python",True]
+   print(type(l))                     # Output: <class 'list'>
 
 ```
 
 * Lists are mutable, which means we can change their elements. We can modify an element by accessing it using its index, or add elements using methods like append().
+* Lists in Python are ordered collections — elements are stored in a sequence (index 0, 1, 2, ...).
 
 ```      
-      l = [10,20,30,3.4,"ashoka",True]
-      l.append(33)                       # Adds 33 to the end of the list
-      print(l)                           # Output: [10,20,30,3.4,"ashoka",True,33]
+   l = [10,20,30,3.4,"ashoka",True]
+   l.append(33)                       # Adds 33 to the end of the list
+   print(l)                           # Output: [10,20,30,3.4,"ashoka",True,33]
 
 ```
+
 * Modifying an element at a specific index
-
 ```
-      l[1] = 33                          # Changes the element at index 1 (20 → 33)
-      print(l)                           # Output: [10, 33, 30, 3.4, "ashoka",True,33]
+   l[1] = 33                          # Changes the element at index 1 (20 → 33)
+   print(l)                           # Output: [10, 33, 30, 3.4, "ashoka",True,33]
 
 ```
 
@@ -349,66 +342,61 @@
 
 * **append(value)** — Adds an element to the end of the list.
 ```
-      l = [10,20,30,3.4,"ashoka",True]
-      l.append(33)                       # Adds 33 to the end of the list
+   l = [10,20,30,3.4,"ashoka",True]
+   l.append(33)                       # Adds 33 to the end of the list
       
 ```
 
 * **insert(index, value)** — Inserts an element at a specific index in the list.
-
 ```
-      my_list = [10, 20, 30]
-      my_list.insert(1, 15)              # Inserts 15 at index 1
-      print(my_list)                     # Output: [10, 15, 20, 30]
+   my_list = [10, 20, 30]
+   my_list.insert(1, 15)              # Inserts 15 at index 1
+   print(my_list)                     # Output: [10, 15, 20, 30]
 
 ```
 
 * **remove(value)** — Removes the first occurrence of the specified value.
-
 ```
-      my_list = [10, 20, 30, 40, 20]
-      my_list.remove(20)                 # Removes the first occurrence of 20
-      print(my_list)                     # Output: [10, 30, 40, 20]
+   my_list = [10, 20, 30, 40, 20]
+   my_list.remove(20)                 # Removes the first occurrence of 20
+   print(my_list)                     # Output: [10, 30, 40, 20]
       
 ```
 
 * **pop(index)** — Removes the element at the specified index and returns it.
-
 ```
-      my_list = [10, 20, 30, 40, 50]
-      popped_item = my_list.pop(2)        # Removes the element at index 2 (30)
-      print(my_list)                      # Output: [10, 20, 40, 50]
-      print("Popped Item:", popped_item)  # Output: Popped Item: 30
+   my_list = [10, 20, 30, 40, 50]
+   popped_item = my_list.pop(2)        # Removes the element at index 2 (30)
+   print(my_list)                      # Output: [10, 20, 40, 50]
+   print("Popped Item:", popped_item)  # Output: Popped Item: 30
 
-      # That returned value is stored in the variable popped_item
+   # That returned value is stored in the variable popped_item
 
 ```
 
 * **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
-
 ```
-      my_list = [1, 2, 3]                 # Original list
-      other_list = ["python","java"]       # Another list to extend my_list with
-      my_list.extend(other_list)          # Using extend() to add elements of other_list to my_list
-      print(my_list)                      # Output: [1, 2, 3, 'python', 'java']
+   my_list = [1, 2, 3]                 # Original list
+   other_list = ["python","java"]       # Another list to extend my_list with
+   my_list.extend(other_list)          # Using extend() to add elements of other_list to my_list
+   print(my_list)                      # Output: [1, 2, 3, 'python', 'java']
 
 ```
 
 * **index(value)** — Returns the index of the first occurrence of the specified value.
-
 ```
-      my_list = [10, 20, 30, 40, 50]
-      index_of_30 = my_list.index(30)
-      print(index_of_30)                  # Output: 2 (The index of 30 is 2)
+   my_list = [10, 20, 30, 40, 50]
+   index_of_30 = my_list.index(30)
+   print(index_of_30)                  # Output: 2 (The index of 30 is 2)
 
 ```
 
 * **sort()** — Sorts the list in ascending order. 
-
 ```
-      my_list = [4, 1, 3, 9, 2]
-      my_list.sort()
-      print(my_list)  # Output: [1, 2, 3, 4, 9]
+   my_list = [4, 1, 3, 9, 2]
+   my_list.sort()
+   print(my_list)  # Output: [1, 2, 3, 4, 9]
+
 ```
 
 ----------------------------------------------------------------------------------------------
@@ -450,9 +438,13 @@
 
 ```
 
+* A nested tuple means a tuple inside another tuple
 ```
       nested_tuple = (1, 2, (3, 4), 5)
-      print(nested_tuple[2])
+      print(nested_tuple[0])           # Output: 1
+      print(nested_tuple[1])           # Output: 2
+      print(nested_tuple[2])           # Output: (3, 4) ← (this itself is another tuple)
+      print(nested_tuple[3])           # Output: 5
 
 ```
 
@@ -460,7 +452,6 @@
 ----------------------------------------------------------------------------------------------
 ### 🧾 6 . Set {Mutable}
 ----------------------------------------------------------------------------------------------
-
 * A **set** is an **unordered** collection of **unique elements**. 
 * Duplicate values are automatically removed when creating a set.
 
@@ -478,70 +469,66 @@
 * Example: Empty set
 
 ```   
-      s = set()
-      print(s)                        # Output: set()
-      print(type(s))                  # Output: <class 'set'>
+   s = set()
+   print(s)                        # Output: set()
+   print(type(s))                  # Output: <class 'set'>
 
 ```   
 
 ```
-      s = {10, 20, 30, 40, 50, 60}
-      print(s)                       # Output: {50, 20, 40, 10, 60, 30}
-      print(type(s))                 # Output: <class 'set'>
+   s = {10, 20, 30, 40, 50, 60}
+   print(s)                       # Output: {50, 20, 40, 10, 60, 30}
+   print(type(s))                 # Output: <class 'set'>
 
 ```
 
 ```
-      s = {10, 10, 20, 30, 40, 50, 60, 60}
-      print(s)                       # Output: {50, 20, 40, 10, 60, 30} # Sets remove duplicates automatically
-      print(type(s))                 # Output: <class 'set'>
+   s = {10, 10, 20, 30, 40, 50, 60, 60}
+   print(s)                       # Output: {50, 20, 40, 10, 60, 30} # Sets remove duplicates automatically
+   print(type(s))                 # Output: <class 'set'>
 
 ```
 
 * Adding elements to a set:
-
 ```   
-      s = {10, 20, 30, 40, 50, 60}   
-      s.add(70)                      # Adds 70 to the set
-      print(s)                       # Output: {50, 20, 70, 40, 10, 60, 30}
+   s = {10, 20, 30, 40, 50, 60}   
+   s.add(70)                      # Adds 70 to the set
+   print(s)                       # Output: {50, 20, 70, 40, 10, 60, 30}
 
 
 ```
 
 * Removing elements from a set:
-
 ```      
-      s = {10, 20, 30, 40, 50, 60}
-      s.remove(20)                   # Removes 20 from the set
-      print(s)                       # Output: {10, 30, 40, 50, 60, 70}
+   s = {10, 20, 30, 40, 50, 60}
+   s.remove(20)                   # Removes 20 from the set
+   print(s)                       # Output: {10, 30, 40, 50, 60, 70}
 
 ```
 
 * **Set operations** like **union**, **intersection**, and **difference** are commonly used.  
 **Union:** Returns a new set with **all unique elements** from both sets.    
-
 ```
 
-      s = {10, 20, 30, 40, 50}
-      s1 = {50, 60, 70, 80}
-      print(s.union(s1))              # Union: {10, 20, 30, 40, 50, 60, 70, 80}
+   s = {10, 20, 30, 40, 50}
+   s1 = {50, 60, 70, 80}
+   print(s.union(s1))              # Union: {10, 20, 30, 40, 50, 60, 70, 80}
 
 ```
 
 * intersection of two sets returns a new set that contains only the elements that are common to both sets.
+```
+
+   s = {10, 20, 30, 40, 50}
+   s1 = {50, 60, 70, 80}
+   print(s.intersection(s1))       # Intersection: {50}
 
 ```
 
-      s = {10, 20, 30, 40, 50}
-      s1 = {50, 60, 70, 80}
-      print(s.intersection(s1))       # Intersection: {50}
-
-```
 
 * Difference: Returns a new set with elements in the first set but not in the second.
-
 ```
-      print(s.difference(s1))   # Output: {10, 20, 30, 40}
+   print(s.difference(s1))   # Output: {10, 20, 30, 40}
 
 ```
 
@@ -566,114 +553,108 @@
 * Empty dictionary  
 
 ```
-      d = dict()
+   d = dict()
 
-      or
+   # or
 
-      d = {}
-      print(d)                                           # Output: {}
-      print(type(d))                                     # Output: <class 'dict'>
+   d = {}
+   print(d)                                           # Output: {}
+   print(type(d))                                     # Output: <class 'dict'>
       
 ```
 
 ```
    student = {
-    "name" : "mac",
+    "name" : "marpu",
     "age" : 25,
     "course": "python"
     }
 
-      print(student["name"])                             # Output: mac
-      print(student.get("age"))                          # Output: 25
-      student["course"] = "AI"
-      print(student)                                     # Output: {'name': 'ashoka', 'age': 25, 'course': 'AI'}
+   print(student["name"])                             # Output: marpu
+   print(student.get("age"))                          # Output: 25
+   student["course"] = "AI"
+   print(student)                                     # Output: {'name': 'ashoka', 'age': 25, 'course': 'AI'}
 
 ```
-      capital_city = {'TS':'Hyd', 'KA':'BANG','TN':'CH'}
-      print(capital_city)                                 # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
-      print(capital_city['TS'])                           # Output: Hyd
-      print(capital_city['AP'])                           # Output: AMV
+```
+   capital_city = {'TS':'Hyd', 'KA':'BANG','TN':'CH'}
+   print(capital_city)                                 # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
+   print(capital_city['TS'])                           # Output: Hyd
+   print(capital_city['AP'])                           # Output: AMV
 
 ```   
   
 * Duplicate Keys:
-
 ```
-   
-
-      capital_city = {'TS':'Hyd', 'TS':'BANG','TN':'CH'}
-      print(capital_city)                                # Output: {'TS': 'BANG', 'TN': 'CH'}
+   capital_city = {'TS':'Hyd', 'TS':'BANG','TN':'CH'}
+   print(capital_city)                                # Output: {'TS': 'BANG', 'TN': 'CH'}
 
 ```
 
 * Modifying Dictionary Values:
 ```
-
-
-      capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
-      capital_city['TS'] = 'Hyderabad'
-      print(capital_city)                               # Output: {'TS': 'Hyderabad', 'TG': 'HYD', 'TN': 'CH'}
+   capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
+   capital_city['TS'] = 'Hyderabad'
+   print(capital_city)                               # Output: {'TS': 'Hyderabad', 'TG': 'HYD', 'TN': 'CH'}
 
 ```
 
 * Changing values in a dictionary
 
 ```
-   
-
-      d = {1:'sai',2:'ashoka'}
-      print(d)                                         # Output: {1: 'sai', 2: 'ashoka'}
-      print(type(d))                                   # Output: <class 'dict'>
-      d[2] = 'ramesh'                                  # Changing the value for key 2 
-      print(d)                                         # Output: {1: 'sai', 2: 'ramesh'}
+   d = {1:'sai',2:'ashoka'}
+   print(d)                                         # Output: {1: 'sai', 2: 'ashoka'}
+   print(type(d))                                   # Output: <class 'dict'>
+   d[2] = 'ramesh'                                  # Changing the value for key 2 
+   print(d)                                         # Output: {1: 'sai', 2: 'ramesh'}
 
 ```
 * Adding key-value pairs to a Dictionary at Runtime
 * Get user input for key-value pairs*
 
 ``` 
-      # Create an empty dictionary
-      person = {}
-
-      # Take input from user
-      name = input("Enter person's name:")
-      age = int(input("Enter person's age:"))
-      city = input("Enter person's city:")
+   * Create an empty dictionary
+   person = {}
+   * Take input from user
+      
+   name = input("Enter person's name:")
+   age = int(input("Enter person's age:"))
+   city = input("Enter person's city:")
 
 
 
   *Add key-value pairs to the dictionary*
       
-      person['name'] = name
-      person['age'] = age
-      person['city'] = city
+   person['name'] = name
+   person['age'] = age
+   person['city'] = city
 
-      print("Dictionary after adding runtime values:", person)  # Output:  {'name': 'ashoka', 'age': '35', 'city': 'hyd'}
-      print(type(person))                                       # Output:  <class 'dict'>
+   print("Dictionary after adding runtime values:", person)  # Output:  {'name': 'ashoka', 'age': '35', 'city': 'hyd'}
+   print(type(person))                                       # Output:  <class 'dict'>
 
 ```
 
 ```
      # Start with an empty dictionary
-     student_scores = {}
+   student_scores = {}
 
 
      # Adding scores for students
-     student_scores['ashoka'] = 85
-     student_scores['sunil'] = 92
-     student_scores['bhaskar'] = 78
+   student_scores['ashoka'] = 85
+   student_scores['sunil'] = 92
+   student_scores['bhaskar'] = 78
 
-     print("Student Scores Dictionary:", student_scores)
-     print(type(student_scores))                             # Output: <class 'dict'>
+   print("Student Scores Dictionary:", student_scores)
+   print(type(student_scores))                             # Output: <class 'dict'>
 
 
-     student_scores['Alice'] = 90  # Update Alice's score
-     print(student_scores)                                    # Output: {'ashoka': 90, 'sunil': 92, 'bhaskar': 78}
+   student_scores['Alice'] = 90  # Update Alice's score
+   print(student_scores)                                    # Output: {'ashoka': 90, 'sunil': 92, 'bhaskar': 78}
 
 ``` 
 
 ----------------------------------------------------------------------------------------------
-### ✨ 8. range (immutable)
+### ✨ 8.range (immutable)
 ----------------------------------------------------------------------------------------------
 * The `range()` function in Python is used to generate a sequence of numbers.  
 * It's typically used in **for loops** to iterate over a specific range of values.
@@ -694,11 +675,12 @@
 
 
 ```
-      r = range(10)
-      print(r)                # Output: range(0, 10)
-      print(type(r))          # Output: <class 'range'>
-      print(list(r))          # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-      print(type(r))          # Output: <class 'range'>
+   r = range(10)
+   print(r)                # Output: range(0, 10)
+      
+   print(list(r))          # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+   
+   print(type(r))          # Output: <class 'range'>
 
 ```
 
@@ -708,19 +690,18 @@
 
 
 ```    
-      r = range(2, 10, 2)  # start=2, stop=10, step=2
-      print(tuple(r))      # Output: (2, 4, 6, 8)
-      print(type(r))       # Output: <class 'range'>
+   r = range(2, 10, 2)  # start=2, stop=10, step=2
+   print(tuple(r))      # Output: (2, 4, 6, 8)
+   print(type(r))       # Output: <class 'range'>
 
 ```
 
 - `range(2, 10, 2)` starts from `2`, goes up to (but not including) `10`, and increments by `2` each time.  
 - We can convert the range to a tuple to see the sequence of numbers: `(2, 4, 6, 8)`.
 
-
 ```     
-      for i in range(5):
-      print(i)
+   for i in range(5):
+   print(i)
 
       # Output:
       # 0
@@ -745,15 +726,15 @@
 -  Creating bytes from a list of integers (ASCII codes)
 
 ```
-      b = bytes([65, 66, 67])           # ASCII values for 'A', 'B', 'C'
-      print(b)                          # Output: b'ABC'
-      print(type(b))                    # Output: <class 'bytes'>
+   b = bytes([65, 66, 67])           # ASCII values for 'A', 'B', 'C'
+   print(b)                          # Output: b'ABC'
+   print(type(b))                    # Output: <class 'bytes'>
 
-      print(b[0])                       # Output: 65  (the ASCII code for 'A')
+   print(b[0])                       # Output: 65  (the ASCII code for 'A')
 
-      # Iterating over bytes
-      for byte in b:
-          print(byte)
+  # Iterating over bytes
+   for byte in b:
+       print(byte)
 
 ```
 
@@ -771,24 +752,24 @@
  - Useful when you need a modifiable sequence of binary data.  
 
  ```
-      # Creating a bytearray
-      ba = bytearray([65, 66, 67])   # ASCII values for 'A', 'B', 'C'
-      print(ba)                      # Output: bytearray(b'ABC')
-      print(type(ba))                # Output: <class 'bytearray'>
+   # Creating a bytearray
+    ba = bytearray([65, 66, 67])   # ASCII values for 'A', 'B', 'C'
+    print(ba)                      # Output: bytearray(b'ABC')
+    print(type(ba))                # Output: <class 'bytearray'>
 
-      # Modifying elements
-      ba[0] = 90                     # Change ASCII 65 ('A') to 90 ('Z')
-      print(ba)                      # Output: bytearray(b'ZBC')
+   # Modifying elements
+    ba[0] = 90                     # Change ASCII 65 ('A') to 90 ('Z')
+    print(ba)                      # Output: bytearray(b'ZBC')
 
-      # Appending a new byte
-      ba.append(68)                  # ASCII for 'D'
-      print(ba)                      # Output: bytearray(b'ZBCD')
+   # Appending a new byte
+    ba.append(68)                  # ASCII for 'D'
+    print(ba)                      # Output: bytearray(b'ZBCD')
 
 
-      # bytearray(b'ABC')
-      # <class 'bytearray'>
-      # bytearray(b'ZBC')
-      # bytearray(b'ZBCD')
+   # bytearray(b'ABC')
+   # <class 'bytearray'>
+   # bytearray(b'ZBC')
+   # bytearray(b'ZBCD')
 
 
 ```
@@ -803,15 +784,15 @@
 * Difference: Unlike `set`, a `frozenset` is **hashable**, so it can be used as a **key in a dictionar
 
 ```
-      frozen_set = frozenset([1, 2, 3, 4, 5])
-      print(frozen_set)   # Output: frozenset({1, 2, 3, 4, 5})
+   frozen_set = frozenset([1, 2, 3, 4, 5])
+   print(frozen_set)   # Output: frozenset({1, 2, 3, 4, 5})
 
-      # frozen_set.add(6) ❌ Error: 'frozenset' object has no attribute 'add'
+   # frozen_set.add(6) ❌ Error: 'frozenset' object has no attribute 'add'
 
-      # But we can still perform set operations
-      s = {3, 4, 5, 6}
-      print(frozen_set.union(s))        # frozenset({1, 2, 3, 4, 5, 6})
-      print(frozen_set.intersection(s)) # frozenset({3, 4, 5})
+   # But we can still perform set operations
+   s = {3, 4, 5, 6}
+   print(frozen_set.union(s))        # frozenset({1, 2, 3, 4, 5, 6})
+   print(frozen_set.intersection(s)) # frozenset({3, 4, 5})
 
 ```
 

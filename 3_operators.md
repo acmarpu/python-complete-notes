@@ -83,28 +83,26 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 
 * The and operator returns True if both conditions are true, otherwise it returns False.
 
-
 ```
-    print(20 < 3 and 1 < 4)   # Output: False
-    # 20 < 3 is False, 1 < 4 is True **False and True gives False**
-
+   print(20 < 3 and 1 < 4)                 # Output: False
+   
+   # 20 < 3 is False, 1 < 4 is True **False and True gives False**
 ```
-                                           
+                                    
 
 * The or operator returns True if at least one condition is true. If both are false, it returns False.*
-
 ```   
-    print(20 < 3 or 1 < 4)    # Output: True
-     # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
+   print(20 < 3 or 1 < 4)                   # Output: True
+    
+    # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
 
 ```    
 
-
-* The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.*
+* The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.
 
 ```
-    print(not(20 < 3))       # Output: True
-    #20 < 3 is False, so not False is True
+   print(not(20 < 3))                        # Output: True
+   #20 < 3 is False, so not False is True
 
 ```      
 
@@ -114,7 +112,7 @@ Logical operators are used to perform **logical operations** (mainly in conditio
     #Using and
     x = 5
     y = 10
-    print(x > 3 and y < 15)  # Output: True
+    print(x > 3 and y < 15)          # Output: True
     #True and True = True
 
 ```      
@@ -192,11 +190,14 @@ Logical operators are used to perform **logical operations** (mainly in conditio
     # Output: False → because i and j are pointing to different objects
 
     # Checking if i and j do not refer to the same object
+    
     print(i is not j)    
+    
     # Output: True → because i and j are different objects
 
     # Using id() to get the memory address of the variables
     # id(): built-in function that returns the memory address of an object
+    
     print(id(i))             # Unique memory address for i
     print(id(j))             # Unique memory address for j
 
