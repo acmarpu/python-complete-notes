@@ -207,8 +207,11 @@
 **Indexing**
 ```
    s = "marputechtravel"
+
    print(s[0])              # Output: m      (first character)
+
    print(s[-1])             # Output: l      (last character, negative index)
+
    print(s[0:7])            # Output: marputech (substring from index 0 to 4)
 
 ```
@@ -216,7 +219,9 @@
 * In Python, you can repeat strings using the multiplication (*) operator.
 ```
    s = "Hello"
+
    repeated = s * 3
+
    print(repeated)              # Output: HelloHelloHello
 
 ```
@@ -234,8 +239,11 @@
 
 ```
    s = "Hello, World"
+
    print(s.upper())                 # Output: HELLO, WORLD
-   t = s[7:]. upper()               
+
+   t = s[7:]. upper() 
+
    print(t)                         # Output: WORLD
 
    print(s.lower())                 # Output: hello, world
@@ -316,25 +324,33 @@
 
 ```      
    l = [10,20,30,3.4,"python",True]
+
    print(l)                           # Output: [10,20,30,3.4,"python",True]
+
    print(type(l))                     # Output: <class 'list'>
 
 ```
 
 * Lists are mutable, which means we can change their elements. We can modify an element by accessing it using its index, or add elements using methods like append().
 * Lists in Python are ordered collections — elements are stored in a sequence (index 0, 1, 2, ...).
+* The append() method adds an element to the end of the list.
 
 ```      
    l = [10,20,30,3.4,"ashoka",True]
+
    l.append(33)                       # Adds 33 to the end of the list
+
    print(l)                           # Output: [10,20,30,3.4,"ashoka",True,33]
 
 ```
 
 * Modifying an element at a specific index
 ```
+   l = [10,20,30,3.4,"ashoka",True]
+
    l[1] = 33                          # Changes the element at index 1 (20 → 33)
-   print(l)                           # Output: [10, 33, 30, 3.4, "ashoka",True,33]
+
+   print(l)                           # Output: [10, 33, 30, 3.4, "ashoka",True]
 
 ```
 
@@ -350,7 +366,9 @@
 * **insert(index, value)** — Inserts an element at a specific index in the list.
 ```
    my_list = [10, 20, 30]
+
    my_list.insert(1, 15)              # Inserts 15 at index 1
+
    print(my_list)                     # Output: [10, 15, 20, 30]
 
 ```
@@ -358,7 +376,9 @@
 * **remove(value)** — Removes the first occurrence of the specified value.
 ```
    my_list = [10, 20, 30, 40, 20]
+
    my_list.remove(20)                 # Removes the first occurrence of 20
+
    print(my_list)                     # Output: [10, 30, 40, 20]
       
 ```
@@ -366,8 +386,11 @@
 * **pop(index)** — Removes the element at the specified index and returns it.
 ```
    my_list = [10, 20, 30, 40, 50]
+
    popped_item = my_list.pop(2)        # Removes the element at index 2 (30)
+
    print(my_list)                      # Output: [10, 20, 40, 50]
+
    print("Popped Item:", popped_item)  # Output: Popped Item: 30
 
    # That returned value is stored in the variable popped_item
@@ -377,8 +400,11 @@
 * **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
 ```
    my_list = [1, 2, 3]                 # Original list
+
    other_list = ["python","java"]       # Another list to extend my_list with
+
    my_list.extend(other_list)          # Using extend() to add elements of other_list to my_list
+
    print(my_list)                      # Output: [1, 2, 3, 'python', 'java']
 
 ```
@@ -386,7 +412,9 @@
 * **index(value)** — Returns the index of the first occurrence of the specified value.
 ```
    my_list = [10, 20, 30, 40, 50]
+
    index_of_30 = my_list.index(30)
+
    print(index_of_30)                  # Output: 2 (The index of 30 is 2)
 
 ```
@@ -394,7 +422,9 @@
 * **sort()** — Sorts the list in ascending order. 
 ```
    my_list = [4, 1, 3, 9, 2]
+
    my_list.sort()
+
    print(my_list)  # Output: [1, 2, 3, 4, 9]
 
 ```
@@ -403,7 +433,7 @@
 ### 📦 5. Tuple (immutable)
 ----------------------------------------------------------------------------------------------
 
-* A **tuple** is a built-in data structure in Python, very similar to a list. However, unlike lists, **tuples are immutable** — their elements cannot be changed after creation.
+* A **tuple** is a built-in data structure in Python, very similar to a **list**. However, unlike lists, **tuples are immutable** — their elements cannot be changed after creation.
    
 📌 **Key Points:**
   * **Immutable:** Once a tuple is created, its elements cannot be modified, added, or removed.
@@ -418,12 +448,16 @@
    
 ```   
       t = ("ashoka")
+
       print(t)                         # Output: ('ashoka')
+
       print(type(t))                   # Output: <class 'str'>
 
 
       t = ("ashoka",)
+
       print(t)                         # Output: ('ashoka',)
+
       print(type(t))                   # Output: <class 'tuple'>
 
 ```
@@ -431,9 +465,13 @@
 
 ```
       t = ("ashoka",12,23.4,10)
+
       print(t)                         # Output: ('ashoka', 12, 23.4, 10)
+
       print(type(t))                   # Output: <class 'tuple'>
+
       t[1] = 33                        # ❌ Trying to change index 1 (value 12 to 33)
+
       print(t)                         # Output ('ashoka', 12, 23.4, 10)  elements cannot be modified
 
 ```
@@ -441,9 +479,13 @@
 * A nested tuple means a tuple inside another tuple
 ```
       nested_tuple = (1, 2, (3, 4), 5)
+
       print(nested_tuple[0])           # Output: 1
+
       print(nested_tuple[1])           # Output: 2
+
       print(nested_tuple[2])           # Output: (3, 4) ← (this itself is another tuple)
+
       print(nested_tuple[3])           # Output: 5
 
 ```
@@ -470,29 +512,37 @@
 
 ```   
    s = set()
+
    print(s)                        # Output: set()
+
    print(type(s))                  # Output: <class 'set'>
 
 ```   
 
 ```
    s = {10, 20, 30, 40, 50, 60}
+
    print(s)                       # Output: {50, 20, 40, 10, 60, 30}
+
    print(type(s))                 # Output: <class 'set'>
 
 ```
 
 ```
    s = {10, 10, 20, 30, 40, 50, 60, 60}
+
    print(s)                       # Output: {50, 20, 40, 10, 60, 30} # Sets remove duplicates automatically
+
    print(type(s))                 # Output: <class 'set'>
 
 ```
 
 * Adding elements to a set:
 ```   
-   s = {10, 20, 30, 40, 50, 60}   
+   s = {10, 20, 30, 40, 50, 60}
+
    s.add(70)                      # Adds 70 to the set
+
    print(s)                       # Output: {50, 20, 70, 40, 10, 60, 30}
 
 
@@ -501,7 +551,9 @@
 * Removing elements from a set:
 ```      
    s = {10, 20, 30, 40, 50, 60}
+
    s.remove(20)                   # Removes 20 from the set
+
    print(s)                       # Output: {10, 30, 40, 50, 60, 70}
 
 ```
@@ -511,7 +563,9 @@
 ```
 
    s = {10, 20, 30, 40, 50}
+
    s1 = {50, 60, 70, 80}
+
    print(s.union(s1))              # Union: {10, 20, 30, 40, 50, 60, 70, 80}
 
 ```
@@ -520,7 +574,9 @@
 ```
 
    s = {10, 20, 30, 40, 50}
+
    s1 = {50, 60, 70, 80}
+
    print(s.intersection(s1))       # Intersection: {50}
 
 ```
@@ -558,7 +614,9 @@
    # or
 
    d = {}
+
    print(d)                                           # Output: {}
+
    print(type(d))                                     # Output: <class 'dict'>
       
 ```
@@ -571,15 +629,21 @@
     }
 
    print(student["name"])                             # Output: marpu
+
    print(student.get("age"))                          # Output: 25
+
    student["course"] = "AI"
+
    print(student)                                     # Output: {'name': 'ashoka', 'age': 25, 'course': 'AI'}
 
 ```
 ```
    capital_city = {'TS':'Hyd', 'KA':'BANG','TN':'CH'}
+
    print(capital_city)                                 # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
+
    print(capital_city['TS'])                           # Output: Hyd
+
    print(capital_city['AP'])                           # Output: AMV
 
 ```   
@@ -587,6 +651,7 @@
 * Duplicate Keys:
 ```
    capital_city = {'TS':'Hyd', 'TS':'BANG','TN':'CH'}
+
    print(capital_city)                                # Output: {'TS': 'BANG', 'TN': 'CH'}
 
 ```
@@ -594,7 +659,9 @@
 * Modifying Dictionary Values:
 ```
    capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
+
    capital_city['TS'] = 'Hyderabad'
+
    print(capital_city)                               # Output: {'TS': 'Hyderabad', 'TG': 'HYD', 'TN': 'CH'}
 
 ```
@@ -603,9 +670,13 @@
 
 ```
    d = {1:'sai',2:'ashoka'}
+
    print(d)                                         # Output: {1: 'sai', 2: 'ashoka'}
+
    print(type(d))                                   # Output: <class 'dict'>
+
    d[2] = 'ramesh'                                  # Changing the value for key 2 
+
    print(d)                                         # Output: {1: 'sai', 2: 'ramesh'}
 
 ```
@@ -613,42 +684,48 @@
 * Get user input for key-value pairs*
 
 ``` 
-   * Create an empty dictionary
-   person = {}
-   * Take input from user
-      
-   name = input("Enter person's name:")
-   age = int(input("Enter person's age:"))
-   city = input("Enter person's city:")
+   
+   person = {}                                   # Create an empty dictionary
+         
+   name = input("Enter person's name:")           # Take input from user name
+
+   age = int(input("Enter person's age:"))        # Take input from user age
+
+   city = input("Enter person's city:")           # Take input from user city
 
 
 
-  *Add key-value pairs to the dictionary*
+  # Add key-value pairs to the dictionary*
       
    person['name'] = name
    person['age'] = age
    person['city'] = city
 
    print("Dictionary after adding runtime values:", person)  # Output:  {'name': 'ashoka', 'age': '35', 'city': 'hyd'}
+
    print(type(person))                                       # Output:  <class 'dict'>
 
 ```
 
 ```
-     # Start with an empty dictionary
+   # Start with an empty dictionary
+   
    student_scores = {}
 
 
-     # Adding scores for students
+   # Adding scores for students
+
    student_scores['ashoka'] = 85
    student_scores['sunil'] = 92
    student_scores['bhaskar'] = 78
 
    print("Student Scores Dictionary:", student_scores)
+
    print(type(student_scores))                             # Output: <class 'dict'>
 
 
    student_scores['Alice'] = 90  # Update Alice's score
+
    print(student_scores)                                    # Output: {'ashoka': 90, 'sunil': 92, 'bhaskar': 78}
 
 ``` 
@@ -691,7 +768,9 @@
 
 ```    
    r = range(2, 10, 2)  # start=2, stop=10, step=2
+
    print(tuple(r))      # Output: (2, 4, 6, 8)
+
    print(type(r))       # Output: <class 'range'>
 
 ```
@@ -727,12 +806,15 @@
 
 ```
    b = bytes([65, 66, 67])           # ASCII values for 'A', 'B', 'C'
+
    print(b)                          # Output: b'ABC'
+
    print(type(b))                    # Output: <class 'bytes'>
 
    print(b[0])                       # Output: 65  (the ASCII code for 'A')
 
   # Iterating over bytes
+
    for byte in b:
        print(byte)
 
@@ -753,16 +835,23 @@
 
  ```
    # Creating a bytearray
+
     ba = bytearray([65, 66, 67])   # ASCII values for 'A', 'B', 'C'
+
     print(ba)                      # Output: bytearray(b'ABC')
+
     print(type(ba))                # Output: <class 'bytearray'>
 
    # Modifying elements
+
     ba[0] = 90                     # Change ASCII 65 ('A') to 90 ('Z')
+
     print(ba)                      # Output: bytearray(b'ZBC')
 
    # Appending a new byte
+
     ba.append(68)                  # ASCII for 'D'
+
     print(ba)                      # Output: bytearray(b'ZBCD')
 
 
@@ -785,13 +874,17 @@
 
 ```
    frozen_set = frozenset([1, 2, 3, 4, 5])
+
    print(frozen_set)   # Output: frozenset({1, 2, 3, 4, 5})
 
    # frozen_set.add(6) ❌ Error: 'frozenset' object has no attribute 'add'
 
    # But we can still perform set operations
+
    s = {3, 4, 5, 6}
+
    print(frozen_set.union(s))        # frozenset({1, 2, 3, 4, 5, 6})
+
    print(frozen_set.intersection(s)) # frozenset({3, 4, 5})
 
 ```
