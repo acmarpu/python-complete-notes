@@ -65,8 +65,11 @@
 
  ```     
     a = 'none'
-    print('none')  
+
+    print('none') 
+
     print(a)                  # Output none
+
     print(type(a))            # Output <class 'str'> 
 
 ```
@@ -83,14 +86,18 @@
 
 ```      
    a = 10
+
    print(a)                   # Output 10 
+
    print(type(a))             # Output <class 'int'> 
 
 ```
 
 ```
    a = 1.4
+
    print(a)                    # Output  1.4 
+
    print(type(a))              # Output  <class 'float'>
 
 ```     
@@ -98,12 +105,16 @@
 * **Converts the integer 10 into a floating-point number → 10.0.**
 ```      
       a = 10
+
       print(a)                # Output 10
+
       print(type(a))          # Output  <class 'int'>
       
 
       b = float(a)
+
       print(b)                # Output 10.0
+
       print(type(b))          # Output <class 'float'>
 
 ```
@@ -111,8 +122,11 @@
 **Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
 ``` 
    a = input("enter num1:")
+
    print(type(a))              # Output   <class 'str'>
+
    x = int(a)                  # here we converting str to int
+
    print(type(x))              # Output   <class 'int'>
 
 ```
@@ -120,23 +134,33 @@
 * **Taking inputs separately and then converting to int**
 ```   
    a = input("enter number1:")       # Enter number 10
+
    print(a)                          # Output 10
+
    print(type(a))                    # Output <class 'str'>
 
    x = int(a)                        # converting str to int
+
    print(x)                          # Output 10
+
    print(type(x))                    # Output   <class 'int'>
 
    b = input("enter number2:")       # Enter number 20
+
    print(b)                          # Output 20
+
    print(type(b))                    # <class 'str'>
 
-   y = int(b)                        # converting str to int
+   y = int(b) 
+                          # converting str to int
    print(type(y))
       
    c = x+y 
-   print(c)                          # Output   sun c is 30                       
-   print(type(c))                    # Output  <class 'int'>                 
+   
+   print(c)                          # Output   sun c is 30
+
+   print(type(c))                    # Output  <class 'int'> 
+
    print("sum c is", c)              # Output sum c is 30         
 
 ```   
@@ -144,10 +168,15 @@
 **Simplified Approach**
 ```
    a = int(input("enter num1:"))     # Enter number 10
+
    b = int(input("enter num2:"))     # Enter number 20
+
    c = a + b
+   
    print(c)                          # Output 30
+
    print("sum is:", c)               # Output: sum is 30
+
    print(type(c))                    # Output <class 'int'>
  
 ```
@@ -155,8 +184,11 @@
 **Taking float inputs directly and adding them**
 ```   
    a = float(input("Enter num1:"))
+
    b = float(input("enter num2:")) 
+
    c = a + b
+
    print("sum is:", c)               # Example Output: sum is 45.7
 
 ```
@@ -165,9 +197,13 @@
 **bool = true or false**
 ```   
    a = 10
+
    b = 20
+
    c = a > b
+
    print(c)                          # Output  False
+
    print(type(c))                    # Output  <class 'bool'>
 
 ```
@@ -187,11 +223,15 @@
 * With single quotes (' ') → may need escape \'.
 ```  
    s = 'hello marputechtravel'
+
    print(s)                 # Output: hello marputechtravel
+
    print(type(s))           # Output <class 'str'>
 
    s = 'hello marputechtravel\'s'
+
    print(s)                 # Output: hello marputechtravel's
+
    print(type(s))           # Output: <class 'str'>
 
 ```
@@ -199,7 +239,9 @@
 * With double quotes (" ")
 ```
    s = "hello marputechtravel" 
+
    print(s)                 # Output: hello marputechtravel
+
    print(type(s))           # Output: <class 'str'>
 
 ```
@@ -229,10 +271,15 @@
 
 ```
    s = "hello marputechtravel"
+
    repeated = s * 3                 #  * (multiplication) operator on a string
+
    print(repeated)                  # Output: hello marputechtravelhello marputechtravelhello marputechtravel
+
    repeated = " ".join([s] * 3)     # Joining Strings with a Separator
+
    # Output: hello ashoka hello ashoka hello ashoka
+
    " ".join(...) → joins them with a space " " in between
 
 ```
@@ -264,6 +311,7 @@
 * Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
 ```      
    s.replace("hello", "hai")
+   
    print(s)                                 # Output: hello world (s is unchanged)
 
 ```
@@ -709,7 +757,7 @@
 
 ```
    # Start with an empty dictionary
-   
+
    student_scores = {}
 
 
