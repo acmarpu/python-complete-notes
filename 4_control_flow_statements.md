@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------
 ### 🔀 Control Flow Statement
 ----------------------------------------------------------------------------------------------
-* In Python, **control flow statements** are used to decide the order in which statements are executed in a program.  
+* In Python, **Control flow Statements** are used to decide the order in which statements are executed in a program.  
 * Control flow statements help maintain the flow of program execution.  
 * Conditional statements in Python are used to execute certain blocks of code based on whether a condition is true or false. These statements allow your program to make decisions and change its behavior accordingly.  
 * Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated.  
@@ -46,9 +46,6 @@ but ❌ not all control flow statements are loops.
 
 * The `if-else` block is used when you want to execute one block of code if the condition is **True**, and a different block of code if the condition is **False**.  
 
-* The `if` statement evaluates a condition:  
-  - If the condition is **True**, the code block inside `if` is executed.  
-  - If the condition is **False**, it will skip to the `else` block (if present
 
 ```
 
@@ -62,7 +59,9 @@ but ❌ not all control flow statements are loops.
 
 ```
    i = 10
+
    if i == 100:
+   
        print("this is the currect:")
 ```
 

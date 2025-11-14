@@ -104,18 +104,18 @@
 
 * **Converts the integer 10 into a floating-point number → 10.0.**
 ```      
-      a = 10
+   a = 10
 
-      print(a)                # Output 10
+   print(a)                # Output 10
 
-      print(type(a))          # Output  <class 'int'>
+   print(type(a))          # Output  <class 'int'>
       
 
-      b = float(a)
+   b = float(a)
 
-      print(b)                # Output 10.0
+   print(b)                # Output 10.0
 
-      print(type(b))          # Output <class 'float'>
+   print(type(b))          # Output <class 'float'>
 
 ```
 
@@ -311,7 +311,7 @@
 * Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
 ```      
    s.replace("hello", "hai")
-   
+
    print(s)                                 # Output: hello world (s is unchanged)
 
 ```
