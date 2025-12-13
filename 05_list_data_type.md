@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------------------------
 * A list is an **ordered collection of elements**.
 * It can store **heterogeneous elements** (different data types).
+* When a data structure contains more than one data type, it is called heterogeneous.
 
 #### 1. creating a list
    
@@ -10,6 +11,12 @@
    l = [10,20,30,40,50,60]
    print(l)                               # Output: 10,20,30,40,50,60
    print(type(l))                         # Output: <class 'list'>
+
+```
+* # List with mixed data types (heterogeneous)
+```
+  l3 = [10, 3.5, "python", True]
+  print (l3)
 
 ```
 
