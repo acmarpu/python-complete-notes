@@ -1,15 +1,15 @@
 --------------------------------------------------------------------------------------------------
 ### 🧾 List
 --------------------------------------------------------------------------------------------------
-is order collection of elements
-      heterogeneous elements (diffrent types of data types)
+* A list is an **ordered collection of elements**.
+* It can store **heterogeneous elements** (different data types).
 
 #### 1. creating a list
    
 ```
    l = [10,20,30,40,50,60]
-   print(l)                   # Output: 10,20,30,40,50,60
-   print(type(l))             # Output: <class 'list'>
+   print(l)                               # Output: 10,20,30,40,50,60
+   print(type(l))                         # Output: <class 'list'>
 
 ```
 
@@ -18,9 +18,9 @@ is order collection of elements
 
 ```
    l = [ 10,20,[30,40],1.0 ]
-   print(l[2])                # Access nested list # Output [30,40]
-   print(type(l))             # Output: <class 'list'>
-   print(l[2][0])             # Access element from nested list # Output 30
+   print(l[2])                            # Access nested list # Output [30,40]
+   print(type(l))                         # Output: <class 'list'>
+   print(l[2][0])                         # Access element from nested list # Output 30
 
 ```
 
@@ -28,7 +28,7 @@ is order collection of elements
    
 ```
    l = [10,20,30,40,50,60]
-   print(l[1])                # Output 20
+   print(l[1])                            # Output 20
    print(type(l))
 
 ```
@@ -39,7 +39,7 @@ is order collection of elements
 ```
    l = [10,20,30,40,50,60]
    print(l)
-   printl[1:4]                # Output: [20, 30, 40]
+   print(l[1:4])                           # Output: [20, 30, 40]
 
 ```
 
@@ -48,10 +48,10 @@ is order collection of elements
 ```
    l = [10,20,30,40,1.0]
    print(l)
-   l[1] =33                   # 1 is index and 33 is element
-   print(l)                   # Output: [10, 33, 30, 40, 1.0]
-   l.insert(1,33)             # 1 is index and 33 is value
-   print(l)                   # Output: [10, 33, 33, 30, 40, 1.0]
+   l[1] =33                               # 1 is index and 33 is element
+   print(l)                               # Output: [10, 33, 30, 40, 1.0]
+   l.insert(1,33)                         # 1 is index and 33 is value
+   print(l)                               # Output: [10, 33, 33, 30, 40, 1.0]
 
 ```
 
@@ -85,12 +85,12 @@ is order collection of elements
 #### 8.. list concatenation and multiplication
 
 ```
-   l1 = ["mac","it","explorer"]
+   l1 = ["mac","tecj","travel"]
    l2 = ["att","ms","tcs"]
    l3 = l1+l2
-   print(l3)                    # Output: ['mac', 'it', 'explorer', 'att', 'ms', 'tcs']
+   print(l3)                    # Output: ['mac', 'tech', 'travel', 'att', 'ms', 'tcs']
    
-   print(l1*2)                  # Output: ['mac', 'it', 'explorer', 'mac', 'it', 'explorer']
+   print(l1*2)                  # Output: ['mac', 'tech', 'travel', 'mac', 'tech', 'travel']
 
 ```
 
