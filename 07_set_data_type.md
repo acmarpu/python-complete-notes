@@ -4,21 +4,24 @@
 #### 1. What is a Set
 * A **set** is an **unordered collection of unique elements**.
 * It automatically **ignores duplicate elements**.
+* Sets are **mutable**.
+* Sets do **not support indexing or slicing** (because they are unordered).
+* Sets are created using **curly braces `{}`** or the `set()` function.
 
 #### 2. creating set 
 
 ```
    s = set()
    print(s)         
-   print(type(s))           # Output <class 'set'>
+   print(type(s))                    # Output <class 'set'>
 
 ```
 ```
    s = {10,20,30,"mac",34.5}
-   print(s)                 # Output {34.5, 20, 'mac', 10, 30}
-   print(type(s))           # Output <class 'set'>
+   print(s)                         # Output {34.5, 20, 'mac', 10, 30}
+   print(type(s))                   # Output <class 'set'>
    s.add(99)
-   print(s)                 # Output {34.5, 99, 'mac', 20, 10, 30}
+   print(s)                         # Output {34.5, 99, 'mac', 20, 10, 30}
 
 ```   
 
@@ -28,26 +31,26 @@
 ```
    s = {}
    print(s)
-   print(type(s))           # Output    <class 'dict'>
+   print(type(s))                  # Output    <class 'dict'>
 
 ```    
 #### 4. how to change set (add and update)
 
 ```
    s = {10,20,30,"mac",34.5}
-   print(s)                   # Output {34.5, 'mac', 20, 10, 30}
-   print(type(s))             # Output <class 'set'>
+   print(s)                        # Output {34.5, 'mac', 20, 10, 30}
+   print(type(s))                  # Output <class 'set'>
    s.add(99)                
-   print(s)                   # Output {34.5, 99, 'mac', 20, 10, 30}
+   print(s)                        # Output {34.5, 99, 'mac', 20, 10, 30}
 
 ```
 
 ```
    s = {10,20,30,"mac",34.5}
-   print(s)                   # Output {34.5, 'mac', 20, 10, 30}
-   print(type(s))             # Output <class 'set'>
+   print(s)                       # Output {34.5, 'mac', 20, 10, 30}
+   print(type(s))                 # Output <class 'set'>
    s.update([36,"mac",True]) 
-   print(s)                   # Output {True, 34.5, 99, 20, 36, 10, 'mac', 30}
+   print(s)                       # Output {True, 34.5, 99, 20, 36, 10, 'mac', 30}
 
 ```
 #### 5. remove elements from set(discard and remove), clear(), del
