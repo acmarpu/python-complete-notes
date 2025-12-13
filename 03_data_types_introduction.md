@@ -222,15 +222,15 @@
 
 * With single quotes (' ') → may need escape \'.
 ```  
-   s = 'hello marputechtravel'
+   s = 'hello mactechtravel'
 
-   print(s)                 # Output: hello marputechtravel
+   print(s)                 # Output: hello mactechtravel
 
    print(type(s))           # Output <class 'str'>
 
-   s = 'hello marputechtravel\'s'
+   s = 'hello mactechtravel\'s'
 
-   print(s)                 # Output: hello marputechtravel's
+   print(s)                 # Output: hello mactechtravel's
 
    print(type(s))           # Output: <class 'str'>
 
@@ -238,9 +238,9 @@
 
 * With double quotes (" ")
 ```
-   s = "hello marputechtravel" 
+   s = "hello mactechtravel" 
 
-   print(s)                 # Output: hello marputechtravel
+   print(s)                 # Output: hello mactechtravel
 
    print(type(s))           # Output: <class 'str'>
 
@@ -248,13 +248,13 @@
 
 **Indexing**
 ```
-   s = "marputechtravel"
+   s = "mactechtravel"
 
    print(s[0])              # Output: m      (first character)
 
    print(s[-1])             # Output: l      (last character, negative index)
 
-   print(s[0:7])            # Output: marputech (substring from index 0 to 4)
+   print(s[0:7])            # Output: mactech (substring from index 0 to 4)
 
 ```
 
@@ -270,11 +270,11 @@
 
 
 ```
-   s = "hello marputechtravel"
+   s = "hello mactechtravel"
 
    repeated = s * 3                 #  * (multiplication) operator on a string
 
-   print(repeated)                  # Output: hello marputechtravelhello marputechtravelhello marputechtravel
+   print(repeated)                  # Output: hello mactechtravelhello mactechtravelhello mactechtravel
 
    repeated = " ".join([s] * 3)     # Joining Strings with a Separator
 
@@ -671,12 +671,12 @@
 
 ```
    student = {
-    "name" : "marpu",
+    "name" : "mac",
     "age" : 25,
     "course": "python"
     }
 
-   print(student["name"])                             # Output: marpu
+   print(student["name"])                             # Output: mac
 
    print(student.get("age"))                          # Output: 25
 
