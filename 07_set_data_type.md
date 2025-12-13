@@ -18,10 +18,10 @@
 ```
 ```
    s = {10,20,30,"mac",34.5}
-   print(s)                         # Output {34.5, 20, 'mac', 10, 30}
-   print(type(s))                   # Output <class 'set'>
+   print(s)                           # Output {34.5, 20, 'mac', 10, 30}
+   print(type(s))                     # Output <class 'set'>
    s.add(99)
-   print(s)                         # Output {34.5, 99, 'mac', 20, 10, 30}
+   print(s)                           # Output {34.5, 99, 'mac', 20, 10, 30}
 
 ```   
 
@@ -31,26 +31,26 @@
 ```
    s = {}
    print(s)
-   print(type(s))                  # Output    <class 'dict'>
+   print(type(s))                      # Output    <class 'dict'>
 
 ```    
 #### 4. how to change set (add and update)
 
 ```
    s = {10,20,30,"mac",34.5}
-   print(s)                        # Output {34.5, 'mac', 20, 10, 30}
-   print(type(s))                  # Output <class 'set'>
+   print(s)                            # Output {34.5, 'mac', 20, 10, 30}
+   print(type(s))                      # Output <class 'set'>
    s.add(99)                
-   print(s)                        # Output {34.5, 99, 'mac', 20, 10, 30}
+   print(s)                            # Output {34.5, 99, 'mac', 20, 10, 30}
 
 ```
 
 ```
    s = {10,20,30,"mac",34.5}
-   print(s)                       # Output {34.5, 'mac', 20, 10, 30}
-   print(type(s))                 # Output <class 'set'>
+   print(s)                            # Output {34.5, 'mac', 20, 10, 30}
+   print(type(s))                      # Output <class 'set'>
    s.update([36,"mac",True]) 
-   print(s)                       # Output {True, 34.5, 99, 20, 36, 10, 'mac', 30}
+   print(s)                            # Output {True, 34.5, 99, 20, 36, 10, 'mac', 30}
 
 ```
 #### 5. remove elements from set(discard and remove), clear(), del
@@ -59,20 +59,20 @@
 ```
    s = {10,20,30,"mac",34.5}
    s.discard(10)
-   print(s)                 # Output {20, 30, 'mac', 34.5}
+   print(s)                            # Output {20, 30, 'mac', 34.5}
 
 ```
 
 ```
    s.remove(10)
-   print(s)                # Output {10, 30, 'mac', 34.5}
+   print(s)                            # Output {10, 30, 'mac', 34.5}
 
 ```
 
 ```
    s = {10, 20, 30}
    s.clear()
-   print()                 # Output: set()
+   print()                             # Output: set()
 
 ```
 
@@ -89,8 +89,8 @@
 ```
    a = {1,2,3,4,5}
    b = {4,5,6,7,8}
-   print(a|b)                # Output {1, 2, 3, 4, 5, 6, 7, 8}
-   print(a.union(b))         # Output {1, 2, 3, 4, 5, 6, 7, 8}
+   print(a|b)                        # Output {1, 2, 3, 4, 5, 6, 7, 8}
+   print(a.union(b))                 # Output {1, 2, 3, 4, 5, 6, 7, 8}
 
 ```
 
@@ -98,16 +98,16 @@
 ```
    A = {1,2,3,4,5}
    B = {4,5,6,7,8}
-   print(A&B)                # Output {4,5}
-   print(A.intersection(B))  # Output {4,5}
+   print(A&B)                        # Output {4,5}
+   print(A.intersection(B))          # Output {4,5}
 
 ```
 * difference
 
 ```
-   print(a-b)               # Output {1,2,3}
-   print(a.difference(b))   # Output {1,2,3}
-   print(b.difference(a))   # Output {8, 6, 7}
+   print(a-b)                        # Output {1,2,3}
+   print(a.difference(b))            # Output {1,2,3}
+   print(b.difference(a))            # Output {8, 6, 7}
 
 ```
 * symmetric difference
@@ -148,7 +148,7 @@
 
 ```
    a = {1,2,3,4,5}
-   print(sum(a))                  # Output 15         
+   print(sum(a))                   # Output 15         
 
 ```
 ----------------------------------------------------------------------------------------------
