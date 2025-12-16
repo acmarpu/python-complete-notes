@@ -4,12 +4,12 @@
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
 **1.** Python is a programming language used for app development. 
-   - Python doesn’t “create” physical infrastructure (like servers, networks, or cloud machines) on its own,
+- Python doesn’t “create” physical infrastructure (like servers, networks, or cloud machines) on its own,
 but it’s widely used to automate and manage infrastructure through code.
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
 
-  **a)** General-Purpose Language
+  **a)** *General-Purpose Language*
     * Python is a general-purpose programming language, meaning it is designed to be used for a wide variety of tasks, not restricted to a single domain.
 
     * You can use Python for:
@@ -23,17 +23,17 @@ but it’s widely used to automate and manage infrastructure through code.
     * 📑 Document Automation — Excel, Word, and PDF using openpyxl, python-docx, PyPDF2
     * 📁 File and Folder Operations — rename, move, delete, or backup files
 
-  **b)** High-level:*
+  **b)** *High-level:*
    * Python is considered a high-level language because it is abstracted from the machine's hardware.(Python does not require you to deal with computer hardware directly (like CPU instructions or memory).)
    * This makes Python easier to read, write, and understand, compared to low-level languages (like Assembly or C), which are closer to machine code. 
    * In other words, Python lets you focus more on solving problems rather than managing memory or other low-level tasks.
 
-  **c)** Case-Sensitive:*
+  **c)** *Case-Sensitive:*
    * Python treats uppercase and lowercase characters as different.
    * For example, *Variable* and *variable* would be considered two different identifiers. 
    * This is important to remember when writing Python code, as the language will not automatically correct case mismatches.
  
-  **d)** Easy to Learn:*
+  **d)** *Easy to Learn:*
    * Python has a simple and easy learn and easy-to-understand syntax, making it a great choice for beginners.
    * meaning it’s a straight forward language
 
