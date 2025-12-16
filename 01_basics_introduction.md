@@ -4,7 +4,7 @@
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
 **1.** Python is a programming language used for app development 
-   a) Python doesn’t “create” physical infrastructure (like servers, networks, or cloud machines) on its own,
+   *a) Python doesn’t “create” physical infrastructure (like servers, networks, or cloud machines) on its own,
 but it’s widely used to automate and manage infrastructure through code.
 
 **2.** Python is a general-purpose, high-level, Case-Sensitive and Easy to Learn Programming Language
