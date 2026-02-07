@@ -6,10 +6,10 @@ Python was designed and developed by Guido van Rossum in the year 1989, and the 
 * Python is a versatile programming language commonly used for application development across web, desktop, and mobile platforms. Although Python itself does not directly create physical infrastructure such as servers, networks, or cloud machines, it plays a crucial role in DevOps and cloud computing. Through libraries and tools like Ansible, SaltStack, boto3 (AWS), and Google Cloud SDK, Python enables engineers to automate, configure, and manage infrastructure efficiently using code
 
 ----------------------------------------------------------------------------------------------
-#### why Python for Automation
+### why Python for Automation
 ----------------------------------------------------------------------------------------------
 
-## 1. Introduction to Python
+**1.** Introduction to Python
 
 * Python is a **General-purpose**, **High-level**, **Case-sensitive**, and **Easy-to-Learn** programming language.  
 It is known for its **Simple** and **Readability**, making it highly **Beginner-friendly**.
@@ -43,12 +43,12 @@ It is known for its **Simple** and **Readability**, making it highly **Beginner-
    * meaning it’s a straight forward language
 
 
-**3.** Python is completely cross-platform or platform-independent
+**2.** Python is completely cross-platform or platform-independent
    * Python is cross-platform, meaning you can write Python code on one operating system (e.g., Windows) and run it on another (e.g., macOS or Linux) without modifications, as long as Python is installed on that system.
 
-**4.** Python is completely free and open-source
+**3.** Python is completely free and open-source
 
-**5.** Python is an **Interpreted** language.
+**4.** Python is an **Interpreted** language.
 
   *a) Interpreter-based languages(e.g., Python):* 
    * The code is executed line by line, with each line being translated into machine code and executed on the fly.
@@ -58,11 +58,11 @@ It is known for its **Simple** and **Readability**, making it highly **Beginner-
    * The source code is compiled into machine code (binary) before execution.
    * In this language, compilation errors prevent the code from compiling.
 
-**6.** Python is a dynamically typed language, not a statically typed language
+**5.** Python is a dynamically typed language, not a statically typed language
 
   *a) Statically typed languages (e.g., C, Java)* require the programmer to specify the data type of variables at the time of 
 
- C or c++: 
+ c or c++: 
 ```
     int a = 100
     The data type (int) must be declared explicitly
@@ -97,7 +97,7 @@ It is known for its **Simple** and **Readability**, making it highly **Beginner-
 ```
 
 ----------------------------------------------------------------------------------------------
-### 🧩 1. Features of Python:
+### 🧩 Features of Python:
 ----------------------------------------------------------------------------------------------
 
 - **Expressive & Readable** → Concise syntax, beginner-friendly, easy to learn.  
@@ -108,7 +108,7 @@ It is known for its **Simple** and **Readability**, making it highly **Beginner-
 - **GUI Support** → Frameworks like Tkinter, PyQt, and Kivy for desktop apps.
 
 ----------------------------------------------------------------------------------------------
-### 💻 2. Different Ways to Write and Execute Python Code:
+### 💻 Different Ways to Write and Execute Python Code:
 ----------------------------------------------------------------------------------------------
 
 **Interactive Mode**
@@ -131,7 +131,7 @@ It is known for its **Simple** and **Readability**, making it highly **Beginner-
 
 
 ----------------------------------------------------------------------------------------------
-### ⚡ 3. Application Areas of Python:
+### ⚡ Application Areas of Python:
 ----------------------------------------------------------------------------------------------
 
 - **Desktop Apps (CUI/GUI)** → Command-line or graphical applications.  

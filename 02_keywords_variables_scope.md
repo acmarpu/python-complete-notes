@@ -2,11 +2,11 @@
 ### 📜 Python Keywords
 ----------------------------------------------------------------------------------------------
 
-**a. Comments** 
+**A. Comments** 
 * Python are identified with a hash symbol(#), and extend to the end of the line# 
 * short cut key is ctrl+/ : description about the code we can use # also
 
-**b. Keywords or Reserved Words**
+**B. Keywords or Reserved Words**
 * There are fewer restrictions on their usage. For example, you will get a “SyntaxError” if you try assigning a keyword to a variable
 * Python keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those specific purposes. 
 * These keywords are always available—you’ll never have to import them into your code.
