@@ -4,7 +4,9 @@
 
 **A. Comments** 
 * Python are identified with a hash symbol(#), and extend to the end of the line# 
-* short cut key is ctrl+/ : description about the code we can use # also
+* short cut key is ctrl + / 
+* using # for comments is a great practice in Python to describe what your code does.
+* You can also use multi-line comments with triple quotes(""" """   ) for longer explanation
 
 **B. Keywords or Reserved Words**
 * There are fewer restrictions on their usage. For example, you will get a “SyntaxError” if you try assigning a keyword to a variable
@@ -29,8 +31,7 @@
 
 ```
 
-    
-
+ 
 ----------------------------------------------------------------------------------------------
 ### 📜 Variables
 ----------------------------------------------------------------------------------------------
@@ -106,7 +107,7 @@
  
     print(a1, a2, sep =a3)                  # Output Hello Python****************Simple & Readable
     print(a1, a3, a2, sep=" ")              # Output Hello Python **************** Simple & Readable
-    print(a1, a2, sep =a3, end="!!!")       # Output Hello Python **************** Simple & Readable
+    print(a1, a2, sep =a3, end="!!!")       # Output Hello Python****************Simple & Readable!!!
 
 ```
 
@@ -131,12 +132,14 @@
    print(a,b,c)         # Output   10 20 30 
              
 
-   print(a, end=",")    # Output  10
+   print(a, end=",")    # Output  10,
 
-   print(b, end=",")    # Output  20
+   print(b, end=",")    # Output  20,
 
    print(c)             # Output  30
 
+   print(a,b,c, sep=",", end=",")
+  
    # Each variable (a, b, c) is printed one after the other on the same line.
    # 10,20,30,          # Output  
 
