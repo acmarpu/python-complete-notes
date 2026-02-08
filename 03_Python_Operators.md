@@ -56,14 +56,14 @@
 
 
 ```
-    a = 5                   # Assigns 5 to variable 'a'
-    print(a)                # Outputs: 5
+        a = 5                   # Assigns 5 to variable 'a'
+        print(a)                # Outputs: 5
 
-    a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
-    print(a)                # Outputs: 7 (because 5 + 2 = 7)
+        a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
+        print(a)                # Outputs: 7 (because 5 + 2 = 7)
 
-    a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
-    print(a)                # Outputs: 5 (because 7 - 2 = 5)
+        a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
+        print(a)                # Outputs: 5 (because 7 - 2 = 5)
 
 ```
 
@@ -84,52 +84,51 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 * The and operator returns True if both conditions are true, otherwise it returns False.
 
 ```
-   print(20 < 3 and 1 < 4)                 # Output: False
+        print(20 < 3 and 1 < 4)           # Output: False
    
-   # 20 < 3 is False, 1 < 4 is True **False and True gives False**
+        # 20 < 3 is False, 1 < 4 is True **False and True gives False**
 ```
                                     
 
 * The or operator returns True if at least one condition is true. If both are false, it returns False.*
 ```   
-   print(20 < 3 or 1 < 4)                   # Output: True
+        print(20 < 3 or 1 < 4)            # Output: True
     
-    # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
+        # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
 
 ```    
 
 * The not operator reverses the boolean value of the condition: if the condition is True, it returns False, and if the condition is False, it returns True.
 
 ```
-   print(not(20 < 3))                        # Output: True
-   #20 < 3 is False, so not False is True
+        print(not(20 < 3))                # Output: True
+        #20 < 3 is False, so not False is True
 
 ```      
 
 * Additional Examples:
-
 ```
-    #Using and
-    x = 5
-    y = 10
-    print(x > 3 and y < 15)          # Output: True
-    #True and True = True
+       #Using and
+       x = 5
+       y = 10
+       print(x > 3 and y < 15)            # Output: True
+       #True and True = True
 
 ```      
 
 ```
-    x = 5
-    y = 10
-    print(x < 3 or y > 5)    # Output: True
-    # False or True = True
+       x = 5
+       y = 10
+       print(x < 3 or y > 5)             # Output: True
+       # False or True = True
 
 ```
 
 ```
-    x = 10
-    print(not(x < 5))        # Output: True
-    # not False = True
-      
+       x = 10
+       print(not(x < 5))                  # Output: True
+       # not False = True
+
 ```
 
 ----------------------------------------------------------------------------------------------
