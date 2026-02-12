@@ -4,6 +4,16 @@
 * In Python, **operators** are symbols (or keywords) used to perform operations on variables and values.  
 * They allow us to manipulate data, perform calculations, compare results, and control logic flow. 
 
+```
+    import operator
+
+    print("All operators in the operators module:", dir(operator))
+    print("All operators in the operators module:", operator.__all__)
+
+    👉 So, __all__ is basically the official list of functions/objects that the operator module wants you to use
+
+```
+
 ----------------------------------------------------------------------------------------------
 #### ➕ 1. Arithmetic Operators
 ----------------------------------------------------------------------------------------------
@@ -21,12 +31,26 @@
 | `**`     | Exponentiation (power)| `print(2 ** 3)` | `8`   |
 
 
+```
+    # Second way
+
+    import operator
+    a = 5
+    b = 3
+
+    print("Addition:", operator.add(a, b))          # Output: 8
+    print("Subtraction:", operator.sub(a, b))       # Output: 2
+    print("Multiplication:", operator.mul(a, b))    # Output: 15
+    print("Division:", operator.truediv(a, b))      # Output: 1.6666666666666667
+
+```
 
 ----------------------------------------------------------------------------------------------
 #### ⚖️ 2. Relational (Comparison) Operators
 ----------------------------------------------------------------------------------------------
 * Relational operators are used to **compare two values**.  
 * The result of these operations is always a **Boolean value** (`True` or `False`).
+* Commonly applied in data validation and filtering
 
 | Operator | Description                      | Example        | Output  |
 |----------|----------------------------------|----------------|---------|
@@ -43,6 +67,7 @@
 ----------------------------------------------------------------------------------------------
 * Assignment operators are used to **assign values** to variables.  
 * Some operators also perform an operation and then assign the result to the variable.
+* When combined with arithmetic operators, they perform two actions at once (calculation + assignment)
 
 | Operator | Description               | Example        | Equivalent To  | Result |
 |----------|---------------------------|----------------|----------------|--------|
@@ -70,7 +95,7 @@
 ----------------------------------------------------------------------------------------------
 #### 🔗 4 . Logical Operators
 ----------------------------------------------------------------------------------------------
-Logical operators are used to perform **logical operations** (mainly in conditional statements).  
+* Logical operators are used to perform **logical operations** (mainly in conditional statements).  
 
 
 | Operator | Description                              | Example            | Result  |
@@ -80,8 +105,8 @@ Logical operators are used to perform **logical operations** (mainly in conditio
 | `not`    | Reverses the boolean value               | `not(5 > 3)`       | `False` |
 
 
-
-* The and operator returns True if both conditions are true, otherwise it returns False.
+* and = both must be true, otherwise False
+* The and operator returns True if both conditions are true, otherwise it returns False if one is true
 
 ```
         print(20 < 3 and 1 < 4)           # Output: False
