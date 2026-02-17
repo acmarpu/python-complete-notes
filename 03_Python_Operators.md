@@ -102,11 +102,10 @@
 
 | Operator | Description                              | Example            | Result  |
 |----------|------------------------------------------|--------------------|---------|
-| `and`    | Returns True if **both** conditions are True | print(5 > 3 and 10 > 5)  | `True` |
-|          |                                              | print(True and True)     |  `True` |
-|          |                                              | print(True and False)    | 'False' |               
-| `or`     | Returns True if **at least one** condition is True | `(5 < 3 or 10 > 5)` | `True` |
-| `not`    | Reverses the boolean value               | `not(5 > 3)`       | `False` |
+| `and`    | Returns True if **both** conditions are True, print(True and True) | print(5 > 3 and 10 > 5)  | `True` |
+|          | Returns False if one conditions is False, print(True and False)    | print(5 < 3 and 10 > 5)  |  False |               
+| `or`     | Returns True if **at least one** condition is True                 | print(5 < 3 and 10 > 5)  | `True` |
+| `not`    | Reverses the boolean value                                         | `not(5 > 3)`             | `False` |
 
 
 * and = both must be true, otherwise False
