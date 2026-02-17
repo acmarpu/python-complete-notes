@@ -95,12 +95,16 @@
 ----------------------------------------------------------------------------------------------
 #### 🔗 4 . Logical Operators
 ----------------------------------------------------------------------------------------------
-* Logical operators are used to perform **logical operations** (mainly in conditional statements).  
+* Logical operators are used to perform **logical operations** (mainly in conditional statements).
+• They deal with Boolean inputs ( or ) and return a Boolean result.
+• Useful for decision-making, validations, and combining multiple conditions.
 
 
 | Operator | Description                              | Example            | Result  |
 |----------|------------------------------------------|--------------------|---------|
-| `and`    | Returns True if **both** conditions are True | `(5 > 3 and 10 > 5)` | `True` |
+| `and`    | Returns True if **both** conditions are True | print(5 > 3 and 10 > 5)  | `True` |
+|          |                                              | print(True and True)     |  `True` |
+|          |                                              | print(True and False)    | 'False' |               
 | `or`     | Returns True if **at least one** condition is True | `(5 < 3 or 10 > 5)` | `True` |
 | `not`    | Reverses the boolean value               | `not(5 > 3)`       | `False` |
 
