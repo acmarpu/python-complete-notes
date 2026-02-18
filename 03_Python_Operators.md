@@ -32,16 +32,24 @@
 
 
 ```
-    # Second way
-
     import operator
     a = 5
     b = 3
+
+    print("Addition:", a + b)
+    print("Subtraction:",a - b)
+    print("Multiplication:", a * b)
+    print("Division:", a / b)
+    print("Floor Division:", a //b)
+
+
+    # Second way
 
     print("Addition:", operator.add(a, b))          # Output: 8
     print("Subtraction:", operator.sub(a, b))       # Output: 2
     print("Multiplication:", operator.mul(a, b))    # Output: 15
     print("Division:", operator.truediv(a, b))      # Output: 1.6666666666666667
+    print("Floor Division:", operator.floordiv(a, b))      # Output: 1
 
 ```
 
@@ -60,6 +68,22 @@
 | `<`      | Less than                        | `print(3 < 2)` | `False` |
 | `>=`     | Greater than or equal to         | `print(5 >= 5)`| `True`  |
 | `<=`     | Less than or equal to            | `print(4 <= 3)`| `False` |
+
+```
+   # Second way
+
+   import operator
+   a = 5
+   b = 3
+
+   print("equal:", operator.eq(a,b))                     #Output: equal: False
+   print("Not equal:", operator.ne(a,b))                 #Output: Not equal: True
+   print("Greater than:", operator.gt(a, b))             #Output: Greater than: True
+   print("Less than:", operator.lt(a, b))                #Output: Less than: False
+   print("Greater than or Equal to:", operator.ge(a,b))  #Output: Greater than or Equal to: True
+   print("Less than or Equal to:", operator.le(a,b))     #Output: Less than or Equal to: False
+
+```
 
 
 ----------------------------------------------------------------------------------------------
@@ -81,14 +105,33 @@
 
 
 ```
-        a = 5                   # Assigns 5 to variable 'a'
-        print(a)                # Outputs: 5
+    a = 5                   # Assigns 5 to variable 'a'
+    print(a)                # Outputs: 5
 
-        a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
-        print(a)                # Outputs: 7 (because 5 + 2 = 7)
+    a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
+    print(a)                # Outputs: 7 (because 5 + 2 = 7)
 
-        a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
-        print(a)                # Outputs: 5 (because 7 - 2 = 5)
+    a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
+    print(a)                # Outputs: 5 (because 7 - 2 = 5)
+
+    a *= 3                  # Equivalent to a = a * 3
+    print(a)                # Outputs: 21
+
+    a %= 4                  # Equivalent to a = a % 4
+    print(a)                # Outputs: 1
+
+    
+    # Second way
+
+    import operator
+    m = 5
+    n = 2
+
+    m = operator.iadd(m, n)      # same as m += n → 7
+    m = operator.isub(m, n)      # same as m -= n → 5
+    m = operator.imul(m, n)      # same as m *= n → 10
+    m = operator.truediv(m, n)   # same as m /= n → 5.0
+    m = operator.floordiv(m, n)  # same as m //= n → 2
 
 ```
 
@@ -103,13 +146,14 @@
 | Operator | Description                              | Example            | Result  |
 |----------|------------------------------------------|--------------------|---------|
 | `and`    | Returns True if **both** conditions are True, print(True and True) | print(5 > 3 and 10 > 5)  | `True` |
-|          | Returns False if one conditions is False, print(True and False)    | print(5 < 3 and 10 > 5)  |  False |               
-| `or`     | Returns True if **at least one** condition is True                 | print(5 < 3 and 10 > 5)  | `True` |
-| `not`    | Reverses the boolean value                                         | `not(5 > 3)`             | `False` |
+|          | Returns False if any one conditions is False, print(True and False)| print(5 < 3 and 10 > 5)  |  False |               
+| `or`     | Returns True if **at least one** condition is True,print(True or False)| print(5 < 3 and 10 > 5)  | `True` |
+|          | Returns false if both of them false, print(False or False)         | print(5 < 3 and 10 < 5)  |  False |   
+| `not`    | Reverses the boolean value                                         | `not(5 > 3)`             | False  |
+|          | print(not True)                                                    |                          | False  |
+|          | print(not False)                                                   |                          | True   | 
 
 
-* and = both must be true, otherwise False
-* The and operator returns True if both conditions are true, otherwise it returns False if one is true
 
 ```
         print(20 < 3 and 1 < 4)           # Output: False
@@ -213,14 +257,11 @@
     j = 20
 
     # Checking if i and j refer to the same object
-    print(i is j)        
-    # Output: False → because i and j are pointing to different objects
+    print(i is j)                       # Output: False → because i and j are pointing to different objects
+
 
     # Checking if i and j do not refer to the same object
-    
-    print(i is not j)    
-    
-    # Output: True → because i and j are different objects
+    print(i is not j)                   # Output: True → because i and j are different objects
 
     # Using id() to get the memory address of the variables
     # id(): built-in function that returns the memory address of an object
