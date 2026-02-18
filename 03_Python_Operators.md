@@ -19,16 +19,22 @@
 ----------------------------------------------------------------------------------------------
 * Arithmetic operators are used to perform basic mathematical operations.
 
+```
+    import operator
+    a = 5
+    b = 3
 
-| Operator | Description           | Example        | Output |
-|----------|-----------------------|----------------|--------|
-| `+`      | Addition              | `print(3 + 2)` | `5`    |
-| `-`      | Subtraction           | `print(5 - 3)` | `2`    |
-| `*`      | Multiplication        | `print(4 * 2)` | `8`    |
-| `/`      | Division (float)      | `print(10 / 3)`| `3.333...` |
-| `//`     | Floor Division        | `print(10 // 3)`| `3`   |
-| `%`      | Modulus (remainder)   | `print(10 % 3)` | `1`   |
-| `**`     | Exponentiation (power)| `print(2 ** 3)` | `8`   |
+```
+
+| Operator | Description           | Example                    | Output|
+|----------|-----------------------|----------------------------|-------|
+| `+`      | Addition              | print("Addition:", a + b)  | `5`    |
+| `-`      | Subtraction           | print("Subtraction:",a - b) | `2`    |
+| `*`      | Multiplication        | print("Multiplication:", a * b) | `8`    |
+| `/`      | Division (float)      | print("Division:", a / b)       | `3.333...` |
+| `//`     | Floor Division        | print("Floor Division:", a //b) | `3`     |
+| `%`      | Modulus (remainder)   | print("Modulus:", 10 % 3)`         | `1`   |
+| `**`     | Exponentiation (power)| print("Exponentiation:", 2 ** 3)   | `8`   |
 
 
 ```
