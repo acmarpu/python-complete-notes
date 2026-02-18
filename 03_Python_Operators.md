@@ -110,15 +110,15 @@
 * Some operators also perform an operation and then assign the result to the variable.
 * When combined with arithmetic operators, they perform two actions at once (calculation + assignment)
 
-| Operator | Description               | Example        | Equivalent To  | Result |
-|----------|---------------------------|----------------|----------------|--------|
-| `=`      | Assign                    | `a = 5`        | –              | `a = 5` |
-| `+=`     | Add and assign            | `a += 2`       | `a = a + 2`    | `a = 7` |
-| `-=`     | Subtract and assign       | `a -= 2`       | `a = a - 2`    | `a = 5` |
-| `*=`     | Multiply and assign       | `a *= 3`       | `a = a * 3`    | `a = 15`|
-| `/=`     | Divide and assign         | `a /= 5`       | `a = a / 5`    | `a = 3.0` |
-| `//=`    | Floor divide and assign   | `a //= 2`      | `a = a // 2`   | `a = 1` |
-| `**=`    | Exponent and assign       | `a **= 2`      | `a = a ** 2`   | `a = 25` |
+| Operator | Description               | Example        | Equivalent To               | Result  |
+|----------|---------------------------|----------------|-----------------------------|---------|
+| `=`      | Assign                    | `a = 5`        | –                           | `a = 5` |
+| `+=`     | Add and assign            | `a += 2`       | print(a) → 7 (a = a + 2)    | `a = 7` |
+| `-=`     | Subtract and assign       | `a -= 2`       | print(a) → 5 (a = a - 2)    | `a = 5` |
+| `*=`     | Multiply and assign       | `a *= 3`       | print(a) → 15 (a = a * 3)   | `a = 15`|
+| `/=`     | Divide and assign         | `a /= 5`       | print(a) → 3.0 (a = a / 5)  | `a = 3.0`|
+| `//=`    | Floor divide and assign   | `a //= 2`      | print(a) → 1 (a = a // 2)   | `a = 1` |
+| `**=`    | Exponent and assign       | `a **= 2`      | print(a) → 2 (a = a % 3)    | 'a = 2' |
 
 
 ```
