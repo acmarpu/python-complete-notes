@@ -27,18 +27,18 @@
 
 | Operator | Description           | Example                    | Output|
 |----------|-----------------------|----------------------------|-------|
-| `+`      | Addition              | print("Addition:", a + b)  | `5`    |
-| `-`      | Subtraction           | print("Subtraction:",a - b) | `2`    |
-| `*`      | Multiplication        | print("Multiplication:", a * b) | `8`    |
-| `/`      | Division (float)      | print("Division:", a / b)       | `3.333...` |
-| `//`     | Floor Division        | print("Floor Division:", a //b) | `3`     |
-| `%`      | Modulus (remainder)   | print("Modulus:", 10 % 3)`         | `1`   |
-| `**`     | Exponentiation (power)| print("Exponentiation:", 2 ** 3)   | `8`   |
+| `+`      | Addition              | print(a + b)               | `5`    |
+| `-`      | Subtraction           | print(a - b)               | `2`    |
+| `*`      | Multiplication        | print(a * b)               | `8`    |
+| `/`      | Division (float)      | print(a / b)               | `3.333...` |
+| `//`     | Floor Division        | print(a //b)               | `3`     |
+| `%`      | Modulus (remainder)   | print(10 % 3)              | `1`   |
+| `**`     | Exponentiation (power)| print(2 ** 3)              | `8`   |
 
 
 
 
- # Second way
+#### Second way
 
 ```
     import operator
@@ -64,7 +64,7 @@
 #### ⚖️ 2. Relational (Comparison) Operators
 ----------------------------------------------------------------------------------------------
 * Relational operators are used to **compare two values**.  
-* The result of these operations is always a **Boolean value** (`True` or `False`).
+* The result of these operations is always a **Boolean value** **(`True` or `False`)**.
 * Commonly applied in data validation and filtering
 
 | Operator | Description                      | Example        | Output  |
@@ -76,21 +76,31 @@
 | `>=`     | Greater than or equal to         | `print(5 >= 5)`| `True`  |
 | `<=`     | Less than or equal to            | `print(4 <= 3)`| `False` |
 
-```
-   # Second way
 
+#### Second way
+
+```
    import operator
    a = 5
    b = 3
 
-   print("equal:", operator.eq(a,b))                     #Output: equal: False
-   print("Not equal:", operator.ne(a,b))                 #Output: Not equal: True
-   print("Greater than:", operator.gt(a, b))             #Output: Greater than: True
-   print("Less than:", operator.lt(a, b))                #Output: Less than: False
-   print("Greater than or Equal to:", operator.ge(a,b))  #Output: Greater than or Equal to: True
-   print("Less than or Equal to:", operator.le(a,b))     #Output: Less than or Equal to: False
-
 ```
+
+| Operator | Description                      | Example                  | Output  |
+|----------|----------------------------------|--------------------------|---------|
+| `==`     | Equal to                         | print("equal:", operator.eq(a,b))| #Output: equal: False  |
+| `!=`     | Not equal to                     | print("Not equal:", operator.ne(a,b)) | #Output: Not equal: True |
+| `>`      | Greater than                     | print("Greater than:", operator.gt(a, b))   | #Output: Greater than: True  |
+| `<`      | Less than                        | print("Less than:", operator.lt(a, b))  | #Output: Less than: False |
+| `>=`     | Greater than or equal to         | print("Greater than or Equal to:", operator.ge(a,b)) | #Output: Greater than or Equal to: True  |
+| `<=`     | Less than or equal to            | print("Less than or Equal to:", operator.le(a,b))|  #Output: Less than or Equal to: False |                      
+                   
+              
+                  
+    
+       
+
+
 
 
 ----------------------------------------------------------------------------------------------
