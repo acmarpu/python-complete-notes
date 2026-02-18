@@ -20,7 +20,6 @@
 * Arithmetic operators are used to perform basic mathematical operations.
 
 ```
-    import operator
     a = 5
     b = 3
 
@@ -37,27 +36,29 @@
 | `**`     | Exponentiation (power)| print("Exponentiation:", 2 ** 3)   | `8`   |
 
 
+
+
+ # Second way
+
 ```
     import operator
     a = 5
     b = 3
 
-    print("Addition:", a + b)
-    print("Subtraction:",a - b)
-    print("Multiplication:", a * b)
-    print("Division:", a / b)
-    print("Floor Division:", a //b)
-
-
-    # Second way
-
-    print("Addition:", operator.add(a, b))          # Output: 8
-    print("Subtraction:", operator.sub(a, b))       # Output: 2
-    print("Multiplication:", operator.mul(a, b))    # Output: 15
-    print("Division:", operator.truediv(a, b))      # Output: 1.6666666666666667
-    print("Floor Division:", operator.floordiv(a, b))      # Output: 1
-
 ```
+
+| Operator | Description           | Example                                | Output       |
+|----------|-----------------------|----------------------------------------|--------------|
+| `+`      | Addition              | print("Addition:", operator.add(a, b)) |  # Output: 8 |
+| `-`      | Subtraction           | print("Subtraction:", operator.sub(a, b)) | # Output: 2 |
+| `*`      | Multiplication        | print("Multiplication:", operator.mul(a, b)) |  # Output: 15 |
+| `/`      | Division (float)      | print("Division:", operator.truediv(a, b)) |  # Output: 1.6666666666666667 |
+| `//`     | Floor Division        | print("Floor Division:", operator.floordiv(a, b))  | # Output: 1 |            
+           
+       
+         
+         
+
 
 ----------------------------------------------------------------------------------------------
 #### ⚖️ 2. Relational (Comparison) Operators
