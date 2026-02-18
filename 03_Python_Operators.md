@@ -120,35 +120,28 @@
 | `//=`    | Floor divide and assign   | `a //= 2`      | print(a) → 1 (a = a // 2)   | `a = 1` |
 | `**=`    | Exponent and assign       | `a **= 2`      | print(a) → 2 (a = a % 3)    | 'a = 2' |
 
-
+#### Second way
 ```
-    a = 5                   # Assigns 5 to variable 'a'
-    print(a)                # Outputs: 5
-
-    a += 2                  # Equivalent to a = a + 2, adds 2 to 'a'
-    print(a)                # Outputs: 7 (because 5 + 2 = 7)
-
-    a -= 2                  # Equivalent to a = a - 2, subtracts 2 from 'a'
-    print(a)                # Outputs: 5 (because 7 - 2 = 5)
-
-    a *= 3                  # Equivalent to a = a * 3
-    print(a)                # Outputs: 21
-
-    a %= 4                  # Equivalent to a = a % 4
-    print(a)                # Outputs: 1
-
-    
-    # Second way
-
+  
     import operator
     m = 5
     n = 2
+    
+    print("Initial m:", m)
+    m = operator.iadd(m, n)      
+    print("After m += n:", m)    # same as m += n → 7
 
-    m = operator.iadd(m, n)      # same as m += n → 7
     m = operator.isub(m, n)      # same as m -= n → 5
+    print("After m -= n:", m)
+
     m = operator.imul(m, n)      # same as m *= n → 10
+    print("After m *= n:", m)
+
     m = operator.truediv(m, n)   # same as m /= n → 5.0
+    print("After m /= n:", m)
+
     m = operator.floordiv(m, n)  # same as m //= n → 2
+    print("After m //= n:", m)
 
 ```
 
