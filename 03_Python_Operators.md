@@ -27,13 +27,13 @@
 
 | Operator | Description           | Example                    | Output|
 |----------|-----------------------|----------------------------|-------|
-| `+`      | Addition              | print(a + b)               | `5`    |
+| `+`      | Addition              | print(a + b)               | `8`    |
 | `-`      | Subtraction           | print(a - b)               | `2`    |
-| `*`      | Multiplication        | print(a * b)               | `8`    |
-| `/`      | Division (float)      | print(a / b)               | `3.333...` |
-| `//`     | Floor Division        | print(a //b)               | `3`     |
-| `%`      | Modulus (remainder)   | print(10 % 3)              | `1`   |
-| `**`     | Exponentiation (power)| print(2 ** 3)              | `8`   |
+| `*`      | Multiplication        | print(a * b)               | `15`    |
+| `/`      | Division (float)      | print(a / b)               | `1.666666..` |
+| `//`     | Floor Division        | print(a //b)               | `1`     |
+| `%`      | Modulus (remainder)   | print(a % b)              | `2`   |
+| `**`     | Exponentiation (power)| print(2 ** 3)              | `125`   |
 
 
 
@@ -67,14 +67,21 @@
 * The result of these operations is always a **Boolean value** **(`True` or `False`)**.
 * Commonly applied in data validation and filtering
 
+```
+    a = 5
+    b = 3
+
+```
+
 | Operator | Description                      | Example        | Output  |
 |----------|----------------------------------|----------------|---------|
-| `==`     | Equal to                         | `print(5 == 5)`| `True`  |
-| `!=`     | Not equal to                     | `print(5 != 3)`| `True`  |
-| `>`      | Greater than                     | `print(7 > 4)` | `True`  |
-| `<`      | Less than                        | `print(3 < 2)` | `False` |
-| `>=`     | Greater than or equal to         | `print(5 >= 5)`| `True`  |
-| `<=`     | Less than or equal to            | `print(4 <= 3)`| `False` |
+| `==`     | Equal to                         | `print(a == b)`| `False`  |
+| `!=`     | Not equal to                     | `print(a != b)` | `True`  |
+| `<`      | Less than                        | `print(a < b)` | `False` |
+| `<=`     | Less than or equal to            | `print(a <= b)`| `False` |
+| `>`      | Greater than                     | `print(a > b)` | `True`  |
+| `>=`     | Greater than or equal to         | `print(a > b)` | `True`  |
+
 
 
 #### Second way
@@ -91,10 +98,9 @@
 | `==`     | Equal to                         | print("equal:", operator.eq(a,b))| #Output: equal: False  |
 | `!=`     | Not equal to                     | print("Not equal:", operator.ne(a,b)) | #Output: Not equal: True |
 | `>`      | Greater than                     | print("Greater than:", operator.gt(a, b))   | #Output: Greater than: True  |
-| `<`      | Less than                        | print("Less than:", operator.lt(a, b))  | #Output: Less than: False |
 | `>=`     | Greater than or equal to         | print("Greater than or Equal to:", operator.ge(a,b)) | #Output: Greater than or Equal to: True  |
-| `<=`     | Less than or equal to            | print("Less than or Equal to:", operator.le(a,b))|  #Output: Less than or Equal to: False |                      
-                   
+| `<`      | Less than                        | print("Less than:", operator.lt(a, b))  | #Output: Less than: False |
+| `<=`     | Less than or equal to            | print("Less than or Equal to:", operator.le(a,b))|  #Output: Less than or Equal to: False |
               
                   
     
