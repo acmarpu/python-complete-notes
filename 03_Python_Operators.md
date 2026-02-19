@@ -49,11 +49,11 @@
 
 | Operator | Description           | Example                                | Output       |
 |----------|-----------------------|----------------------------------------|--------------|
-| `+`      | Addition              | print("Addition:", operator.add(a, b)) |  # Output: 8 |
-| `-`      | Subtraction           | print("Subtraction:", operator.sub(a, b)) | # Output: 2 |
-| `*`      | Multiplication        | print("Multiplication:", operator.mul(a, b)) |  # Output: 15 |
-| `/`      | Division (float)      | print("Division:", operator.truediv(a, b)) |  # Output: 1.6666666666666667 |
-| `//`     | Floor Division        | print("Floor Division:", operator.floordiv(a, b))  | # Output: 1 |            
+| `+`      | Addition              | print("Addition:", operator.add(a, b)) |  Addition: 8 |
+| `-`      | Subtraction           | print("Subtraction:", operator.sub(a, b)) | Subtraction: 2 |
+| `*`      | Multiplication        | print("Multiplication:", operator.mul(a, b)) |  Multiplication: 15 |
+| `/`      | Division (float)      | print("Division:", operator.truediv(a, b)) | Division: 1.6666666666666667 |
+| `//`     | Floor Division        | print("Floor Division:", operator.floordiv(a, b))  | Floor Division: 1 |            
            
        
          
@@ -95,12 +95,12 @@
 
 | Operator | Description                      | Example                  | Output  |
 |----------|----------------------------------|--------------------------|---------|
-| `==`     | Equal to                         | print("equal:", operator.eq(a,b))| #Output: equal: False  |
-| `!=`     | Not equal to                     | print("Not equal:", operator.ne(a,b)) | #Output: Not equal: True |
-| `>`      | Greater than                     | print("Greater than:", operator.gt(a, b))   | #Output: Greater than: True  |
-| `>=`     | Greater than or equal to         | print("Greater than or Equal to:", operator.ge(a,b)) | #Output: Greater than or Equal to: True  |
-| `<`      | Less than                        | print("Less than:", operator.lt(a, b))  | #Output: Less than: False |
-| `<=`     | Less than or equal to            | print("Less than or Equal to:", operator.le(a,b))|  #Output: Less than or Equal to: False |
+| `==`     | Equal to                         | print("equal:", operator.eq(a,b))| equal: False  |
+| `!=`     | Not equal to                     | print("Not equal:", operator.ne(a,b)) | Not equal: True |
+| `>`      | Greater than                     | print("Greater than:", operator.gt(a, b))   | Greater than: True  |
+| `>=`     | Greater than or equal to         | print("Greater than or Equal to:", operator.ge(a,b)) | Greater than or Equal to: True  |
+| `<`      | Less than                        | print("Less than:", operator.lt(a, b))  | Less than: False |
+| `<=`     | Less than or equal to            | print("Less than or Equal to:", operator.le(a,b))| Less than or Equal to: False |
               
                   
     
