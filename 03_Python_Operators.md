@@ -116,6 +116,7 @@
 * Some operators also perform an operation and then assign the result to the variable.
 * When combined with arithmetic operators, they perform two actions at once (calculation + assignment)
 
+
 | Operator | Description               | Example        | Equivalent To               | Result  |
 |----------|---------------------------|----------------|-----------------------------|---------|
 | `=`      | Assign                    | `a = 5`        | –                           | `a = 5` |
@@ -126,7 +127,10 @@
 | `//=`    | Floor divide and assign   | `a //= 2`      | print(a) → 1 (a = a // 2)   | `a = 1` |
 | `**=`    | Exponent and assign       | `a **= 2`      | print(a) → 2 (a = a % 3)    | 'a = 2' |
 
+
 #### Second way
+
+
 ```
   
     import operator
@@ -159,13 +163,14 @@
 • Useful for decision-making, validations, and combining multiple conditions.
 
 
+
 | Operator | Description                              | Example            | Result  |
 |----------|------------------------------------------|--------------------|---------|
-| `and`    | Returns True if **both** conditions are True, print(True and True) | print(5 > 3 and 10 > 5)  | `True` |
-|          | Returns False if any one conditions is False, print(True and False)| print(5 < 3 and 10 > 5)  |  False |               
-| `or`     | Returns True if **at least one** condition is True,print(True or False)| print(5 < 3 and 10 > 5)  | `True` |
+| and      | Returns True if **both** conditions are True, print(True and True) | print(5 > 3 and 10 > 5)  | True |
+|          | Returns False if any **one conditions is False**, print(True and False)| print(5 < 3 and 10 > 5) |  False |               
+| or       | Returns True if **at least one** condition is True,print(True or False)| print(5 < 3 and 10 > 5) | True |
 |          | Returns false if both of them false, print(False or False)         | print(5 < 3 and 10 < 5)  |  False |   
-| `not`    | Reverses the boolean value                                         | `not(5 > 3)`             | False  |
+| not      | Reverses the boolean value                                         | print(not(5 > 3))        | False  |
 |          | print(not True)                                                    |                          | False  |
 |          | print(not False)                                                   |                          | True   | 
 
@@ -173,7 +178,6 @@
 
 ```
         print(20 < 3 and 1 < 4)           # Output: False
-   
         # 20 < 3 is False, 1 < 4 is True **False and True gives False**
 ```
                                     
@@ -181,7 +185,6 @@
 * The or operator returns True if at least one condition is true. If both are false, it returns False.*
 ```   
         print(20 < 3 or 1 < 4)            # Output: True
-    
         # 20 < 3 is False, 1 < 4 is True  So, False or True gives True
 
 ```    
@@ -194,30 +197,7 @@
 
 ```      
 
-* Additional Examples:
-```
-       #Using and
-       x = 5
-       y = 10
-       print(x > 3 and y < 15)            # Output: True
-       #True and True = True
 
-```      
-
-```
-       x = 5
-       y = 10
-       print(x < 3 or y > 5)             # Output: True
-       # False or True = True
-
-```
-
-```
-       x = 10
-       print(not(x < 5))                  # Output: True
-       # not False = True
-
-```
 
 ----------------------------------------------------------------------------------------------
 #### 📦 5 . Membership
@@ -234,7 +214,7 @@
 * with List data types examples
 
 ```      
-    l = [10, 20, 30]
+    meb = [10, 20, 30]
     print(100 not in l)         
     # Output : True 
     # Explanation: 100 is in the list, so "in" returns True
@@ -273,11 +253,11 @@
     j = 20
 
     # Checking if i and j refer to the same object
-    print(i is j)                       # Output: False → because i and j are pointing to different objects
+    print(i is j)                                   # Output: False → because i and j are pointing to different objects
 
 
     # Checking if i and j do not refer to the same object
-    print(i is not j)                   # Output: True → because i and j are different objects
+    print(i is not j)                               # Output: True → because i and j are different objects
 
     # Using id() to get the memory address of the variables
     # id(): built-in function that returns the memory address of an object
