@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------------------
- # un comment the code below and run it to see the output of the arithmetic operators
+ # comment/un-comment the code below and run it to see the output of the arithmetic operators
 #-----------------------------------------------------------------------------------------
 
 # Use the arithmetic operators to calculate the sum, average CPU load given cpu_loads = [ 40, 60, 80 ]
@@ -21,7 +21,7 @@ print("Average CPU load:", average_load)
 
 
 #------------------------------------------------------------------------------------------
-# un comment the code below and run it to see the output of the comparison operators
+# comment/un-comment the code below and run it to see the output of the comparison operators
 #-----------------------------------------------------------------------------------------
 # Use the comparison operators to check if disk usage is above 80%
 
@@ -45,7 +45,7 @@ print("disk usage is above 80% :", is_above_80)
 
 
 #------------------------------------------------------------------------------------------
-# un comment the code below and run it to see the output of the logical operators
+# comment/un-comment the code below and run it to see the output of the logical operators
 #-----------------------------------------------------------------------------------------
 # Use the logical operators (and, or, not) to check if (CPU > 70 amd Memory > 80)
 
@@ -84,7 +84,7 @@ print("\nCPU condition:", cpu_condition02)
 
 
 #------------------------------------------------------------------------------------------
-# un comment the code below and run it to see the output of the identity operators
+# comment/un-comment the code below and run it to see the output of the identity operators
 #-----------------------------------------------------------------------------------------
 
 # Use the identity operator (is) to check if two services reference to the same object in memory
@@ -102,7 +102,7 @@ print("\nconfig and config2 reference the same object in memory:", are_same_obje
 
 
 #------------------------------------------------------------------------------------------
-# un comment the code below and run it to see the output of the membership operators
+# comment/un-comment the code below and run it to see the output of the membership operators
 #-----------------------------------------------------------------------------------------
 # Use the membership operator (in) to check if a specific nginx is in running_services
 
@@ -112,12 +112,3 @@ is_nginx_running = "nginx" in running_services
 
 # Output: nginx is running: True
 print("nginx is running:", is_nginx_running)
-
-
-
-
-
-
-
-
-
