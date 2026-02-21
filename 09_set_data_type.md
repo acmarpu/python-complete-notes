@@ -2,11 +2,21 @@
 ### 🧾 Set
 --------------------------------------------------------------------------------------------------
 #### 1. What is a Set
-* A **set** is an **unordered collection of unique elements**.
-* It automatically **ignores duplicate elements**.
-* Sets are **mutable**.
-* Sets do **not support indexing or slicing** (because they are unordered).
-* Sets are created using **curly braces `{}`** or the `set()` function.
+* A **set** is an **unordered** collection of **unique elements**. 
+* Duplicate values are automatically removed when creating a set.
+
+📌 **Key Points:**
+
+  * **Unordered:** The elements in a set do not have any specific order. When you print a set, its elements may not appear in the order they were added.
+  * **Unique Elements:** Sets automatically remove duplicate elements, so each element is stored only once.
+  * **Mutable:** Sets are mutable, meaning you can add or remove elements after creation.
+  * **Different Data Types:** A set can hold elements of different data types (e.g., integers, strings, etc.).
+
+*Creating Sets:*
+* To create a non-empty set, you can use curly braces {}.
+* To create an empty set, you need to use the set() function because {} creates an empty dictionary, not a set.
+   
+* Example: Empty set
 
 #### 2. creating set 
 

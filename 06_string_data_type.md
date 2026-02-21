@@ -1,15 +1,39 @@
 ----------------------------------------------------------------------------------------------
-### 🧵 String Data Type
+### 🧵 3. String ("immutable")
 ----------------------------------------------------------------------------------------------
 #### 1. What is a String?
-* A string is a sequence of characters enclosed in quotes.
-* It can be defined using:
+* In Python, strings are an essential data type used to represent textual data.
+* Definition: A string is a sequence of characters enclosed in single quotes (' '), double quotes (" "), or triple quotes (''' ''' / """ """).
+ - Example: 'hello', "python", """world"""
+* String Methods: Python provides many built-in methods to manipulate strings.
+ - Examples: .replace(), .split(), .lower(), .upper(), .strip(), etc.
+* String Immutability: Strings are **immutable**, meaning once created, they cannot be modified.
+ - Operations like concatenation or .replace() return a new string instead of changing the original one.
 
-* Single quotes → 'hello'
-* Double quotes → "hello"
-* Triple quotes → '''hello''' or """hello""" (for multiline strings)
 
-👉 Strings are **immutable**, meaning their content cannot be changed after creation.
+
+* With single quotes (' ') → may need escape \'.
+
+```  
+   s = 'hello python'
+   print(s)                 # Output: hello python
+   print(type(s))           # Output <class 'str'>
+   s = 'hello python\'s'
+
+   print(s)                 # Output: hello python's
+   print(type(s))           # Output: <class 'str'>
+
+```
+
+* With double quotes (" ")
+```
+   s = "hello python" 
+   print(s)                 # Output: hello python
+   print(type(s))           # Output: <class 'str'>
+
+```
+
+
 
 #### 2. String Indexing and Slicing
 * Indexing means accessing characters in a string using position numbers.
@@ -26,9 +50,10 @@
 ```
    s = "hyderabad"
 
-    print(s)                                     # Output: hyderabad
-    print(s[3])                                  # Output: e
-    print(s[-3])                                 # Output: a
+    print(s)                # Output: hyderabad
+    print(s[3])             # Output: e
+    print(s[-3])            # Output: b
+    print(s[0:7])           # Output: hyderab
 
 ```
 
@@ -376,6 +401,23 @@ Returns True if all characters are alphanumeric (letters and digits only).
    ['python', 'is', 'very', 'easy']
    nohtyp si yrev ysae
 
+
+```
+
+
+
+**To get a list of all available functions for string operations, you can use the dir() function:**
+* This will return a list of all the methods and attributes associated with the string class.
+
+```
+   print(dir(str))
+   __add_                                     #also called descriptors
+```
+
+
+```    
+  * description    
+  help(str)
 
 ```
 

@@ -2,10 +2,20 @@
 ### 📦 Tuple
 --------------------------------------------------------------------------------------------------
 #### 1. what is tuple: 
-* A **tuple** is an *ordered collection of elements*, similar to a list.  
-* Unlike lists, **tuples are immutable**, meaning their elements **cannot be changed** after creation.
-* Tuples can store **heterogeneous elements**.
-* Tuples are created using **parentheses `()`**.
+
+* A **tuple** is a built-in data structure in Python, very similar to a **list**. However, unlike lists, **tuples are immutable** — their elements cannot be changed after creation.
+   
+📌 **Key Points:**
+  * **Immutable:** Once a tuple is created, its elements cannot be modified, added, or removed.
+  * **Ordered:** Like lists, tuples maintain the order of elements.
+  * **Different Data Types:** A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
+  * **Duplicates Allowed:** Tuples can have multiple occurrences of the same element.
+  * **Parentheses:** Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
+
+
+* If you want to create a **tuple with only one element**, you must add a **trailing comma**.  
+* Without the comma, Python will treat it as a normal value inside parentheses, not a tuple.
+   
 
 #### 2. creating tuple : ()
 
@@ -150,6 +160,19 @@
 
 ```
 
+
+* A nested tuple means a tuple inside another tuple
+```
+      nested_tuple = (1, 2, (3, 4), 5)
+
+      print(nested_tuple[0])           # Output: 1
+
+      print(nested_tuple[1])           # Output: 2
+
+      print(nested_tuple[2])           # Output: (3, 4) ← (this itself is another tuple)
+
+      print(nested_tuple[3])           # Output: 5
+``
 ----------------------------------------------------------------------------------------------
 ✅ End of tuple_data_type.md
 ----------------------------------------------------------------------------------------------

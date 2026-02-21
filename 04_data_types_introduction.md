@@ -20,6 +20,10 @@
 | **Data Type**   | **Category**   | **Example**     | **Definition** |
 |-----------------|----------------|-----------------|----------------|
 | **None**        | NoneType       |   a = None      | Represents the absence of a value or null. |
+
+
+| **Data Type**   | **Category**   | **Example**     | **Definition** |
+|-----------------|----------------|-----------------|----------------|
 | **Numeric**     | int (Integer)  |   a = 10        | Holds whole numbers (e.g., 0, 100, -5). |
 |                 | float (Float)  |   a = 10.5      | Numbers with decimal or fractional part. |
 |                 | bool (Boolean) |   x = True      | Represents truth values: `True` or `False`. |
@@ -84,99 +88,7 @@
    * bool(true or false)
    * Complex Numbers(1a)
 
-```      
-   a = 10
-   print(a)                       # Output 10 
-   print(type(a))                 # Output <class 'int'> 
 
-```
-
-```
-   a = 1.4
-   print(a)                        # Output  1.4 
-   print(type(a))                  # Output  <class 'float'>
-
-```     
-
-* **Converts the integer 10 into a floating-point number → 10.0.**
-```      
-   a = 10
-   print(a)                         # Output 10
-   print(type(a))                   # Output  <class 'int'>
-      
-
-   b = float(a)
-   print(b)                          # Output 10.0
-   print(type(b))                    # Output <class 'float'>
-
-```
-
-**Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
-``` 
-   a = input("enter num1:")
-   print(type(a))                    # Output   <class 'str'>
-
-   x = int(a)                        # here we converting str to int
-   print(type(x))                    # Output   <class 'int'>
-
-```
-
-* **Taking inputs separately and then converting to int**
-```   
-   a = input("enter number1:")       # Enter number 10
-   print(a)                          # Output 10
-   print(type(a))                    # Output <class 'str'>
-
-   x = int(a)                        # converting str to int
-   print(x)                          # Output 10
-   print(type(x))                    # Output   <class 'int'>
-
-   b = input("enter number2:")       # Enter number 20
-   print(b)                          # Output 20
-   print(type(b))                    # <class 'str'>
-
-   y = int(b)                        # converting str to int
-   print(type(y))
-      
-   c = x+y 
-   print(c)                           # Output   sun c is 30
-   print(type(c))                     # Output  <class 'int'> 
-
-   print("sum c is", c)               # Output sum c is 30         
-
-```   
-
-**Simplified Approach**
-```
-   a = int(input("enter num1:"))       # Enter number 10
-   b = int(input("enter num2:"))       # Enter number 20
-   c = a + b
-   print(c)                             # Output 30
-
-   print("sum is:", c)                  # Output: sum is 30
-   print(type(c))                       # Output <class 'int'>
- 
-```
-
-**Taking float inputs directly and adding them**
-```   
-   a = float(input("Enter num1:"))
-   b = float(input("enter num2:")) 
-   c = a + b
-   print("sum is:", c)                  # Example Output: sum is 45.7
-
-```
-
-
-**bool = true or false**
-```   
-   a = 10
-   b = 20
-   c = a > b
-   print(c)                             # Output  False
-   print(type(c))                       # Output  <class 'bool'>
-
-```
 
 ----------------------------------------------------------------------------------------------
 ### 🧵 3. String ("immutable")
@@ -189,136 +101,12 @@
 * String Immutability: Strings are **immutable**, meaning once created, they cannot be modified.
  - Operations like concatenation or .replace() return a new string instead of changing the original one.
 
-
-* With single quotes (' ') → may need escape \'.
-```  
-   s = 'hello mactechtravel'
-
-   print(s)                 # Output: hello mactechtravel
-
-   print(type(s))           # Output <class 'str'>
-
-   s = 'hello mactechtravel\'s'
-
-   print(s)                 # Output: hello mactechtravel's
-
+```
+   s = "hello python" 
+   print(s)                 # Output: hello python
    print(type(s))           # Output: <class 'str'>
 
 ```
-
-* With double quotes (" ")
-```
-   s = "hello mactechtravel" 
-
-   print(s)                 # Output: hello mactechtravel
-
-   print(type(s))           # Output: <class 'str'>
-
-```
-
-**Indexing**
-```
-   s = "mactechtravel"
-
-   print(s[0])              # Output: m      (first character)
-
-   print(s[-1])             # Output: l      (last character, negative index)
-
-   print(s[0:7])            # Output: mactech (substring from index 0 to 4)
-
-```
-
-* In Python, you can repeat strings using the multiplication (*) operator.
-```
-   s = "Hello"
-
-   repeated = s * 3
-
-   print(repeated)              # Output: HelloHelloHello
-
-```
-
-
-```
-   s = "hello mactechtravel"
-
-   repeated = s * 3                 #  * (multiplication) operator on a string
-
-   print(repeated)                  # Output: hello mactechtravelhello mactechtravelhello mactechtravel
-
-   repeated = " ".join([s] * 3)     # Joining Strings with a Separator
-
-   # Output: hello ashoka hello ashoka hello ashoka
-
-   " ".join(...) → joins them with a space " " in between
-
-```
-
-```
-   s = "Hello, World"
-
-   print(s.upper())                 # Output: HELLO, WORLD
-
-   t = s[7:]. upper() 
-
-   print(t)                         # Output: WORLD
-
-   print(s.lower())                 # Output: hello, world
-      
-   print(s.strip())                 # Output: Hello, World! used to remove any leading and trailing whitespace characters from a string
-
-   print(s.replace("World", "Python"))      # Output:   Hello, Python!
-
-   print(s.split())                         # Output: ['Hello,', 'World!']
-
-   print(s.find("World"))                   # Output: 8 (index of the first occurrence of "World")
-   
-* Note every character (including spaces, commas, tabs, etc.) counts as one index
-
-```
-
-
-* Replacing 'hello' with 'hai' (note this does not change s, since strings are immutable)*
-```      
-   s.replace("hello", "hai")
-
-   print(s)                                 # Output: hello world (s is unchanged)
-
-```
-
-* The replace method returns a new string, we can assign the result to a variable*
-* we can not reuse "s" value*
-
-```
-
-   print(s.replace("hello","hai")) 
-
-```
-* But important: the original s is still unchanged (s is still "hello ashoka") because strings are immutable.
-* We can assign the modified string to a new variable*
-
-```      
-   s1 = s.replace("hello", "hai")
-   
-   print(s1)                                  # Output: hai worls
-
-```
-
-**To get a list of all available functions for string operations, you can use the dir() function:**
-* This will return a list of all the methods and attributes associated with the string class.
-
-```
-   print(dir(str))
-   __add_                                     #also called descriptors
-```
-
-
-```    
-  * description    
-  help(str)
-
-```
-
 
 ----------------------------------------------------------------------------------------------
 ### 🧾 4. List ["mutable"]
@@ -353,99 +141,8 @@
 * Lists in Python are ordered collections — elements are stored in a sequence (index 0, 1, 2, ...).
 * The append() method adds an element to the end of the list.
 
-```      
-   l = [10,20,30,3.4,"ashoka",True]
 
-   l.append(33)                       # Adds 33 to the end of the list
 
-   print(l)                           # Output: [10,20,30,3.4,"ashoka",True,33]
-
-```
-
-* Modifying an element at a specific index
-```
-   l = [10,20,30,3.4,"ashoka",True]
-
-   l[1] = 33                          # Changes the element at index 1 (20 → 33)
-
-   print(l)                           # Output: [10, 33, 30, 3.4, "ashoka",True]
-
-```
-
-📌 **Key Methods for Working with Lists:**
-
-* **append(value)** — Adds an element to the end of the list.
-```
-   l = [10,20,30,3.4,"ashoka",True]
-   l.append(33)                       # Adds 33 to the end of the list
-      
-```
-
-* **insert(index, value)** — Inserts an element at a specific index in the list.
-```
-   my_list = [10, 20, 30]
-
-   my_list.insert(1, 15)              # Inserts 15 at index 1
-
-   print(my_list)                     # Output: [10, 15, 20, 30]
-
-```
-
-* **remove(value)** — Removes the first occurrence of the specified value.
-```
-   my_list = [10, 20, 30, 40, 20]
-
-   my_list.remove(20)                 # Removes the first occurrence of 20
-
-   print(my_list)                     # Output: [10, 30, 40, 20]
-      
-```
-
-* **pop(index)** — Removes the element at the specified index and returns it.
-```
-   my_list = [10, 20, 30, 40, 50]
-
-   popped_item = my_list.pop(2)        # Removes the element at index 2 (30)
-
-   print(my_list)                      # Output: [10, 20, 40, 50]
-
-   print("Popped Item:", popped_item)  # Output: Popped Item: 30
-
-   # That returned value is stored in the variable popped_item
-
-```
-
-* **extend(iterable)** — Extends the list by appending all elements from another iterable (e.g., another list).
-```
-   my_list = [1, 2, 3]                 # Original list
-
-   other_list = ["python","java"]       # Another list to extend my_list with
-
-   my_list.extend(other_list)          # Using extend() to add elements of other_list to my_list
-
-   print(my_list)                      # Output: [1, 2, 3, 'python', 'java']
-
-```
-
-* **index(value)** — Returns the index of the first occurrence of the specified value.
-```
-   my_list = [10, 20, 30, 40, 50]
-
-   index_of_30 = my_list.index(30)
-
-   print(index_of_30)                  # Output: 2 (The index of 30 is 2)
-
-```
-
-* **sort()** — Sorts the list in ascending order. 
-```
-   my_list = [4, 1, 3, 9, 2]
-
-   my_list.sort()
-
-   print(my_list)  # Output: [1, 2, 3, 4, 9]
-
-```
 
 ----------------------------------------------------------------------------------------------
 ### 📦 5. Tuple (immutable)
@@ -464,21 +161,6 @@
 * If you want to create a **tuple with only one element**, you must add a **trailing comma**.  
 * Without the comma, Python will treat it as a normal value inside parentheses, not a tuple.
    
-```   
-      t = ("ashoka")
-
-      print(t)                         # Output: ('ashoka')
-
-      print(type(t))                   # Output: <class 'str'>
-
-
-      t = ("ashoka",)
-
-      print(t)                         # Output: ('ashoka',)
-
-      print(type(t))                   # Output: <class 'tuple'>
-
-```
 
 
 ```
@@ -494,19 +176,7 @@
 
 ```
 
-* A nested tuple means a tuple inside another tuple
-```
-      nested_tuple = (1, 2, (3, 4), 5)
 
-      print(nested_tuple[0])           # Output: 1
-
-      print(nested_tuple[1])           # Output: 2
-
-      print(nested_tuple[2])           # Output: (3, 4) ← (this itself is another tuple)
-
-      print(nested_tuple[3])           # Output: 5
-
-```
 
 
 ----------------------------------------------------------------------------------------------
@@ -537,74 +207,6 @@
 
 ```   
 
-```
-   s = {10, 20, 30, 40, 50, 60}
-
-   print(s)                       # Output: {50, 20, 40, 10, 60, 30}
-
-   print(type(s))                 # Output: <class 'set'>
-
-```
-
-```
-   s = {10, 10, 20, 30, 40, 50, 60, 60}
-
-   print(s)                       # Output: {50, 20, 40, 10, 60, 30} # Sets remove duplicates automatically
-
-   print(type(s))                 # Output: <class 'set'>
-
-```
-
-* Adding elements to a set:
-```   
-   s = {10, 20, 30, 40, 50, 60}
-
-   s.add(70)                      # Adds 70 to the set
-
-   print(s)                       # Output: {50, 20, 70, 40, 10, 60, 30}
-
-
-```
-
-* Removing elements from a set:
-```      
-   s = {10, 20, 30, 40, 50, 60}
-
-   s.remove(20)                   # Removes 20 from the set
-
-   print(s)                       # Output: {10, 30, 40, 50, 60, 70}
-
-```
-
-* **Set operations** like **union**, **intersection**, and **difference** are commonly used.  
-**Union:** Returns a new set with **all unique elements** from both sets.    
-```
-
-   s = {10, 20, 30, 40, 50}
-
-   s1 = {50, 60, 70, 80}
-
-   print(s.union(s1))              # Union: {10, 20, 30, 40, 50, 60, 70, 80}
-
-```
-
-* intersection of two sets returns a new set that contains only the elements that are common to both sets.
-```
-
-   s = {10, 20, 30, 40, 50}
-
-   s1 = {50, 60, 70, 80}
-
-   print(s.intersection(s1))       # Intersection: {50}
-
-```
-
-
-* Difference: Returns a new set with elements in the first set but not in the second.
-```
-   print(s.difference(s1))   # Output: {10, 20, 30, 40}
-
-```
 
 
 ----------------------------------------------------------------------------------------------
@@ -639,114 +241,6 @@
       
 ```
 
-```
-   student = {
-    "name" : "mac",
-    "age" : 25,
-    "course": "python"
-    }
-
-   print(student["name"])                             # Output: mac
-
-   print(student.get("age"))                          # Output: 25
-
-   student["course"] = "AI"
-
-   print(student)                                     # Output: {'name': 'ashoka', 'age': 25, 'course': 'AI'}
-
-```
-```
-   capital_city = {'TS':'Hyd', 'KA':'BANG','TN':'CH'}
-
-   print(capital_city)                                 # Output: {'TS': 'Hyd', 'AP': 'AMV', 'TN': 'CH'}
-
-   print(capital_city['TS'])                           # Output: Hyd
-
-   print(capital_city['AP'])                           # Output: AMV
-
-```   
-  
-* Duplicate Keys:
-```
-   capital_city = {'TS':'Hyd', 'TS':'BANG','TN':'CH'}
-
-   print(capital_city)                                # Output: {'TS': 'BANG', 'TN': 'CH'}
-
-```
-
-* Modifying Dictionary Values:
-```
-   capital_city = {'TS':'Hyd', 'TG':'HYD','TN':'CH'}
-
-   capital_city['TS'] = 'Hyderabad'
-
-   print(capital_city)                               # Output: {'TS': 'Hyderabad', 'TG': 'HYD', 'TN': 'CH'}
-
-```
-
-* Changing values in a dictionary
-
-```
-   d = {1:'sai',2:'ashoka'}
-
-   print(d)                                         # Output: {1: 'sai', 2: 'ashoka'}
-
-   print(type(d))                                   # Output: <class 'dict'>
-
-   d[2] = 'ramesh'                                  # Changing the value for key 2 
-
-   print(d)                                         # Output: {1: 'sai', 2: 'ramesh'}
-
-```
-* Adding key-value pairs to a Dictionary at Runtime
-* Get user input for key-value pairs*
-
-``` 
-   
-   person = {}                                   # Create an empty dictionary
-         
-   name = input("Enter person's name:")           # Take input from user name
-
-   age = int(input("Enter person's age:"))        # Take input from user age
-
-   city = input("Enter person's city:")           # Take input from user city
-
-
-
-  # Add key-value pairs to the dictionary*
-      
-   person['name'] = name
-   person['age'] = age
-   person['city'] = city
-
-   print("Dictionary after adding runtime values:", person)  # Output:  {'name': 'ashoka', 'age': '35', 'city': 'hyd'}
-
-   print(type(person))                                       # Output:  <class 'dict'>
-
-```
-
-```
-   # Start with an empty dictionary
-
-   student_scores = {}
-
-
-   # Adding scores for students
-
-   student_scores['ashoka'] = 85
-   student_scores['sunil'] = 92
-   student_scores['bhaskar'] = 78
-
-   print("Student Scores Dictionary:", student_scores)
-
-   print(type(student_scores))                             # Output: <class 'dict'>
-
-
-   student_scores['Alice'] = 90  # Update Alice's score
-
-   print(student_scores)                                    # Output: {'ashoka': 90, 'sunil': 92, 'bhaskar': 78}
-
-``` 
 
 ----------------------------------------------------------------------------------------------
 ### ✨ 8.range (immutable)
@@ -779,41 +273,11 @@
 
 ```
 
-- range(10) generates a sequence starting from 0 up to (but not including) 10.
-- You can convert it to a list or tuple to see the actual values.
-- `range()` itself does **not store all values in memory**. It generates numbers on demand (lazy evaluation), which is why printing it directly shows `range(0, 10)` instead of the numbers
-
-
-```    
-   r = range(2, 10, 2)  # start=2, stop=10, step=2
-
-   print(tuple(r))      # Output: (2, 4, 6, 8)
-
-   print(type(r))       # Output: <class 'range'>
-
-```
-
-- `range(2, 10, 2)` starts from `2`, goes up to (but not including) `10`, and increments by `2` each time.  
-- We can convert the range to a tuple to see the sequence of numbers: `(2, 4, 6, 8)`.
-
-```     
-   for i in range(5):
-   print(i)
-
-      # Output:
-      # 0
-      # 1
-      # 2
-      # 3
-      # 4
-
-```
-
 
 ----------------------------------------------------------------------------------------------
 ### 🔍 9. bytes  immutable 
 ----------------------------------------------------------------------------------------------
-   *the bytes data type represents sequences of bytes, which are immutable sequences of integers, each representing a byte value from 0 to 255
+*the bytes data type represents sequences of bytes, which are immutable sequences of integers, each representing a byte value from 0 to 255
 
 📌 **Key Points:**
 - Immutable → once created, cannot be changed.  
@@ -821,6 +285,7 @@
 - Often used when dealing with raw binary or encoded data.
 
 -  Creating bytes from a list of integers (ASCII codes)
+
 
 ```
    b = bytes([65, 66, 67])           # ASCII values for 'A', 'B', 'C'
