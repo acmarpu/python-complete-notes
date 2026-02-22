@@ -14,13 +14,34 @@
 - **Immutable:** Data types whose values **cannot be changed** after creation.  
 
 ----------------------------------------------------------------------------------------------
-### 📘 **_Basic Data Types_**
+## 📘 **_Basic Data Types_**
 ----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+### 🔹 1. none
+----------------------------------------------------------------------------------------------
+
+* nothing is there in the variable
 
 | **Data Type**   | **Category**   | **Example**     | **Definition** |
 |-----------------|----------------|-----------------|----------------|
 | **None**        | NoneType       |   a = None      | Represents the absence of a value or null. |
 
+ ```     
+    my_none = 'none'
+    print("none value:", my_none, type(my_none))    # Outpu none value: none <class 'str'>
+    
+```
+
+----------------------------------------------------------------------------------------------
+### 🔢 2. Numeric type   (immutable)
+----------------------------------------------------------------------------------------------
+
+* In Python, the numeric types refer to the data types that represent numbers, which include 
+   * int(0,100) 
+   * float(10.0)
+   * bool(true or false)
+   * Complex Numbers(1a)
 
 | **Data Type**   | **Category**   | **Example**     | **Definition** |
 |-----------------|----------------|-----------------|----------------|
@@ -30,7 +51,9 @@
 |                 | complex        |   a = 2 + 3j    | Numbers with real and imaginary parts. |
 
 
+----------------------------------------------------------------------------------------------
 * **_Sequence & Collection Types_**
+----------------------------------------------------------------------------------------------
 * Meaning: you can access elements using indexing, slicing, or keys.
 
 | **Data Type** | **Category**      | **Example**                           | **Definition** |
@@ -63,33 +86,6 @@
 | **range**     | range()     |    No             |    Yes            |     Yes     |  No               |
 
 
-
-----------------------------------------------------------------------------------------------
-### 🔹 1. none
-----------------------------------------------------------------------------------------------
-
-* nothing is there in the variable
-
- ```     
-    a = 'none'
-    print('none') 
-    print(a)                     # Output none
-    print(type(a))               # Output <class 'str'> 
-
-```
-
-----------------------------------------------------------------------------------------------
-### 🔢 2. Numeric type   (immutable)
-----------------------------------------------------------------------------------------------
-
-* In Python, the numeric types refer to the data types that represent numbers, which include 
-   * int(0,100) 
-   * float(10.0)
-   * bool(true or false)
-   * Complex Numbers(1a)
-
-
-
 ----------------------------------------------------------------------------------------------
 ### 🧵 3. String ("immutable")
 ----------------------------------------------------------------------------------------------
@@ -102,9 +98,10 @@
  - Operations like concatenation or .replace() return a new string instead of changing the original one.
 
 ```
-   s = "hello python" 
-   print(s)                 # Output: hello python
-   print(type(s))           # Output: <class 'str'>
+   my_string = "Hello, Apple!"
+   print("String value:", my_string, type(my_string))
+   
+   # Output: String value: Hello, Apple! <class 'str'>
 
 ```
 
@@ -129,20 +126,12 @@
 * Creating a list with various types of elements*
 
 ```      
-   l = [10,20,30,3.4,"python",True]
+   my_list = [1, 2, 3, 4, 5, "apple", True]
+   print("List value:", my_list, type(my_list))
 
-   print(l)                           # Output: [10,20,30,3.4,"python",True]
-
-   print(type(l))                     # Output: <class 'list'>
-
+   # Output: List value: [1, 2, 3, 4, 5, 'apple', True] <class 'list'>
+   
 ```
-
-* Lists are mutable, which means we can change their elements. We can modify an element by accessing it using its index, or add elements using methods like append().
-* Lists in Python are ordered collections — elements are stored in a sequence (index 0, 1, 2, ...).
-* The append() method adds an element to the end of the list.
-
-
-
 
 ----------------------------------------------------------------------------------------------
 ### 📦 5. Tuple (immutable)
@@ -156,28 +145,17 @@
   * **Different Data Types:** A tuple can store elements of various data types (e.g., integers, strings, floats, etc.).
   * **Duplicates Allowed:** Tuples can have multiple occurrences of the same element.
   * **Parentheses:** Tuples are usually created using () (parentheses), though they are optional in some cases (e.g., creating a single element tuple requires a trailing comma).
-
-
 * If you want to create a **tuple with only one element**, you must add a **trailing comma**.  
 * Without the comma, Python will treat it as a normal value inside parentheses, not a tuple.
-   
-
-
-```
-      t = ("ashoka",12,23.4,10)
-
-      print(t)                         # Output: ('ashoka', 12, 23.4, 10)
-
-      print(type(t))                   # Output: <class 'tuple'>
-
-      t[1] = 33                        # ❌ Trying to change index 1 (value 12 to 33)
-
-      print(t)                         # Output ('ashoka', 12, 23.4, 10)  elements cannot be modified
+  
 
 ```
+    my_tuple = (1, 2, 3, 4, 5, "apple", True)
+    print("Tuple value:", my_tuple, type(my_tuple)) 
 
+    # Output: Tuple value: (1, 2, 3, 4, 5, 'apple', True) <class 'tuple'>
 
-
+```
 
 ----------------------------------------------------------------------------------------------
 ### 🧾 6 . Set {Mutable}
@@ -199,21 +177,18 @@
 * Example: Empty set
 
 ```   
-   s = set()
+   my_set = {1, 2, 3, 4, 5, "apple", "orange", 3.4}
+   print("Set value:", my_set, type(my_set))
 
-   print(s)                        # Output: set()
-
-   print(type(s))                  # Output: <class 'set'>
+   # Output: Set value: {1, 2, 3, 4, 5, 3.4, 'apple', 'orange'} <class 'set'>
 
 ```   
-
-
 
 ----------------------------------------------------------------------------------------------
 ### 🔑 7. Dictionary {Mutable}
 ----------------------------------------------------------------------------------------------
 * A **dictionary** is an **unordered collection of key-value pairs**.  
-* It stores elements in **pairs**, where each key is associated with a value. - Each key-value pair is called an **item**: `{key: value}` 
+* It stores elements in **pairs**, where each key is associated with a value. - Each key-value pair is called an **item**: {key: value}
 
 📌 **Key Points:**
 
@@ -229,18 +204,18 @@
 * Empty dictionary  
 
 ```
-   d = dict()
+   my_dict = {
+    "name": "Apple",
+    "age": 30,
+    "city": "India",
+    "is_student": False
+   }
 
-   # or
+   print("Dictionary value:", my_dict, type(my_dict))
 
-   d = {}
+   # Output: Dictionary value: {'name': 'Apple', 'age': 30, 'city': 'India', 'is_student': False} <class 'dict'>
 
-   print(d)                                           # Output: {}
-
-   print(type(d))                                     # Output: <class 'dict'>
-      
 ```
-
 
 ----------------------------------------------------------------------------------------------
 ### ✨ 8.range (immutable)
@@ -264,12 +239,16 @@
 
 
 ```
-   r = range(10)
-   print(r)                # Output: range(0, 10)
-      
-   print(list(r))          # Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-   
-   print(type(r))          # Output: <class 'range'>
+   my_range = range(1, 10)
+   print("Range value:", my_range, type(my_range))
+   # Output: Range value: range(1, 10) <class 'range'>
+
+   my_range_2 = range(10)
+   # Output: Range2 value: range(0, 10)
+
+   print("Range2 value:", my_range_2)
+   print(list(my_range_2))
+   # Output; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ```
 
@@ -288,18 +267,10 @@
 
 
 ```
-   b = bytes([65, 66, 67])           # ASCII values for 'A', 'B', 'C'
+   my_bytes = bytes([65, 66, 67, 68])  # ASCII values for A, B, C, D
+   print("Bytes value:", my_bytes, type(my_bytes))
 
-   print(b)                          # Output: b'ABC'
-
-   print(type(b))                    # Output: <class 'bytes'>
-
-   print(b[0])                       # Output: 65  (the ASCII code for 'A')
-
-  # Iterating over bytes
-
-   for byte in b:
-       print(byte)
+   # Output: Bytes value: b'ABCD' <class 'bytes'>
 
 ```
 
@@ -317,31 +288,10 @@
  - Useful when you need a modifiable sequence of binary data.  
 
  ```
-   # Creating a bytearray
+   my_bytearray = bytearray([65, 66, 67, 68])  # ASCII values for A, B, C, D
+   print("Bytearray value:", my_bytearray, type(my_bytearray))
 
-    ba = bytearray([65, 66, 67])   # ASCII values for 'A', 'B', 'C'
-
-    print(ba)                      # Output: bytearray(b'ABC')
-
-    print(type(ba))                # Output: <class 'bytearray'>
-
-   # Modifying elements
-
-    ba[0] = 90                     # Change ASCII 65 ('A') to 90 ('Z')
-
-    print(ba)                      # Output: bytearray(b'ZBC')
-
-   # Appending a new byte
-
-    ba.append(68)                  # ASCII for 'D'
-
-    print(ba)                      # Output: bytearray(b'ZBCD')
-
-
-   # bytearray(b'ABC')
-   # <class 'bytearray'>
-   # bytearray(b'ZBC')
-   # bytearray(b'ZBCD')
+   #Output: Bytearray value: bytearray(b'ABCD') <class 'bytearray'>
 
 
 ```
@@ -356,19 +306,10 @@
 * Difference: Unlike `set`, a `frozenset` is **hashable**, so it can be used as a **key in a dictionar
 
 ```
-   frozen_set = frozenset([1, 2, 3, 4, 5])
-
-   print(frozen_set)   # Output: frozenset({1, 2, 3, 4, 5})
-
-   # frozen_set.add(6) ❌ Error: 'frozenset' object has no attribute 'add'
-
-   # But we can still perform set operations
-
-   s = {3, 4, 5, 6}
-
-   print(frozen_set.union(s))        # frozenset({1, 2, 3, 4, 5, 6})
-
-   print(frozen_set.intersection(s)) # frozenset({3, 4, 5})
+   my_frozenset = frozenset([1, 2, 3, 4, 5, "apple", "orange", 3.4])
+   print("FrozenSet value:", my_frozenset, type(my_frozenset))
+   
+   #Output; FrozenSet value: frozenset({1, 2, 3, 4, 5, 3.4, 'apple', 'orange'}) <class 'frozenset'>
 
 ```
 
