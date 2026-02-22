@@ -10,81 +10,92 @@
    * Complex Numbers(1a)
 
 ```      
-   a = 10
-   print(a)                       # Output 10 
-   print(type(a))                 # Output <class 'int'> 
+   numaric = 10
+   print("numaric value:", numaric)       #Output: numaric value: 10
+   print("numaric type:", type(numaric))  #Output: numaric type: <class 'int'>
 
 ```
 
 ```
-   a = 1.4
-   print(a)                        # Output  1.4 
-   print(type(a))                  # Output  <class 'float'>
+  my_float = 3.14 
+  print("Float value:", my_float)        #Output: Float value: 3.14      
+  print("Float type:", type(my_float))   #Output: Float type: <class 'float'>
 
 ```     
 
-* **Converts the integer 10 into a floating-point number → 10.0.**
 ```      
-   a = 10
-   print(a)                         # Output 10
-   print(type(a))                   # Output  <class 'int'>
-      
+  # Converting integer (numaric) to float
 
-   b = float(a)
-   print(b)                          # Output 10.0
-   print(type(b))                    # Output <class 'float'>
+   numaric = 10
+   print("numaric value:", numaric)      #Output: numaric value: 10   
+   print("numaric type:", type(numaric)) #Output: numaric type: <class 'int'>
+
+   my_float = float(numaric)            
+   print("Float value:", my_float)        #Output: Float value: 10.0
+   print("Float type:", type(my_float))   #Output: Float type: <class 'float'>
 
 ```
 
 **Enter runtime** - when you enter a value at runtime using input() function the default datatype is *string*
+
 ``` 
-   a = input("enter num1:")
-   print(type(a))                    # Output   <class 'str'>
-
-   x = int(a)                        # here we converting str to int
-   print(type(x))                    # Output   <class 'int'>
+   numaric = int(input("Enter a numaric value: "))    #Output: Enter a numaric value: 10
+   print("numaric value:", numaric)                   #Output: numaric value: 10
+   print("numaric type:", type(numaric))              #Output: numaric type: <class 'int'>
 
 ```
 
-* **Taking inputs separately and then converting to int**
+
+``` 
+
+# Enter the runtime value as a string and convert it to numaric value
+
+
+   a = input("Enter a numaric value: ")
+   print("Input value:", a)
+   print("Input type:", type(a))
+
+
+   # Converting a string input value to x integer value
+   x = int(a)
+   print("Converted value:", x)
+   print("Converted type:", type(x))
+
+   b = input("Enter a float value: ")
+   print("Input value:", b)
+   print("Input type:", type(b))
+   
+
+   # converting b string input value to y numaric value
+   y = int(b)
+   print("Converted value:", y)
+   print("Converted type:", type(y))
+   
+
+   # Adding x and y
+   c = x + y
+   print("Sum of x and y:", c)
+   print("Type of sum:", type(c))        
+
 ```   
-   a = input("enter number1:")       # Enter number 10
-   print(a)                          # Output 10
-   print(type(a))                    # Output <class 'str'>
 
-   x = int(a)                        # converting str to int
-   print(x)                          # Output 10
-   print(type(x))                    # Output   <class 'int'>
 
-   b = input("enter number2:")       # Enter number 20
-   print(b)                          # Output 20
-   print(type(b))                    # <class 'str'>
-
-   y = int(b)                        # converting str to int
-   print(type(y))
-      
-   c = x+y 
-   print(c)                           # Output   sun c is 30
-   print(type(c))                     # Output  <class 'int'> 
-
-   print("sum c is", c)               # Output sum c is 30         
-
-```   
-
-**Simplified Approach**
 ```
-   a = int(input("enter num1:"))       # Enter number 10
-   b = int(input("enter num2:"))       # Enter number 20
+  # Simple approach to add two numaric values
+   
+   a = int(input("Enter first numaric value: "))
+   b = int(input("Enter second numaric value: "))
+
    c = a + b
-   print(c)                             # Output 30
-
-   print("sum is:", c)                  # Output: sum is 30
-   print(type(c))                       # Output <class 'int'>
+   print("Sum of a and b:", c)
+   print("Type of sum:", type(c))
  
 ```
 
-**Taking float inputs directly and adding them**
-```   
+
+```  
+   # Adding two float values
+
    a = float(input("Enter num1:"))
    b = float(input("enter num2:")) 
    c = a + b
@@ -93,8 +104,9 @@
 ```
 
 
-**bool = true or false**
-```   
+
+```  
+   #  bool = true or false
    a = 10
    b = 20
    c = a > b
@@ -102,3 +114,8 @@
    print(type(c))                       # Output  <class 'bool'>
 
 ```
+
+
+----------------------------------------------------------------------------------------------
+✅ End of Numaric Data Types 
+----------------------------------------------------------------------------------------------
