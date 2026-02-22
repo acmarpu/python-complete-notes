@@ -28,7 +28,7 @@
 * The append() method adds an element to the end of the list.
 
 
-* # List with mixed data types (heterogeneous)
+* List with mixed data types (heterogeneous)
 ```
   l3 = [10, 3.5, "python", True]
   print (l3)
