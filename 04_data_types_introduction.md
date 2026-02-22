@@ -8,7 +8,7 @@
 * Python is a **dynamically typed** language (no need to declare data types explicitly).
 
 ----------------------------------------------------------------------------------------------
-### 🔹 Mutable vs Immutable Types
+##### 🔹 Mutable vs Immutable Types
 ----------------------------------------------------------------------------------------------
 - **Mutable:** Data types whose values **can be changed** after creation.  
 - **Immutable:** Data types whose values **cannot be changed** after creation.  
