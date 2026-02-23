@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------
-### 🧵 3. String ("immutable")
+### 🧵 3. String ("Immutable")
 ----------------------------------------------------------------------------------------------
 #### 1. What is a String?
 * In Python, strings are an essential data type used to represent textual data.
@@ -12,28 +12,17 @@
 
 
 
-* With single quotes (' ') → may need escape \'.
-
 ```  
-   s = 'hello python'
-   print(s)                 # Output: hello python
-   print(type(s))           # Output <class 'str'>
-   s = 'hello python\'s'
+   my_string = "Hello, Apple!"
+   print("String value:", my_string)           #Output: String value: Hello, Apple!
+   print("Type of string:", type(my_string))   #Output: Type of string: <class 'str'>
 
-   print(s)                 # Output: hello python's
-   print(type(s))           # Output: <class 'str'>
 
-```
-
-* With double quotes (" ")
-```
-   s = "hello python" 
-   print(s)                 # Output: hello python
-   print(type(s))           # Output: <class 'str'>
+   # With single quotes (' ') → may need escape \'.
+   my_string = 'Hello, Apple!\'s'
+   print("String value:", my_string)          #Output: String value: Hello, Apple!'s
 
 ```
-
-
 
 #### 2. String Indexing and Slicing
 * Indexing means accessing characters in a string using position numbers.
@@ -41,38 +30,39 @@
 
 ```
      0 1 2 3 4 5 6 7 8   → Positive index
-     h y d e r a b a d
+     h e l l o c o d e
     -9-8-7-6-5-4-3-2-1   → Negative index
 
 ```
 
 * a) Indexing Examples
 ```
-   s = "hyderabad"
-
-    print(s)                # Output: hyderabad
-    print(s[3])             # Output: e
-    print(s[-3])            # Output: b
-    print(s[0:7])           # Output: hyderab
+   my_string = "helloapple!"
+   print("First character:", my_string[0])          # Output: h
+   print("Second character:", my_string[1])         # Output: e   
+   print("Last character:", my_string[-1])          # Output: !
+   print("Second last character:", my_string[-3])   # Output: e
 
 ```
 
 * b) Slicing
 * Slicing means extracting a part of the string.
 * string[start:end]   # end index is excluded
-```
-   s = "hyderabad"
 
-   print(s[1:6])                                   # Output: yderab  (characters from index 1 to 5)
-   print(s[-7:-1])                                 # Output: deraba  (negative slicing)
+```
+   print("Substring (0 to 4):", my_string[0:5])     # Output: hello
+   print("Substring (6 to end):", my_string[6:])    # Output: apple!
+   print("Substring (start to 5):", my_string[:6])  # Output: hello
 
 ```
 
 * reverese the string without reverese function
 * We can reverse a string easily using slicing with a step value of -1.
+
 ```
-   s = "hyderabad"
-   print(::-1)
+   my_string = "helloapple!"
+   reversed_string = my_string[::-1]
+   print("Reversed string:", reversed_string)        # Output: !elppaolleh
 
 ```
 
@@ -81,13 +71,15 @@
 * Multiplication →   Used to repeat a string multiple times using the * operator.
 
 ```
-   s1 = "red"
-   s2 = "apple"
+   str1 = "red"
+   str2 = "apple"
+   print("Concatenated string:", str1 + " " + str2)   # Output: red apple
 
-   print(s1 + s2)                                  # Output: redapple
-   print(s1 + " " + s2)                            # Output: red apple  (adds space between)
-   print(s1 * 3)                                   # Output: redredred
-   print((s1 + " " + s2 + " ") * 3)                # Output: red apple red apple red apple
+   print(str1 + " " + str2)                           # Output: redapple
+
+   print(str1 * 3)                                    # Output: redredred
+
+   print((str1 + " " + str2 + " ") * 3)               # Output: red red apple red apple red apple
 
 ```
 
@@ -97,20 +89,19 @@
 * maxsplit → (optional): The maximum number of splits. Remaining string is returned as the last element.
 
 ```
-   s1 = "python is very easy and anyone can learn"
-   print(s1)                                        # Output: python is very easy and anyone can learn
+   str1 = " Python is very easy to learn."
+   print("Original string:", str1)              # Output: Original string:  Python is very easy to learn.
 
-   # Split the string using space as a separator
-   s2 = s1.split(" ")
-   print(s2)                                        # Output: ['python', 'is', 'very', 'easy', 'and', 'anyone', 'can', 'learn']
+   
+   words = str1.split()
+   print("Words in the string:", words)         # Output: ['Python', 'is', 'very', 'easy', 'to', 'learn.']
 
-   # Split the string using space, but only into 4 parts (max 3 splits)
-   s3 = s1.split(" ", 3)
-   print(s3)                                        # Output:  ['python', 'is', 'very', 'easy and anyone can learn']
+   maxsplit = str1.split(" ", 3)
+   print("Max 3 splits:", maxsplit)             # Output: ['Python', 'is', 'very', 'easy to learn.']
 
-   # Split the string wherever the word 'is' appears
-   s4 = s1.split("is")
-   print(s4)                                        # Output: ['python ', ' very easy and anyone can learn']
+
+   isappears = str1.split("is")
+   print("Split by 'is':", isappears)           # Output: [' Python ', ' very easy to learn.']
 
 
 ```
@@ -119,15 +110,11 @@
 * The capitalize() method returns a new string where the first character is converted to uppercase, and the rest of the string is converted to lowercase.
 
 ```
-   s1 = "python is very easy and anyone can learn"
-   print(s1)                                        # Output: python is very easy and anyone can learn
-   s2 = s1.capitalize()
-   print(s2)                                        # Output: Python is very easy and anyone can learn
+   str1 = " Python is Very Easy To Learn."
+   print(str1)                   # Output:  Python is Very Easy To Learn.
 
-   s3 = "Python Is very Easy and Anyone can learn"
-   print(s3)                                        # Output: Python Is very Easy and Anyone can learn
-   s4 = s3.capitalize()
-   print(s4)                                        # Output: Python is very easy and anyone can learn
+   str2 = str1.capitalize()
+   print(str2)                   # Output:  python is very easy to learn.
 
 ```
 
@@ -135,11 +122,9 @@
 The title() method returns a new string where the first character of every word is capitalized, and all other letters are lowercase.
 
 ```
-   s1 = "Python Is very Easy and Anyone can learn"
-   print(s1)                                       # Output: Python Is very Easy and Anyone can learn
-
-   s2 = s1.title()
-   print(s2)                                       # Output: Python Is Very Easy And Anyone Can learn
+   str1 = " python is very easy to learn."
+   str3 = str1.title()
+   print(str3)                   # Output:  Python Is Very Easy To Learn.
 
 ```
 
@@ -147,13 +132,13 @@ The title() method returns a new string where the first character of every word 
 The count() method returns the number of occurrences of a specified substring within a given string.
 
 ```
-   s1 = "Python is very Easy and Anyone can learn"
-   print(s1)                                       # Output: Python is very Easy and Anyone can learn
-   print(s1.count(""))                             # Output: 7 space 
+   str1 = "Python is very Easy and Anyone can learn"
+   print(str1)                                       # Output: Python is very Easy and Anyone can learn
+   print(str1.count(""))                             # Output: 7 space 
 
-   print(s1.count('is'))                           # Output: 1
+   print(str1.count('is'))                           # Output: 1
 
-   s2 = s1.count("a")
+   s2 = str1.count("a")
    print(s2)                                       # Output: 3
               
 ```
@@ -162,11 +147,8 @@ The count() method returns the number of occurrences of a specified substring wi
 The replace() method returns a new string where all occurrences of a specified substring are replaced with another substring.
 
 ```
-   s1 = "python is very easy and anyone can learn"
-   print(s1.replace("easy", "hard"))              # Output: python is very hard and anyone can learn
-
-   s2 = s1.replace("easy", "hard")      
-   print(s2)                                      # Output: python is very hard and anyone can learn                   
+   str1 = " python is very easy to learn."
+   print(str1.replace("easy", "hard"))             # Output:  python is very hard to learn.           
 
 ```
 
@@ -174,12 +156,12 @@ The replace() method returns a new string where all occurrences of a specified s
 These methods convert the case of characters in a string.
 
 ```
-   s1 = "python is very easy and Anyone can learn"
+   str1 = "python is very easy and Anyone can learn"
+   print(str1.upper())                   # Output:  PYTHON IS VERY EASY AND ANYONE CAN LEARN.
 
-   print(s1.upper())                             # Convert all letters to uppercase
-
-   s2 = s1.upper()
-   print(s2.lower())                            # Convert all letters back to lowercase
+   str2 = str1.upper()
+   print(str2)                           # Output:  PYTHON IS VERY EASY AND ANYONE CAN LEARN.
+   print(str2.lower())                   # Output:  python is very easy and anyone can learn. 
 
 ```
 
@@ -187,9 +169,10 @@ These methods convert the case of characters in a string.
 The swapcase() method returns a new string where uppercase letters become lowercase and lowercase letters become uppercase
 
 ```
-   s = "HyDerAbaD"
-   print(s)                                      # Output: HydERabAd
-   print(s.swapcase())                           # Output: hYDerABaD
+   str1 = "Python Is Very Easy To Learn."
+
+   str2 = str1.swapcase()
+   print(str2)                   # Output:  pYTHON iS vERY eASY tO lEARN.
 
 ```
 
@@ -198,8 +181,8 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 * We can reverse using slicing [::-1].
 
 ```
-   s = "python"
-   print(s[::-1])                               # Output nohtyp
+   str1 = "python"
+   print(str1[::-1])                               # Output nohtyp
 
 ```
 
@@ -208,9 +191,9 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 * Any operation that seems to modify a string actually creates a new string.
 
 ```
-   s = "python"
-   print(id(s))
-   s = s + " language"
+   str1 = "python"
+   print(id(str1))
+   s = s + "language"
    print(s)
    print(id(s))                                # Different ID → new string created
 
@@ -221,14 +204,14 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
    s = "python is very easy"
-   s1 = s.split()
-   print(s1)                                   # Output ['python', 'is', 'very', 'easy']
+   str1 = s.split()
+   print(str1)                                   # Output ['python', 'is', 'very', 'easy']
 
-   s1.sort()
-   print(s1)                                   # Output ['easy', 'is', 'python', 'very']
+   str1.sort()
+   print(str1)                                   # Output ['easy', 'is', 'python', 'very']
 
-   s1.sort(reverse=True)
-   print(s1)                                   # Output ['very', 'python', 'is', 'easy']
+   str1.sort(reverse=True)
+   print(str1)                                   # Output ['very', 'python', 'is', 'easy']
 
 ```
 
@@ -238,10 +221,10 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 ```
 
    s = "hyderabad"
-   s1 = ':'.join(s)
-   print(s1)                                   # Output: h:y:d:e:r:a:b:a:d
+   str1 = ':'.join(s)
+   print(str1)                                   # Output: h:y:d:e:r:a:b:a:d
 
-   s2 = ''.join(reversed(s1))
+   s2 = ''.join(reversed(str1))
    print(s2)                                   # Output: d:a:b:a:r:e:d:y:h
 
    print("".join(reversed("SAI")))             # Output: IAS
@@ -262,8 +245,8 @@ The swapcase() method returns a new string where uppercase letters become lowerc
    print(s.rstrip())                         # Removes spaces on the right
    print(s.lstrip())                         # Removes spaces on the left
 
-   s1 = s.strip()
-   print(s1)
+   str1 = s.strip()
+   print(str1)
 
 
    # Output:
@@ -390,10 +373,10 @@ Returns True if all characters are alphanumeric (letters and digits only).
 
 ```
    s = "python is very easy"
-   s1 = s.split(" ")
-   print(s1)
+   str1 = s.split(" ")
+   print(str1)
 
-   for i in s1:
+   for i in str1:
       print(i[::-1], end=" ")
 
    #Output
