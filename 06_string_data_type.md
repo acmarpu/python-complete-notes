@@ -9,6 +9,7 @@
  - Examples: .replace(), .split(), .lower(), .upper(), .strip(), etc.
 * String Immutability: Strings are **immutable**, meaning once created, they cannot be modified.
  - Operations like concatenation or .replace() return a new string instead of changing the original one.
+* String supports to Indexing 
 
 
 
@@ -28,30 +29,40 @@
 * Indexing means accessing characters in a string using position numbers.
 * String indices start at 0 (for the first character).
 
-```
-     0 1 2 3 4 5 6 7 8   → Positive index
-     h e l l o c o d e
-    -9-8-7-6-5-4-3-2-1   → Negative index
 
-```
+
+|Positive Indexing   | 0 | 1 | 2 | 3 | 4 | 5 |6  |7  |
+|--------------------|---|---|---|---|---|---|---|---|
+|                    | W | E | L |   | C | O | M | E |
+|Negative indexing   |-8 |-7 |-6 |-5 |-4 |-3 |-2 |-1 |
+
+
 
 * a) Indexing Examples
+
 ```
    my_string = "helloapple!"
+
    print("First character:", my_string[0])          # Output: h
-   print("Second character:", my_string[1])         # Output: e   
+
+   print("Second character:", my_string[1])         # Output: e 
+
    print("Last character:", my_string[-1])          # Output: !
+
    print("Second last character:", my_string[-3])   # Output: e
 
 ```
 
 * b) Slicing
+
 * Slicing means extracting a part of the string.
 * string[start:end]   # end index is excluded
 
 ```
    print("Substring (0 to 4):", my_string[0:5])     # Output: hello
+
    print("Substring (6 to end):", my_string[6:])    # Output: apple!
+
    print("Substring (start to 5):", my_string[:6])  # Output: hello
 
 ```
@@ -61,7 +72,9 @@
 
 ```
    my_string = "helloapple!"
+
    reversed_string = my_string[::-1]
+
    print("Reversed string:", reversed_string)        # Output: !elppaolleh
 
 ```
@@ -73,6 +86,7 @@
 ```
    str1 = "red"
    str2 = "apple"
+
    print("Concatenated string:", str1 + " " + str2)   # Output: red apple
 
    print(str1 + " " + str2)                           # Output: redapple
@@ -90,17 +104,21 @@
 
 ```
    str1 = " Python is very easy to learn."
+
    print("Original string:", str1)              # Output: Original string:  Python is very easy to learn.
 
    
    words = str1.split()
+
    print("Words in the string:", words)         # Output: ['Python', 'is', 'very', 'easy', 'to', 'learn.']
 
    maxsplit = str1.split(" ", 3)
+
    print("Max 3 splits:", maxsplit)             # Output: ['Python', 'is', 'very', 'easy to learn.']
 
 
    isappears = str1.split("is")
+
    print("Split by 'is':", isappears)           # Output: [' Python ', ' very easy to learn.']
 
 
@@ -111,9 +129,11 @@
 
 ```
    str1 = " Python is Very Easy To Learn."
+
    print(str1)                   # Output:  Python is Very Easy To Learn.
 
    str2 = str1.capitalize()
+
    print(str2)                   # Output:  python is very easy to learn.
 
 ```
@@ -123,7 +143,9 @@ The title() method returns a new string where the first character of every word 
 
 ```
    str1 = " python is very easy to learn."
+
    str3 = str1.title()
+
    print(str3)                   # Output:  Python Is Very Easy To Learn.
 
 ```
@@ -133,12 +155,15 @@ The count() method returns the number of occurrences of a specified substring wi
 
 ```
    str1 = "Python is very Easy and Anyone can learn"
+
    print(str1)                                       # Output: Python is very Easy and Anyone can learn
+
    print(str1.count(""))                             # Output: 7 space 
 
    print(str1.count('is'))                           # Output: 1
 
    s2 = str1.count("a")
+
    print(s2)                                       # Output: 3
               
 ```
@@ -148,6 +173,7 @@ The replace() method returns a new string where all occurrences of a specified s
 
 ```
    str1 = " python is very easy to learn."
+
    print(str1.replace("easy", "hard"))             # Output:  python is very hard to learn.           
 
 ```
@@ -157,10 +183,13 @@ These methods convert the case of characters in a string.
 
 ```
    str1 = "python is very easy and Anyone can learn"
+
    print(str1.upper())                   # Output:  PYTHON IS VERY EASY AND ANYONE CAN LEARN.
 
    str2 = str1.upper()
+
    print(str2)                           # Output:  PYTHON IS VERY EASY AND ANYONE CAN LEARN.
+
    print(str2.lower())                   # Output:  python is very easy and anyone can learn. 
 
 ```
@@ -172,6 +201,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
    str1 = "Python Is Very Easy To Learn."
 
    str2 = str1.swapcase()
+
    print(str2)                   # Output:  pYTHON iS vERY eASY tO lEARN.
 
 ```
@@ -182,6 +212,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
    str1 = "python"
+
    print(str1[::-1])                               # Output nohtyp
 
 ```
@@ -192,9 +223,13 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
    str1 = "python"
+
    print(id(str1))
+
    s = s + "language"
+
    print(s)
+
    print(id(s))                                # Different ID → new string created
 
 ```
@@ -204,13 +239,17 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
    s = "python is very easy"
+
    str1 = s.split()
+
    print(str1)                                   # Output ['python', 'is', 'very', 'easy']
 
    str1.sort()
+
    print(str1)                                   # Output ['easy', 'is', 'python', 'very']
 
    str1.sort(reverse=True)
+   
    print(str1)                                   # Output ['very', 'python', 'is', 'easy']
 
 ```

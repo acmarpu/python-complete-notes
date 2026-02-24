@@ -17,7 +17,9 @@
 #### 1. creating a list   
 ```
    my_list = [1, 2, 3.5, 4, 5, "apple", True]
+
    print("List value:", my_list)                 # Output: List value: [1, 2, 3.5, 4, 5, 'apple', True]
+
    print("List type:", type(my_list))            # Output: List type: <class 'list'>
 
 ```
@@ -27,7 +29,9 @@
 
 ```
    my_list = [1, 2, [3, 4], 5.5, "apple", True]
+
    print("List value:", my_list)                 # Output: List value: [1, 2, [3, 4], 5.5, 'apple', True]
+
    print("List type:", type(my_list))            # Output: List type: <class 'list'>
 
 ```
@@ -35,6 +39,7 @@
 #### 3. Access elements in a list
 ```
    my_list = [1, 2, [3, 4], 5.5, "apple", True]
+
    print("First element:", my_list[0])           # Output: First element: 1
 
 ```
@@ -43,7 +48,9 @@
 ⚠️ Note: Negative indexing is supported, but “backward slicing” (like l[-1:-4]) won’t work unless step is -1.  
 ```
    my_list = [10,20,30,40,50,60]
+
    print(my_list)                    # Output: [10, 20, 30, 40, 50, 60]
+
    print(my_list[1:4])               # Output: [20, 30, 40]
 
 ```
@@ -51,11 +58,15 @@
 #### 5. changing or adding insert elements
 ```
    my_list = [10,20,30,40,50,60]
+
    print(my_list)                    # Output: [10, 20, 30, 40, 50, 60]
+
    my_list[2] = 35
+
    print(my_list)                    # Output: [10, 20, 35, 40, 50, 60]
 
    my_list.insert(2, 25)
+
    print(my_list)                    # Output: [10, 20, 25, 35, 40, 50, 60]
 
 ```
@@ -67,12 +78,16 @@
 
 ```
    my_list = [10,20,30,40,50,60]
+
    print(my_list)                    # Output: [10, 20, 30, 40, 50, 60]
+
    my_list.append(70)  
+
    print(my_list)                    # Output: [10, 20, 30, 40, 50, 60, 70]
 
 
    my_list.extend([80, 90, "apple"])
+   
    print(my_list)                    # Output: [10, 20, 30, 40, 50, 60, 70, 80, 90, 'apple']
 
 ```
