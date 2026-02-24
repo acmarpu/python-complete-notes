@@ -57,16 +57,20 @@
 * Meaning: access elements using indexing, slicing, or keys. string, list , tuple 
 * Dictionary, set - do not support indexing 
 
+
+                        |---|---| ---|---|---|---|---|---|
                         | 0 | 1 | 2  | 3 | 4 | 5 |6  |7  |
 Positive Index Nos      |---|---|----|---|---|---|---|---|  
                         |W  |E  | L  |   |C  | O | M | E |
+                        |---|---| ---|---|---|---|---|---|
 
-
+                        |---|---| ---|---|---|---|---|---|
 Positive Index Nos      | 0 | 1 | 2  | 3 | 4 | 5 |6  |7  |
                         |---|---|----|---|---|---|---|---|
                         |W  |E  | L  |   |C  | O | M | E |
                         |---|---|----|---|---|---|---|---|
 Negative Index Nos      |-8 | -7| -6 | -5| -4| -3|-2 | -1|
+                        |---|---| ---|---|---|---|---|---|
 
 
 
