@@ -11,7 +11,47 @@
  - Operations like concatenation or .replace() return a new string instead of changing the original one.
 * String supports to Indexing 
 
+* String format 
 
+- f-string (Python 3.6+): f'hello {name}
+
+- str.foramt(): "Hello{}".format(name)
+
+- % opetator: "Hello %s" % name
+
+
+```
+   Course_id = 1001
+   Course_name = "python"
+
+
+   # Expected Output : my Course Id is 1001 and my course name is python
+   print(f"my Course Id is {Course_id} and my course name {python})
+
+```
+
+```
+  # Format method 
+
+   Course_id = 1001
+   Course_name = "python"
+  
+  # Expected Output : my Course Id is 1001 and my course name is python
+  print("my Course Id is {} and my course name is {}".format(Course_id, Course_name))
+
+```
+```  
+   Course_id = 1001
+   Course_name = "python"
+
+   # Expected Output : my Course Id is 1001 and my course name is python
+   print("my Course Id is %d and my course name is %s" % (Course_id, Course_name))
+
+   %d - Expecting number
+   %s - expecting string 
+
+
+```
 
 ```  
    my_string = "Hello, Apple!"
@@ -34,6 +74,7 @@
 |Positive Indexing   | 0 | 1 | 2 | 3 | 4 | 5 |6  |7  |
 |--------------------|---|---|---|---|---|---|---|---|
 |                    | W | E | L |   | C | O | M | E |
+|--------------------|---|---|---|---|---|---|---|---|
 |Negative indexing   |-8 |-7 |-6 |-5 |-4 |-3 |-2 |-1 |
 
 
@@ -103,52 +144,19 @@
 * maxsplit → (optional): The maximum number of splits. Remaining string is returned as the last element.
 
 ```
-   str1 = " Python is very easy to learn."
+   string = "code4python"
+   print("Original string:", string)                    # Output: Original string: code4python
 
-   print("Original string:", str1)              # Output: Original string:  Python is very easy to learn.
+   print("String after split:", string.split())         # Output: String after split: ['code4python'] 
+
+   print("string after max split:", string.split("4"))  # Output: string after max split: ['code', 'python']
+
+   print("string after max split:", string.split(sep=="4"))  # Output: string after max split: ['code', 'python']
 
    
-   words = str1.split()
-
-   print("Words in the string:", words)         # Output: ['Python', 'is', 'very', 'easy', 'to', 'learn.']
-
-   maxsplit = str1.split(" ", 3)
-
-   print("Max 3 splits:", maxsplit)             # Output: ['Python', 'is', 'very', 'easy to learn.']
-
-
-   isappears = str1.split("is")
-
-   print("Split by 'is':", isappears)           # Output: [' Python ', ' very easy to learn.']
-
 
 ```
 
-#### 5. capitalize() Method
-* The capitalize() method returns a new string where the first character is converted to uppercase, and the rest of the string is converted to lowercase.
-
-```
-   str1 = " Python is Very Easy To Learn."
-
-   print(str1)                   # Output:  Python is Very Easy To Learn.
-
-   str2 = str1.capitalize()
-
-   print(str2)                   # Output:  python is very easy to learn.
-
-```
-
-#### 6. String title() Method
-The title() method returns a new string where the first character of every word is capitalized, and all other letters are lowercase.
-
-```
-   str1 = " python is very easy to learn."
-
-   str3 = str1.title()
-
-   print(str3)                   # Output:  Python Is Very Easy To Learn.
-
-```
 
 #### 7. String count() Method
 The count() method returns the number of occurrences of a specified substring within a given string.
@@ -178,19 +186,32 @@ The replace() method returns a new string where all occurrences of a specified s
 
 ```
 
-#### 9. String upper() and lower() Methods
+#### 9. String Upper() and Lower(), title() Methods
 These methods convert the case of characters in a string.
 
 ```
-   str1 = "python is very easy and Anyone can learn"
+  print("#" * 10)
 
-   print(str1.upper())                   # Output:  PYTHON IS VERY EASY AND ANYONE CAN LEARN.
+  str1 = "python is very easy and Anyone can learn"
 
-   str2 = str1.upper()
+  print("Upper case str1:", str1.upper())                  # Output:  Upper case str1: PYTHON IS VERY EASY AND ANYONE CAN LEARN
 
-   print(str2)                           # Output:  PYTHON IS VERY EASY AND ANYONE CAN LEARN.
+  str2 = str1.upper()
 
-   print(str2.lower())                   # Output:  python is very easy and anyone can learn. 
+  print(str2)                                              # Output:  PYTHON IS VERY EASY AND ANYONE CAN LEARN.
+  print("Lower case str1:", str2.lower())                  # Output:  Lower case str1: python is very easy and anyone can learn
+   
+  str3 = str1.title()
+  print("Title Method str1:", str3.title())               # Output: Title Method str1: Python Is Very Easy And Anyone Can Learn
+
+```
+
+#### 5. capitalize() Method
+* The capitalize() method returns a new string where the first character is converted to uppercase, and the rest of the string is converted to lowercase.
+
+```
+   str4 = str1.capitalize()
+   print("Capitalize Method str1:", str4.capitalize())     # Output: Capitalize Method str1: Python is very easy and anyone can learn
 
 ```
 
@@ -258,20 +279,17 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 * The join() method combines elements of an iterable (like a string or list) into a single string.
 
 ```
+   str1 = ["Python", "is", "awesome"]
+   print("Joined string:", " ".join(str1))           # Output: Joined string: Python is awesome
 
-   s = "hyderabad"
-   str1 = ':'.join(s)
-   print(str1)                                   # Output: h:y:d:e:r:a:b:a:d
+   print("str1 after join method:", '|'.join(str1))  # Output: str1 after join method: Python|is|awesome
 
-   s2 = ''.join(reversed(str1))
-   print(s2)                                   # Output: d:a:b:a:r:e:d:y:h
+   str2 = ''.join(reversed(str1))
+   print("Reversed and joined string:", str2)        # Output: Reversed and joined string: awesomeisPython
 
-   print("".join(reversed("SAI")))             # Output: IAS
-
-   l = ["sai", "raj", "ram"]
-   s = ','.join(l)
-   print(s)                                    # Output sai,raj,ram
-
+   str3 = ','.join(str1)
+   print("Joined with comma:", str3)                 # Output: Joined with comma: Python,is,awesome
+  
 
 ```
 #### 15–17. strip(), lstrip(), and rstrip()
@@ -279,20 +297,14 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 * They return a copy of the string with leading and/or trailing characters removed
 
 ```
-   s = "  mactechtravel "
-   print(s.strip())                          # Removes spaces on both sides
-   print(s.rstrip())                         # Removes spaces on the right
-   print(s.lstrip())                         # Removes spaces on the left
+   
+   str1 = "  Python   "                            # Original string with spaces
+   print("Removed the spaces:", str1.strip())      # Output: Removed the spaces: Python
+   
+   print("Removes spaces on the right:", str1.rstrip())   
 
-   str1 = s.strip()
-   print(str1)
+   print("Removes spaces on the left:", str1.lstrip())                        
 
-
-   # Output:
-   mactechtravel
-     mactechtravel
-   mactechtravel  
-   mactechtravel
 
 ```
 
@@ -313,8 +325,8 @@ Returns the length of the string.
 
 ```
    s = "python"
-   print(s.find("b"))                        # Not found
-   print(s.find("t"))                        # Found at index 2
+   print("find b in s value:", s.find("b"))         # find b in s value: -1
+   print("find b in s value:", s.find("t"))         # Found at index 2
 
 ```
 #### 21–22. max() and min()
@@ -365,9 +377,9 @@ Returns the highest index of the substring.
 Returns True if the string starts with the given prefix.
 
 ```
-   s = "python is easy"
-   print(s.startswith("python"))                # Output: True
-   print(s.startswith("is"))                    # Output:False
+   str1 = "python is easy"
+   print("Starts with 'python':", str1.startswith("python"))            # Output: True
+   print("Starts with 'is':", str1.startswith("is"))                    # Output:False
 
 ```
 
