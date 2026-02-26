@@ -158,7 +158,7 @@
 ```
 
 
-#### 7. String count() Method
+#### 5. String count() Method
 The count() method returns the number of occurrences of a specified substring within a given string.
 
 ```
@@ -176,7 +176,7 @@ The count() method returns the number of occurrences of a specified substring wi
               
 ```
 
-#### 8. String replace() Method
+#### 6. String replace() Method
 The replace() method returns a new string where all occurrences of a specified substring are replaced with another substring.
 
 ```
@@ -186,7 +186,7 @@ The replace() method returns a new string where all occurrences of a specified s
 
 ```
 
-#### 9. String Upper() and Lower(), title() Methods
+#### 7. String Upper() and Lower(), title() Methods
 These methods convert the case of characters in a string.
 
 ```
@@ -206,7 +206,7 @@ These methods convert the case of characters in a string.
 
 ```
 
-#### 5. capitalize() Method
+#### 8. capitalize() Method
 * The capitalize() method returns a new string where the first character is converted to uppercase, and the rest of the string is converted to lowercase.
 
 ```
@@ -215,7 +215,7 @@ These methods convert the case of characters in a string.
 
 ```
 
-#### 10. string swapcase() Method
+#### 9. string swapcase() Method
 The swapcase() method returns a new string where uppercase letters become lowercase and lowercase letters become uppercase
 
 ```
@@ -227,7 +227,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
 
-#### 11. String Reverse
+#### 10. String Reverse
 * There is no direct reverse() method for strings since they are immutable.
 * We can reverse using slicing [::-1].
 
@@ -238,7 +238,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
 
-#### 12. String Immutability
+#### 11. String Immutability
 * Strings in Python cannot be changed after creation.
 * Any operation that seems to modify a string actually creates a new string.
 
@@ -255,7 +255,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
 
-#### 13. String Sort
+#### 12. String Sort
 * You can split a string into words and then sort them alphabetically.
 
 ```
@@ -275,7 +275,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 
 ```
 
-#### 14. join() Function
+#### 13. join() Function
 * The join() method combines elements of an iterable (like a string or list) into a single string.
 
 ```
@@ -292,7 +292,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
   
 
 ```
-#### 15–17. strip(), lstrip(), and rstrip()
+#### 14–15. strip(), lstrip(), and rstrip()
 * These methods remove whitespace or specified characters from a string.
 * They return a copy of the string with leading and/or trailing characters removed
 
@@ -309,7 +309,7 @@ The swapcase() method returns a new string where uppercase letters become lowerc
 ```
 
 
-#### 18. len()
+#### 16. len()
 Returns the length of the string.
 
 ```
@@ -319,7 +319,7 @@ Returns the length of the string.
 ```
 
 
-#### 19. find()
+#### 17. find()
 * Returns the index of the first occurrence of a substring.
 * Returns -1 if not found.
 
@@ -329,7 +329,7 @@ Returns the length of the string.
    print("find b in s value:", s.find("t"))         # Found at index 2
 
 ```
-#### 21–22. max() and min()
+#### 18–19. max() and min()
 Return the highest and lowest alphabetical characters.
 
 ```
@@ -339,7 +339,7 @@ Return the highest and lowest alphabetical characters.
 
 ```
 
-#### 23. index()
+#### 20. index()
 * Returns the index of the first occurrence of a substring.
 * Raises an error if the substring is not found.
 
@@ -349,7 +349,7 @@ Return the highest and lowest alphabetical characters.
 
 ```
 
-#### 24. rindex()
+#### 21. rindex()
 Returns the highest index of the substring.
 
 ```
@@ -357,7 +357,7 @@ Returns the highest index of the substring.
    print(s.rindex("y"))
 
 ```
-#### 25. partition()
+#### 22. partition()
 * Splits the string at the first occurrence of the separator and returns a tuple.
 
 ```
@@ -373,7 +373,7 @@ Returns the highest index of the substring.
 
 ```
 
-#### 26. startswith()
+#### 23. startswith()
 Returns True if the string starts with the given prefix.
 
 ```
@@ -383,7 +383,7 @@ Returns True if the string starts with the given prefix.
 
 ```
 
-#### 27. endswith()
+#### 24. endswith()
 Returns True if the string ends with the given suffix.
 
 ```
@@ -393,7 +393,7 @@ Returns True if the string ends with the given suffix.
 
 ```
 
-### 28. isdigit()
+### 25. isdigit()
 Returns True if all characters in the string are digits.
 
 ```
@@ -401,7 +401,7 @@ Returns True if all characters in the string are digits.
    print(s.isdigit())                            # Output True
 
 ```
-#### 29. isalpha()
+#### 26. isalpha()
 Returns True if all characters in the string are alphabets.
 
 ```
@@ -410,7 +410,7 @@ Returns True if all characters in the string are alphabets.
 
 ```
 
-#### 30. isalnum()
+#### 27. isalnum()
 Returns True if all characters are alphanumeric (letters and digits only).
 
 
