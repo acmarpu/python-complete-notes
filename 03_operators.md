@@ -103,10 +103,7 @@
 | `<=`     | Less than or equal to            | print("Less than or Equal to:", operator.le(a,b))| Less than or Equal to: False |
               
                   
-    
-       
-
-
+ 
 
 
 ----------------------------------------------------------------------------------------------

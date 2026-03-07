@@ -65,7 +65,7 @@ print("First 3 servers IPs:", type(first_three_ips))
 
 
 #------------------------------------------------------------
-# Practic Question 3
+# Practic Question 4
 #------------------------------------------------------------
 
 # From a log message string "ERROR: Pod crashed at 10:00, slice to get only "ERROR"
@@ -78,7 +78,7 @@ print("\n sliced error message:", error_message)
 
 
 #------------------------------------------------------------
-# Practic Question 4
+# Practic Question 5
 #------------------------------------------------------------
 """
 Extract every alterante and reverse service name from a list of services.
@@ -93,7 +93,9 @@ alternate_reverse_services = services[::-2]
 # Alternate and reverse service names: ['elasticsearch', 'mongodb', 'mysql', 'nginx']
 print("\nAlternate and reverse service names:", alternate_reverse_services)
 
-
+#------------------------------------------------------------
+# Practic Question 6
+#------------------------------------------------------------
 
 # F string practice
 
@@ -114,7 +116,9 @@ print("my Course Id is {} and my course name is {}".format(Course_id, Course_nam
 print("my Course Id is %d and my course name is %s" % (Course_id, Course_name))
 
 
-print("#" * 10)
+#------------------------------------------------------------
+# Practic Question 7
+#------------------------------------------------------------
 
 str1 = "python is very easy and Anyone can learn"
 
@@ -134,7 +138,9 @@ print("Capitalize Method str1:", str4.capitalize())     # Output: Capitalize Met
 
 
 
-print("#" * 30)
+#------------------------------------------------------------
+# Practic Question 8
+#------------------------------------------------------------
 
 str1 = "  Python   "                 # Original string with spaces
 print("Removed the spaces:", str1.strip())      # Output: Removed the spaces: Python
