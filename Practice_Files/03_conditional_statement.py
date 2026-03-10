@@ -1,4 +1,4 @@
-'''
+
 # Conditional statements in python 
 #------------------------------------------------------------
 # Practic Question 1
@@ -275,7 +275,7 @@ else:
 # output
 print(f"deployment status code {status_code} indicates that the deployment was {deployment_status}.")
 
-'''
+
 
 #------------------------------------------------------------
 # Practic Question 13
