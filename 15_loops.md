@@ -11,6 +11,7 @@
 2. `while loop'   → used to repeat a block of code as long as a condition is `True`
 3. `Nested loops' → loop inside another loop
 
+
 ----------------------------------------------------------------------------------------------
 #### for loop
 ----------------------------------------------------------------------------------------------
@@ -25,9 +26,13 @@
 
 
 ```    
-    for element in iterator :
+    for variable in sequence :
             block of code
 ```
+* **for** is the keyword used to indicate the start if a for loop
+* **in** is another keyword used to separate the variable from the sequence it's iterating over.
+* **sequence** is the collection of values you want to iterate over. the could be a list, tuple, string, or iterable object.
+* **variable** is a name you choose to represent each value in the sequence as you iterate through it. this name can be anything you like, but it should be meaningful to your code 
 
 * Normally, to display all elements of a list, we might print them **one by one**:
 ```
@@ -109,7 +114,7 @@
 
 ```
 
-* Break & Continue
+* **Break & Continue**
 * Break : Exit the current loop immediately
 * Continue: Skip the current iteration
 
@@ -182,12 +187,28 @@
 ---------------------------------------------------------------------------------------------- 
 * The **`while` loop** is used to execute a block of statements **repeatedly** as long as the given condition is **True**.  
 * Once the condition becomes **False**, the control jumps **out of the loop**.
+* Conditions can be based on **integers, floats, or other numeric values** (and even boolean expressions).  
+
  
 * *infinite loop* = If the loop condition **never becomes False**, the loop will continue running forever — this is called an **infinite loop**.
 
+
+* Always an expression → never just a statement.
+   - Expressions can involve:
+   - Comparisons (==, <, >=, etc.)
+   - Logical operators (and, or, not)
+   - Membership (in, not in)
+   - Identity (is, is not)
+   - Or even direct values (True, False, numbers, strings).
+
+* whenever statement true execute statement1 and statement2
+* if false then execute statement2
+
 ```
-      while condition:
-         statement
+      while (expression):
+         statement1
+
+      statement2
 
 ```
 
@@ -204,4 +225,23 @@
       while i <= 10:
           print(i)
           i = i + 1
+```
+
+```
+# while loop example : multiplication table
+
+# input from user
+num = int(input("enter a number to print its multiplication table: "))
+
+# initialize counter
+
+i = 1
+print(f"Multiplication Table of {num}:")
+
+# while loop from 1 to 10
+while i <= 10:
+    product = num * i
+    print(f"{num} X {i} = {product}")
+    i += 1  # increment counter
+    
 ```
