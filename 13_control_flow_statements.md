@@ -5,6 +5,8 @@
 * Control flow statements help maintain the flow of program execution.  
 * Conditional statements in Python are used to execute certain blocks of code based on whether a condition is true or false. These statements allow your program to make decisions and change its behavior accordingly.  
 * Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated.  
+* Based on the condition. it decides whether the block of code will allows for execution or not.
+* if the condition is true. the block of code is allowed for execution 
 
 ✅ All loops are control flow statements,
 but ❌ not all control flow statements are loops.

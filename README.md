@@ -10,22 +10,21 @@
 
 
 📂 python-complete-notes/
-│
-|
-├── 1_basics_introduction.md       → Python overview, installation, first program, Variables
-├── 2_data_types.md                → Numbers, strings, lists, tuples, sets, dicts
-├── 3_3_operators.md               → operators, expressions
-├── 4_control_flow_statements.md   → if, elif, else, loops (for, while)
-├── 5_string_data_type.md          → String methods, formatting, slicing
-├── 6_list_data_type.md            →   
-├── 7_                  → 
-├── 8_modules_and_packages.md      → Importing modules, creating packages
-├── 9_file_handling.md             → Reading, writing, and managing files
-├── 10_exceptions.md               → Try-except, handling errors gracefully
-├── 11_oop.md                      → Classes, objects, inheritance, polymorphism
-├── 12_advanced_topics.md          → Decorators, generators, iterators, comprehensions
-│
-└── README.md                      → Overview and navigation
+
+  - 1_basics_introduction.md       → Python overview, installation, first program, Variables
+  - 2_data_types.md                → Numbers, strings, lists, tuples, sets, dicts
+  - 3_operators.md               → operators, expressions
+  - 4_control_flow_statements.md   → if, elif, else, loops (for, while)
+  - 5_string_data_type.md          → String methods, formatting, slicing
+  - 6_list_data_type.md            →   
+  - 7_                  → 
+  - 8_modules_and_packages.md      → Importing modules, creating packages
+  - 9_file_handling.md             → Reading, writing, and managing files
+  - 10_exceptions.md               → Try-except, handling errors gracefully
+  - 11_oop.md                      → Classes, objects, inheritance, polymorphism
+  - 12_advanced_topics.md          → Decorators, generators, iterators, comprehensions
+
+  - README.md                      → Overview and navigation
 
 
 
