@@ -8,8 +8,10 @@
 ## 📘 Repository Overview
 * Each file covers a specific Python concept — from beginner to advanced topics — in a progressive learning order.
 
+
 📂 python-complete-notes/
 │
+|
 ├── 1_basics_introduction.md       → Python overview, installation, first program, Variables
 ├── 2_data_types.md                → Numbers, strings, lists, tuples, sets, dicts
 ├── 3_3_operators.md               → operators, expressions
@@ -26,6 +28,7 @@
 └── README.md                      → Overview and navigation
 
 
+
 ## 🧠 How to Use
 
 * Read notes in order from 1 → 12 for smooth learning
@@ -34,5 +37,5 @@
 
 
 ## 🌐 Connect
-* 📸 Instagram: @mac_it_explorer
+* 📸 Instagram: @marpu_tech
 * 💻 GitHub: github.com/acmarpu
