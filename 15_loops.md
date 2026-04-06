@@ -1,15 +1,15 @@
 
 ----------------------------------------------------------------------------------------------
-### 2.🔁 Iterative Statements / Repetitive Statements  (Loops) 
+### 2.🔁 Loops (Iterative Statements / Repetitive Statements) 
 ----------------------------------------------------------------------------------------------
 * Iterative statements (also known as **loops**) are used to execute a block of code repeatedly **as long as a specific condition is true**.
 * Once the condition becomes false, the loop terminates, and the control moves to the next part of the program.
 * Loops help in reducing code repetition and improving efficiency.
 
 📘 **Common Loop Types in Python:**
-1. `forloop'      → used to iterate over a sequence (like list, tuple, string, range, etc.)
-2. `while loop'   → used to repeat a block of code as long as a condition is `True`
-3. `Nested loops' → loop inside another loop
+1. `for loop'      → used to iterate over a sequence (like list, tuple, string, range, etc.)
+2. `while loop'    → used to repeat a block of code as long as a condition is 'True' (integers, float, numbers)
+3. `Nested loops'  → loop inside another loop
 
 
 ----------------------------------------------------------------------------------------------
@@ -188,6 +188,7 @@
 * The **`while` loop** is used to execute a block of statements **repeatedly** as long as the given condition is **True**.  
 * Once the condition becomes **False**, the control jumps **out of the loop**.
 * Conditions can be based on **integers, floats, or other numeric values** (and even boolean expressions).  
+* integer(0,100), float(10.0), bool(true or false)
 
  
 * *infinite loop* = If the loop condition **never becomes False**, the loop will continue running forever — this is called an **infinite loop**.
@@ -201,7 +202,7 @@
    - Identity (is, is not)
    - Or even direct values (True, False, numbers, strings).
 
-* whenever statement true execute statement1 and statement2
+* whenever condition statement true execute statement1 and statement2
 * if false then execute statement2
 
 ```
