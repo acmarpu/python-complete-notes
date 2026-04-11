@@ -1,4 +1,4 @@
-'''
+
 
 #------------------------------------------------------------
    # while loop example : multiplication table
@@ -146,7 +146,7 @@ print(f'the server with least CPU usage is: {least_cpu_server}'
     f' with {servers[least_cpu_server]}% CPU usage')
 
 
-'''
+
 
 #------------------------------------------------------------
 # Use nested loops to generate all possible combinations of username and environment and environment (dev, stage, prod).

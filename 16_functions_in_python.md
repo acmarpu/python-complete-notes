@@ -5,6 +5,7 @@
 * Functions help in organizing code into **small, manageable parts**.
 * A function **runs only when it is called**.
 * Functions improve **code readability, reusability, and maintainability**.
+* to make the code clean
 
 
 #### 📌 Types of Functions
@@ -28,6 +29,12 @@
    # Note : f1 name: function name,  parameters: [optional] input values to the function
 
 ```
+
+* def : keyword used to define a function
+* f1  : name given to the function
+* parameters: input value(optional)
+* return: sends result back to caller
+
 
 * Creating small function
 ```
@@ -70,7 +77,8 @@ if we define global scope value a = 50, again if we define same value a = 50, so
 
 ```
 
-* if you want to chenage global value with in function then use global keyward
+* if you want to chenage global value with in function then use global keyward.
+
 ```
    a =100                        # Global scope
    def samplefunction():
@@ -83,6 +91,9 @@ if we define global scope value a = 50, again if we define same value a = 50, so
    print(a)                      # Optput: 
 
 ```
+
+
+
 
 
 
