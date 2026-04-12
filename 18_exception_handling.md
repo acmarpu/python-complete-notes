@@ -7,15 +7,15 @@
 | **Exception Type**   | **Description**                              | **Example (DevOps Context)**   | 
 |----------------------|----------------------------------------------|--------------------------------|
 | Try-Except Block     | Used to catch and handle exceptions without  |  try:                          |
-|                      | crashing the program                         |  with open(*/etc/config yaml*) |
+|                       crashing the program                          |  with open(*/etc/config yaml*) |
 | Using the Else Block | Runs only if no exception occurs in the try  |  try:                          |
 |                      | block.                                       |  response = 200 # mock HTTP status|
-|                      |                                              |  if responce ! = 200            |
-|                      |                                              |  raise Exception("Deployment failed") |  
-|                      |                                              |  except Exception as e          |
-|                      |                                              |  print("Error", e)              |
-|                      |                                              |  else                           |
-|                      |                                              |  print("Deployment Successful") |
+|                                                                        if responce ! = 200            |
+|                                                                        raise Exception("Deployment failed") |  
+|                                                                        except Exception as e          |
+|                                                                        print("Error", e)              |
+|                                                                        else                           |
+|                                                                        print("Deployment Successful") |
 | Using the Finally    |                                              |                                 |
 | Block                | Always runs(whether exception occurs or not).|  try:                           |  
 |                      | Useful for cleanup tasks                     |  f = open("deployment log", 'W') |
