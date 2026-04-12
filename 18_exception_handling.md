@@ -19,7 +19,7 @@
 |                      |                                              |  print("Deployment Successful") |
 |                      |                                              |                                 |
 | Using the Finally    | Always runs(whether exception occurs or not).|  try:                           |  
-  Block |               Useful for cleanup tasks                      |  f = open("deployment log", 'W') |
+  Block |               Useful for cleanup tasks |                    |  f = open("deployment log", 'W') |
                                                                       |  f write("Deploymet started.")   |
                                                                       |  finally.                        |
                                                                       |  f.close() # ensure file is closed|   
