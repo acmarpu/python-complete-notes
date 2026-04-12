@@ -20,11 +20,11 @@
 |                      |                                              |                                 |
 | Using the Finally    | Always runs(whether exception occurs or not).|  try:                           |  
   Block |               Useful for cleanup tasks                      |  f = open("deployment log", 'W') |
-|                      |                                              |  f write("Deploymet started.")   |
-|                      |                                              |  finally.                        |
-|                      |                                              |  f.close() # ensure file is closed|   
-|                      |                                              |  print("Log file closed")         |
-|                      |                                              |                                 |
+                                                                      |  f write("Deploymet started.")   |
+                                                                      |  finally.                        |
+                                                                      |  f.close() # ensure file is closed|   
+                                                                      |  print("Log file closed")         |
+                                                                      |                                 |
 |Raising  Exception    | Used to raise a built-in or custom error when|  def check_disk_space(space)      |
 |                      | a condition fails.                           |    if space < 20                  |
 |                      |                                              |  raise Exception("Low disk space! |
