@@ -4,7 +4,7 @@
 
 # Mutability of list and tuple
 
-'''
+
 course_list = ["Python", "Java", "C++", "javaScript"]
 print("list before modification:", course_list)
 print("before change address of list:", id(course_list))
@@ -27,7 +27,7 @@ print("list after modification:", id(course_tuple))
 
 # Output  course_tuple[0] = "Golang" TypeError: 'tuple' object does not support item assignment
 
-'''
+
 #---------------------------------------------------------------
 # Syntax of list Comprehension in Python
 #---------------------------------------------------------------
