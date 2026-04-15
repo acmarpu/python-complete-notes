@@ -1,0 +1,14 @@
+# YAML Configuration example
+# YAML is a human friendly data serialization format. It is commonly used for configuration files and in applications where data is being stored or transmitted. It is designed to be easy to read and write, and it is often used as an alternative to JSON or XML.
+
+dev_db_config:
+  DB_USER: dev_user
+  DB_PASSWORD: dev_password
+  DB_HOST: localhost
+  DB_PORT: 5432
+
+prod_db_config:
+  DB_USER: prod_user
+  DB_PASSWORD: prod_password
+  DB_HOST: prod-db-server
+  DB_PORT: 5432

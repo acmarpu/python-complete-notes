@@ -1,0 +1,17 @@
+{
+ "dev_db_config": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "dev_user",
+    "password": "dev_pass",
+    "database": "dev_db"
+ },
+
+ "prod_db_config": {
+    "host": "prod-db-server",
+    "port": 5432,
+    "username": "prod_user",
+    "password": "prod_pass",
+    "database": "prod_db"
+ }
+}   
