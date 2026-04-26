@@ -1,4 +1,4 @@
-#####  Create or Login into JIRA account https://home.atlassian.com/
+####  Create or Login into JIRA account https://home.atlassian.com/
 
 
 #### Navigate to Account settings
@@ -6,7 +6,7 @@
 - Select Account Settings
 
 
-##### Create API Token
+#### Create API Token
 - In the left sidebar, click Security 
 - Under API Token, click Create and manage API token 
 - Click Create API token
@@ -14,7 +14,7 @@
 - Click Create
 
 
-##### Copy and Save Token
+#### Copy and Save Token
 
 
 #### Create .env file
