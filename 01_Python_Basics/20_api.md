@@ -2,9 +2,6 @@
 ### API Basics 
 ----------------------------------------------------------------------------------------------
 
-
-
-
 * **HTTP Methods (Operations)**
 GET    ------->  Retrive Data  /users
 POST   ------->  Create Data   /Users

@@ -103,7 +103,7 @@ def display_menu(resource_client, storage_client):
     print("1. Create resource group")
     print("2. Create Storage Account")
 
-    print("11. Exit")
+    print("3. Exit")
     choice = input("Enter your choice: ")
 
     if choice == "1":
@@ -160,7 +160,13 @@ def create_storage_account(resource_client, storage_client, resource_group_name,
         params = {
             "sku": {"name": "Standard_LRS"},
             "kind": "StorageV2",
-            "location": location
+            "location": location,
+            "properties": {
+                "isHnsEnabled": True,
+                "isSftpEnabled": True,
+                "supportsHttpsTrafficOnly": True,
+                "minimumTlsVersion": "TLS1_2"
+            }
         }
         # Exit if a storage account with the same name already exists in the resource group
         try:
@@ -178,11 +184,10 @@ def create_storage_account(resource_client, storage_client, resource_group_name,
             params
         )
         account = poller.result()
-        print(f"Storage account '{account.name}' created in resource group '{resource_group_name}'")
+        print(f"Storage account '{account.name}' created in resource group '{resource_group_name}' with SFTP enabled.")
     except Exception as e:
         print(f"Failed to create storage account: {e}")
         sys.exit(1)
-
 
 # display the cloud storage activity logs for the storage account
 
