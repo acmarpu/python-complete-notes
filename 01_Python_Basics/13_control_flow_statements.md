@@ -11,7 +11,9 @@
 ✅ All loops are control flow statements,
 but ❌ not all control flow statements are loops.
 
-* Conditional statements:
+----------------------------------------------------------------------------------------------
+### Conditional statements: (Decision Making)
+----------------------------------------------------------------------------------------------
 ```
    if 
    if else
