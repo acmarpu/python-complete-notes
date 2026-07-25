@@ -1,4 +1,4 @@
-# � Python Complete Notes
+# Python Complete Notes
 
 ![Python Learning](https://img.shields.io/badge/Python-Learning%20Notes-blue?logo=python&logoColor=white)
 
