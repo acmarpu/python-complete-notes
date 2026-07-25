@@ -215,7 +215,7 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-##### keywords, variables and scope completed 
+##### keywords, variables and scope Completed 
 
 📖 **Next Topic:**
 👉 [Operators](03_operators.md)

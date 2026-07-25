@@ -54,12 +54,9 @@
 | `*`      | Multiplication        | print("Multiplication:", operator.mul(a, b)) |  Multiplication: 15 |
 | `/`      | Division (float)      | print("Division:", operator.truediv(a, b)) | Division: 1.6666666666666667 |
 | `//`     | Floor Division        | print("Floor Division:", operator.floordiv(a, b))  | Floor Division: 1 |            
-           
-       
-         
-         
-
-
+                 
+<br><br><br>        
+ 
 ----------------------------------------------------------------------------------------------
 #### ⚖️ 2. Relational (Comparison) Operators
 ----------------------------------------------------------------------------------------------
@@ -375,5 +372,8 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-✅ End of Python Operators
+##### Operators Completed 
+
+📖 **Next Topic:**
+👉 [Data Types](04_data_types_introduction.md)
 ----------------------------------------------------------------------------------------------

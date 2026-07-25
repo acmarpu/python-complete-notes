@@ -7,6 +7,7 @@
 * Data types determine the **operations** that can be performed on a value.
 * Python is a **dynamically typed** language (no need to declare data types explicitly).
 
+<br><br><br>
 
 ##### 🔹 Mutable vs Immutable Types
 
@@ -58,14 +59,7 @@
 * Dictionary, set - do not support indexing 
 
 
-
-|Positive Indexing   | 0 | 1 | 2 | 3 | 4 | 5 |6  |7  |
-|--------------------|---|---|---|---|---|---|---|---|     
-|                    | W | E | L |   | C | O | M | E |
-
-
 * Char at end is excluded
-
 
 
 |Positive Indexing   | 0 | 1 | 2 | 3 | 4 | 5 |6  |7  |
@@ -338,5 +332,8 @@
 ```
 
 ----------------------------------------------------------------------------------------------
-✅ End of Python Data Types 
+##### Data Type Completed 
+
+📖 **Next Topic:**
+👉 [Numeric Data Type](05_numeric_data_type.ipynb)
 ----------------------------------------------------------------------------------------------
