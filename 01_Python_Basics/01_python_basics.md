@@ -212,10 +212,8 @@ In function-oriented programming, the program is divided into functions, and dat
 
 
 ----------------------------------------------------------------------------------------------
-##### End of Python Basics
+##### Python Basics Completed
 
 📖 **Next Topic:**
-➡️ [Keywords, Variables, and Scope](02_keywords_variables_scope.md)
-
-Happy Learning! 🚀
+👉 [Keywords, Variables, and Scope](02_keywords_variables_scope.md)
 ----------------------------------------------------------------------------------------------
