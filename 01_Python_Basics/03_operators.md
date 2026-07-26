@@ -375,5 +375,5 @@
 ##### Operators Completed 
 
 📖 **Next Topic:**
-👉 [Data Types](04_data_types_introduction.md)
+👉 [Python Data Types](04_data_types_introduction.md)
 ----------------------------------------------------------------------------------------------
