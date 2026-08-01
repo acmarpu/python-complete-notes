@@ -1,3 +1,4 @@
+![alt text](https://github.com/acmarpu/images/blob/main/python_basic_01.png)
 
 - [Python Basics](#python-basics)
   - [Why Python for Automation](#why-python-for-automation)
@@ -12,9 +13,6 @@
 
 - [>> Next Topic : Operators](/01_Python_Basics/02_operators.md)
 
-<span style="color: #306998; font-size: 1.15em; font-weight: bold;">📘 Python Basics</span>
-
-![Python logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
 
 ----------------------------------------------------------------------------------------------
 ### Python Basics
