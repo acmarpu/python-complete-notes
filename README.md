@@ -16,9 +16,9 @@ The goal of this project is to provide a structured path for learning Python fro
 
 ## Repository Structure
 
-| 01_Python_Basics                  |
-|-----------------------------------|
-| 01_python_basics.md               |
+| 01_Python_Basics                     |
+|--------------------------------------|
+| >> 01_python_basics.md               |
 | 
 
 ## Topics Covered
