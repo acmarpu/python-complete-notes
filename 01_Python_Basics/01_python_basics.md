@@ -1,4 +1,4 @@
-![alt text](https://github.com/acmarpu/images/blob/main/python_basic_01.png)
+![alt text](https://github.com/acmarpu/images/blob/main/Python/02_python_basic_01.png)
 
 - [Python Basics](#python-basics)
   - [Why Python for Automation](#why-python-for-automation)

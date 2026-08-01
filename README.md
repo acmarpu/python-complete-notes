@@ -1,4 +1,4 @@
-![alt text](https://github.com/acmarpu/images/blob/main/python_final_banner.png)
+![alt text](https://github.com/acmarpu/images/blob/main/Python/01_python_final_banner.png)
 
 
 ![Python Learning](https://img.shields.io/badge/Python-Learning%20Notes-blue?logo=python&logoColor=white)
