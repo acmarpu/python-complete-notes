@@ -1,3 +1,21 @@
+![alt text](https://github.com/acmarpu/images/blob/main/Python/03_python_operators.png)
+
+- [Operators](#-operators)
+  - [Arithmetic Operators](#-1-arithmetic-operators)
+  - [Relational Operators](#️-2-relational-comparison-operators)
+  - [Assignment Operator](#-3-assignment-operator)
+  - [Logical Operators](#-4--logical-operators)
+  - [Membership Operators](#-5--membership)
+  - [Identity Operators](#-6-identity)
+  - [Bitwise Operators](#-7-bitwise)
+  - []()
+
+- [>> Next Topic : Data Types](/01_Python_Basics/03_data_types_introduction.md)
+
+
+
+
+
 ----------------------------------------------------------------------------------------------
 ### 👉 Operators
 ----------------------------------------------------------------------------------------------
@@ -375,5 +393,5 @@
 ##### Operators Completed 
 
 📖 **Next Topic:**
-👉 [Python Data Types](04_data_types_introduction.md)
+👉 [Python Data Types](/01_Python_Basics/03_data_types_introduction.md)
 ----------------------------------------------------------------------------------------------
