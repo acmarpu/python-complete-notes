@@ -10,7 +10,7 @@
   - [Function-Oriented Programming](#️-2-function-oriented-programming-fop)
   - [Object-Oriented Programming](#-3-object-oriented-programming-oop)
 
-- [Next Topic](/01_Python_Basics/02_operators.md)
+- [Next Topic : Operators](/01_Python_Basics/02_operators.md)
   
 ----------------------------------------------------------------------------------------------
 ### Python Basics
