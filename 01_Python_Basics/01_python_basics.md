@@ -1,12 +1,11 @@
- - [Python Basics](#Python Basics)
+- [📘 Day 15](#-day-01)
+  - [## 👉 Python Basics](### 👉 Python Basics)
     - [why Python for Automation](#why Python for Automation)
+    - [NameError](#nameerror)
 
 
+## 👉 Python Basics
 
-
-----------------------------------------------------------------------------------------------
-👉 Python Basics
-----------------------------------------------------------------------------------------------
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
 * Python is a versatile programming language commonly used for application development across web, desktop, and mobile platforms. Although Python itself does not directly create physical infrastructure such as servers, networks, or cloud machines, it plays a crucial role in DevOps and cloud computing. Through libraries and tools like Ansible, SaltStack, boto3 (AWS), and Google Cloud SDK, Python enables engineers to automate, configure, and manage infrastructure efficiently using code
