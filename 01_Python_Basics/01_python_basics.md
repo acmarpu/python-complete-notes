@@ -1,5 +1,6 @@
+
 - [Python Basics](#python-basics)
-  - [why Python for Automation](#why-python-for-automation)
+  - [Why Python for Automation](#why-python-for-automation)
   - [Features of Python](#-features-of-python)
   - [Execute Python Code](#-different-ways-to-write-and-execute-python-code)
   - [Python Keywords](#-python-keywords)
