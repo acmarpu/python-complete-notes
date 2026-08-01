@@ -1,6 +1,5 @@
 ![alt text](https://github.com/acmarpu/images/blob/main/python_final_banner.png)
 
-# Python Complete Notes
 
 ![Python Learning](https://img.shields.io/badge/Python-Learning%20Notes-blue?logo=python&logoColor=white)
 
@@ -17,12 +16,10 @@ The goal of this project is to provide a structured path for learning Python fro
 
 ## Repository Structure
 
-- [01_Python_Basics](01_Python_Basics) - Core Python basics, notes, and notebooks
-- [02_Python_Basics_Practice_Files](02_Python_Basics_Practice_Files) - Practice exercises for operators, data types, loops, functions, exceptions, and file handling
-- [03_Python_Advanced](03_Python_Advanced) - Advanced Python concepts and study material
-- [Azure_Storage_Python_Automation](Azure_Storage_Python_Automation) - Azure Storage automation scripts and setup notes
-- [GCP_Automation](GCP_Automation) - Google Cloud automation setup notes
-- [Python_JIRA_Automation](Python_JIRA_Automation) - JIRA automation scripts and instructions
+| 01_Python_Basics                  |
+|-----------------------------------|
+| 01_python_basics.md               |
+| 
 
 ## Topics Covered
 
