@@ -1,17 +1,23 @@
-- [📘 Day 15](#-day-01)
-  - [## 👉 Python Basics](### 👉 Python Basics)
-    - [why Python for Automation](#why Python for Automation)
-    - [NameError](#nameerror)
-
-
-## 👉 Python Basics
-
+- [Python Basics](#python-basics)
+  - [why Python for Automation](#why-python-for-automation)
+  - [Features of Python](#-features-of-python)
+  - [Execute Python Code](#-different-ways-to-write-and-execute-python-code)
+  - [Python Keywords](#-python-keywords)
+  - [Variables](#-variables)
+  - [Indentation](#indentation)
+  - [Structured Programming](#-1-structured-programming)
+  - [Function-Oriented Programming](#️-2-function-oriented-programming-fop)
+  - [Object-Oriented Programming](#-3-object-oriented-programming-oop)
+  
+----------------------------------------------------------------------------------------------
+### Python Basics
+----------------------------------------------------------------------------------------------
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
 * Python is a versatile programming language commonly used for application development across web, desktop, and mobile platforms. Although Python itself does not directly create physical infrastructure such as servers, networks, or cloud machines, it plays a crucial role in DevOps and cloud computing. Through libraries and tools like Ansible, SaltStack, boto3 (AWS), and Google Cloud SDK, Python enables engineers to automate, configure, and manage infrastructure efficiently using code
 
 ----------------------------------------------------------------------------------------------
-### why Python for Automation
+### Why Python for Automation
 ----------------------------------------------------------------------------------------------
 
 **1.** Introduction to Python
@@ -240,7 +246,7 @@ It is known for its **Simple** and **Readability**, making it highly **Beginner-
   - h) no keywords or reserved words can be used as identifier.
 
 ----------------------------------------------------------------------------------------------
-#### Indentation
+### Indentation
 ----------------------------------------------------------------------------------------------
 * Python uses indentation (whitespace before a statement) to define the structure of the code — for example, in loops, conditionals, functions, and classes.
 * Unlike many other languages such as C, C++, or Java, which use curly braces {} to group statements, Python relies only on indentation.
@@ -313,6 +319,5 @@ In function-oriented programming, the program is divided into functions, and dat
 ----------------------------------------------------------------------------------------------
 ##### Python Basics Completed
 
-📖 **Next Topic:**
-👉 [Keywords, Variables, and Scope](02_keywords_variables_scope.md)
+###### 📖 **Next Topic:** 👉 [Operators](02_operators.md)
 ----------------------------------------------------------------------------------------------
