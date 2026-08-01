@@ -1,6 +1,7 @@
 ![alt text](https://github.com/acmarpu/images/blob/main/Python/03_python_datatypes.png)
 
 - [Data Types](#-data-types-in-python)
+  - [Mutable vs Immutable Types](#-mutable-vs-immutable-types)
   - [Basic Data Types](#-basic-data-types)
       - [none](#-1-none)
   - [Sequence & Collection Types](#sequence--collection-types)
@@ -34,10 +35,9 @@
 * bytearray
 * frozenset
 
-<br><br><br>
-
+----------------------------------------------------------------------------------------------
 ##### 🔹 Mutable vs Immutable Types
-
+----------------------------------------------------------------------------------------------
 - **Mutable:** Data types whose values **can be changed** after creation.  
 - **Immutable:** Data types whose values **cannot be changed** after creation.  
 
@@ -77,7 +77,7 @@
 |--------------------|---|---|---|---|---|---|---|---|
 |Negative indexing   |-8 |-7 |-6 |-5 |-4 |-3 |-2 |-1 |
 
-
+<br>
 
 | **Data Type** | **Category**      | **Example**                           | **Definition** |
 |---------------|------------------|---------------------------------------|----------------|
@@ -91,7 +91,7 @@
 | **bytes**     | Binary Type       | `b = b'Hello'`                        | Immutable sequence of bytes. |
 | **bytearray** | Binary Type       | `ba = bytearray(b'Hello')`            | Mutable sequence of bytes. |
 
-
+<br>
 
 ----------------------------------------------------------------------------------------------
 ### 📊 Data Types Comparison Table
