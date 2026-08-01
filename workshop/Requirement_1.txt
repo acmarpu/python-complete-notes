@@ -1,0 +1,62 @@
+# Break down the requirement
+#Input : Log file
+"C:\\Users\\VENKATESH BALAGIRI\\PMCH\\Python_Digital_Mastery_Adv\\log\\app_log.txt"
+
+# User defined function( Log file)
+
+# Read log file using with open function (line by line)
+
+# Entire log data into buffer as a whole string
+
+# Using readline function it  reads data line by line by default this read line function converts entire file data into list of strings where each line will be single element in the list.  
+
+
+# Read the list using for loop
+
+
+# Performing the validation/filter/check using Regular expressins , using conditional statements, using methods
+
+
+# mapping
+# time ---> Date time
+# Mode --> Log_mode
+# Message --> Log_message
+
+# Each case capture the activity or transaction using logging functionality with proper log_mode=DEBUG
+
+
+# Each phase we are going to use exception handling
+
+
+# Connect to the MYSQL data base using PYMYSQL
+
+
+# Estabilish the cusror
+
+
+# Define the SQL query
+
+# Execute the SQL query : IF Exists just insert the data
+# if not CREATE the table and insert the required data using for loop
+
+
+# Commit the data and close the connection
+
+
+# Excpetion handling for MYSQL DB connection
+
+# logginng for entire functionality
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Output: MySQL Table with required data : Date, Log_mode and Log_message

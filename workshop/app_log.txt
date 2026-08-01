@@ -1,0 +1,7 @@
+2022-01-01 12:00:00  info:  Application started successfully
+2022-01-01 12:01:00  warning:  Low disk space on drive C
+2022-01-01 12:02:00  error:  Failed to connect to database
+2022-01-01 12:03:00  info:  User login successful
+2022-01-01 12:04:00  debug:  Executing query: SELECT * FROM users
+2022-01-01 12:05:00  error:  Invalid user credentials provided
+2022-01-01 12:06:00  warning:  System shutdown in 10 minutes
