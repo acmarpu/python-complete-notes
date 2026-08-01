@@ -13,7 +13,7 @@
       - [Range Data Type](/01_Python_Basics/10_range_data_type.ipynb)
       - [bytes_bytearray_frozenset](/01_Python_Basics/11_bytes_and_bytearray_data_type.ipynb)
 
-- [>> Next Topic : Numeric Data Type](/01_Python_Basics/04_numeric_data_type.ipynb)
+
 ----------------------------------------------------------------------------------------------
 ### 👉 Data Types in Python
 ----------------------------------------------------------------------------------------------
