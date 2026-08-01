@@ -10,8 +10,12 @@
   - [Function-Oriented Programming](#️-2-function-oriented-programming-fop)
   - [Object-Oriented Programming](#-3-object-oriented-programming-oop)
 
-- [Next Topic : Operators](/01_Python_Basics/02_operators.md)
-  
+- [>> Next Topic : Operators](/01_Python_Basics/02_operators.md)
+
+<span style="color: #306998; font-size: 1.15em; font-weight: bold;">📘 Python Basics</span>
+
+![Python logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+
 ----------------------------------------------------------------------------------------------
 ### Python Basics
 ----------------------------------------------------------------------------------------------
