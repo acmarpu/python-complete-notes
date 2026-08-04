@@ -58,5 +58,5 @@ Then install any required dependencies as needed for the specific folder or scri
 This repository is mainly for personal learning and reference. It is a growing collection of notes and examples that can be expanded over time.
 
 🌐 Connect
-📸 Instagram: @marpu_tech
-💻 GitHub: github.com/acmarpu
+* 📸 Instagram: @mac_4599
+* 💻 GitHub: github.com/acmarpu
