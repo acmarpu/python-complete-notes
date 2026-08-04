@@ -67,10 +67,6 @@
 * Meaning: access elements using indexing, slicing, or keys. string, list , tuple 
 * Dictionary, set - do not support indexing 
 
-
-* Char at end is excluded
-
-
 |                        |   |   |   |   |   |   |   |   |
 |------------------------|---|---|---|---|---|---|---|---|
 |**Positive Indexing**   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
