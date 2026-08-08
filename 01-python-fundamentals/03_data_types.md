@@ -108,5 +108,5 @@
 #### Data Types introduction Completed 
 
 📖 **Next Topic:**
-👉 [Numeric Data Type](/01_Python_Basics/04_numeric_data_type.ipynb)
+👉 [Numeric Data Type](/01-python-fundamentals/04_numeric_data_type.ipynb)
 ----------------------------------------------------------------------------------------------

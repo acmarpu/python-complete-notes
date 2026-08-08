@@ -387,5 +387,5 @@
 ##### Operators Completed 
 
 📖 **Next Topic:**
-👉 [Python Data Types](/01_Python_Basics/03_data_types_introduction.md)
+👉 [Python Data Types](/01-python-fundamentals/03_data_types.md)
 ----------------------------------------------------------------------------------------------

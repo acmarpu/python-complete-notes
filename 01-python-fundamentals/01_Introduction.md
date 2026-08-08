@@ -15,7 +15,7 @@
 
 
 ----------------------------------------------------------------------------------------------
-### Python Basics
+### Python Introduction
 ----------------------------------------------------------------------------------------------
 Python was designed and developed by Guido van Rossum in the year 1989, and the first version was released in the year 1991.
 
@@ -324,5 +324,5 @@ In function-oriented programming, the program is divided into functions, and dat
 ----------------------------------------------------------------------------------------------
 ##### Python Basics Completed
 
-###### 📖 **Next Topic:** 👉 [Operators](02_operators.md)
+###### 📖 **Next Topic:** 👉 [Operators](/01-python-fundamentals/02_operators.md)
 ----------------------------------------------------------------------------------------------
